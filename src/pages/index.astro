@@ -4,7 +4,7 @@ import MainLayout from '../layouts/MainLayout.astro';
 <MainLayout title="Lake Forest Websites | Modern Dark Design" bodyClass="page-home">
   <link rel="stylesheet" href="/css/pages/home.css" />
 
-  <section class="relative pt-40 pb-32 px-6 flex flex-col items-center justify-center text-center">
+  <section class="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-6 py-20 md:py-32">
     <!-- Hero background video -->
     <video
       class="absolute inset-0 -z-10 w-full h-full object-cover"
@@ -15,24 +15,24 @@ import MainLayout from '../layouts/MainLayout.astro';
       playsinline
     ></video>
     <!-- Dark overlay + glow -->
-    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-black/90 via-black/75 to-black/90"></div>
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-black/95 via-black/85 to-black/95"></div>
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] glow-bg pointer-events-none opacity-50"></div>
 
-    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-orange-400 mb-8">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-orange-400 mb-6 md:mb-8">
       <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
       Based in Lake Forest, CA
     </div>
 
-    <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6 max-w-4xl mx-auto leading-tight">
-      Custom Website Design.<br />
-      <span class="text-zinc-500">Real Results.</span>
+    <h1 class="text-6xl md:text-8xl font-bold tracking-tight mb-8 md:mb-10 max-w-5xl mx-auto">
+      Design for <span class="text-gradient-orange">Humans</span>.<br />
+      Rank for <span class="text-gradient-orange">Machines</span>.
     </h1>
 
-    <p class="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-      100% custom websites built for your business. No templates. No offshore call centers. Just a partner you can count on.
+    <p class="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-12 md:mb-14 leading-relaxed">
+      If you aren't at the top, you don't exist. We bridge the gap between "just a website" and a dominant market presence with elite SEO and psychological-led design.
     </p>
 
-    <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+    <div class="flex flex-col sm:flex-row gap-4 w-full justify-center max-w-md sm:max-w-none">
       <a href="#" class="px-8 py-4 bg-orange-600 text-white font-semibold rounded-xl btn-glow hover:bg-orange-500 transition-colors">
         Request Consultation
       </a>
@@ -62,8 +62,8 @@ import MainLayout from '../layouts/MainLayout.astro';
       <div class="grid md:grid-cols-2 gap-16 items-center">
         <div>
           <h2 class="text-3xl md:text-4xl font-bold mb-6">
-            Not Just a Website.<br />
-            <span class="text-gradient-orange">A Partner You Can Count On.</span>
+            More Than a Website.<br />
+            <span class="text-gradient-orange">A Team That Delivers.</span>
           </h2>
           <div class="space-y-8">
             <div class="flex gap-4">
@@ -71,8 +71,8 @@ import MainLayout from '../layouts/MainLayout.astro';
                 <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
               </div>
               <div>
-                <h3 class="text-xl font-semibold text-white mb-2">Custom, Functional Design</h3>
-                <p class="text-zinc-400 leading-relaxed">We craft unique websites that reflect your brand. No bloated templates that slow you down.</p>
+                <h3 class="text-xl font-semibold text-white mb-2">Custom, Purpose-Built Design</h3>
+                <p class="text-zinc-400 leading-relaxed">Every site is built from scratch for your specific needs. No template bloat, no unnecessary features—just what works for your business.</p>
               </div>
             </div>
             <div class="flex gap-4">
@@ -80,8 +80,8 @@ import MainLayout from '../layouts/MainLayout.astro';
                 <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
               </div>
               <div>
-                <h3 class="text-xl font-semibold text-white mb-2">Real People, Real Support</h3>
-                <p class="text-zinc-400 leading-relaxed">No bots. No long waits. Speak directly to a team based in Lake Forest, CA.</p>
+                <h3 class="text-xl font-semibold text-white mb-2">Direct Access to Your Team</h3>
+                <p class="text-zinc-400 leading-relaxed">Skip the ticket queues. Work directly with the people who built your site, based right here in Lake Forest, CA.</p>
               </div>
             </div>
           </div>
@@ -141,7 +141,7 @@ import MainLayout from '../layouts/MainLayout.astro';
           </div>
           <h3 class="text-xl font-bold mb-3">Custom Websites</h3>
           <p class="text-sm text-zinc-400 mb-6 leading-relaxed">
-            Clean, functional websites designed for your goals, brand, and audience.
+            Purpose-driven websites tailored to your business objectives, brand identity, and target audience.
           </p>
           <div class="flex flex-wrap gap-2">
             <span class="px-2 py-1 text-xs bg-white/5 rounded text-zinc-300">Brochure</span>
@@ -155,7 +155,7 @@ import MainLayout from '../layouts/MainLayout.astro';
           </div>
           <h3 class="text-xl font-bold mb-3">Ecommerce Stores</h3>
           <p class="text-sm text-zinc-400 mb-6 leading-relaxed">
-            Online stores with secure checkout and scalable features for growth.
+            Full-featured online stores with secure payment processing and flexible options that scale with your business.
           </p>
           <div class="flex flex-wrap gap-2">
             <span class="px-2 py-1 text-xs bg-white/5 rounded text-zinc-300">Shopify</span>
@@ -169,7 +169,7 @@ import MainLayout from '../layouts/MainLayout.astro';
           </div>
           <h3 class="text-xl font-bold mb-3">Custom Development</h3>
           <p class="text-sm text-zinc-400 mb-6 leading-relaxed">
-            Advanced features for businesses that need more than just a website.
+            Tailored functionality and integrations for businesses requiring specialized web solutions.
           </p>
           <div class="flex flex-wrap gap-2">
             <span class="px-2 py-1 text-xs bg-white/5 rounded text-zinc-300">API Integration</span>
