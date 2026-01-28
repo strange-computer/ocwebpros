@@ -31,7 +31,10 @@ const navClass = (href: string) =>
           <a href="/" class="flex items-center flex-shrink-0">
             <img src="/images/LakeForestLogo.png" alt="Lake Forest Websites" class="h-8 w-auto" />
           </a>
-          <a href="/" class="logo-text text-sm sm:text-base hover:text-white/80 transition truncate">Lake Forest Websites</a>
+          <a href="/" class="logo-text text-sm sm:text-base hover:text-white/80 transition">
+            <span class="block md:inline">Lake Forest</span>
+            <span class="block md:inline md:ml-1">Websites</span>
+          </a>
         </div>
         <div class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
           <a href="/services" class={navClass('/services')}>Services</a>
