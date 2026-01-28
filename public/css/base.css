@@ -5,10 +5,48 @@
         --bg: #09090b;
     }
 
+    html {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
     body {
         font-family: 'Inter', sans-serif;
         background-color: var(--bg);
         color: var(--text);
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+    }
+
+    /* Mobile-specific improvements */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Improve touch targets on mobile */
+    @media (max-width: 768px) {
+        a, button {
+            min-height: 44px;
+            min-width: 44px;
+        }
+
+        /* Prevent text size adjustment on iOS */
+        html {
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+
+        /* Improve scrolling on mobile */
+        body {
+            -webkit-overflow-scrolling: touch;
+        }
     }
 }
 

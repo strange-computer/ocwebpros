@@ -57,6 +57,19 @@
     @keyframes code-caret-blink {
         50% { opacity: 0; }
     }
+
+    /* Mobile menu improvements */
+    @media (max-width: 768px) {
+        #mobileMenu {
+            overscroll-behavior: contain;
+        }
+
+        /* Ensure mobile menu links are easily tappable */
+        #mobileMenu a {
+            display: block;
+            padding: 0.75rem 1rem;
+        }
+    }
 }
 
 
