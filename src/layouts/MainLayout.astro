@@ -16,7 +16,7 @@ const navClass = (href: string) =>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet" />
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <!-- Existing layered CSS -->
@@ -28,10 +28,10 @@ const navClass = (href: string) =>
     <nav class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/30 backdrop-blur-xl backdrop-saturate-150 shadow-[0_8px_32px_rgba(0,0,0,0.35)] ring-1 ring-white/10">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
         <div class="flex items-center gap-2 min-w-0 flex-shrink">
-          <div class="w-8 h-8 bg-orange-600 rounded-lg flex items-center justify-center font-bold text-white flex-shrink-0">
-            LF
-          </div>
-          <a href="/" class="font-semibold text-base sm:text-lg tracking-tight hover:text-white/80 transition truncate">Lake Forest Websites</a>
+          <a href="/" class="flex items-center flex-shrink-0">
+            <img src="/images/LakeForestLogo.png" alt="Lake Forest Websites" class="h-8 w-auto" />
+          </a>
+          <a href="/" class="logo-text text-sm sm:text-base hover:text-white/80 transition truncate">Lake Forest Websites</a>
         </div>
         <div class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
           <a href="/services" class={navClass('/services')}>Services</a>
