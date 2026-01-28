@@ -21,119 +21,231 @@ import MainLayout from '../layouts/MainLayout.astro';
     </div>
   </header>
 
-  <main class="pb-24 px-6">
-    <!-- Why choose us for local -->
-    <section class="max-w-7xl mx-auto">
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="framer-card p-8 rounded-2xl">
-          <div class="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/20 flex items-center justify-center mb-4">
-            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h10"/></svg>
+  <main class="pb-24 px-6 md:px-8">
+    <!-- Spotlight Section -->
+    <section class="max-w-7xl mx-auto pt-8 md:pt-12 pb-16 md:pb-24">
+      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        <!-- Text Content (Left on desktop, bottom on mobile) -->
+        <div class="w-full md:w-1/2 backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-8 md:p-10" data-aos="fade-right">
+          <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Designed for Your Business</h3>
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Tailored to Your Industry</h2>
+          <p class="text-zinc-400 mb-6 text-lg leading-relaxed">We understand what makes local companies successful. Your website should reflect your community presence, showcase your expertise, and make it effortless for customers to choose you.</p>
+          <ul class="space-y-3 text-zinc-300">
+            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Tailored to your specific industry and service area</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Designed to convert visitors into customers</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Optimized for local search visibility</span></li>
+          </ul>
+        </div>
+        <!-- Mockup Placeholder (Right on desktop, top on mobile) -->
+        <div class="w-full md:w-1/2 h-96 md:h-[500px] border border-white/10 rounded-xl overflow-hidden" data-aos="fade-left">
+          <div class="w-full h-full bg-zinc-800/50 flex items-center justify-center">
+            <div class="text-zinc-500 text-sm">Local Business Website Mockup</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why choose us for local -->
+    <section class="max-w-7xl mx-auto pt-2 md:pt-4 pb-16 md:pb-24 px-6 md:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="group hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-8 h-8 flex items-center justify-center mb-3">
+            <svg class="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h10"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Designed for Your Business</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">No one‑size‑fits‑all themes. Layouts and messaging are tailored to your services, service areas, and customers.</p>
         </div>
-        <div class="framer-card p-8 rounded-2xl">
-          <div class="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/20 flex items-center justify-center mb-4">
-            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
+        <div class="group hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-8 h-8 flex items-center justify-center mb-3">
+            <svg class="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Built to Last</h3>
+          <h3 class="text-xl font-bold text-white mb-2">Built to Last</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Clean code, mobile‑first structure, and performance best practices—easy to manage and ready to grow.</p>
         </div>
-        <div class="framer-card p-8 rounded-2xl">
-          <div class="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/20 flex items-center justify-center mb-4">
-            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg>
+        <div class="group hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-8 h-8 flex items-center justify-center mb-3">
+            <svg class="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Conversion‑First</h3>
+          <h3 class="text-xl font-bold text-white mb-2">Conversion‑First</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Service pages, trust signals, reviews, maps, and clear CTAs make it easy to call, book, or request a quote.</p>
         </div>
       </div>
     </section>
 
     <!-- Sectors -->
-    <section class="max-w-7xl mx-auto mt-12">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">Industries We Serve</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="framer-card p-8 rounded-2xl">
-          <h3 class="text-lg font-semibold mb-2">Contractors & Trades</h3>
+    <section class="max-w-7xl mx-auto py-16 md:py-24 px-6 md:px-8 bg-zinc-900/30 border-y border-white/5">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center" data-aos="fade-up">Industries We Serve</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-white/20 transition-all group" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-8 h-8 flex items-center justify-center mb-3">
+            <svg class="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Contractors & Trades</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">HVAC, electricians, plumbers, concrete, landscaping. Emphasis on services, before/after, financing, and fast contact.</p>
         </div>
-        <div class="framer-card p-8 rounded-2xl">
-          <h3 class="text-lg font-semibold mb-2">Professional Services</h3>
+        <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-white/20 transition-all group" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-8 h-8 flex items-center justify-center mb-3">
+            <svg class="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Professional Services</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Attorneys, CPAs, consultants, healthcare. Credibility, clarity, and simple intake flows.</p>
         </div>
-        <div class="framer-card p-8 rounded-2xl">
-          <h3 class="text-lg font-semibold mb-2">Restaurants & Food</h3>
+        <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-white/20 transition-all group" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-8 h-8 flex items-center justify-center mb-3">
+            <svg class="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Restaurants & Food</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Menus, locations, hours, and online ordering links—organized for quick decisions on mobile.</p>
         </div>
-        <div class="framer-card p-8 rounded-2xl">
-          <h3 class="text-lg font-semibold mb-2">Home & Property</h3>
+        <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-white/20 transition-all group" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-8 h-8 flex items-center justify-center mb-3">
+            <svg class="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Home & Property</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Remodeling, cleaning, property services. Galleries, service areas, and quote forms that convert.</p>
         </div>
-        <div class="framer-card p-8 rounded-2xl">
-          <h3 class="text-lg font-semibold mb-2">Retail & Local Services</h3>
+        <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-white/20 transition-all group" data-aos="fade-up" data-aos-delay="400">
+          <div class="w-8 h-8 flex items-center justify-center mb-3">
+            <svg class="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Retail & Local Services</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Appointment links, reviews, and product highlights; designed to drive foot traffic and calls.</p>
         </div>
-        <div class="framer-card p-8 rounded-2xl">
-          <h3 class="text-lg font-semibold mb-2">Education & Non‑profits</h3>
+        <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-white/20 transition-all group" data-aos="fade-up" data-aos-delay="500">
+          <div class="w-8 h-8 flex items-center justify-center mb-3">
+            <svg class="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Education & Non‑profits</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Clear navigation, accessibility, programs, events, and donation pathways.</p>
         </div>
       </div>
     </section>
 
     <!-- What you get -->
-    <section class="max-w-7xl mx-auto mt-12">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">What You Get</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="framer-card p-8 rounded-2xl">
-          <h3 class="text-xl font-semibold mb-2">Service & Location Pages</h3>
+    <section class="max-w-7xl mx-auto py-16 md:py-24 px-6 md:px-8 border-y border-white/5">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center" data-aos="fade-up">What You Get</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="group hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-8 h-8 flex items-center justify-center mb-3">
+            <svg class="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Service & Location Pages</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Structured pages for each service and city you target support both users and local SEO.</p>
         </div>
-        <div class="framer-card p-8 rounded-2xl">
-          <h3 class="text-xl font-semibold mb-2">Reviews & Trust Signals</h3>
+        <div class="group hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-8 h-8 flex items-center justify-center mb-3">
+            <svg class="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Reviews & Trust Signals</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Testimonials, badges, and policies in the right places to reduce friction and increase inquiries.</p>
         </div>
-        <div class="framer-card p-8 rounded-2xl">
-          <h3 class="text-xl font-semibold mb-2">Speed, Security, & Hygiene</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed">Core Web Vitals, sitemaps, redirects, and clean structure so search and customers don’t struggle.</p>
+        <div class="group hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-8 h-8 flex items-center justify-center mb-3">
+            <svg class="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Speed, Security, & Hygiene</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Core Web Vitals, sitemaps, redirects, and clean structure so search and customers don't struggle.</p>
         </div>
       </div>
     </section>
 
-    <!-- Process -->
-    <section class="max-w-7xl mx-auto mt-12">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">Our Simple Process</h2>
-      <div class="grid md:grid-cols-5 gap-6">
-        <div class="framer-card p-6 rounded-2xl">
-          <div class="w-7 h-7 rounded-full bg-orange-600/20 border border-orange-500/30 text-orange-300 flex items-center justify-center mb-3">1</div>
-          <h3 class="font-semibold mb-2">Discovery</h3>
-          <p class="text-sm text-zinc-400">Goals, audience, competitive context.</p>
+    <!-- Process Timeline -->
+    <section class="max-w-7xl mx-auto py-16 md:py-24 px-6 md:px-8 bg-zinc-900/30 border-y border-white/5">
+      <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center" data-aos="fade-up">Our Simple Process</h2>
+      <!-- Desktop: Horizontal Timeline -->
+      <div class="hidden md:flex items-center justify-between relative">
+        <!-- Connecting line -->
+        <div class="absolute top-6 left-0 right-0 h-0.5 bg-orange-500/30 -z-10"></div>
+        <!-- Step 1 -->
+        <div class="flex flex-col items-center flex-1 relative group cursor-pointer" data-aos="zoom-in" data-aos-delay="0">
+          <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg mb-4 relative z-10 group-hover:scale-110 transition-transform">1</div>
+          <h3 class="font-bold text-white mb-2 text-center group-hover:text-orange-400 transition-colors">Discovery</h3>
+          <p class="text-sm text-zinc-400 text-center max-w-[180px]">Goals, audience, competitive context.</p>
         </div>
-        <div class="framer-card p-6 rounded-2xl">
-          <div class="w-7 h-7 rounded-full bg-orange-600/20 border border-orange-500/30 text-orange-300 flex items-center justify-center mb-3">2</div>
-          <h3 class="font-semibold mb-2">Sitemap & Design</h3>
-          <p class="text-sm text-zinc-400">Structure and visuals reviewed together.</p>
+        <!-- Step 2 -->
+        <div class="flex flex-col items-center flex-1 relative group cursor-pointer" data-aos="zoom-in" data-aos-delay="150">
+          <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg mb-4 relative z-10 group-hover:scale-110 transition-transform">2</div>
+          <h3 class="font-bold text-white mb-2 text-center group-hover:text-orange-400 transition-colors">Sitemap & Design</h3>
+          <p class="text-sm text-zinc-400 text-center max-w-[180px]">Structure and visuals reviewed together.</p>
         </div>
-        <div class="framer-card p-6 rounded-2xl">
-          <div class="w-7 h-7 rounded-full bg-orange-600/20 border border-orange-500/30 text-orange-300 flex items-center justify-center mb-3">3</div>
-          <h3 class="font-semibold mb-2">Build</h3>
-          <p class="text-sm text-zinc-400">Clean implementation with content and QA.</p>
+        <!-- Step 3 -->
+        <div class="flex flex-col items-center flex-1 relative group cursor-pointer" data-aos="zoom-in" data-aos-delay="300">
+          <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg mb-4 relative z-10 group-hover:scale-110 transition-transform">3</div>
+          <h3 class="font-bold text-white mb-2 text-center group-hover:text-orange-400 transition-colors">Build</h3>
+          <p class="text-sm text-zinc-400 text-center max-w-[180px]">Clean implementation with content and QA.</p>
         </div>
-        <div class="framer-card p-6 rounded-2xl">
-          <div class="w-7 h-7 rounded-full bg-orange-600/20 border border-orange-500/30 text-orange-300 flex items-center justify-center mb-3">4</div>
-          <h3 class="font-semibold mb-2">Launch</h3>
-          <p class="text-sm text-zinc-400">Cross‑device testing and go‑live checklist.</p>
+        <!-- Step 4 -->
+        <div class="flex flex-col items-center flex-1 relative group cursor-pointer" data-aos="zoom-in" data-aos-delay="450">
+          <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg mb-4 relative z-10 group-hover:scale-110 transition-transform">4</div>
+          <h3 class="font-bold text-white mb-2 text-center group-hover:text-orange-400 transition-colors">Launch</h3>
+          <p class="text-sm text-zinc-400 text-center max-w-[180px]">Cross‑device testing and go‑live checklist.</p>
         </div>
-        <div class="framer-card p-6 rounded-2xl">
-          <div class="w-7 h-7 rounded-full bg-orange-600/20 border border-orange-500/30 text-orange-300 flex items-center justify-center mb-3">5</div>
-          <h3 class="font-semibold mb-2">Support</h3>
-          <p class="text-sm text-zinc-400">Updates, hosting, and growth options.</p>
+        <!-- Step 5 -->
+        <div class="flex flex-col items-center flex-1 relative group cursor-pointer" data-aos="zoom-in" data-aos-delay="600">
+          <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg mb-4 relative z-10 group-hover:scale-110 transition-transform">5</div>
+          <h3 class="font-bold text-white mb-2 text-center group-hover:text-orange-400 transition-colors">Support</h3>
+          <p class="text-sm text-zinc-400 text-center max-w-[180px]">Updates, hosting, and growth options.</p>
+        </div>
+      </div>
+      <!-- Mobile: Vertical Timeline -->
+      <div class="md:hidden space-y-8">
+        <div class="flex gap-4 relative">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg">1</div>
+            <div class="w-0.5 h-full bg-orange-500/30 mt-2 absolute top-12 left-6"></div>
+          </div>
+          <div class="flex-1 pt-2">
+            <h3 class="font-bold text-white mb-2">Discovery</h3>
+            <p class="text-sm text-zinc-400">Goals, audience, competitive context.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 relative">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg">2</div>
+            <div class="w-0.5 h-full bg-orange-500/30 mt-2 absolute top-12 left-6"></div>
+          </div>
+          <div class="flex-1 pt-2">
+            <h3 class="font-bold text-white mb-2">Sitemap & Design</h3>
+            <p class="text-sm text-zinc-400">Structure and visuals reviewed together.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 relative">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg">3</div>
+            <div class="w-0.5 h-full bg-orange-500/30 mt-2 absolute top-12 left-6"></div>
+          </div>
+          <div class="flex-1 pt-2">
+            <h3 class="font-bold text-white mb-2">Build</h3>
+            <p class="text-sm text-zinc-400">Clean implementation with content and QA.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 relative">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg">4</div>
+            <div class="w-0.5 h-full bg-orange-500/30 mt-2 absolute top-12 left-6"></div>
+          </div>
+          <div class="flex-1 pt-2">
+            <h3 class="font-bold text-white mb-2">Launch</h3>
+            <p class="text-sm text-zinc-400">Cross‑device testing and go‑live checklist.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg">5</div>
+          </div>
+          <div class="flex-1 pt-2">
+            <h3 class="font-bold text-white mb-2">Support</h3>
+            <p class="text-sm text-zinc-400">Updates, hosting, and growth options.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- CTA -->
-    <section class="text-center mt-16">
-      <div class="inline-flex gap-3">
+    <section class="text-center py-16 md:py-24 px-6 md:px-8" data-aos="fade-up">
+      <div class="inline-flex flex-col sm:flex-row gap-4">
         <a href="mailto:info@example.com" class="px-10 py-5 bg-orange-600 text-white font-bold rounded-full hover:bg-orange-500 transition-colors text-lg btn-glow">
           Talk to our team
         </a>

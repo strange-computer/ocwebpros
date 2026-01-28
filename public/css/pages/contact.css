@@ -1,5 +1,14 @@
 @layer pages {
   /* Page-specific styles for Contact */
+  
+  /* Dark mode Google Maps */
+  .dark-map-container iframe {
+    filter: invert(1) hue-rotate(180deg) brightness(0.8) contrast(1.2);
+  }
+  
+  .dark-map-container iframe img {
+    filter: invert(1) hue-rotate(180deg);
+  }
 }
 
 

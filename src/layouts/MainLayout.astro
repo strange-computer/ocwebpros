@@ -17,6 +17,8 @@ const navClass = (href: string) =>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <!-- Existing layered CSS -->
     <link rel="stylesheet" href="/css/layers.css" />
     <link rel="stylesheet" href="/css/base.css" />
@@ -59,6 +61,37 @@ const navClass = (href: string) =>
         </div>
       </div>
     </footer>
+    
+    <!-- AOS JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+    <script is:inline>
+      window.addEventListener('load', function() {
+        if (typeof AOS !== 'undefined') {
+          AOS.init({
+            duration: 700,
+            easing: 'ease-out',
+            once: true,
+            offset: 100,
+            delay: 0,
+            disable: false
+          });
+        } else {
+          // Retry if AOS hasn't loaded yet
+          setTimeout(function() {
+            if (typeof AOS !== 'undefined') {
+              AOS.init({
+                duration: 700,
+                easing: 'ease-out',
+                once: true,
+                offset: 100,
+                delay: 0,
+                disable: false
+              });
+            }
+          }, 100);
+        }
+      });
+    </script>
   </body>
   <!-- Per-page CSS layers can be added by the page (e.g., /css/pages/home.css) -->
 </html>

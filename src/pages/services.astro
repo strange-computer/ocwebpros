@@ -25,7 +25,7 @@ import MainLayout from '../layouts/MainLayout.astro';
     <section class="max-w-7xl mx-auto pt-8 md:pt-12 pb-16 md:pb-24">
       <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
         <!-- Text Content (Left on desktop, bottom on mobile) -->
-        <div class="w-full md:w-1/2 backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-8 md:p-10">
+        <div class="w-full md:w-1/2 backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-8 md:p-10" data-aos="fade-right">
           <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6">
             <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18"/></svg>
           </div>
@@ -38,7 +38,7 @@ import MainLayout from '../layouts/MainLayout.astro';
           </ul>
         </div>
         <!-- Mockup Image (Right on desktop, top on mobile) -->
-        <div class="w-full md:w-1/2 h-96 md:h-[500px] border border-white/10 rounded-xl overflow-hidden">
+        <div class="w-full md:w-1/2 h-96 md:h-[500px] border border-white/10 rounded-xl overflow-hidden" data-aos="fade-left">
           <img src="/images/web-design-mockup.png" alt="Web Design Portfolio Mockup" class="w-full h-full object-cover" />
         </div>
       </div>
@@ -47,42 +47,42 @@ import MainLayout from '../layouts/MainLayout.astro';
     <!-- Web Design Features Grid -->
     <section class="max-w-7xl mx-auto pt-2 md:pt-4 pb-16 md:pb-24 px-6 md:px-8">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <div>
+        <div data-aos="fade-up" data-aos-delay="0">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
             <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">Custom Design</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Your website should authentically represent your brand and objectives. We focus on content strategy and conversion optimization, not generic themes.</p>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="100">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
             <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h10"/></svg>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">Modern Features</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Animations, galleries, forms, and social—implemented lightly so pages stay fast.</p>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="200">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
             <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">Built to Last</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Streamlined architecture, optimized performance, mobile-responsive. Simple to update and built to scale alongside your business.</p>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="300">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
             <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c1.657 0 3-1.567 3-3.5S13.657 4 12 4 9 5.567 9 7.5 10.343 11 12 11zm0 0v9m-7-5h14"/></svg>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">Performance & Security</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Best practices for speed and security baked in from day one.</p>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="400">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
             <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h10M4 18h6"/></svg>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">Scalable Architecture</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Flexible content structure so pages, sections, and features can be added later without a rebuild.</p>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="500">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
             <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg>
           </div>
@@ -96,11 +96,11 @@ import MainLayout from '../layouts/MainLayout.astro';
     <section class="max-w-7xl mx-auto py-16 md:py-24">
       <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
         <!-- Mockup Image (Left on desktop, top on mobile) -->
-        <div class="w-full md:w-1/2 h-96 md:h-[500px] border border-white/10 rounded-xl overflow-hidden order-1 md:order-1">
+        <div class="w-full md:w-1/2 h-96 md:h-[500px] border border-white/10 rounded-xl overflow-hidden order-1 md:order-1" data-aos="fade-left">
           <img src="/images/local-seo-mockup.png" alt="Local SEO Dashboard Mockup" class="w-full h-full object-cover" />
         </div>
         <!-- Text Content (Right on desktop, bottom on mobile) -->
-        <div class="w-full md:w-1/2 backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-8 md:p-10 order-2 md:order-2">
+        <div class="w-full md:w-1/2 backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-8 md:p-10 order-2 md:order-2" data-aos="fade-right">
           <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6">
             <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 17l-5-5m0 0l5-5m-5 5h12"/></svg>
           </div>
@@ -118,42 +118,42 @@ import MainLayout from '../layouts/MainLayout.astro';
     <!-- Local SEO Features Grid -->
     <section class="max-w-7xl mx-auto pt-2 md:pt-4 pb-16 md:pb-24 px-6 md:px-8">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <div>
+        <div data-aos="fade-up" data-aos-delay="0">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
             <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">On‑Page Foundations</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Title tags, meta descriptions, headings, internal links, and clear service/location pages.</p>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="100">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
             <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">Google Business Profile</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Setup, categories, services, photos, and posting cadence to support Maps visibility.</p>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="200">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
             <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">Content & Schema</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">City/service content, basic schema where it helps, and sensible internal linking.</p>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="300">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
             <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">Technical Hygiene</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Core Web Vitals, indexation, sitemaps, redirects, and clean site structure.</p>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="400">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
             <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">Reputation Signals</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Review strategy and structured citations that reinforce trust.</p>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="500">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
             <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
           </div>
@@ -164,35 +164,35 @@ import MainLayout from '../layouts/MainLayout.astro';
     </section>
 
     <!-- Process Timeline -->
-    <section class="max-w-7xl mx-auto py-16 md:py-24 px-6 md:px-8">
-      <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center">How We Work</h2>
+    <section class="max-w-7xl mx-auto py-16 md:py-24 px-6 md:px-8 bg-zinc-900/30 border-y border-white/5">
+      <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center" data-aos="fade-up">How We Work</h2>
       <!-- Desktop: Horizontal Timeline -->
       <div class="hidden md:flex items-center justify-between relative">
         <!-- Connecting line -->
         <div class="absolute top-6 left-0 right-0 h-0.5 bg-orange-500/30 -z-10"></div>
         <!-- Step 1 -->
-        <div class="flex flex-col items-center flex-1 relative">
-          <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg mb-4 relative z-10">1</div>
-          <h3 class="font-bold text-white mb-2 text-center">Discovery</h3>
-          <p class="text-sm text-zinc-400 text-center max-w-[200px]">Goals, audience, and success criteria.</p>
+        <div class="flex flex-col items-center flex-1 relative group cursor-pointer" data-aos="zoom-in" data-aos-delay="0">
+          <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg mb-4 relative z-10 group-hover:scale-110 transition-transform">1</div>
+          <h3 class="font-bold text-white mb-2 text-center group-hover:text-orange-400 transition-colors">Discovery</h3>
+          <p class="text-sm text-zinc-400 text-center max-w-[180px]">Goals, audience, and success criteria.</p>
         </div>
         <!-- Step 2 -->
-        <div class="flex flex-col items-center flex-1 relative">
-          <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg mb-4 relative z-10">2</div>
-          <h3 class="font-bold text-white mb-2 text-center">Design</h3>
-          <p class="text-sm text-zinc-400 text-center max-w-[200px]">Concepts reviewed together before build.</p>
+        <div class="flex flex-col items-center flex-1 relative group cursor-pointer" data-aos="zoom-in" data-aos-delay="150">
+          <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg mb-4 relative z-10 group-hover:scale-110 transition-transform">2</div>
+          <h3 class="font-bold text-white mb-2 text-center group-hover:text-orange-400 transition-colors">Design</h3>
+          <p class="text-sm text-zinc-400 text-center max-w-[180px]">Concepts reviewed together before build.</p>
         </div>
         <!-- Step 3 -->
-        <div class="flex flex-col items-center flex-1 relative">
-          <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg mb-4 relative z-10">3</div>
-          <h3 class="font-bold text-white mb-2 text-center">Build</h3>
-          <p class="text-sm text-zinc-400 text-center max-w-[200px]">Clean implementation, content, and QA.</p>
+        <div class="flex flex-col items-center flex-1 relative group cursor-pointer" data-aos="zoom-in" data-aos-delay="300">
+          <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg mb-4 relative z-10 group-hover:scale-110 transition-transform">3</div>
+          <h3 class="font-bold text-white mb-2 text-center group-hover:text-orange-400 transition-colors">Build</h3>
+          <p class="text-sm text-zinc-400 text-center max-w-[180px]">Clean implementation, content, and QA.</p>
         </div>
         <!-- Step 4 -->
-        <div class="flex flex-col items-center flex-1 relative">
-          <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg mb-4 relative z-10">4</div>
-          <h3 class="font-bold text-white mb-2 text-center">Launch & Support</h3>
-          <p class="text-sm text-zinc-400 text-center max-w-[200px]">Testing, launch, and ongoing improvements.</p>
+        <div class="flex flex-col items-center flex-1 relative group cursor-pointer" data-aos="zoom-in" data-aos-delay="450">
+          <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg mb-4 relative z-10 group-hover:scale-110 transition-transform">4</div>
+          <h3 class="font-bold text-white mb-2 text-center group-hover:text-orange-400 transition-colors">Launch & Support</h3>
+          <p class="text-sm text-zinc-400 text-center max-w-[180px]">Testing, launch, and ongoing improvements.</p>
         </div>
       </div>
       <!-- Mobile: Vertical Timeline -->
@@ -239,7 +239,7 @@ import MainLayout from '../layouts/MainLayout.astro';
       </div>
     </section>
 
-    <div class="text-center py-16 md:py-24 px-6 md:px-8">
+    <div class="text-center py-16 md:py-24 px-6 md:px-8" data-aos="fade-up">
       <div class="inline-flex flex-col sm:flex-row gap-4">
         <a href="mailto:info@example.com" class="px-10 py-5 bg-orange-600 text-white font-bold rounded-full hover:bg-orange-500 transition-colors text-lg btn-glow">
           Request a free consult

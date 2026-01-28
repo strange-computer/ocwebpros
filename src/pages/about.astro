@@ -21,91 +21,126 @@ import MainLayout from '../layouts/MainLayout.astro';
     </div>
   </header>
 
-  <main class="pb-24 px-6">
-    <!-- Mission -->
-    <section class="max-w-5xl mx-auto mb-12">
-      <div class="framer-card p-8 rounded-2xl">
-        <h2 class="text-2xl font-bold mb-4">Our Mission</h2>
-        <p class="text-zinc-300 leading-relaxed">
-          Too many sites look flashy but load slowly or miss what customers need. We take a different path:
-          clean builds, clear content, and dependable support—so your website helps the business every day.
-        </p>
+  <main class="pb-24 px-6 md:px-8">
+    <!-- Spotlight: Our Approach -->
+    <section class="max-w-7xl mx-auto pt-8 md:pt-12 pb-16 md:pb-24">
+      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        <!-- Text Content (Left on desktop, bottom on mobile) -->
+        <div class="w-full md:w-1/2 backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-8 md:p-10" data-aos="fade-right">
+          <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Built for Real Businesses</h2>
+          <p class="text-zinc-400 mb-6 text-lg leading-relaxed">Too many websites look impressive but fail where it matters—speed, functionality, and actual results. We take a different approach: clean builds, strategic design, and support that actually helps your business grow.</p>
+          <ul class="space-y-3 text-zinc-300">
+            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Based in Lake Forest, serving Orange County and beyond</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Years of experience building websites that convert visitors into customers</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Direct access to the team—no ticket queues or automated responses</span></li>
+          </ul>
+        </div>
+        <!-- Mockup Placeholder (Right on desktop, top on mobile) -->
+        <div class="w-full md:w-1/2 h-96 md:h-[500px] border border-white/10 rounded-xl overflow-hidden" data-aos="fade-left">
+          <div class="w-full h-full bg-zinc-800/50 flex items-center justify-center">
+            <div class="text-zinc-500 text-sm">Team Photo or Office Mockup</div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Commitments -->
-    <section class="max-w-7xl mx-auto">
-      <h2 class="text-2xl md:text-3xl font-bold mb-6">Our Commitment to You</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="framer-card p-8 rounded-2xl">
-          <div class="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/20 flex items-center justify-center mb-4">
-            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3M4 11h16M4 19h16"/></svg>
+    <!-- Our Values -->
+    <section class="max-w-7xl mx-auto py-16 md:py-24 px-6 md:px-8 bg-zinc-900/30 border-y border-white/5">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center" data-aos="fade-up">What Sets Us Apart</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="group hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-8 h-8 flex items-center justify-center mb-3">
+            <svg class="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
           </div>
-          <h3 class="text-xl font-semibold mb-2">We Learn Your Business</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed">Goals, audience, and constraints come first—so the site is grounded in reality.</p>
+          <h3 class="text-xl font-bold text-white mb-2">We Listen First</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Before we design anything, we learn about your goals, your customers, and what success looks like for your business. Great websites start with understanding.</p>
         </div>
-        <div class="framer-card p-8 rounded-2xl">
-          <div class="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/20 flex items-center justify-center mb-4">
-            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h10"/></svg>
+        <div class="group hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-8 h-8 flex items-center justify-center mb-3">
+            <svg class="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
           </div>
-          <h3 class="text-xl font-semibold mb-2">We Focus on Results</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed">Clear navigation, strong CTAs, and mobile speed—not gimmicks.</p>
+          <h3 class="text-xl font-bold text-white mb-2">Performance Over Flash</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">We prioritize speed, mobile responsiveness, and clear calls-to-action. No unnecessary animations or bloated code—just websites that work.</p>
         </div>
-        <div class="framer-card p-8 rounded-2xl">
-          <div class="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/20 flex items-center justify-center mb-4">
-            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
+        <div class="group hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-8 h-8 flex items-center justify-center mb-3">
+            <svg class="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
           </div>
-          <h3 class="text-xl font-semibold mb-2">We Build to Last</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed">Clean structure, accessibility, and performance baked in from day one.</p>
+          <h3 class="text-xl font-bold text-white mb-2">Built to Last</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Clean code, accessibility standards, and scalable architecture. Your website should grow with your business, not hold it back.</p>
         </div>
-      </div>
-      <div class="grid md:grid-cols-2 gap-6 mt-6">
-        <div class="framer-card p-8 rounded-2xl">
-          <div class="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/20 flex items-center justify-center mb-4">
-            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg>
+        <div class="group hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-8 h-8 flex items-center justify-center mb-3">
+            <svg class="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Clear, Fair Pricing</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed">Simple proposals, no upsells you don’t need, and scope you can trust.</p>
+          <h3 class="text-xl font-bold text-white mb-2">Honest Pricing</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Clear proposals, transparent costs, and no surprise fees. You'll know exactly what you're getting and what it costs from day one.</p>
         </div>
-        <div class="framer-card p-8 rounded-2xl">
-          <div class="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/20 flex items-center justify-center mb-4">
-            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <div class="group hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="400">
+          <div class="w-8 h-8 flex items-center justify-center mb-3">
+            <svg class="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Real, Local Support</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed">No ticket mills—talk to the people who built your site and can actually help.</p>
+          <h3 class="text-xl font-bold text-white mb-2">Local Support</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">When you need help, you'll talk directly to the people who built your site. No overseas call centers, no ticket queues—just real support from Lake Forest.</p>
+        </div>
+        <div class="group hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="500">
+          <div class="w-8 h-8 flex items-center justify-center mb-3">
+            <svg class="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Results-Driven</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">We measure success by your success. Every decision—from design to SEO—is made with your business goals in mind.</p>
         </div>
       </div>
     </section>
 
     <!-- Service Areas -->
-    <section class="max-w-7xl mx-auto mt-12">
-      <div class="framer-card p-8 rounded-2xl">
-        <h2 class="text-2xl font-bold mb-4">Serving Southern California</h2>
-        <p class="text-zinc-400">Based in Lake Forest, we work with businesses across Orange County and nearby regions.</p>
-        <div class="flex flex-wrap gap-2 mt-4">
-          <span class="px-3 py-1 text-xs rounded bg-white/5 border border-white/10 text-zinc-300">Lake Forest</span>
-          <span class="px-3 py-1 text-xs rounded bg-white/5 border border-white/10 text-zinc-300">Irvine</span>
-          <span class="px-3 py-1 text-xs rounded bg-white/5 border border-white/10 text-zinc-300">Mission Viejo</span>
-          <span class="px-3 py-1 text-xs rounded bg-white/5 border border-white/10 text-zinc-300">Laguna Hills</span>
-          <span class="px-3 py-1 text-xs rounded bg-white/5 border border-white/10 text-zinc-300">Tustin</span>
-          <span class="px-3 py-1 text-xs rounded bg-white/5 border border-white/10 text-zinc-300">Orange County</span>
+    <section class="max-w-7xl mx-auto py-16 md:py-24 px-6 md:px-8" data-aos="fade-up">
+      <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-8 md:p-10">
+        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+          <div class="w-full md:w-1/2">
+            <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 text-white">Serving Orange County & Beyond</h2>
+            <p class="text-zinc-400 mb-6 leading-relaxed">Based in Lake Forest, we work with businesses throughout Orange County and surrounding areas. Whether you're in Irvine, Mission Viejo, or anywhere in Southern California, we're here to help.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 text-sm rounded-lg bg-white/5 border border-white/10 text-zinc-300 hover:bg-white/10 hover:border-white/20 transition-all">Lake Forest</span>
+              <span class="px-3 py-1.5 text-sm rounded-lg bg-white/5 border border-white/10 text-zinc-300 hover:bg-white/10 hover:border-white/20 transition-all">Irvine</span>
+              <span class="px-3 py-1.5 text-sm rounded-lg bg-white/5 border border-white/10 text-zinc-300 hover:bg-white/10 hover:border-white/20 transition-all">Mission Viejo</span>
+              <span class="px-3 py-1.5 text-sm rounded-lg bg-white/5 border border-white/10 text-zinc-300 hover:bg-white/10 hover:border-white/20 transition-all">Laguna Hills</span>
+              <span class="px-3 py-1.5 text-sm rounded-lg bg-white/5 border border-white/10 text-zinc-300 hover:bg-white/10 hover:border-white/20 transition-all">Tustin</span>
+              <span class="px-3 py-1.5 text-sm rounded-lg bg-white/5 border border-white/10 text-zinc-300 hover:bg-white/10 hover:border-white/20 transition-all">Orange County</span>
+              <span class="px-3 py-1.5 text-sm rounded-lg bg-white/5 border border-white/10 text-zinc-300 hover:bg-white/10 hover:border-white/20 transition-all">Los Angeles</span>
+              <span class="px-3 py-1.5 text-sm rounded-lg bg-white/5 border border-white/10 text-zinc-300 hover:bg-white/10 hover:border-white/20 transition-all">San Diego</span>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 h-64 md:h-80 border border-white/10 rounded-xl overflow-hidden dark-map-container">
+            <iframe
+              title="Map of Orange County, CA"
+              class="w-full h-full"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Orange+County,+CA&z=10&output=embed">
+            </iframe>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- CTA -->
-    <section class="text-center mt-16">
-      <div class="inline-flex gap-3">
-        <a href="/services" class="px-10 py-5 bg-orange-600 text-white font-bold rounded-full hover:bg-orange-500 transition-colors text-lg btn-glow">
-          Explore services
-        </a>
-        <a href="/contact" class="px-10 py-5 bg-white/5 text-white font-bold rounded-full border border-white/10 hover:bg-white/10 transition-colors text-lg">
+    <section class="text-center py-16 md:py-24 px-6 md:px-8" data-aos="fade-up">
+      <div class="inline-flex flex-col sm:flex-row gap-4">
+        <a href="/contact" class="px-10 py-5 bg-orange-600 text-white font-bold rounded-full hover:bg-orange-500 transition-colors text-lg btn-glow">
           Talk to our team
+        </a>
+        <a href="/services" class="px-10 py-5 bg-white/5 text-white font-bold rounded-full border border-white/10 hover:bg-white/10 transition-colors text-lg">
+          Explore services
         </a>
       </div>
       <p class="text-zinc-500 text-sm mt-3">Prefer a call? Add your number in the email.</p>
     </section>
   </main>
 </MainLayout>
-
-
