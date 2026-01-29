@@ -1,9 +1,10 @@
 @layer pages {
     /* Page-specific styles for the services page, scoped by .page-services */
 
-    /* Web Design Pricing card: own compositor layer to avoid scroll/backdrop-blur glitch */
+    /* Web Design Pricing card: stay on own GPU layer so it doesn't jump layers on hover/scroll */
     .page-services .web-design-pricing-card {
         transform: translateZ(0);
+        will-change: transform;
     }
 
     /* Web Design Pricing card: framer-style hover (lift, border glow, shadow) */
@@ -21,9 +22,10 @@
         transform: translateZ(0) translateY(-2px);
     }
 
-    /* Local SEO Pricing cards: own compositor layer to avoid scroll/backdrop-blur glitch */
+    /* Local SEO Pricing cards: stay on own GPU layer so they don't jump layers on hover/scroll */
     .page-services .local-seo-pricing-card {
         transform: translateZ(0);
+        will-change: transform;
         backface-visibility: hidden;
     }
 
