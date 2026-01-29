@@ -87,24 +87,11 @@ import TerminalAnimation from '../components/TerminalAnimation.astro';
             </div>
           </div>
         </div>
-        <div class="relative">
+        <div class="relative min-w-0">
           <div class="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-purple-500/20 blur-3xl rounded-full"></div>
-          <div class="framer-card p-8 rounded-2xl relative z-10">
-            <div class="flex items-center gap-4 mb-6">
-              <div class="w-3 h-3 rounded-full bg-red-500"></div>
-              <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-              <div class="w-3 h-3 rounded-full bg-green-500"></div>
-            </div>
+          <div class="framer-card p-8 rounded-2xl relative z-10 min-w-0 overflow-visible">
             <div class="space-y-4">
-              <div class="flex items-center justify-between px-1 mb-4 opacity-50">
-                <div class="text-xs font-mono text-zinc-400">
-                  user@lake-forest-websites: ~/projects/client-site
-                </div>
-                <div class="text-xs font-mono text-zinc-600">
-                  zsh
-                </div>
-              </div>
-              <TerminalAnimation id="lfwSnippet" />
+              <TerminalAnimation />
             </div>
           </div>
         </div>

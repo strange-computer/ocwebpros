@@ -1,68 +1,89 @@
 ---
+/* TerminalAnimation.astro */
 interface Props {
-  /** Unique id for the terminal output element (for multiple instances on a page). */
+  /** Unique id for the terminal content element (for multiple instances on a page). */
   id?: string;
-  /** Typing speed in ms per character. */
-  typeSpeedMs?: number;
 }
 
-const { id = 'lfwSnippet', typeSpeedMs = 24 } = Astro.props;
+const { id = 'terminal-content' } = Astro.props;
 ---
 
-<div class="relative min-h-[11rem] h-56 bg-gradient-to-b from-zinc-800/80 to-zinc-900/80 border border-white/10 rounded-lg shadow-2xl text-zinc-300 text-sm overflow-hidden">
-  <div class="h-full w-full overflow-x-auto overflow-y-hidden p-4 pt-4 pb-10 min-w-0">
-    <pre class="terminal-font text-left leading-6 whitespace-pre text-sm"><code id={id}></code><span class="code-caret" aria-hidden="true"></span></pre>
+<div class="relative w-full max-w-2xl mx-auto rounded-xl overflow-hidden bg-gradient-to-b from-zinc-900 to-black border border-white/10 shadow-2xl font-mono text-sm sm:text-base terminal-font">
+  <div class="flex items-center justify-between px-4 py-3 border-b border-white/5 bg-white/5">
+    <div class="flex items-center gap-2">
+      <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+      <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+      <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+    </div>
+
+    <div class="absolute left-1/2 -translate-x-1/2 text-xs text-zinc-500 font-medium tracking-wide">
+      ~/projects/client-site
+    </div>
+
+    <div class="text-xs text-zinc-600">zsh</div>
+  </div>
+
+  <div class="p-6 pb-10 min-h-[240px] text-zinc-300 overflow-x-auto min-w-0" style="-webkit-overflow-scrolling: touch;">
+    <div id={id} class="whitespace-pre font-normal leading-relaxed"></div>
   </div>
 </div>
 
-<script define:vars={{ id, typeSpeedMs }}>
-  (() => {
-    /** Each line is an array of chunks. Each chunk has { text, class } and is typed inside a span with that class. */
-    const lines = [
-      [
-        { text: '> run site-audit', class: 'text-orange-400' },
-        { text: ' --target=client-site', class: 'text-zinc-400' },
-      ],
-      [{ text: 'Running performance analysis...', class: 'text-zinc-400' }],
-      [
-        { text: '> Checking Speed...           ', class: 'text-zinc-400' },
-        { text: '[100/100] OK', class: 'text-emerald-400' },
-      ],
-      [
-        { text: '> Checking SEO...             ', class: 'text-zinc-400' },
-        { text: '[100/100] OK', class: 'text-emerald-400' },
-      ],
-      [
-        { text: '> Checking Mobile...          ', class: 'text-zinc-400' },
-        { text: '[100/100] OK', class: 'text-emerald-400' },
-      ],
-      [],
-      [
-        {
-          text: '// Result: Your site will load in < 0.5s',
-          class: 'text-zinc-400 italic',
-        },
-      ],
-    ];
+<script define:vars={{ id }}>
+  const terminalLines = [
+    [
+      { text: "> run site-audit", class: "text-orange-400 font-bold" },
+      { text: " --target=client-site", class: "text-zinc-500" }
+    ],
+    [
+      { text: "Running performance analysis...", class: "text-zinc-400" }
+    ],
+    [
+      { text: "> Checking Speed...", class: "text-zinc-300" },
+      { text: "      [100/100] OK", class: "text-emerald-400 font-bold" }
+    ],
+    [
+      { text: "> Checking SEO...", class: "text-zinc-300" },
+      { text: "        [100/100] OK", class: "text-emerald-400 font-bold" }
+    ],
+    [
+      { text: "> Checking Mobile...", class: "text-zinc-300" },
+      { text: "     [100/100] OK", class: "text-emerald-400 font-bold" }
+    ],
+    [
+      { text: "", class: "" }
+    ],
+    [
+      { text: "// Result: Your site will load in < 0.5s", class: "text-zinc-500 italic" }
+    ]
+  ];
 
-    const codeEl = document.getElementById(id);
-    if (!codeEl) return;
+  async function typeTerminal(lines, containerId) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
 
-    const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+    container.innerHTML = '';
 
-    (async () => {
-      for (const line of lines) {
-        for (const chunk of line) {
-          const span = document.createElement('span');
-          span.className = chunk.class;
-          codeEl.appendChild(span);
-          for (const char of chunk.text) {
-            span.textContent += char;
-            await sleep(typeSpeedMs);
-          }
+    const cursor = document.createElement('span');
+    cursor.className = "inline-block w-2.5 h-5 bg-zinc-400 ml-1 align-middle animate-pulse";
+
+    for (const line of lines) {
+      const lineDiv = document.createElement('div');
+      lineDiv.className = "mb-1";
+      container.appendChild(lineDiv);
+      lineDiv.appendChild(cursor);
+
+      for (const chunk of line) {
+        const span = document.createElement('span');
+        if (chunk.class) span.className = chunk.class;
+        lineDiv.insertBefore(span, cursor);
+
+        for (const char of chunk.text) {
+          span.textContent += char;
+          await new Promise(r => setTimeout(r, Math.random() * 18 + 14));
         }
-        codeEl.appendChild(document.createTextNode('\n'));
       }
-    })();
-  })();
+    }
+  }
+
+  typeTerminal(terminalLines, id);
 </script>
