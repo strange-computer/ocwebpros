@@ -46,63 +46,67 @@ import MainLayout from '../layouts/MainLayout.astro';
 
     <!-- Web Design Pricing Box -->
     <section class="max-w-7xl mx-auto pt-4 md:pt-8 pb-12 md:pb-16 px-4 sm:px-6">
-      <div class="max-w-5xl mx-auto" data-aos="fade-up">
-        <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-8 md:p-10 overflow-hidden relative">
-          <!-- Subtle gradient overlay -->
-          <div class="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-transparent to-transparent pointer-events-none"></div>
+      <div class="max-w-5xl mx-auto relative" data-aos="fade-up">
+        <!-- Glow orb behind card -->
+        <div class="absolute -top-12 -left-12 w-64 h-64 md:w-80 md:h-80 bg-gradient-to-tr from-orange-500/20 to-purple-500/20 blur-3xl rounded-full pointer-events-none" aria-hidden="true"></div>
+        <div class="web-design-pricing-card relative backdrop-blur-[12px] border border-white/10 rounded-2xl p-8 md:p-10 overflow-hidden transition-all duration-300 ease-out shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)]" style="background: rgba(24, 24, 27, 0.6);">
+          <!-- Stronger gradient overlays -->
+          <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-transparent to-transparent pointer-events-none"></div>
+          <div class="absolute inset-0 bg-gradient-to-tl from-purple-500/5 via-transparent to-transparent pointer-events-none"></div>
           
           <div class="relative">
-            <div class="text-center mb-6">
+            <!-- Mobile only: badge + headline at top -->
+            <div class="text-center mb-4 md:hidden">
               <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-orange-400 mb-4">
                 <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
                 Web Design Pricing
               </div>
-              <h2 class="text-2xl md:text-3xl font-bold mb-2 text-white">One project, endless possibilities</h2>
+              <h2 class="text-2xl md:text-4xl font-bold mb-2 text-white tracking-tight">One Project,<br /><span class="text-gradient-orange">Endless Possibilities</span></h2>
             </div>
-            
-            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
-              <!-- Price Section -->
-              <div class="text-center md:text-left flex-shrink-0">
-                <div class="text-5xl md:text-6xl font-bold text-white mb-1">
-                  <span class="text-2xl md:text-3xl align-top">$</span>4,995
-                </div>
-                <p class="text-zinc-400 text-sm">one-time project fee</p>
-              </div>
 
-              <!-- Features Grid -->
-              <div class="flex-1">
-                <ul class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-3">
-                  <li class="flex items-center gap-2.5">
+            <!-- Mobile: badge/headline (top) → price → features → CTA. Desktop: left = badge+headline+features, right = price+CTA -->
+            <div class="flex flex-col md:grid gap-6 md:grid-cols-[1fr_auto] md:items-stretch">
+              <!-- Left column: badge + headline (desktop only) + features -->
+              <div class="order-2 md:order-1 md:col-start-1 md:row-start-1 md:pr-8 min-w-0">
+                <div class="hidden md:block text-center mb-4">
+                  <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-orange-400 mb-4">
+                    <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+                    Web Design Pricing
+                  </div>
+                  <h2 class="text-2xl md:text-4xl font-bold mb-2 text-white tracking-tight">One Project,<br /><span class="text-gradient-orange">Endless Possibilities</span></h2>
+                </div>
+                <ul class="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-2">
+                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                     <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                     </svg>
                     <span class="text-sm text-zinc-300">Custom design</span>
                   </li>
-                  <li class="flex items-center gap-2.5">
+                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                     <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                     </svg>
                     <span class="text-sm text-zinc-300">Fully responsive</span>
                   </li>
-                  <li class="flex items-center gap-2.5">
+                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                     <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                     </svg>
                     <span class="text-sm text-zinc-300">Up to 5 pages</span>
                   </li>
-                  <li class="flex items-center gap-2.5">
+                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                     <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                     </svg>
                     <span class="text-sm text-zinc-300">SEO foundations</span>
                   </li>
-                  <li class="flex items-center gap-2.5">
+                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                     <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                     </svg>
                     <span class="text-sm text-zinc-300">CMS included</span>
                   </li>
-                  <li class="flex items-center gap-2.5">
+                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                     <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                     </svg>
@@ -111,12 +115,22 @@ import MainLayout from '../layouts/MainLayout.astro';
                 </ul>
               </div>
 
-              <!-- CTA Button -->
-              <div class="flex-shrink-0 text-center md:text-left">
-                <a href="/contact" class="inline-block px-8 py-3.5 bg-orange-600 text-white font-semibold rounded-full hover:bg-orange-500 transition-colors btn-glow text-sm md:text-base">
-                  Get Started Today
-                </a>
-                <p class="text-xs text-zinc-500 mt-2">Custom quotes available</p>
+              <!-- Right column: price + CTA in one block (single cell on desktop, display:contents on mobile for order) -->
+              <div class="contents md:flex md:flex-col md:gap-4 md:pl-8 md:border-l md:border-white/10 md:col-start-2 md:row-start-1 md:justify-center">
+                <!-- Price (mobile order 1) -->
+                <div class="order-1 md:order-none text-center flex flex-col items-center">
+                  <div class="text-4xl md:text-5xl font-bold text-white mb-1">
+                    <span class="text-xl md:text-2xl align-top">$</span>4,995
+                  </div>
+                  <p class="text-zinc-400 text-sm">one-time project fee</p>
+                </div>
+                <!-- CTA (mobile order 3) -->
+                <div class="order-3 md:order-none text-center flex flex-col items-center">
+                  <a href="/contact" class="inline-block px-8 py-3.5 bg-orange-600 text-white font-semibold rounded-full hover:bg-orange-500 transition-colors btn-glow text-sm md:text-base">
+                    Get Started Today
+                  </a>
+                  <p class="text-xs text-zinc-400 mt-2 font-medium">Custom quotes available</p>
+                </div>
               </div>
             </div>
           </div>
@@ -197,19 +211,24 @@ import MainLayout from '../layouts/MainLayout.astro';
 
     <!-- Local SEO Pricing Tiers -->
     <section class="max-w-7xl mx-auto pt-4 md:pt-8 pb-12 md:pb-16 px-4 sm:px-6">
-      <div class="text-center mb-8" data-aos="fade-up">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-orange-400 mb-4">
-          <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
-          Local SEO Pricing
+      <div class="relative text-center mb-8" data-aos="fade-up">
+        <!-- Subtle glow behind header -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-48 md:w-96 md:h-56 bg-gradient-to-tr from-orange-500/15 to-purple-500/15 blur-3xl rounded-full pointer-events-none" aria-hidden="true"></div>
+        <div class="relative">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-orange-400 mb-4">
+            <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+            Local SEO Pricing
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold mb-2 text-white">Choose your plan</h2>
+          <p class="text-zinc-400 text-sm md:text-base">Monthly packages to fit your business needs</p>
         </div>
-        <h2 class="text-2xl md:text-3xl font-bold mb-2 text-white">Choose your plan</h2>
-        <p class="text-zinc-400 text-sm md:text-base">Monthly packages to fit your business needs</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto" data-aos="fade-up">
         <!-- Starter Tier -->
-        <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 overflow-hidden relative flex flex-col">
-          <div class="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-transparent to-transparent pointer-events-none"></div>
+        <div class="local-seo-pricing-card backdrop-blur-[12px] border border-white/10 rounded-2xl p-6 md:p-8 overflow-hidden relative flex flex-col transition-all duration-300 ease-out" style="background: rgba(24, 24, 27, 0.6);">
+          <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-transparent to-transparent pointer-events-none"></div>
+          <div class="absolute inset-0 bg-gradient-to-tl from-purple-500/5 via-transparent to-transparent pointer-events-none"></div>
           <div class="relative flex flex-col flex-1">
             <div class="mb-6">
               <h3 class="text-xl font-bold text-white mb-2">Starter</h3>
@@ -218,20 +237,20 @@ import MainLayout from '../layouts/MainLayout.astro';
               </div>
               <p class="text-zinc-400 text-sm">per month</p>
             </div>
-            <ul class="space-y-3 mb-6 flex-1">
-              <li class="flex items-start gap-2.5">
+            <ul class="space-y-2 mb-6 flex-1">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <span class="text-sm text-zinc-300">Google Business Profile optimization</span>
               </li>
-              <li class="flex items-start gap-2.5">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <span class="text-sm text-zinc-300">Basic on-page SEO</span>
               </li>
-              <li class="flex items-start gap-2.5">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
@@ -245,8 +264,9 @@ import MainLayout from '../layouts/MainLayout.astro';
         </div>
 
         <!-- Professional Tier (Featured) -->
-        <div class="backdrop-blur-[12px] bg-white/5 border-2 border-orange-500/50 rounded-2xl p-6 md:p-8 overflow-hidden relative flex flex-col">
+        <div class="local-seo-pricing-card backdrop-blur-[12px] border-2 border-orange-500/50 rounded-2xl p-6 md:p-8 overflow-hidden relative flex flex-col transition-all duration-300 ease-out" style="background: rgba(24, 24, 27, 0.6);">
           <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-transparent to-transparent pointer-events-none"></div>
+          <div class="absolute inset-0 bg-gradient-to-tl from-purple-500/5 via-transparent to-transparent pointer-events-none"></div>
           <div class="absolute top-4 right-4">
             <span class="px-2 py-1 bg-orange-500 text-white text-xs font-semibold rounded-full">Popular</span>
           </div>
@@ -258,32 +278,32 @@ import MainLayout from '../layouts/MainLayout.astro';
               </div>
               <p class="text-zinc-400 text-sm">per month</p>
             </div>
-            <ul class="space-y-3 mb-6 flex-1">
-              <li class="flex items-start gap-2.5">
+            <ul class="space-y-2 mb-6 flex-1">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <span class="text-sm text-zinc-300">Everything in Starter</span>
               </li>
-              <li class="flex items-start gap-2.5">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <span class="text-sm text-zinc-300">Advanced on-page optimization</span>
               </li>
-              <li class="flex items-start gap-2.5">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <span class="text-sm text-zinc-300">Content creation & optimization</span>
               </li>
-              <li class="flex items-start gap-2.5">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <span class="text-sm text-zinc-300">Local citation building</span>
               </li>
-              <li class="flex items-start gap-2.5">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
@@ -297,8 +317,9 @@ import MainLayout from '../layouts/MainLayout.astro';
         </div>
 
         <!-- Enterprise Tier -->
-        <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 overflow-hidden relative flex flex-col">
-          <div class="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-transparent to-transparent pointer-events-none"></div>
+        <div class="local-seo-pricing-card backdrop-blur-[12px] border border-white/10 rounded-2xl p-6 md:p-8 overflow-hidden relative flex flex-col transition-all duration-300 ease-out" style="background: rgba(24, 24, 27, 0.6);">
+          <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-transparent to-transparent pointer-events-none"></div>
+          <div class="absolute inset-0 bg-gradient-to-tl from-purple-500/5 via-transparent to-transparent pointer-events-none"></div>
           <div class="relative flex flex-col flex-1">
             <div class="mb-6">
               <h3 class="text-xl font-bold text-white mb-2">Enterprise</h3>
@@ -307,32 +328,32 @@ import MainLayout from '../layouts/MainLayout.astro';
               </div>
               <p class="text-zinc-400 text-sm">per month</p>
             </div>
-            <ul class="space-y-3 mb-6 flex-1">
-              <li class="flex items-start gap-2.5">
+            <ul class="space-y-2 mb-6 flex-1">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <span class="text-sm text-zinc-300">Everything in Professional</span>
               </li>
-              <li class="flex items-start gap-2.5">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <span class="text-sm text-zinc-300">Multi-location management</span>
               </li>
-              <li class="flex items-start gap-2.5">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <span class="text-sm text-zinc-300">Advanced schema markup</span>
               </li>
-              <li class="flex items-start gap-2.5">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
                 <span class="text-sm text-zinc-300">Reputation management</span>
               </li>
-              <li class="flex items-start gap-2.5">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
