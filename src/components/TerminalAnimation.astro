@@ -1,0 +1,68 @@
+---
+interface Props {
+  /** Unique id for the terminal output element (for multiple instances on a page). */
+  id?: string;
+  /** Typing speed in ms per character. */
+  typeSpeedMs?: number;
+}
+
+const { id = 'lfwSnippet', typeSpeedMs = 24 } = Astro.props;
+---
+
+<div class="relative min-h-[11rem] h-56 bg-gradient-to-b from-zinc-800/80 to-zinc-900/80 border border-white/10 rounded-lg shadow-2xl text-zinc-300 text-sm overflow-hidden">
+  <div class="h-full w-full overflow-x-auto overflow-y-hidden p-4 pt-4 pb-10 min-w-0">
+    <pre class="terminal-font text-left leading-6 whitespace-pre text-sm"><code id={id}></code><span class="code-caret" aria-hidden="true"></span></pre>
+  </div>
+</div>
+
+<script define:vars={{ id, typeSpeedMs }}>
+  (() => {
+    /** Each line is an array of chunks. Each chunk has { text, class } and is typed inside a span with that class. */
+    const lines = [
+      [
+        { text: '> run site-audit', class: 'text-orange-400' },
+        { text: ' --target=client-site', class: 'text-zinc-400' },
+      ],
+      [{ text: 'Running performance analysis...', class: 'text-zinc-400' }],
+      [
+        { text: '> Checking Speed...           ', class: 'text-zinc-400' },
+        { text: '[100/100] OK', class: 'text-emerald-400' },
+      ],
+      [
+        { text: '> Checking SEO...             ', class: 'text-zinc-400' },
+        { text: '[100/100] OK', class: 'text-emerald-400' },
+      ],
+      [
+        { text: '> Checking Mobile...          ', class: 'text-zinc-400' },
+        { text: '[100/100] OK', class: 'text-emerald-400' },
+      ],
+      [],
+      [
+        {
+          text: '// Result: Your site will load in < 0.5s',
+          class: 'text-zinc-400 italic',
+        },
+      ],
+    ];
+
+    const codeEl = document.getElementById(id);
+    if (!codeEl) return;
+
+    const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+    (async () => {
+      for (const line of lines) {
+        for (const chunk of line) {
+          const span = document.createElement('span');
+          span.className = chunk.class;
+          codeEl.appendChild(span);
+          for (const char of chunk.text) {
+            span.textContent += char;
+            await sleep(typeSpeedMs);
+          }
+        }
+        codeEl.appendChild(document.createTextNode('\n'));
+      }
+    })();
+  })();
+</script>

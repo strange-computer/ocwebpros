@@ -53,6 +53,11 @@
         box-shadow: 0 0 30px rgba(234, 88, 12, 0.5);
     }
 
+    /* Terminal animation: monospace font */
+    .terminal-font {
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+    }
+
     /* Code typing caret for the demo snippet */
     .code-caret {
         display: inline-block;
