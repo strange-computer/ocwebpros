@@ -8,10 +8,16 @@
         box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5), 0 0 30px rgba(234, 88, 12, 0.08);
     }
 
+    /* Local SEO Pricing cards: own compositor layer to avoid scroll/backdrop-blur glitch */
+    .page-services .local-seo-pricing-card {
+        transform: translateZ(0);
+        backface-visibility: hidden;
+    }
+
     /* Local SEO Pricing cards: framer-style hover (lift, border glow, shadow) */
     .page-services .local-seo-pricing-card:hover {
         border-color: rgba(251, 146, 60, 0.4);
-        transform: translateY(-2px);
+        transform: translateZ(0) translateY(-2px);
         box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5), 0 0 30px rgba(234, 88, 12, 0.08);
     }
 }
