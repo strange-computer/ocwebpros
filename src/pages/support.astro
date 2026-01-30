@@ -50,6 +50,131 @@ import MainLayout from '../layouts/MainLayout.astro';
       </div>
     </section>
 
+    <!-- Support Pricing Tiers -->
+    <section class="max-w-7xl mx-auto pt-4 md:pt-8 pb-12 md:pb-16 px-4 sm:px-6">
+      <div class="relative text-center mb-8" data-aos="fade-up">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-48 md:w-96 md:h-56 bg-gradient-to-tr from-orange-500/15 to-purple-500/15 blur-3xl rounded-full pointer-events-none" aria-hidden="true"></div>
+        <div class="relative">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-orange-400 mb-4">
+            <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+            Support Plans
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold mb-2 text-white">Choose your plan</h2>
+          <p class="text-zinc-400 text-sm md:text-base">Monthly plans to fit your business needs</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <!-- Tier 1: The "Technical" Plan -->
+        <div class="support-pricing-card backdrop-blur-[12px] border border-white/10 rounded-2xl p-6 md:p-8 overflow-hidden relative flex flex-col transition-all duration-300 ease-out" style="background: rgba(24, 24, 27, 0.6);">
+          <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-transparent to-transparent pointer-events-none"></div>
+          <div class="absolute inset-0 bg-gradient-to-tl from-purple-500/5 via-transparent to-transparent pointer-events-none"></div>
+          <div class="relative flex flex-col flex-1">
+            <div class="mb-6">
+              <h3 class="text-xl font-bold text-white mb-2">The &quot;Technical&quot; Plan</h3>
+              <div class="text-4xl font-bold text-white mb-1">
+                <span class="text-lg align-top">$</span>99
+              </div>
+              <p class="text-zinc-400 text-sm">per month</p>
+              <p class="text-zinc-400 text-sm mt-2">For businesses that just want technical security.</p>
+            </div>
+            <ul class="space-y-2 mb-6 flex-1">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm text-zinc-300">Weekly Plugin Updates: We manually update plugins to prevent security holes.</span>
+              </li>
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm text-zinc-300">Visual Regression Testing: We check to make sure an update didn&apos;t break your design.</span>
+              </li>
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm text-zinc-300">Database Optimization: Keeping the site fast.</span>
+              </li>
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm text-zinc-300">Monthly PDF Report: Proof that we are working.</span>
+              </li>
+            </ul>
+            <a href="/contact" class="block w-full px-6 py-3 bg-white/5 text-white font-semibold rounded-full text-center border border-white/10 hover:bg-white/10 transition-colors text-sm mt-auto">Get Started</a>
+          </div>
+        </div>
+
+        <!-- Tier 2: The "Content" Plan (Recommended) -->
+        <div class="support-pricing-card backdrop-blur-[12px] border-2 border-orange-500/50 rounded-2xl p-6 md:p-8 overflow-hidden relative flex flex-col transition-all duration-300 ease-out" style="background: rgba(24, 24, 27, 0.6);">
+          <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-transparent to-transparent pointer-events-none"></div>
+          <div class="absolute inset-0 bg-gradient-to-tl from-purple-500/5 via-transparent to-transparent pointer-events-none"></div>
+          <div class="absolute top-4 right-4">
+            <span class="px-2 py-1 bg-orange-500 text-white text-xs font-semibold rounded-full">Recommended</span>
+          </div>
+          <div class="relative flex flex-col flex-1">
+            <div class="mb-6">
+              <h3 class="text-xl font-bold text-white mb-2">The &quot;Content&quot; Plan</h3>
+              <div class="text-4xl font-bold text-white mb-1">
+                <span class="text-lg align-top">$</span>249
+              </div>
+              <p class="text-zinc-400 text-sm">per month</p>
+              <p class="text-zinc-400 text-sm mt-2">For businesses that need regular website updates.</p>
+            </div>
+            <ul class="space-y-2 mb-6 flex-1">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm text-zinc-300">Everything in Technical, PLUS:</span>
+              </li>
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm text-zinc-300">1 Hour of Content Edits: Send us your text/image changes, and we do them for you.</span>
+              </li>
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm text-zinc-300">Priority Support: You skip the line. 24-hour turnaround guarantee.</span>
+              </li>
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm text-zinc-300">Performance Audits: Quarterly checkups to ensure Google still loves your speed.</span>
+              </li>
+            </ul>
+            <a href="/contact" class="block w-full px-6 py-3 bg-orange-600 text-white font-semibold rounded-full text-center hover:bg-orange-500 transition-colors btn-glow text-sm mt-auto">Get Started</a>
+          </div>
+        </div>
+
+        <!-- Tier 3: The "VIP" Plan -->
+        <div class="support-pricing-card backdrop-blur-[12px] border border-white/10 rounded-2xl p-6 md:p-8 overflow-hidden relative flex flex-col transition-all duration-300 ease-out" style="background: rgba(24, 24, 27, 0.6);">
+          <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-transparent to-transparent pointer-events-none"></div>
+          <div class="absolute inset-0 bg-gradient-to-tl from-purple-500/5 via-transparent to-transparent pointer-events-none"></div>
+          <div class="relative flex flex-col flex-1">
+            <div class="mb-6">
+              <h3 class="text-xl font-bold text-white mb-2">The &quot;VIP&quot; Plan</h3>
+              <div class="text-4xl font-bold text-white mb-1">
+                <span class="text-lg align-top">$</span>499
+              </div>
+              <p class="text-zinc-400 text-sm">per month</p>
+              <p class="text-zinc-400 text-sm mt-2">For e-commerce or high-traffic sites.</p>
+            </div>
+            <ul class="space-y-2 mb-6 flex-1">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm text-zinc-300">Everything in Content, PLUS:</span>
+              </li>
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm text-zinc-300">Unlimited Small Content Edits: Change text/blogs whenever you want.</span>
+              </li>
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm text-zinc-300">Emergency &quot;Red Phone&quot; Access: Direct Slack/Text access to a developer.</span>
+              </li>
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
+                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <span class="text-sm text-zinc-300">Conversion Consulting: Monthly advice on how to get more leads.</span>
+              </li>
+            </ul>
+            <a href="/contact" class="block w-full px-6 py-3 bg-white/5 text-white font-semibold rounded-full text-center border border-white/10 hover:bg-white/10 transition-colors text-sm mt-auto">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Spotlight: WordPress Expertise -->
     <section class="max-w-7xl mx-auto py-16 md:py-24">
       <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
