@@ -1,0 +1,62 @@
+@layer pages {
+    /* Page-specific styles for the pricing page, scoped by .page-pricing */
+
+    /* Web Design Pricing card: stay on own GPU layer so it doesn't jump layers on hover/scroll */
+    .page-pricing .web-design-pricing-card {
+        transform: translateZ(0);
+        will-change: transform;
+    }
+
+    /* Web Design Pricing card: framer-style hover (lift, border glow, shadow) */
+    .page-pricing .web-design-pricing-card:hover {
+        border-color: rgba(251, 146, 60, 0.3);
+        transform: translateZ(0) translateY(-2px);
+        box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5), 0 0 30px rgba(234, 88, 12, 0.08);
+    }
+
+    /* Web Design feature list items: own compositor layer so one box doesn't grey out on scroll */
+    .page-pricing .web-design-pricing-card ul.grid li {
+        transform: translateZ(0);
+    }
+    .page-pricing .web-design-pricing-card ul.grid li:hover {
+        transform: translateZ(0) translateY(-2px);
+    }
+
+    /* Local SEO Pricing cards: stay on own GPU layer so they don't jump layers on hover/scroll */
+    .page-pricing .local-seo-pricing-card {
+        transform: translateZ(0);
+        will-change: transform;
+        backface-visibility: hidden;
+    }
+
+    /* Local SEO Pricing cards: framer-style hover (lift, border glow, shadow) */
+    .page-pricing .local-seo-pricing-card:hover {
+        border-color: rgba(251, 146, 60, 0.4);
+        transform: translateZ(0) translateY(-2px);
+        box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5), 0 0 30px rgba(234, 88, 12, 0.08);
+    }
+
+    /* Support pricing cards: match SEO pricing hover/lift */
+    .page-pricing .support-pricing-card {
+        transform: translateZ(0);
+        will-change: transform;
+        backface-visibility: hidden;
+    }
+    .page-pricing .support-pricing-card:hover {
+        border-color: rgba(251, 146, 60, 0.4);
+        transform: translateZ(0) translateY(-2px);
+        box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5), 0 0 30px rgba(234, 88, 12, 0.08);
+    }
+
+    /* Hosting pricing card: GPU layer + emerald hover glow */
+    .page-pricing .hosting-pricing-card {
+        transform: translateZ(0);
+        will-change: transform;
+        backface-visibility: hidden;
+    }
+    .page-pricing .hosting-pricing-card:hover {
+        border-color: rgba(16, 185, 129, 0.4);
+        transform: translateZ(0) translateY(-2px);
+        box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5), 0 0 30px rgba(16, 185, 129, 0.12);
+    }
+}
