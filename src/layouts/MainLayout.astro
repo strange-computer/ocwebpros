@@ -4,6 +4,7 @@ interface Props {
   bodyClass?: string;
 }
 import '../styles/global.css';
+import CartSidebar from '../components/CartSidebar.astro';
 const { title = 'Lake Forest Websites', bodyClass = '' } = Astro.props;
 // Highlight active nav link based on current path
 const currentPath = Astro.url.pathname.replace(/\/+$/, '') || '/';
@@ -43,7 +44,6 @@ const navClass = (href: string) =>
           <a href="/portfolio" class={navClass('/portfolio')}>Portfolio</a>
           <a href="/support" class={navClass('/support')}>Support</a>
           <a href="/hosting" class={navClass('/hosting')}>Hosting</a>
-          <a href="/reviews" class={navClass('/reviews')}>Reviews</a>
           <a href="/about" class={navClass('/about')}>About</a>
           <a href="/contact" class={navClass('/contact')}>Contact</a>
         </div>
@@ -82,7 +82,6 @@ const navClass = (href: string) =>
           <a href="/portfolio" class={`py-3 px-4 rounded-lg text-base font-medium transition-colors ${navClass('/portfolio')}`}>Portfolio</a>
           <a href="/support" class={`py-3 px-4 rounded-lg text-base font-medium transition-colors ${navClass('/support')}`}>Support</a>
           <a href="/hosting" class={`py-3 px-4 rounded-lg text-base font-medium transition-colors ${navClass('/hosting')}`}>Hosting</a>
-          <a href="/reviews" class={`py-3 px-4 rounded-lg text-base font-medium transition-colors ${navClass('/reviews')}`}>Reviews</a>
           <a href="/about" class={`py-3 px-4 rounded-lg text-base font-medium transition-colors ${navClass('/about')}`}>About</a>
           <a href="/contact" class={`py-3 px-4 rounded-lg text-base font-medium transition-colors ${navClass('/contact')}`}>Contact</a>
         </div>
@@ -110,6 +109,10 @@ const navClass = (href: string) =>
       </div>
     </footer>
     
+    <!-- Cart: load first so it's available on every page -->
+    <script is:inline src="/js/cart.js"></script>
+    <CartSidebar />
+
     <!-- AOS JavaScript -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
     <script is:inline>

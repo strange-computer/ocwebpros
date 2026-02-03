@@ -1,10 +1,8 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
-import CartSidebar from '../components/CartSidebar.astro';
 ---
 <MainLayout title="Pricing | Lake Forest Websites" bodyClass="page-pricing">
   <link rel="stylesheet" href="/css/pages/pricing.css" />
-  <script is:inline src="/js/cart.js"></script>
 
   <header class="relative pt-32 sm:pt-32 md:pt-40 pb-12 sm:pb-16 px-4 sm:px-6 text-center overflow-hidden">
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[90vw] max-w-[800px] h-[400px] sm:h-[500px] md:h-[600px] glow-bg pointer-events-none opacity-40"></div>
@@ -636,6 +634,4 @@ import CartSidebar from '../components/CartSidebar.astro';
       <p class="text-zinc-500 text-sm mt-3">Prefer a call? Add your number in the message.</p>
     </div>
   </main>
-
-  <CartSidebar />
 </MainLayout>
