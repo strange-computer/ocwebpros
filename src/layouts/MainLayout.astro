@@ -48,6 +48,12 @@ const navClass = (href: string) =>
           <a href="/contact" class={navClass('/contact')}>Contact</a>
         </div>
         <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+          <button id="cartBtn" class="relative p-2 text-zinc-400 hover:text-white transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+            </svg>
+            <span id="cartBadge" class="hidden absolute -top-1 -right-1 w-5 h-5 bg-orange-500 text-white text-xs font-bold rounded-full flex items-center justify-center">0</span>
+          </button>
           <a href="tel:(555)555-1234" class="md:hidden flex items-center justify-center px-3 py-1.5 bg-white/10 text-white text-xs font-medium rounded-full border border-white/20 hover:bg-white/20 transition-colors leading-none">
             Call
           </a>
@@ -154,6 +160,12 @@ const navClass = (href: string) =>
           }
         });
       })();
+
+      // Cart button handler
+      const cartBtn = document.getElementById('cartBtn');
+      if (cartBtn && typeof window.openCart === 'function') {
+        cartBtn.addEventListener('click', window.openCart);
+      }
 
       // AOS initialization
       window.addEventListener('load', function() {

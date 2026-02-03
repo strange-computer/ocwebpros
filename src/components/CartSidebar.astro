@@ -1,0 +1,233 @@
+<!-- Shopping Cart Sidebar -->
+<div id="cartSidebar" class="fixed inset-y-0 right-0 w-full sm:w-96 bg-zinc-950 border-l border-white/10 shadow-2xl transform translate-x-full transition-transform duration-300 ease-out z-[60] overflow-hidden flex flex-col">
+  <!-- Header -->
+  <div class="flex items-center justify-between p-6 border-b border-white/10 flex-shrink-0">
+    <h2 class="text-xl font-bold text-white flex items-center gap-2">
+      <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+      </svg>
+      Your Cart
+    </h2>
+    <button id="closeCartBtn" class="p-2 hover:bg-white/10 rounded-lg transition-colors">
+      <svg class="w-5 h-5 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Cart Items -->
+  <div id="cartItems" class="flex-1 overflow-y-auto p-6 space-y-4">
+    <!-- Items will be injected here by JavaScript -->
+  </div>
+
+  <!-- Footer with totals and checkout -->
+  <div id="cartFooter" class="border-t border-white/10 p-6 bg-zinc-900/50 backdrop-blur-sm flex-shrink-0">
+    <div id="cartTotals" class="space-y-3 mb-4">
+      <!-- Totals will be injected here -->
+    </div>
+    <a href="/checkout" id="checkoutBtn" class="block w-full px-6 py-3.5 bg-orange-600 text-white font-semibold rounded-full text-center hover:bg-orange-500 transition-colors btn-glow disabled:opacity-50 disabled:cursor-not-allowed">
+      Proceed to Checkout
+    </a>
+    <button id="clearCartBtn" class="block w-full mt-3 px-6 py-2 text-zinc-400 text-sm hover:text-white transition-colors">
+      Clear Cart
+    </button>
+  </div>
+</div>
+
+<!-- Cart Overlay -->
+<div id="cartOverlay" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[55] opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+<script is:inline>
+  (function() {
+    const sidebar = document.getElementById('cartSidebar');
+    const overlay = document.getElementById('cartOverlay');
+    const closeBtn = document.getElementById('closeCartBtn');
+    const clearBtn = document.getElementById('clearCartBtn');
+    const cartItemsContainer = document.getElementById('cartItems');
+    const cartTotals = document.getElementById('cartTotals');
+    const checkoutBtn = document.getElementById('checkoutBtn');
+
+    if (!sidebar || !overlay || !window.cart) return;
+
+    // Open cart
+    window.openCart = function() {
+      sidebar.classList.remove('translate-x-full');
+      overlay.classList.remove('opacity-0', 'pointer-events-none');
+      document.body.style.overflow = 'hidden';
+      renderCart();
+    };
+
+    // Close cart
+    window.closeCart = function() {
+      sidebar.classList.add('translate-x-full');
+      overlay.classList.add('opacity-0', 'pointer-events-none');
+      document.body.style.overflow = '';
+    };
+
+    // Close handlers
+    closeBtn.addEventListener('click', window.closeCart);
+    overlay.addEventListener('click', window.closeCart);
+
+    // Clear cart
+    clearBtn.addEventListener('click', function() {
+      if (confirm('Are you sure you want to clear your cart?')) {
+        window.cart.clearCart();
+        renderCart();
+      }
+    });
+
+    // Render cart items and totals
+    function renderCart() {
+      const items = window.cart.getItems();
+      const totals = window.cart.getTotals();
+
+      // Render items
+      if (items.length === 0) {
+        cartItemsContainer.innerHTML = `
+          <div class="text-center py-12">
+            <svg class="w-16 h-16 text-zinc-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+            </svg>
+            <p class="text-zinc-400 text-sm">Your cart is empty</p>
+          </div>
+        `;
+        checkoutBtn.classList.add('opacity-50', 'pointer-events-none');
+      } else {
+        cartItemsContainer.innerHTML = items.map(item => `
+          <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-lg p-4">
+            <div class="flex items-start justify-between mb-2">
+              <div class="flex-1">
+                <h3 class="font-semibold text-white text-sm mb-1">${item.name}</h3>
+                <p class="text-xs text-zinc-400 mb-2">
+                  ${item.type === 'one-time' ? 'One-time' : 'Monthly subscription'}
+                </p>
+                <p class="text-orange-400 font-bold">
+                  $${item.price.toLocaleString()}${item.type === 'subscription' ? '/mo' : ''}
+                </p>
+              </div>
+              <button class="remove-item p-1 hover:bg-white/10 rounded transition-colors" data-id="${item.id}">
+                <svg class="w-4 h-4 text-zinc-400 hover:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        `).join('');
+
+        // Add remove handlers
+        document.querySelectorAll('.remove-item').forEach(btn => {
+          btn.addEventListener('click', function() {
+            const id = this.getAttribute('data-id');
+            window.cart.removeItem(id);
+            renderCart();
+          });
+        });
+
+        checkoutBtn.classList.remove('opacity-50', 'pointer-events-none');
+      }
+
+      // Render totals
+      let totalsHTML = '';
+      
+      if (totals.oneTime > 0) {
+        totalsHTML += `
+          <div class="flex justify-between text-sm">
+            <span class="text-zinc-400">One-time total:</span>
+            <span class="text-white font-semibold">$${totals.oneTime.toLocaleString()}</span>
+          </div>
+        `;
+      }
+
+      if (totals.monthly > 0 || totals.hostingIncluded) {
+        totalsHTML += `
+          <div class="flex justify-between text-sm">
+            <span class="text-zinc-400">Monthly total:</span>
+            <span class="text-white font-semibold">$${totals.monthly.toLocaleString()}/mo</span>
+          </div>
+        `;
+      }
+
+      if (totals.hostingIncluded) {
+        totalsHTML += `
+          <div class="flex items-center gap-2 py-2 px-3 bg-emerald-500/10 border border-emerald-500/20 rounded-lg">
+            <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span class="text-xs text-emerald-300 font-medium">FREE Managed Hosting included ($75/mo value)</span>
+          </div>
+        `;
+      }
+
+      cartTotals.innerHTML = totalsHTML;
+
+      // Update cart badge in nav
+      updateCartBadge();
+    }
+
+    // Update cart badge count in navigation
+    function updateCartBadge() {
+      const count = window.cart.getCount();
+      const badge = document.getElementById('cartBadge');
+      if (badge) {
+        badge.textContent = count;
+        if (count > 0) {
+          badge.classList.remove('hidden');
+        } else {
+          badge.classList.add('hidden');
+        }
+      }
+    }
+
+    // Listen for cart changes
+    window.cart.onChange(renderCart);
+
+    // Initial render
+    renderCart();
+
+    // Handle "Add to Cart" buttons
+    document.addEventListener('click', function(e) {
+      const btn = e.target.closest('.add-to-cart');
+      if (!btn) return;
+
+      e.preventDefault();
+
+      const item = {
+        id: btn.getAttribute('data-item-id'),
+        name: btn.getAttribute('data-name'),
+        price: btn.getAttribute('data-price'),
+        category: btn.getAttribute('data-category'),
+        type: btn.getAttribute('data-type'),
+        interval: btn.getAttribute('data-interval'),
+        stripeId: btn.getAttribute('data-stripe-id')
+      };
+
+      const result = window.cart.addItem(item);
+      
+      if (result.success) {
+        // Show success feedback
+        const originalText = btn.innerHTML;
+        btn.innerHTML = `
+          <svg class="w-5 h-5 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+          Added!
+        `;
+        btn.classList.add('bg-emerald-600');
+        
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.classList.remove('bg-emerald-600');
+        }, 1500);
+
+        // Open cart sidebar
+        window.openCart();
+      } else {
+        // Show error feedback
+        alert(result.message);
+      }
+    });
+
+    // Initialize badge on page load
+    updateCartBadge();
+  })();
+</script>

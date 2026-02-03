@@ -12,6 +12,7 @@
     "@tailwindcss/vite": "^4.1.18",
     "aos": "^2.3.4",
     "astro": "^5.16.6",
+    "stripe": "^20.3.0",
     "tailwindcss": "^4.1.18"
   }
 }
