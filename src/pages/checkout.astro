@@ -58,7 +58,7 @@ import MainLayout from '../layouts/MainLayout.astro';
               <label for="customerPhone" class="block text-sm font-medium text-zinc-300 mb-2">Phone *</label>
               <input type="tel" id="customerPhone" name="customerPhone" required 
                 class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent" 
-                placeholder="(555) 555-1234">
+                placeholder="(949) 329-4437">
             </div>
 
             <div>
@@ -91,22 +91,23 @@ import MainLayout from '../layouts/MainLayout.astro';
 
   <script is:inline>
     (function() {
-      if (!window.cart) {
-        console.error('Cart not initialized');
-        window.location.href = '/pricing';
-        return;
-      }
+      function runCheckout() {
+        if (!window.cart) {
+          console.error('Cart not initialized');
+          window.location.href = '/pricing';
+          return;
+        }
 
-      const items = window.cart.getItems();
-      const totals = window.cart.getTotals();
+        const items = window.cart.getItems();
+        const totals = window.cart.getTotals();
 
-      // Redirect if cart is empty
-      if (items.length === 0) {
-        window.location.href = '/pricing';
-        return;
-      }
+        // Redirect if cart is empty
+        if (items.length === 0) {
+          window.location.href = '/pricing';
+          return;
+        }
 
-      // Render cart items
+        // Render cart items
       const checkoutItems = document.getElementById('checkoutItems');
       checkoutItems.innerHTML = items.map(item => `
         <div class="flex justify-between items-start py-3 border-b border-white/5 last:border-0">
@@ -206,6 +207,31 @@ import MainLayout from '../layouts/MainLayout.astro';
           btn.innerHTML = originalText;
         }
       });
+      }
+
+      // Cart is loaded by layout script after this page's content; wait for it before running
+      function whenCartReady() {
+        if (window.cart) {
+          runCheckout();
+          return;
+        }
+        var attempts = 0;
+        var t = setInterval(function() {
+          attempts++;
+          if (window.cart) {
+            clearInterval(t);
+            runCheckout();
+          } else if (attempts > 40) {
+            clearInterval(t);
+            window.location.href = '/pricing';
+          }
+        }, 50);
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', whenCartReady);
+      } else {
+        whenCartReady();
+      }
     })();
   </script>
 </MainLayout>
