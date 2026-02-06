@@ -1,6 +1,40 @@
 @layer pages {
     /* Page-specific styles for the home page can go here, scoped by .page-home */
     /* .page-home .hero { padding-block: 4rem; } */
+    
+    /* Testimonials auto-scroll styling */
+    .testimonials-scroll-container {
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .testimonials-track {
+        will-change: transform;
+        transition: none;
+    }
+    
+    .testimonial-card {
+        position: relative;
+        transition: all 0.3s ease;
+    }
+    
+    .testimonial-card::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 1rem;
+        padding: 1px;
+        background: linear-gradient(135deg, rgba(249, 115, 22, 0.2), transparent);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .testimonial-card:hover::before {
+        opacity: 1;
+    }
 }
 
 

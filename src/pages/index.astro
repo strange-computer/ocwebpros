@@ -73,7 +73,7 @@ import TerminalAnimation from '../components/TerminalAnimation.astro';
               </div>
               <div>
                 <h3 class="text-xl font-semibold text-white mb-2">Custom, Purpose-Built Design</h3>
-                <p class="text-zinc-400 leading-relaxed">Every site is built from scratch for your specific needs. No template bloat, no unnecessary features—just what works for your business.</p>
+                <p class="text-zinc-400 leading-relaxed">Every site is built from scratch for your specific needs. No template bloat, no unnecessary features - just what works for your business.</p>
               </div>
             </div>
             <div class="flex gap-4">
@@ -103,8 +103,8 @@ import TerminalAnimation from '../components/TerminalAnimation.astro';
   <section class="px-4 sm:px-6 py-10 sm:py-12 border-t border-white/5 bg-gradient-to-r from-zinc-900/40 via-zinc-900/20 to-zinc-900/40" data-aos="fade-up">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
       <div>
-        <h3 class="text-2xl md:text-3xl font-bold">Let’s make your website a growth asset.</h3>
-        <p class="text-zinc-400 mt-2">Fast, clear, and built to last-without the bloat.</p>
+        <h3 class="text-2xl md:text-3xl font-bold">Let's make your website a growth asset.</h3>
+        <p class="text-zinc-400 mt-2">Fast, clear, and built to last - without the bloat.</p>
       </div>
       <div class="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
         <a href="/contact" class="px-6 py-3 bg-orange-600 text-white font-semibold rounded-full hover:bg-orange-500 transition-colors btn-glow text-center text-sm sm:text-base">Request consult</a>
@@ -189,104 +189,213 @@ import TerminalAnimation from '../components/TerminalAnimation.astro';
   </section>
   
   <!-- Testimonials -->
-  <section class="px-6 py-24 border-t border-white/5">
-    <div class="max-w-7xl mx-auto">
+  <section class="py-24 border-t border-white/5 overflow-hidden relative">
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-zinc-900/20 to-transparent pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
       <div class="text-center mb-12" data-aos="fade-up">
         <h2 class="text-3xl font-bold mb-4">What Clients Say</h2>
         <p class="text-zinc-400">Real feedback about process, speed, and outcomes.</p>
       </div>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="framer-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
-          <div class="flex text-orange-500 mb-4">★★★★★</div>
-          <p class="text-zinc-300 mb-6 text-sm leading-relaxed">“They made the process simple and handled updates quickly.”</p>
-          <div class="flex items-center gap-3">
-            <div class="w-8 h-8 rounded-full bg-zinc-700 flex items-center justify-center text-xs">MJ</div>
-            <span class="text-sm font-medium text-white">Local Services</span>
+    </div>
+    <div class="relative">
+      <!-- Gradient overlays for fade effect -->
+      <div class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none"></div>
+      <div class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none"></div>
+      
+      <div class="testimonials-scroll-container overflow-hidden">
+        <div class="testimonials-track flex gap-6 px-6 py-4">
+          <!-- First set of testimonials -->
+          <div class="testimonial-card framer-card p-8 rounded-2xl min-w-[320px] md:min-w-[380px] flex-shrink-0">
+            <div class="flex text-orange-500 mb-4 text-lg">★★★★★</div>
+            <p class="text-zinc-300 mb-6 text-sm leading-relaxed">"They made the process simple and handled updates quickly."</p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-sm font-semibold text-white">MJ</div>
+              <div>
+                <div class="text-sm font-semibold text-white">MJ</div>
+                <div class="text-xs text-zinc-400">Local Services</div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="framer-card p-6 rounded-2xl" data-aos="fade-up">
-          <div class="flex text-orange-500 mb-4">★★★★★</div>
-          <p class="text-zinc-300 mb-6 text-sm leading-relaxed">“Clean design, faster site, and clearer calls to action.”</p>
-          <div class="flex items-center gap-3">
-            <div class="w-8 h-8 rounded-full bg-zinc-700 flex items-center justify-center text-xs">RS</div>
-            <span class="text-sm font-medium text-white">Professional</span>
+          
+          <div class="testimonial-card framer-card p-8 rounded-2xl min-w-[320px] md:min-w-[380px] flex-shrink-0">
+            <div class="flex text-orange-500 mb-4 text-lg">★★★★★</div>
+            <p class="text-zinc-300 mb-6 text-sm leading-relaxed">"Clean design, faster site, and clearer calls to action."</p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-sm font-semibold text-white">RS</div>
+              <div>
+                <div class="text-sm font-semibold text-white">RS</div>
+                <div class="text-xs text-zinc-400">Professional</div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="framer-card p-6 rounded-2xl" data-aos="fade-up">
-          <div class="flex text-orange-500 mb-4">★★★★★</div>
-          <p class="text-zinc-300 mb-6 text-sm leading-relaxed">“Responsive team and solid results on mobile.”</p>
-          <div class="flex items-center gap-3">
-            <div class="w-8 h-8 rounded-full bg-zinc-700 flex items-center justify-center text-xs">LT</div>
-            <span class="text-sm font-medium text-white">Retail</span>
+          
+          <div class="testimonial-card framer-card p-8 rounded-2xl min-w-[320px] md:min-w-[380px] flex-shrink-0">
+            <div class="flex text-orange-500 mb-4 text-lg">★★★★★</div>
+            <p class="text-zinc-300 mb-6 text-sm leading-relaxed">"Responsive team and solid results on mobile."</p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-sm font-semibold text-white">LT</div>
+              <div>
+                <div class="text-sm font-semibold text-white">LT</div>
+                <div class="text-xs text-zinc-400">Retail</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card framer-card p-8 rounded-2xl min-w-[320px] md:min-w-[380px] flex-shrink-0">
+            <div class="flex text-orange-500 mb-4 text-lg">★★★★★</div>
+            <p class="text-zinc-300 mb-6 text-sm leading-relaxed">"Professional work and great communication throughout."</p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-sm font-semibold text-white">KC</div>
+              <div>
+                <div class="text-sm font-semibold text-white">KC</div>
+                <div class="text-xs text-zinc-400">Healthcare</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card framer-card p-8 rounded-2xl min-w-[320px] md:min-w-[380px] flex-shrink-0">
+            <div class="flex text-orange-500 mb-4 text-lg">★★★★★</div>
+            <p class="text-zinc-300 mb-6 text-sm leading-relaxed">"Exceeded expectations with attention to detail."</p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-sm font-semibold text-white">DM</div>
+              <div>
+                <div class="text-sm font-semibold text-white">DM</div>
+                <div class="text-xs text-zinc-400">Real Estate</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Duplicate set for seamless loop -->
+          <div class="testimonial-card framer-card p-8 rounded-2xl min-w-[320px] md:min-w-[380px] flex-shrink-0">
+            <div class="flex text-orange-500 mb-4 text-lg">★★★★★</div>
+            <p class="text-zinc-300 mb-6 text-sm leading-relaxed">"They made the process simple and handled updates quickly."</p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-sm font-semibold text-white">MJ</div>
+              <div>
+                <div class="text-sm font-semibold text-white">MJ</div>
+                <div class="text-xs text-zinc-400">Local Services</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card framer-card p-8 rounded-2xl min-w-[320px] md:min-w-[380px] flex-shrink-0">
+            <div class="flex text-orange-500 mb-4 text-lg">★★★★★</div>
+            <p class="text-zinc-300 mb-6 text-sm leading-relaxed">"Clean design, faster site, and clearer calls to action."</p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-sm font-semibold text-white">RS</div>
+              <div>
+                <div class="text-sm font-semibold text-white">RS</div>
+                <div class="text-xs text-zinc-400">Professional</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card framer-card p-8 rounded-2xl min-w-[320px] md:min-w-[380px] flex-shrink-0">
+            <div class="flex text-orange-500 mb-4 text-lg">★★★★★</div>
+            <p class="text-zinc-300 mb-6 text-sm leading-relaxed">"Responsive team and solid results on mobile."</p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-sm font-semibold text-white">LT</div>
+              <div>
+                <div class="text-sm font-semibold text-white">LT</div>
+                <div class="text-xs text-zinc-400">Retail</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="px-6 py-24 border-t border-white/5">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-10" data-aos="fade-up">
-        <h2 class="text-3xl font-bold mb-4">FAQs</h2>
-        <p class="text-zinc-400">Straight answers to common questions.</p>
-      </div>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="framer-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
-          <details class="group">
-            <summary class="cursor-pointer text-white font-medium">How long does a typical site take?</summary>
-            <p class="mt-3 text-sm text-zinc-400">Small sites are often measured in weeks, not months. Timelines depend on content and feedback speed.</p>
-          </details>
-        </div>
-        <div class="framer-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
-          <details class="group">
-            <summary class="cursor-pointer text-white font-medium">Do you work with existing content?</summary>
-            <p class="mt-3 text-sm text-zinc-400">Yes. We can reuse what works, edit what needs clarity, and propose gaps to fill.</p>
-          </details>
-        </div>
-        <div class="framer-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
-          <details class="group">
-            <summary class="cursor-pointer text-white font-medium">What about hosting and support?</summary>
-            <p class="mt-3 text-sm text-zinc-400">We offer managed hosting and WordPress support for ongoing care. Or we’ll deploy to your provider.</p>
-          </details>
-        </div>
-        <div class="framer-card p-6 rounded-2xl" data-aos="fade-up" data-aos-delay="400">
-          <details class="group">
-            <summary class="cursor-pointer text-white font-medium">Is SEO included?</summary>
-            <p class="mt-3 text-sm text-zinc-400">Foundations are included (speed, structure, meta, headings). Local SEO packages are available if needed.</p>
-          </details>
-        </div>
-      </div>
-    </div>
-  </section>
+  <script>
+    // Auto-scrolling testimonials
+    const track = document.querySelector('.testimonials-track');
+    const container = document.querySelector('.testimonials-scroll-container');
+    
+    if (track && container) {
+      let scrollPosition = 0;
+      const scrollSpeed = 0.5; // pixels per frame
+      
+      // Clone items for seamless loop
+      const items = track.querySelectorAll('.testimonial-card');
+      const itemWidth = items[0].offsetWidth + 24; // card width + gap
+      const totalWidth = itemWidth * (items.length / 2); // half because we duplicated
+      
+      function animate() {
+        scrollPosition += scrollSpeed;
+        
+        // Reset position for seamless loop
+        if (scrollPosition >= totalWidth) {
+          scrollPosition = 0;
+        }
+        
+        track.style.transform = `translateX(-${scrollPosition}px)`;
+        requestAnimationFrame(animate);
+      }
+      
+      // Start animation
+      animate();
+    }
+  </script>
 
-  <section class="py-24 px-6 border-t border-white/5">
+  <section class="py-24 px-6 bg-zinc-900/30 border-y border-white/5">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-12" data-aos="fade-up">
         <h2 class="text-3xl font-bold mb-4">What You Can Expect</h2>
         <p class="text-zinc-400">Clear process, reliable communication, and quality outcomes.</p>
       </div>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="framer-card p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
-          <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
-          </div>
-          <h3 class="text-xl font-bold mb-3">Discovery</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed">We clarify goals, audience, and success criteria together.</p>
+      <!-- Desktop: Horizontal Timeline -->
+      <div class="hidden md:flex items-center justify-between relative">
+        <!-- Connecting line -->
+        <div class="absolute top-6 left-0 right-0 h-0.5 bg-orange-500/30 -z-10"></div>
+        <!-- Step 1 -->
+        <div class="flex flex-col items-center flex-1 relative group cursor-pointer" data-aos="zoom-in" data-aos-delay="0">
+          <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg mb-4 relative z-10 group-hover:scale-110 transition-transform">1</div>
+          <h3 class="font-bold text-white mb-2 text-center group-hover:text-orange-400 transition-colors">Discovery</h3>
+          <p class="text-sm text-zinc-400 text-center max-w-[180px]">We clarify goals, audience, and success criteria together.</p>
         </div>
-        <div class="framer-card p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
-          <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-          </div>
-          <h3 class="text-xl font-bold mb-3">Design</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed">Modern, accessible UI tailored to your brand and content.</p>
+        <!-- Step 2 -->
+        <div class="flex flex-col items-center flex-1 relative group cursor-pointer" data-aos="zoom-in" data-aos-delay="150">
+          <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg mb-4 relative z-10 group-hover:scale-110 transition-transform">2</div>
+          <h3 class="font-bold text-white mb-2 text-center group-hover:text-orange-400 transition-colors">Design</h3>
+          <p class="text-sm text-zinc-400 text-center max-w-[180px]">Modern, accessible UI tailored to your brand and content.</p>
         </div>
-        <div class="framer-card p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
-          <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v8m-4-4h8"/></svg>
+        <!-- Step 3 -->
+        <div class="flex flex-col items-center flex-1 relative group cursor-pointer" data-aos="zoom-in" data-aos-delay="300">
+          <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg mb-4 relative z-10 group-hover:scale-110 transition-transform">3</div>
+          <h3 class="font-bold text-white mb-2 text-center group-hover:text-orange-400 transition-colors">Build & Launch</h3>
+          <p class="text-sm text-zinc-400 text-center max-w-[180px]">Fast, mobile‑first pages and a smooth handoff at launch.</p>
+        </div>
+      </div>
+      <!-- Mobile: Vertical Timeline -->
+      <div class="md:hidden space-y-8">
+        <div class="flex gap-4 relative">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg">1</div>
+            <div class="w-0.5 h-full bg-orange-500/30 mt-2 absolute top-12 left-6"></div>
           </div>
-          <h3 class="text-xl font-bold mb-3">Build & Launch</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed">Fast, mobile‑first pages and a smooth handoff at launch.</p>
+          <div class="flex-1 pt-2">
+            <h3 class="font-bold text-white mb-2">Discovery</h3>
+            <p class="text-sm text-zinc-400">We clarify goals, audience, and success criteria together.</p>
+          </div>
+        </div>
+        <div class="flex gap-4 relative">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg">2</div>
+            <div class="w-0.5 h-full bg-orange-500/30 mt-2 absolute top-12 left-6"></div>
+          </div>
+          <div class="flex-1 pt-2">
+            <h3 class="font-bold text-white mb-2">Design</h3>
+            <p class="text-sm text-zinc-400">Modern, accessible UI tailored to your brand and content.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg">3</div>
+          </div>
+          <div class="flex-1 pt-2">
+            <h3 class="font-bold text-white mb-2">Build & Launch</h3>
+            <p class="text-sm text-zinc-400">Fast, mobile‑first pages and a smooth handoff at launch.</p>
+          </div>
         </div>
       </div>
     </div>
