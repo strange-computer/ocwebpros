@@ -1,7 +1,10 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
 ---
-<MainLayout title="Contact | Lake Forest Websites" bodyClass="page-contact">
+<MainLayout 
+  title="Contact | OCWebPros" 
+  description="Get in touch with our Lake Forest web design team. Call (949) 329-4437 or email info@ocwebpros.com. Serving Orange County and surrounding areas."
+  bodyClass="page-contact">
   <link rel="stylesheet" href="/css/pages/contact.css" />
 
   <!-- Hero -->
@@ -39,7 +42,7 @@ import MainLayout from '../layouts/MainLayout.astro';
           </div>
           <h3 class="text-lg font-bold text-white mb-2">Email</h3>
           <p class="text-sm text-zinc-400 mb-3">We reply quickly during business hours.</p>
-          <a href="mailto:info@lakeforestwebsites.com" class="text-orange-400 font-semibold hover:text-orange-300 transition-colors">info@lakeforestwebsites.com</a>
+          <a href="mailto:info@ocwebpros.com" class="text-orange-400 font-semibold hover:text-orange-300 transition-colors">info@ocwebpros.com</a>
         </div>
         <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-white/20 transition-all group" data-aos="fade-up" data-aos-delay="200">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
@@ -124,7 +127,7 @@ import MainLayout from '../layouts/MainLayout.astro';
         const body = encodeURIComponent(
           `Name: ${decodeURIComponent(name)}\nEmail: ${decodeURIComponent(email)}\nPhone: ${decodeURIComponent(phone)}\n\nMessage:\n${decodeURIComponent(msg)}`
         );
-        window.location.href = `mailto:info@lakeforestwebsites.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:info@ocwebpros.com?subject=${subject}&body=${body}`;
       });
     })();
   </script>

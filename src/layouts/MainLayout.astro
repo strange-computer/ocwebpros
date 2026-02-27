@@ -1,15 +1,173 @@
 ---
 interface Props {
   title?: string;
+  description?: string;
   bodyClass?: string;
 }
 import '../styles/global.css';
 import CartSidebar from '../components/CartSidebar.astro';
-const { title = 'Lake Forest Websites', bodyClass = '' } = Astro.props;
+const { 
+  title = 'OCWebPros', 
+  description = 'Professional web design and local SEO services in Orange County, CA. Custom websites built for local businesses with strategic optimization.',
+  bodyClass = '' 
+} = Astro.props;
 // Highlight active nav link based on current path
 const currentPath = Astro.url.pathname.replace(/\/+$/, '') || '/';
 const navClass = (href: string) =>
   `hover:text-white transition-colors ${currentPath === href || (href !== '/' && currentPath.startsWith(href)) ? 'text-white' : ''}`;
+
+// Get the full URL for schema
+const siteUrl = Astro.site || new URL(Astro.url.origin);
+const canonicalURL = new URL(Astro.url.pathname, siteUrl);
+
+// Schema.org structured data for SEO
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "OCWebPros",
+  "description": "Professional web design and local SEO services in Orange County, California. Custom websites built for local businesses with strategic SEO optimization.",
+  "url": siteUrl.toString(),
+  "logo": new URL("/images/LakeForestLogo.png", siteUrl).toString(),
+  "image": new URL("/images/LakeForestLogo.png", siteUrl).toString(),
+  "telephone": "+1-949-329-4437",
+  "email": "info@ocwebpros.com",
+  "foundingDate": "2026",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lake Forest",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Lake Forest",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "California"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Irvine",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "California"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Mission Viejo",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "California"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Laguna Hills",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "California"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Tustin",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "California"
+      }
+    },
+    {
+      "@type": "Place",
+      "name": "Orange County, California"
+    }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Web Design and SEO Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Custom Web Design",
+          "description": "Professional custom website design and development for local businesses"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Local SEO Services",
+          "description": "Strategic local search engine optimization to improve visibility in Orange County"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Managed Web Hosting",
+          "description": "Secure, fast managed hosting with daily backups and monitoring"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Website Support & Maintenance",
+          "description": "Ongoing website updates, security patches, and technical support"
+        }
+      }
+    ]
+  }
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "OCWebPros",
+  "url": siteUrl.toString(),
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": new URL("/services?q={search_term_string}", siteUrl).toString()
+    },
+    "query-input": "required name=search_term_string"
+  }
+};
+
+// Breadcrumb schema (dynamically generated based on current path)
+const pathSegments = Astro.url.pathname.split('/').filter(Boolean);
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": siteUrl.toString()
+    },
+    ...pathSegments.map((segment, index) => ({
+      "@type": "ListItem",
+      "position": index + 2,
+      "name": segment.charAt(0).toUpperCase() + segment.slice(1).replace(/-/g, ' '),
+      "item": new URL(pathSegments.slice(0, index + 1).join('/'), siteUrl).toString()
+    }))
+  ]
+};
 ---
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth overflow-x-hidden">
@@ -17,7 +175,42 @@ const navClass = (href: string) =>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL.toString()} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL.toString()} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL("/images/LakeForestLogo.png", siteUrl).toString()} />
+    <meta property="og:site_name" content="OCWebPros" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL.toString()} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL("/images/LakeForestLogo.png", siteUrl).toString()} />
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEP6G0WSB0"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SEP6G0WSB0');
+    </script>
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Schema.org Structured Data for SEO -->
+    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+    {pathSegments.length > 0 && (
+      <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    )}
+    
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <!-- Existing layered CSS -->
@@ -30,11 +223,10 @@ const navClass = (href: string) =>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
         <div class="flex items-center gap-2 min-w-0 flex-shrink">
           <a href="/" class="flex items-center flex-shrink-0">
-            <img src="/images/LakeForestLogo.png" alt="Lake Forest Websites" class="h-8 w-auto" />
+            <img src="/images/LakeForestLogo.png" alt="OCWebPros" class="h-8 w-auto" />
           </a>
           <a href="/" class="logo-text text-sm sm:text-base hover:text-white/80 transition">
-            <span class="block md:inline">Lake Forest</span>
-            <span class="block md:inline md:ml-1">Websites</span>
+            OCWebPros
           </a>
         </div>
         <div class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
@@ -89,7 +281,7 @@ const navClass = (href: string) =>
           <a href="tel:9493294437" class="block w-full px-6 py-3 bg-orange-600 text-white font-semibold rounded-full text-center hover:bg-orange-500 transition-colors mb-3">
             (949) 329-4437
           </a>
-          <a href="mailto:info@lakeforestwebsites.com" class="block w-full px-6 py-3 bg-white/5 text-white font-semibold rounded-full text-center border border-white/10 hover:bg-white/10 transition-colors">
+          <a href="mailto:info@ocwebpros.com" class="block w-full px-6 py-3 bg-white/5 text-white font-semibold rounded-full text-center border border-white/10 hover:bg-white/10 transition-colors">
             Email Us
           </a>
         </div>
@@ -101,7 +293,7 @@ const navClass = (href: string) =>
     <footer class="border-t border-white/10 py-12 px-6 bg-black">
       <div class="max-w-7xl mx-auto">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
-          <div class="text-zinc-500 text-sm">© 2026 Lake Forest Websites. All Rights Reserved.</div>
+          <div class="text-zinc-500 text-sm">© 2026 OCWebPros. All Rights Reserved.</div>
           <div class="grid grid-cols-2 sm:flex sm:flex-wrap gap-x-6 gap-y-3 text-sm text-zinc-400">
             <a href="/" class="hover:text-white transition-colors">Home</a>
             <a href="/services" class="hover:text-white transition-colors">Services</a>

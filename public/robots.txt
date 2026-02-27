@@ -1,0 +1,11 @@
+# robots.txt for OCWebPros
+User-agent: *
+Allow: /
+
+# Disallow checkout and success pages from indexing
+Disallow: /checkout
+Disallow: /success
+Disallow: /cancel
+
+# Sitemap location
+Sitemap: https://www.ocwebpros.com/sitemap.xml

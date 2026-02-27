@@ -3,9 +3,8 @@
     .logo-text {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        font-size: 0.8em;
+        letter-spacing: 0.05em;
+        font-size: 0.9em;
     }
 
     /* Custom Gradient Text */
