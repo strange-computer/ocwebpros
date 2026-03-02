@@ -1,0 +1,104 @@
+@layer pages {
+    .page-blog {
+        /* Blog-specific styles */
+    }
+
+    /* Blog post content styling */
+    .blog-content {
+        font-size: 1.125rem;
+        line-height: 1.75;
+        color: #d4d4d8;
+    }
+
+    .blog-content h2 {
+        font-size: 1.875rem;
+        font-weight: 700;
+        color: #fff;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .blog-content h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #fff;
+        margin-top: 2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .blog-content p {
+        margin-bottom: 1.5rem;
+    }
+
+    .blog-content ul,
+    .blog-content ol {
+        margin-bottom: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .blog-content li {
+        margin-bottom: 0.5rem;
+        color: #d4d4d8;
+    }
+
+    .blog-content ul li {
+        list-style-type: disc;
+    }
+
+    .blog-content ol li {
+        list-style-type: decimal;
+    }
+
+    .blog-content a {
+        color: #fb923c;
+        text-decoration: underline;
+        transition: color 0.2s;
+    }
+
+    .blog-content a:hover {
+        color: #ea580c;
+    }
+
+    .blog-content code {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 0.2em 0.4em;
+        border-radius: 0.25rem;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.9em;
+    }
+
+    .blog-content pre {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 1.5rem;
+        border-radius: 0.75rem;
+        overflow-x: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .blog-content pre code {
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
+    .blog-content blockquote {
+        border-left: 4px solid #fb923c;
+        padding-left: 1.5rem;
+        margin: 1.5rem 0;
+        font-style: italic;
+        color: #a1a1aa;
+    }
+
+    .blog-content img {
+        border-radius: 0.75rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin: 2rem 0;
+    }
+
+    .blog-content strong {
+        color: #fff;
+        font-weight: 600;
+    }
+}

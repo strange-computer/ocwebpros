@@ -11,6 +11,8 @@ export const GET: APIRoute = async ({ site }) => {
     { url: 'pricing', priority: '0.9', changefreq: 'weekly' },
     { url: 'portfolio', priority: '0.8', changefreq: 'weekly' },
     { url: 'industries', priority: '0.8', changefreq: 'monthly' },
+    { url: 'blog', priority: '0.8', changefreq: 'weekly' },
+    { url: 'blog/how-to-improve-local-seo', priority: '0.7', changefreq: 'monthly' },
     { url: 'hosting', priority: '0.7', changefreq: 'monthly' },
     { url: 'support', priority: '0.7', changefreq: 'monthly' },
     { url: 'contact', priority: '0.9', changefreq: 'monthly' },
