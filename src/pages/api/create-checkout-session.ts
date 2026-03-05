@@ -119,15 +119,9 @@ export const POST: APIRoute = async ({ request }) => {
       }
     }
 
-    // Get the origin for redirect URLs
-    // Netlify terminates SSL at the edge, so request.url may be http:// internally.
-    // Use X-Forwarded-Proto to get the actual client protocol, or fall back to config site.
-    const SITE_URL = 'https://www.ocwebpros.com';
-    const forwardedProto = request.headers.get('x-forwarded-proto');
-    const requestUrl = new URL(request.url);
-    const origin = forwardedProto === 'https'
-      ? `https://${requestUrl.host}`
-      : SITE_URL;
+    // Always use canonical HTTPS URL for redirects. request.url can be http:// when
+    // Netlify terminates SSL at the edge, which would cause "not secure" after checkout.
+    const origin = 'https://www.ocwebpros.com';
 
     // Create Stripe checkout session
     const session = await stripe.checkout.sessions.create({

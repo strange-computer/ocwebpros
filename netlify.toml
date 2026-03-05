@@ -5,6 +5,18 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Force HTTPS - redirect all HTTP to HTTPS (prevents "not secure" despite valid cert)
+[[redirects]]
+  from = "/*"
+  to = "/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
 [[headers]]
   for = "/images/*"
   [headers.values]
