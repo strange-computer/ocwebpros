@@ -1,0 +1,3 @@
+# Force HTTPS - redirect HTTP to HTTPS
+http://ocwebpros.com/* https://ocwebpros.com/:splat 301!
+http://www.ocwebpros.com/* https://www.ocwebpros.com/:splat 301!
