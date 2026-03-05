@@ -38,4 +38,4 @@ Orange County web design typically runs $1,500–$8,000 for a custom business si
 
 We got tired of seeing OC small businesses overpay for underperforming sites — or underpay for sites that look cheap and rank nowhere. OCWebPros is Lake Forest-based, works directly with you, and builds sites that actually show up in search.
 
-[See our work →](/web-design) | [Get a quote →](/contact)
+[See our work →](/services#web-design) | [Get a quote →](/contact)

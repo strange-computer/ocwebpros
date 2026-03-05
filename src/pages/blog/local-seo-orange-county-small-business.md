@@ -42,4 +42,4 @@ Honest answer: 3–6 months to see meaningful movement, 6–12 months for compet
 
 We offer local SEO services built specifically for Orange County businesses — Google Business Profile optimization, citation building, on-page SEO, and content strategy.
 
-[Learn about our local SEO services →](/local-seo) | [Get a free audit →](/contact)
+[Learn about our local SEO services →](/services#local-seo) | [Get a free audit →](/contact)

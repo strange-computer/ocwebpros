@@ -42,4 +42,4 @@ If you're pre-revenue and just need a placeholder — start with Squarespace. Ge
 
 If you're an established OC business that needs to compete in local search, convert visitors, and build something that grows with you — a custom site is the move.
 
-[See what a custom site looks like →](/web-design) | [Get a quote →](/contact)
+[See what a custom site looks like →](/services#web-design) | [Get a quote →](/contact)
