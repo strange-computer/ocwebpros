@@ -2,7 +2,7 @@ import type { APIRoute } from 'astro';
 import Stripe from 'stripe';
 
 const stripe = new Stripe(import.meta.env.STRIPE_SECRET_KEY || '', {
-  apiVersion: '2024-12-18.acacia',
+  apiVersion: '2026-01-28.clover',
 });
 
 export const prerender = false;
@@ -120,7 +120,14 @@ export const POST: APIRoute = async ({ request }) => {
     }
 
     // Get the origin for redirect URLs
-    const origin = new URL(request.url).origin;
+    // Netlify terminates SSL at the edge, so request.url may be http:// internally.
+    // Use X-Forwarded-Proto to get the actual client protocol, or fall back to config site.
+    const SITE_URL = 'https://www.ocwebpros.com';
+    const forwardedProto = request.headers.get('x-forwarded-proto');
+    const requestUrl = new URL(request.url);
+    const origin = forwardedProto === 'https'
+      ? `https://${requestUrl.host}`
+      : SITE_URL;
 
     // Create Stripe checkout session
     const session = await stripe.checkout.sessions.create({
