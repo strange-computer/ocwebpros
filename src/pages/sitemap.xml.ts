@@ -26,6 +26,7 @@ export const GET: APIRoute = async ({ site }) => {
     { url: 'blog/website-maintenance-orange-county', priority: '0.7', changefreq: 'monthly' },
     { url: 'blog/ecommerce-website-design-orange-county-2026-trends', priority: '0.7', changefreq: 'monthly' },
     { url: 'blog/choose-web-design-agency-orange-county', priority: '0.7', changefreq: 'monthly' },
+    { url: 'blog/restaurant-website-design-orange-county', priority: '0.7', changefreq: 'monthly' },
   ];
 
   const lastmod = new Date().toISOString();
