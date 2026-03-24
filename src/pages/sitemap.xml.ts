@@ -34,6 +34,7 @@ export const GET: APIRoute = async ({ site }) => {
     { url: 'blog/ecommerce-website-design-orange-county-2026-trends', priority: '0.7', changefreq: 'monthly' },
     { url: 'blog/choose-web-design-agency-orange-county', priority: '0.7', changefreq: 'monthly' },
     { url: 'blog/restaurant-website-design-orange-county', priority: '0.7', changefreq: 'monthly' },
+    { url: 'blog/2026-03-23-apple-m5-chip-4x-faster-ai-inference-web-development-2026', priority: '0.7', changefreq: 'monthly' },
   ];
 
   const lastmod = new Date().toISOString();
