@@ -23,7 +23,7 @@ const canonicalURL = new URL(Astro.url.pathname, siteUrl);
 // Schema.org structured data for SEO
 const organizationSchema = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
+  "@type": ["ProfessionalService", "LocalBusiness"],
   "name": "OCWebPros",
   "description": "Professional web design and local SEO services in Orange County, California. Custom websites built for local businesses with strategic SEO optimization.",
   "url": siteUrl.toString(),

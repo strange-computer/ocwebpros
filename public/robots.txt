@@ -2,6 +2,19 @@
 User-agent: *
 Allow: /
 
+# Allow AI crawlers (Ahrefs recommendation for AI-SEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 # Disallow checkout and success pages from indexing
 Disallow: /checkout
 Disallow: /success
