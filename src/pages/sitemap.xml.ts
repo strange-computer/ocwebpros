@@ -39,6 +39,7 @@ export const GET: APIRoute = async ({ site }) => {
     { url: 'blog/2026-03-26-ahrefs-seo-checklist-2026-ai-optimization', priority: '0.7', changefreq: 'monthly' },
     { url: 'blog/2026-03-26-local-seo-trends-2026-ai-first-optimization', priority: '0.7', changefreq: 'monthly' },
     { url: 'blog/2026-03-26-ai-for-seo-content-step-by-step-guide', priority: '0.7', changefreq: 'monthly' },
+    { url: 'blog/2026-03-26-brand-signals-eeat-ai-content-differentiation', priority: '0.7', changefreq: 'monthly' },
   ];
 
   const lastmod = new Date().toISOString();
