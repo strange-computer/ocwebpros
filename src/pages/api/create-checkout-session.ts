@@ -61,7 +61,7 @@ export const POST: APIRoute = async ({ request }) => {
           price_data: {
             currency: 'usd',
             product_data: {
-              name: 'Managed Hosting - Sleep at Night Protocol',
+              name: 'Managed Hosting - Peace of Mind Protocol',
               description: 'Included FREE with Local SEO package',
             },
             recurring: { interval: 'month' },
@@ -108,7 +108,7 @@ export const POST: APIRoute = async ({ request }) => {
           price_data: {
             currency: 'usd',
             product_data: {
-              name: 'Managed Hosting - Sleep at Night Protocol',
+              name: 'Managed Hosting - Peace of Mind Protocol',
               description: 'Included FREE with Local SEO package',
             },
             recurring: { interval: 'month' },

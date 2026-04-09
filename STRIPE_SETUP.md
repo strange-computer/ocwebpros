@@ -60,11 +60,11 @@ Go to https://dashboard.stripe.com/products and create:
 **Recurring Products (monthly):**
 - Local SEO - The Foundation: $500/month
 - Local SEO - The Growth Engine: $1,250/month
-- Local SEO - Market Dominance: $2,000/month
+- Local SEO - Market Dominance: $3,000/month
 - WordPress Support - Technical Plan: $99/month
 - WordPress Support - Content Plan: $249/month
 - WordPress Support - VIP Plan: $499/month
-- Managed Hosting - Sleep at Night Protocol: $75/month (or $0 when bundled)
+- Managed Hosting - Peace of Mind Protocol: $75/month (or $0 when bundled)
 
 **After creating each product:**
 1. Copy the Price ID (starts with `price_...`)
