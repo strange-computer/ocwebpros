@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://www.ocwebpros.com',
+  site: 'https://ocwebpros.com',
   output: 'server',
   adapter: netlify(),
   vite: {
