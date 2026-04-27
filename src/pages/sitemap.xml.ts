@@ -24,9 +24,26 @@ export const GET: APIRoute = async ({ site }) => {
     { url: 'blog/local-seo-orange-county-small-business', priority: '0.7', changefreq: 'monthly' },
     { url: 'blog/web-design-vs-diy-website-builders-orange-county', priority: '0.7', changefreq: 'monthly' },
     { url: 'blog/website-maintenance-orange-county', priority: '0.7', changefreq: 'monthly' },
+    { url: 'blog/algorithmic-liberation-seo-big-brother-control-2026', priority: '0.7', changefreq: 'monthly' },
+    { url: 'blog/google-sge-ai-search-optimization-guide-2026', priority: '0.7', changefreq: 'monthly' },
+    { url: 'blog/2026-03-19-generative-engine-optimization-geo-playbook', priority: '0.7', changefreq: 'monthly' },
+    { url: 'blog/2026-03-19-synthetic-authority-ai-trust', priority: '0.7', changefreq: 'monthly' },
+    { url: 'blog/2026-03-19-ai-overviews-web-design-seo-outline', priority: '0.7', changefreq: 'monthly' },
+    { url: 'blog/2026-03-23-ai-ready-web-design-ai-overviews', priority: '0.7', changefreq: 'monthly' },
+    { url: 'blog/2026-03-23-ai-infrastructure-race-orange-county-businesses', priority: '0.7', changefreq: 'monthly' },
     { url: 'blog/ecommerce-website-design-orange-county-2026-trends', priority: '0.7', changefreq: 'monthly' },
     { url: 'blog/choose-web-design-agency-orange-county', priority: '0.7', changefreq: 'monthly' },
     { url: 'blog/restaurant-website-design-orange-county', priority: '0.7', changefreq: 'monthly' },
+    { url: 'blog/2026-03-23-apple-m5-chip-4x-faster-ai-inference-web-development-2026', priority: '0.7', changefreq: 'monthly' },
+    
+    { url: 'blog/2026-03-26-ahrefs-seo-checklist-2026-ai-optimization', priority: '0.7', changefreq: 'monthly' },
+    { url: 'blog/2026-03-26-local-seo-trends-2026-ai-first-optimization', priority: '0.7', changefreq: 'monthly' },
+    { url: 'blog/2026-03-26-ai-for-seo-content-step-by-step-guide', priority: '0.7', changefreq: 'monthly' },
+    { url: 'blog/2026-03-26-brand-signals-eeat-ai-content-differentiation', priority: '0.7', changefreq: 'monthly' },
+    { url: 'blog/2026-03-26-ai-first-local-seo-orange-county-2026', priority: '0.7', changefreq: 'monthly' },
+    { url: 'blog/2026-03-26-visual-seo-geotagged-photos-local-search', priority: '0.7', changefreq: 'monthly' },
+    { url: 'blog/2026-03-26-multi-channel-visibility-2026', priority: '0.7', changefreq: 'monthly' },
+    { url: 'blog/2026-03-27-google-web-guide-orange-county-ai-search', priority: '0.7', changefreq: 'monthly' },
   ];
 
   const lastmod = new Date().toISOString();
