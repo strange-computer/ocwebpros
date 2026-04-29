@@ -1,1 +1,134 @@
 @import "tailwindcss";
+
+/* ── Layer order (was layers.css) ── */
+@layer reset, base, components, utilities, pages;
+
+/* ── Base tokens & resets (was base.css) ── */
+@layer base {
+    :root {
+        --brand: #ea580c;
+        --text: #f4f4f5;
+        --bg: #09090b;
+    }
+
+    html {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+
+    @media (max-width: 768px) {
+        a, button {
+            min-height: 44px;
+            min-width: 44px;
+        }
+
+        html {
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+
+        body {
+            -webkit-overflow-scrolling: touch;
+        }
+    }
+}
+
+/* ── Component classes (was components.css) ── */
+@layer components {
+    .logo-text {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        font-size: 0.9em;
+    }
+
+    .text-gradient {
+        background: linear-gradient(to right, #fff, #a1a1aa);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .text-gradient-orange {
+        background: linear-gradient(to right, #fb923c, #ea580c);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .glow-bg {
+        background: radial-gradient(
+            circle at 50% 50%,
+            rgba(251, 146, 60, 0.15),
+            transparent 50%
+        );
+    }
+
+    .framer-card {
+        background: rgba(24, 24, 27, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(12px);
+        transition: all 0.3s ease;
+    }
+
+    .framer-card:hover {
+        border-color: rgba(251, 146, 60, 0.3);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+    }
+
+    .btn-glow {
+        box-shadow: 0 0 20px rgba(234, 88, 12, 0.3);
+        transition: all 0.3s ease;
+    }
+
+    .btn-glow:hover {
+        box-shadow: 0 0 30px rgba(234, 88, 12, 0.5);
+    }
+
+    .terminal-font {
+        font-family: 'JetBrains Mono', ui-monospace, monospace;
+    }
+
+    .code-caret {
+        display: inline-block;
+        width: 0.6ch;
+        height: 1em;
+        margin-left: 2px;
+        background-color: rgba(244, 244, 245, 0.75);
+        vertical-align: -10%;
+        animation: code-caret-blink 1s step-start infinite;
+    }
+
+    @keyframes code-caret-blink {
+        50% { opacity: 0; }
+    }
+
+    @media (max-width: 768px) {
+        #mobileMenu {
+            overscroll-behavior: contain;
+        }
+
+        #mobileMenu a {
+            display: block;
+            padding: 0.75rem 1rem;
+        }
+    }
+}

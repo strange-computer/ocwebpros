@@ -5,6 +5,7 @@ interface Props {
   bodyClass?: string;
 }
 import '../styles/global.css';
+import 'aos/dist/aos.css';
 import CartSidebar from '../components/CartSidebar.astro';
 const { 
   title = 'OCWebPros', 
@@ -211,12 +212,6 @@ const breadcrumbSchema = {
       <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
     )}
     
-    <!-- AOS CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
-    <!-- Existing layered CSS -->
-    <link rel="stylesheet" href="/css/layers.css" />
-    <link rel="stylesheet" href="/css/base.css" />
-    <link rel="stylesheet" href="/css/components.css" />
   </head>
   <body class={`antialiased overflow-x-hidden selection:bg-orange-500 selection:text-white ${bodyClass}`}>
     <nav class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/30 backdrop-blur-xl backdrop-saturate-150 shadow-[0_8px_32px_rgba(0,0,0,0.35)] ring-1 ring-white/10">
@@ -317,8 +312,18 @@ const breadcrumbSchema = {
     <script is:inline src="/js/cart.js"></script>
     <CartSidebar />
 
-    <!-- AOS JavaScript -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+    <!-- AOS: bundled from npm, no CDN request -->
+    <script>
+      import AOS from 'aos';
+      AOS.init({
+        duration: 700,
+        easing: 'ease-out',
+        once: true,
+        offset: 100,
+        delay: 0,
+        disable: false
+      });
+    </script>
     <script is:inline>
       // Mobile menu toggle
       (function() {
@@ -373,34 +378,6 @@ const breadcrumbSchema = {
       if (cartBtn && typeof window.openCart === 'function') {
         cartBtn.addEventListener('click', window.openCart);
       }
-
-      // AOS initialization
-      window.addEventListener('load', function() {
-        if (typeof AOS !== 'undefined') {
-          AOS.init({
-            duration: 700,
-            easing: 'ease-out',
-            once: true,
-            offset: 100,
-            delay: 0,
-            disable: false
-          });
-        } else {
-          // Retry if AOS hasn't loaded yet
-          setTimeout(function() {
-            if (typeof AOS !== 'undefined') {
-              AOS.init({
-                duration: 700,
-                easing: 'ease-out',
-                once: true,
-                offset: 100,
-                delay: 0,
-                disable: false
-              });
-            }
-          }, 100);
-        }
-      });
     </script>
   </body>
   <!-- Per-page CSS layers can be added by the page (e.g., /css/pages/home.css) -->
