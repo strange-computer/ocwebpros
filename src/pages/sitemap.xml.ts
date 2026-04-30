@@ -1,7 +1,7 @@
 import type { APIRoute } from 'astro';
 
 export const GET: APIRoute = async ({ site }) => {
-  const siteUrl = site?.toString() || 'https://ocwebpros.com';
+  const siteUrl = (site?.toString() || 'https://ocwebpros.com').replace(/\/$/, '');
   
   // Define all your pages with their priorities and change frequencies
   const pages = [
