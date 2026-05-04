@@ -196,13 +196,19 @@ const breadcrumbSchema = {
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={new URL("/images/LakeForestLogo.png", siteUrl).toString()} />
     
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEP6G0WSB0"></script>
+    <!-- Google Analytics: dataLayer stub runs immediately so no events are lost;
+         the GA script itself loads after the page is interactive to avoid forced reflow -->
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-SEP6G0WSB0');
+      window.addEventListener('load', function() {
+        var s = document.createElement('script');
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-SEP6G0WSB0';
+        s.async = true;
+        document.head.appendChild(s);
+      });
     </script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com" />
