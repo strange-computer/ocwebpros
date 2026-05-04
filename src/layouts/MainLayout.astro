@@ -3,6 +3,7 @@ interface Props {
   title?: string;
   description?: string;
   bodyClass?: string;
+  pageCSS?: string;
 }
 import '../styles/global.css';
 import 'aos/dist/aos.css';
@@ -10,7 +11,8 @@ import CartSidebar from '../components/CartSidebar.astro';
 const { 
   title = 'OCWebPros', 
   description = 'Professional web design and local SEO services in Orange County, CA. Custom websites built for local businesses with strategic optimization.',
-  bodyClass = '' 
+  bodyClass = '',
+  pageCSS = ''
 } = Astro.props;
 // Highlight active nav link based on current path
 const currentPath = Astro.url.pathname.replace(/\/+$/, '') || '/';
@@ -215,6 +217,12 @@ const breadcrumbSchema = {
       <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
     )}
     
+    {pageCSS && (
+      <>
+        <link rel="preload" as="style" href={pageCSS} onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link rel="stylesheet" href={pageCSS} /></noscript>
+      </>
+    )}
   </head>
   <body class={`antialiased overflow-x-hidden selection:bg-orange-500 selection:text-white ${bodyClass}`}>
     <nav class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/30 backdrop-blur-xl backdrop-saturate-150 shadow-[0_8px_32px_rgba(0,0,0,0.35)] ring-1 ring-white/10">
@@ -314,8 +322,8 @@ const breadcrumbSchema = {
       </div>
     </footer>
     
-    <!-- Cart: load first so it's available on every page -->
-    <script is:inline src="/js/cart.js"></script>
+    <!-- Cart: deferred so it doesn't block initial render -->
+    <script is:inline src="/js/cart.js" defer></script>
     <CartSidebar />
 
     <!-- AOS: bundled from npm, no CDN request -->
