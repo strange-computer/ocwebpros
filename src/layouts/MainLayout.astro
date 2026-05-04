@@ -218,7 +218,10 @@ const breadcrumbSchema = {
       <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
         <div class="flex items-center gap-2 min-w-0 flex-shrink">
           <a href="/" class="flex items-center flex-shrink-0">
-            <img src="/images/LakeForestLogo.png" alt="OCWebPros" class="h-8 w-auto" />
+            <picture>
+              <source srcset="/images/LakeForestLogo.webp" type="image/webp" />
+              <img src="/images/LakeForestLogo.png" alt="OCWebPros" class="h-8 w-auto" width="50" height="64" />
+            </picture>
           </a>
           <a href="/" class="logo-text text-sm sm:text-base hover:text-white/80 transition">
             OCWebPros
