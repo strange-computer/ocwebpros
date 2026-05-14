@@ -5,7 +5,7 @@ description: "After analyzing dozens of Orange County web design agencies, we cr
 pubDate: "2026-05-14"
 author: "OCWebPros Team"
 category: "Web Design"
-image: "/images/pricing-guide.png"
+image: "/images/pricing-guide.svg"
 draft: false
 ---
 

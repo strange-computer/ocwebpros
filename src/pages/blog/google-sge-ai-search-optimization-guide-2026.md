@@ -5,7 +5,7 @@ description: "Google's Search Generative Experience now answers 84% of queries. 
 pubDate: "2026-03-18"
 author: "OCWebPros Team"
 category: "SEO"
-image: "/images/horizon.png"
+image: "/images/horizon.svg"
 ---
 
 **Position 1 is dead.** In 2026, the top spot in Google search results has been replaced by the **"Generated Snapshot"**—an AI‑powered answer that synthesizes information from multiple sources and displays it before any organic listings.

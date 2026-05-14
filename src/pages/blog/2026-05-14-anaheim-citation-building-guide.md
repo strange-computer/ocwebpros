@@ -5,7 +5,7 @@ description: "Complete guide to citation building for Anaheim businesses. Learn 
 pubDate: "2026-05-14"
 author: "OCWebPros Team"
 category: "Local SEO"
-image: "/images/anaheim-citations.png"
+image: "/images/anaheim-citations.svg"
 draft: false
 ---
 

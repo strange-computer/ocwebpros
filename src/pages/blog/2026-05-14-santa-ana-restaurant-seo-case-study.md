@@ -5,7 +5,7 @@ description: "Case study of a Santa Ana restaurant that achieved 250% online ord
 pubDate: "2026-05-14"
 author: "OCWebPros Team"
 category: "Case Studies"
-image: "/images/restaurant-seo.png"
+image: "/images/restaurant-seo.svg"
 draft: false
 ---
 

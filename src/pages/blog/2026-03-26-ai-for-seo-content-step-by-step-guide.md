@@ -5,7 +5,7 @@ description: "Learn how to leverage AI to create SEO‑friendly content that ran
 pubDate: "2026-03-26"
 author: "OCWebPros Team"
 category: "AI"
-image: "/images/server.png"
+image: "/images/server.svg"
 draft: true
 ---
 

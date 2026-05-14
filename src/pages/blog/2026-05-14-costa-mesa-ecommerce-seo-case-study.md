@@ -5,7 +5,7 @@ description: "Case study of a Costa Mesa fashion e-commerce business that achiev
 pubDate: "2026-05-14"
 author: "OCWebPros Team"
 category: "Case Studies"
-image: "/images/ecommerce-seo.png"
+image: "/images/ecommerce-seo.svg"
 draft: false
 ---
 

@@ -5,7 +5,7 @@ description: "81.9% of top‑20 ranking pages now include AI assistance. Learn h
 pubDate: "2026-03-26"
 author: "OCWebPros Team"
 category: "SEO"
-image: "/images/server.png"
+image: "/images/server.svg"
 draft: true
 ---
 

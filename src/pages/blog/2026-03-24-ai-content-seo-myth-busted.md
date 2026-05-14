@@ -5,7 +5,7 @@ description: "Ahrefs study reveals 81.9% of top-ranking pages include AI assista
 pubDate: "2026-03-24"
 author: "OCWebPros Team"
 category: "SEO"
-image: "/images/server.png"
+image: "/images/server.svg"
 draft: true
 ---
 

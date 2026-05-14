@@ -5,7 +5,7 @@ description: "Complete guide to local SEO for Fullerton businesses. Learn Fuller
 pubDate: "2026-05-14"
 author: "OCWebPros Team"
 category: "Local SEO"
-image: "/images/fullerton-seo.png"
+image: "/images/fullerton-seo.svg"
 draft: false
 ---
 

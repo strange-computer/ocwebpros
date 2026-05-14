@@ -5,7 +5,7 @@ description: "Step-by-step guide to optimizing Google Business Profile for Irvin
 pubDate: "2026-05-14"
 author: "OCWebPros Team"
 category: "Local SEO"
-image: "/images/irvine-gbp.png"
+image: "/images/irvine-gbp.svg"
 draft: false
 ---
 

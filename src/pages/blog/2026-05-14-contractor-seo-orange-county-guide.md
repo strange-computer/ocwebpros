@@ -5,7 +5,7 @@ description: "Complete guide to contractor SEO in Orange County. Service area op
 pubDate: "2026-05-14"
 author: "OCWebPros Team"
 category: "Industry SEO"
-image: "/images/contractor-seo.png"
+image: "/images/contractor-seo.svg"
 draft: false
 ---
 

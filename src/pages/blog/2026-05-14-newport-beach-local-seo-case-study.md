@@ -5,7 +5,7 @@ description: "Case study of a Newport Beach luxury service business that achieve
 pubDate: "2026-05-14"
 author: "OCWebPros Team"
 category: "Case Studies"
-image: "/images/newport-beach-case-study.png"
+image: "/images/newport-beach-case-study.svg"
 draft: false
 ---
 

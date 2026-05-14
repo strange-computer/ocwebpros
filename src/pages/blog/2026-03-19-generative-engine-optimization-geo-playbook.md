@@ -5,7 +5,7 @@ description: "Google AI Overviews now appear on 48% of queries—a 58% surge in 
 pubDate: "2026-03-19"
 author: "OCWebPros Team"
 category: "SEO"
-image: "/images/horizon.png"
+image: "/images/horizon.svg"
 ---
 
 **The ten‑blue‑link era is over.** In 2026, the battlefield for search visibility isn’t Page 1—it’s the **AI‑generated snapshot** that appears before any organic result.

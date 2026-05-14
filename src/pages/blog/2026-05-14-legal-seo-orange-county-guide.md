@@ -5,7 +5,7 @@ description: "Complete guide to legal SEO for Orange County law firms. Ethical o
 pubDate: "2026-05-14"
 author: "OCWebPros Team"
 category: "Industry SEO"
-image: "/images/legal-seo.png"
+image: "/images/legal-seo.svg"
 draft: false
 ---
 

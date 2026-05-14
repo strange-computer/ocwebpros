@@ -5,7 +5,7 @@ description: "Complete guide to dental SEO for Orange County practices. HIPAA-co
 pubDate: "2026-05-14"
 author: "OCWebPros Team"
 category: "Industry SEO"
-image: "/images/dental-seo.png"
+image: "/images/dental-seo.svg"
 draft: false
 ---
 

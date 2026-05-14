@@ -5,7 +5,7 @@ description: "AI Overviews now appear on 48% of searches—and they’re reshapi
 pubDate: "2026-03-23"
 author: "OCWebPros Team"
 category: "Web Design"
-image: "/images/web-design-mockup.png"
+image: "/images/web-design-mockup.svg"
 ---
 
 **The first page of Google is no longer a list of links—it’s a conversation.**

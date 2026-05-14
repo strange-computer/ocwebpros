@@ -5,7 +5,7 @@ description: "E‑commerce in Orange County is evolving fast. This 2026 guide co
 pubDate: "2026-03-11"
 author: "OCWebPros Team"
 category: "E‑commerce"
-image: "/images/local-seo-mockup.png"
+image: "/images/local-seo-mockup.svg"
 ---
 
 Orange County's e‑commerce landscape has transformed. What worked in 2023 — a basic Shopify template with standard checkout — won't cut it in 2026. OC consumers expect seamless mobile experiences, local delivery options, personalized recommendations, and frictionless payment.

@@ -5,7 +5,7 @@ description: "Complete guide to medical spa SEO in Huntington Beach. HIPAA-compl
 pubDate: "2026-05-14"
 author: "OCWebPros Team"
 category: "Industry SEO"
-image: "/images/medspa-seo.png"
+image: "/images/medspa-seo.svg"
 draft: false
 ---
 

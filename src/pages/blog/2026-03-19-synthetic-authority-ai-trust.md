@@ -5,7 +5,7 @@ description: "In the age of AI search, authority is no longer about backlinks—
 pubDate: "2026-03-19"
 author: "OCWebPros Team"
 category: "SEO"
-image: "/images/horizon.png"
+image: "/images/horizon.svg"
 ---
 
 **The first page of Google is a ghost town.**  

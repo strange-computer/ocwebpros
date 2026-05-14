@@ -5,7 +5,7 @@ description: "Complete guide to Orange County SEO costs with competitor analysis
 pubDate: "2026-05-14"
 author: "OCWebPros Team"
 category: "SEO"
-image: "/images/seo-pricing.png"
+image: "/images/seo-pricing.svg"
 draft: false
 ---
 

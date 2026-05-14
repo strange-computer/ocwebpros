@@ -5,7 +5,7 @@ description: "Complete guide to emerging SEO trends for Orange County businesses
 pubDate: "2026-05-14"
 author: "OCWebPros Team"
 category: "Trends"
-image: "/images/seo-trends.png"
+image: "/images/seo-trends.svg"
 draft: false
 ---
 

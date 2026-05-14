@@ -5,7 +5,7 @@ description: "Single‑location Google profiles are losing traffic. Learn why mu
 pubDate: "2026-03-26"
 author: "OCWebPros Team"
 category: "SEO"
-image: "/images/horizon.png"
+image: "/images/horizon.svg"
 draft: true
 ---
 

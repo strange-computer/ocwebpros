@@ -5,7 +5,7 @@ description: "Step-by-step guide to dominating local search in Irvine, Newport B
 pubDate: "2026-05-14"
 author: "OCWebPros Team"
 category: "Local SEO"
-image: "/images/local-seo-playbook.png"
+image: "/images/local-seo-playbook.svg"
 draft: false
 ---
 

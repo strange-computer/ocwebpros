@@ -5,7 +5,7 @@ description: "AI infrastructure 2026 is reshaping Orange County AI services. Lea
 pubDate: "2026-03-23"
 author: "OCWebPros Team"
 category: "AI & Web Development"
-image: "/images/server.png"
+image: "/images/server.svg"
 draft: true
 ---
 

@@ -5,7 +5,7 @@ description: "Wix or custom? Here's the honest comparison for Orange County busi
 pubDate: "2026-02-27"
 author: "OCWebPros Team"
 category: "Web Design"
-image: "/images/local-seo-mockup.png"
+image: "/images/local-seo-mockup.svg"
 ---
 
 Wix. Squarespace. GoDaddy Website Builder. They make it look easy — drag, drop, done. So why do so many Orange County businesses end up hiring a professional web designer anyway?

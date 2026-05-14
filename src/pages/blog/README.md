@@ -27,7 +27,7 @@ description: "A compelling 150-160 character description for SEO. This appears i
 pubDate: "2026-02-27"
 author: "OCWebPros Team"
 category: "Local SEO"
-image: "/images/your-image.png"
+image: "/images/your-image.svg"
 ---
 ```
 
