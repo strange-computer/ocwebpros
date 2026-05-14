@@ -16,13 +16,13 @@
   <circle cx="850" cy="400" r="70" fill="#FFFFFF" opacity="0.1"/>
   
   <!-- Title -->
-  <text x="600" y="250" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="42" font-weight="bold">
-    E-commerce SEO Case Study
+  <text x="600" y="250" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="48" font-weight="bold">
+    E-commerce SEO Mastery
   </text>
   
   <!-- Subtitle -->
   <text x="600" y="320" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="28">
-    Shopify • WooCommerce • Local Delivery
+    Shopify • WooCommerce • Local Delivery • Mobile Commerce
   </text>
   
   <!-- Footer -->
