@@ -40,6 +40,18 @@ const formattedDate = new Date(pubDate).toLocaleDateString('en-US', {
         {title}
       </h1>
       
+      <!-- Blog Post Image -->
+      {image && (
+        <div class="mb-8 max-w-3xl mx-auto">
+          <img 
+            src={image} 
+            alt={`${title} thumbnail`}
+            class="w-full h-auto rounded-xl border border-white/10 shadow-lg"
+            loading="lazy"
+          />
+        </div>
+      )}
+      
       <div class="flex items-center justify-center gap-4 text-sm text-zinc-400">
         <div class="flex items-center gap-2">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
