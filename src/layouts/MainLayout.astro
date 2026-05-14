@@ -196,8 +196,15 @@ const breadcrumbSchema = {
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={new URL("/images/LakeForestLogo.png", siteUrl).toString()} />
     
-    <!-- Google Analytics: dataLayer stub runs immediately so no events are lost;
-         the GA script itself loads after the page is interactive to avoid forced reflow -->
+    <!-- Google Tag Manager -->
+    <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PBXTHDW8');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Analytics (temporary direct fallback - remove once GA4 tag is verified in GTM) -->
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -210,7 +217,8 @@ const breadcrumbSchema = {
         document.head.appendChild(s);
       });
     </script>
-    
+    <!-- End Google Analytics temporary fallback -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
@@ -231,6 +239,11 @@ const breadcrumbSchema = {
     )}
   </head>
   <body class={`antialiased overflow-x-hidden selection:bg-orange-500 selection:text-white ${bodyClass}`}>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBXTHDW8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <nav class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/30 backdrop-blur-xl backdrop-saturate-150 shadow-[0_8px_32px_rgba(0,0,0,0.35)] ring-1 ring-white/10">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
         <div class="flex items-center gap-2 min-w-0 flex-shrink">
