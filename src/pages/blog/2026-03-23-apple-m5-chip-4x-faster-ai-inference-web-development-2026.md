@@ -5,7 +5,7 @@ description: "Apple's M5 chip brings 4× faster AI inference, 3.8× quicker imag
 pubDate: "2026-03-23"
 author: "OCWebPros Team"
 category: "AI & Web Development"
-image: "/images/server.svg"
+image: "/images/server.png"
 draft: true
 ---
 

@@ -5,7 +5,7 @@ description: "Looking for the best web design company in Orange County? Here's w
 pubDate: "2026-02-27"
 author: "OCWebPros Team"
 category: "Web Design"
-image: "/images/local-seo-mockup.svg"
+image: "/images/local-seo-mockup.png"
 ---
 
 Search "best web design companies in Orange County" and you'll get a list of agencies, most of which look identical on the surface. Here's how to cut through the noise and find one that actually delivers.

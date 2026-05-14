@@ -5,7 +5,7 @@ description: "Ahrefs' latest SEO research reveals what works in 2026. This compr
 pubDate: "2026-03-26"
 author: "OCWebPros Team"
 category: "SEO"
-image: "/images/server.svg"
+image: "/images/server.png"
 draft: true
 ---
 

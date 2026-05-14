@@ -5,7 +5,7 @@ description: "AI Overviews now appear for 84% of queries—and they're changing 
 pubDate: "2026-03-19"
 author: "OCWebPros Team"
 category: "Web Design"
-image: "/images/horizon.svg"
+image: "/images/horizon.png"
 draft: true
 ---
 

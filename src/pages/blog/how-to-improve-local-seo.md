@@ -5,7 +5,7 @@ description: "Practical local SEO strategies for Orange County businesses. Learn
 pubDate: "2026-02-27"
 author: "OCWebPros Team"
 category: "Local SEO"
-image: "/images/local-seo-mockup.svg"
+image: "/images/local-seo-mockup.png"
 ---
 
 If you're a local business in Orange County, showing up in local search results is critical. When someone searches for "plumber near me" or "best web designer in Irvine," you want to be at the top of those results.

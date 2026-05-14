@@ -5,7 +5,7 @@ description: "Google's new Search Labs experiment, Web Guide, organizes results 
 pubDate: "2026-03-27"
 author: "OCWebPros Team"
 category: "SEO"
-image: "/images/server.svg"
+image: "/images/server.png"
 draft: true
 ---
 

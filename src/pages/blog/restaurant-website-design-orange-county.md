@@ -5,7 +5,7 @@ description: "Your restaurant's website is your digital front door. This 2026 gu
 pubDate: "2026-03-11"
 author: "OCWebPros Team"
 category: "Restaurant Websites"
-image: "/images/local-seo-mockup.svg"
+image: "/images/local-seo-mockup.png"
 ---
 
 In Orange County's competitive dining scene, your website isn't just an online brochure — it's your host, your reservation book, your menu, and your front‑of‑house staff, all working 24/7. A poorly designed site turns away hungry customers before they ever taste your food.

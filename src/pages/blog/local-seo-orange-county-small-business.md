@@ -5,7 +5,7 @@ description: "Local SEO is the highest-ROI marketing an Orange County small busi
 pubDate: "2026-02-27"
 author: "OCWebPros Team"
 category: "Local SEO"
-image: "/images/local-seo-mockup.svg"
+image: "/images/local-seo-mockup.png"
 ---
 
 If your business serves customers in Orange County — whether you're a contractor in Mission Viejo, a restaurant in Lake Forest, or a med spa in Irvine — local SEO is the highest-ROI marketing you can do in 2026. Here's why, and what it actually involves.

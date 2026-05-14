@@ -5,7 +5,7 @@ description: "Wondering what website maintenance actually includes for Orange Co
 pubDate: "2026-03-03"
 author: "OCWebPros Team"
 category: "Website Maintenance"
-image: "/images/local-seo-mockup.svg"
+image: "/images/local-seo-mockup.png"
 ---
 
 Your website is your digital storefront. For Orange County businesses in Lake Forest, Irvine, Mission Viejo, and beyond, a poorly maintained site can mean lost customers, security breaches, and dropped search rankings. Yet most small business owners aren't sure what “website maintenance” actually means—or what they really need.

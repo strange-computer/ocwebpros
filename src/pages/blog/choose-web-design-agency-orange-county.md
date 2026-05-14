@@ -5,7 +5,7 @@ description: "Choosing the right web design agency in Orange County can make or 
 pubDate: "2026-03-11"
 author: "OCWebPros Team"
 category: "Web Design"
-image: "/images/local-seo-mockup.svg"
+image: "/images/local-seo-mockup.png"
 ---
 
 Finding the right web design agency in Orange County feels overwhelming. With dozens of agencies promising “custom websites,” “SEO expertise,” and “local results,” how do you separate marketing from reality?

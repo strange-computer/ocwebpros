@@ -5,7 +5,7 @@ description: "Wondering what a website costs in Orange County? See what OC busin
 pubDate: "2026-02-27"
 author: "OCWebPros Team"
 category: "Web Design"
-image: "/images/local-seo-mockup.svg"
+image: "/images/local-seo-mockup.png"
 ---
 
 If you've been Googling "how much does a website cost" — you've probably seen answers ranging from $500 to $50,000. That range is real, and it's confusing. Here's what Orange County businesses actually pay in 2026, and what drives the price difference.
