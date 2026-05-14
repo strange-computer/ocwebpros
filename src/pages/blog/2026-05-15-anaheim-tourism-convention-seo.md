@@ -5,7 +5,7 @@ description: "Complete guide to Anaheim tourism SEO focusing on Disneyland area 
 pubDate: "2026-05-15"
 author: "OCWebPros Team"
 category: "Local SEO"
-image: "/images/anaheim-seo.png"
+image: "/images/anaheim-seo.svg"
 draft: false
 ---
 

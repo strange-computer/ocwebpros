@@ -5,7 +5,7 @@ description: "Complete guide to Huntington Beach SEO focusing on surf culture op
 pubDate: "2026-05-15"
 author: "OCWebPros Team"
 category: "Local SEO"
-image: "/images/huntington-beach-seo.png"
+image: "/images/huntington-beach-seo.svg"
 draft: false
 ---
 

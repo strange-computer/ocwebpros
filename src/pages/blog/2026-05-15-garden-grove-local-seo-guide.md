@@ -5,7 +5,7 @@ description: "Complete guide to Garden Grove local SEO focusing on Vietnamese bu
 pubDate: "2026-05-15"
 author: "OCWebPros Team"
 category: "Local SEO"
-image: "/images/garden-grove-seo.png"
+image: "/images/garden-grove-seo.svg"
 draft: false
 ---
 

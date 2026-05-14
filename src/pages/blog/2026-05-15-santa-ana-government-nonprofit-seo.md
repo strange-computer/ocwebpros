@@ -5,7 +5,7 @@ description: "Complete guide to Santa Ana government contracting SEO, non-profit
 pubDate: "2026-05-15"
 author: "OCWebPros Team"
 category: "Industry SEO"
-image: "/images/santa-ana-seo.png"
+image: "/images/santa-ana-seo.svg"
 draft: false
 ---
 

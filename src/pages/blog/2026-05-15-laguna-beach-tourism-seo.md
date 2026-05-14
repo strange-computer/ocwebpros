@@ -5,7 +5,7 @@ description: "Complete guide to Laguna Beach tourism SEO focusing on arts commun
 pubDate: "2026-05-15"
 author: "OCWebPros Team"
 category: "Industry SEO"
-image: "/images/laguna-beach-seo.png"
+image: "/images/laguna-beach-seo.svg"
 draft: false
 ---
 

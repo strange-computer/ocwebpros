@@ -5,7 +5,7 @@ description: "Complete guide to Mission Viejo professional services SEO focusing
 pubDate: "2026-05-15"
 author: "OCWebPros Team"
 category: "Industry SEO"
-image: "/images/mission-viejo-seo.png"
+image: "/images/mission-viejo-seo.svg"
 draft: false
 ---
 

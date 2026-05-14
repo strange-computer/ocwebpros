@@ -5,7 +5,7 @@ description: "Complete guide to Newport Beach luxury real estate SEO focusing on
 pubDate: "2026-05-15"
 author: "OCWebPros Team"
 category: "Industry SEO"
-image: "/images/newport-beach-real-estate-seo.png"
+image: "/images/newport-beach-real-estate-seo.svg"
 draft: false
 ---
 

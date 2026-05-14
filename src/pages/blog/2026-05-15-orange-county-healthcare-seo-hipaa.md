@@ -5,7 +5,7 @@ description: "Complete guide to Orange County healthcare SEO focusing on HIPAA c
 pubDate: "2026-05-15"
 author: "OCWebPros Team"
 category: "Industry SEO"
-image: "/images/healthcare-seo.png"
+image: "/images/healthcare-seo.svg"
 draft: false
 ---
 

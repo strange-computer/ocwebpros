@@ -5,7 +5,7 @@ description: "Complete guide to Orange, CA local SEO focusing on the unique 'Ora
 pubDate: "2026-05-15"
 author: "OCWebPros Team"
 category: "Local SEO"
-image: "/images/orange-city-seo.png"
+image: "/images/orange-city-seo.svg"
 draft: false
 ---
 

@@ -5,7 +5,7 @@ description: "Complete guide to Tustin business SEO focusing on Legacy Field red
 pubDate: "2026-05-15"
 author: "OCWebPros Team"
 category: "Local SEO"
-image: "/images/tustin-seo.png"
+image: "/images/tustin-seo.svg"
 draft: false
 ---
 
