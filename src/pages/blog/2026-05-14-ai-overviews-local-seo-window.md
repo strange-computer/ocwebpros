@@ -6,7 +6,7 @@ pubDate: "2026-05-14"
 author: "OCWebPros Team"
 category: "SEO"
 image: "/images/server.png"
-draft: true
+draft: false
 ---
 
 # AI Overviews Haven't Killed Local SEO Yet: How to Capitalize Before They Do (2026)
