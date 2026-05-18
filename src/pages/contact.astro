@@ -127,6 +127,8 @@ import MainLayout from '../layouts/MainLayout.astro';
         const body = encodeURIComponent(
           `Name: ${decodeURIComponent(name)}\nEmail: ${decodeURIComponent(email)}\nPhone: ${decodeURIComponent(phone)}\n\nMessage:\n${decodeURIComponent(msg)}`
         );
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'contact_form_submit' });
         window.location.href = `mailto:hello@ocwebpros.com?subject=${subject}&body=${body}`;
       });
     })();
