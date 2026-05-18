@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/BlogPost.astro"
+layout: "../../layouts/BlogPostLayout.astro"
 title: "Local SEO Best Practices for 2026: What Orange County Businesses Need to Know"
 description: "Stay ahead of the competition with these essential local SEO strategies for 2026. Learn how to optimize for AI search, Google Business Profile, and local intent signals."
 pubDate: 2026-05-18
