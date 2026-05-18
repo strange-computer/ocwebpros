@@ -2,10 +2,10 @@ import type { APIRoute } from 'astro';
 
 export const GET: APIRoute = async ({ site }) => {
   const siteUrl = (site?.toString() || 'https://ocwebpros.com').replace(/\/$/, '');
-  
-  // Define all your pages with their priorities and change frequencies
-  const pages = [
-    { url: '', priority: '1.0', changefreq: 'weekly' }, // homepage
+
+  // Static pages
+  const staticPages = [
+    { url: '', priority: '1.0', changefreq: 'weekly' },
     { url: 'about', priority: '0.8', changefreq: 'monthly' },
     { url: 'services', priority: '0.9', changefreq: 'weekly' },
     { url: 'service-areas', priority: '0.8', changefreq: 'monthly' },
@@ -15,52 +15,35 @@ export const GET: APIRoute = async ({ site }) => {
     { url: 'hosting', priority: '0.7', changefreq: 'monthly' },
     { url: 'support', priority: '0.7', changefreq: 'monthly' },
     { url: 'contact', priority: '0.9', changefreq: 'monthly' },
-    // Blog index
     { url: 'blog', priority: '0.8', changefreq: 'weekly' },
-    // Blog posts
-    { url: 'blog/how-to-improve-local-seo', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/website-cost-orange-county', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/best-web-design-companies-orange-county', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/local-seo-orange-county-small-business', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/web-design-vs-diy-website-builders-orange-county', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/website-maintenance-orange-county', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/algorithmic-liberation-seo-big-brother-control-2026', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/google-sge-ai-search-optimization-guide-2026', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/2026-03-19-generative-engine-optimization-geo-playbook', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/2026-03-19-synthetic-authority-ai-trust', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/2026-03-19-ai-overviews-web-design-seo-outline', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/2026-03-23-ai-ready-web-design-ai-overviews', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/2026-03-23-ai-infrastructure-race-orange-county-businesses', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/ecommerce-website-design-orange-county-2026-trends', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/choose-web-design-agency-orange-county', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/restaurant-website-design-orange-county', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/2026-03-23-apple-m5-chip-4x-faster-ai-inference-web-development-2026', priority: '0.7', changefreq: 'monthly' },
-    
-    { url: 'blog/2026-03-26-ahrefs-seo-checklist-2026-ai-optimization', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/2026-03-26-local-seo-trends-2026-ai-first-optimization', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/2026-03-26-ai-for-seo-content-step-by-step-guide', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/2026-03-26-brand-signals-eeat-ai-content-differentiation', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/2026-03-26-ai-first-local-seo-orange-county-2026', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/2026-03-26-visual-seo-geotagged-photos-local-search', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/2026-03-26-multi-channel-visibility-2026', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/2026-03-27-google-web-guide-orange-county-ai-search', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/2026-05-14-hyperlocal-seo-ai-small-business-2026', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/2026-05-14-ai-overviews-local-seo-window', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/2026-05-17-oc-web-design-trends-2026', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/test-pipeline-2026-05-17-ai-local-seo', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/final-test-2026-05-17-video-seo', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/2026-05-17-video-seo-local-businesses-2026', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/2026-05-17-ai-powered-seo-orange-county-businesses', priority: '0.7', changefreq: 'monthly' },
-    { url: 'blog/2026-05-17-mobile-first-design-orange-county-2026', priority: '0.7', changefreq: 'monthly' },
   ];
 
-  const lastmod = new Date().toISOString();
+  // Auto-discover all blog posts — excludes drafts, README, and test slugs
+  const allPosts = await import.meta.glob('./blog/*.md', { eager: true }) as Record<string, { frontmatter: { draft?: boolean; pubDate?: string } }>;
+  const blogPages = Object.entries(allPosts)
+    .filter(([path, post]) => {
+      const slug = path.replace('./blog/', '').replace('.md', '');
+      if (slug === 'README') return false;
+      if (post.frontmatter?.draft === true) return false;
+      return true;
+    })
+    .map(([path, post]) => {
+      const slug = path.replace('./blog/', '').replace('.md', '');
+      const lastmod = post.frontmatter?.pubDate
+        ? new Date(post.frontmatter.pubDate).toISOString()
+        : new Date().toISOString();
+      return { url: `blog/${slug}`, priority: '0.7', changefreq: 'monthly', lastmod };
+    })
+    .sort((a, b) => b.lastmod.localeCompare(a.lastmod));
+
+  const pages = [...staticPages, ...blogPages];
+  const buildTime = new Date().toISOString();
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${pages.map(page => `  <url>
     <loc>${siteUrl}${page.url ? '/' + page.url : ''}</loc>
-    <lastmod>${lastmod}</lastmod>
+    <lastmod>${('lastmod' in page ? page.lastmod : buildTime)}</lastmod>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority}</priority>
   </url>`).join('\n')}
