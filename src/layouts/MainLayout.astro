@@ -8,6 +8,7 @@ interface Props {
 import '../styles/global.css';
 import '../styles/aos-minimal.css';
 import CartSidebar from '../components/CartSidebar.astro';
+import ocwebprosLogo from '../assets/ocwebpros_logo.png';
 const { 
   title = 'OCWebPros', 
   description = 'Professional web design and local SEO services in Orange County, CA. Custom websites built for local businesses with strategic optimization.',
@@ -30,8 +31,8 @@ const organizationSchema = {
   "name": "OCWebPros",
   "description": "Professional web design and local SEO services in Orange County, California. Custom websites built for local businesses with strategic SEO optimization.",
   "url": siteUrl.toString(),
-  "logo": new URL("/images/LakeForestLogo.png", siteUrl).toString(),
-  "image": new URL("/images/LakeForestLogo.png", siteUrl).toString(),
+  "logo": new URL(ocwebprosLogo.src, siteUrl).toString(),
+  "image": new URL(ocwebprosLogo.src, siteUrl).toString(),
   "telephone": "+1-949-329-4437",
   "email": "hello@ocwebpros.com",
   "foundingDate": "2026",
@@ -180,13 +181,20 @@ const breadcrumbSchema = {
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL.toString()} />
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalURL.toString()} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={new URL("/images/LakeForestLogo.png", siteUrl).toString()} />
+    <meta property="og:image" content={new URL(ocwebprosLogo.src, siteUrl).toString()} />
     <meta property="og:site_name" content="OCWebPros" />
     
     <!-- Twitter -->
@@ -194,7 +202,7 @@ const breadcrumbSchema = {
     <meta name="twitter:url" content={canonicalURL.toString()} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={new URL("/images/LakeForestLogo.png", siteUrl).toString()} />
+    <meta name="twitter:image" content={new URL(ocwebprosLogo.src, siteUrl).toString()} />
     
     <!-- Google Tag Manager -->
     <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -233,10 +241,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
         <div class="flex items-center gap-2 min-w-0 flex-shrink">
           <a href="/" class="flex items-center flex-shrink-0">
-            <picture>
-              <source srcset="/images/LakeForestLogo.webp" type="image/webp" />
-              <img src="/images/LakeForestLogo.png" alt="OCWebPros" class="h-8 w-auto" width="50" height="64" />
-            </picture>
+            <img src={ocwebprosLogo.src} alt="OCWebPros" class="h-8 w-auto" width={ocwebprosLogo.width} height={ocwebprosLogo.height} />
           </a>
           <a href="/" class="logo-text text-sm sm:text-base hover:text-white/80 transition">
             OCWebPros
