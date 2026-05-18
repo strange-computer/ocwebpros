@@ -21,4 +21,4 @@ Disallow: /success
 Disallow: /cancel
 
 # Sitemap location
-Sitemap: https://www.ocwebpros.com/sitemap.xml
+Sitemap: https://ocwebpros.com/sitemap.xml
