@@ -49,6 +49,9 @@ export const GET: APIRoute = async ({ site }) => {
     { url: 'blog/2026-05-17-oc-web-design-trends-2026', priority: '0.7', changefreq: 'monthly' },
     { url: 'blog/test-pipeline-2026-05-17-ai-local-seo', priority: '0.7', changefreq: 'monthly' },
     { url: 'blog/final-test-2026-05-17-video-seo', priority: '0.7', changefreq: 'monthly' },
+    { url: 'blog/2026-05-17-video-seo-local-businesses-2026', priority: '0.7', changefreq: 'monthly' },
+    { url: 'blog/2026-05-17-ai-powered-seo-orange-county-businesses', priority: '0.7', changefreq: 'monthly' },
+    { url: 'blog/2026-05-17-mobile-first-design-orange-county-2026', priority: '0.7', changefreq: 'monthly' },
   ];
 
   const lastmod = new Date().toISOString();
