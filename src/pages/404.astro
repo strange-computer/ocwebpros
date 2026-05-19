@@ -1,0 +1,71 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+<MainLayout
+  title="Page Not Found | OCWebPros"
+  description="The page you were looking for doesn't exist. Head back to OCWebPros to explore our web design and local SEO services for Orange County businesses."
+  bodyClass="page-404">
+
+  <main class="min-h-screen flex items-center justify-center px-4 sm:px-6 py-32 relative overflow-hidden">
+
+    <!-- Background glow -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-orange-600/10 blur-[120px] pointer-events-none"></div>
+
+    <div class="relative max-w-2xl mx-auto text-center">
+
+      <!-- 404 badge -->
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-orange-400 mb-8">
+        <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+        Error 404
+      </div>
+
+      <!-- Large 404 -->
+      <div class="text-[10rem] sm:text-[14rem] font-bold leading-none tracking-tighter text-white/5 select-none mb-[-2rem] sm:mb-[-3rem]" aria-hidden="true">
+        404
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl font-bold tracking-tight mb-4 relative">
+        Page <span class="text-gradient-orange">Not Found</span>
+      </h1>
+
+      <p class="text-zinc-400 text-base sm:text-lg leading-relaxed mb-10 max-w-lg mx-auto">
+        Looks like this page went offline. Don't worry, let's get you back to building your online presence.
+      </p>
+
+      <!-- CTAs -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+        <a
+          href="/"
+          class="w-full sm:w-auto px-7 py-3 bg-orange-600 hover:bg-orange-500 text-white font-semibold rounded-full transition-colors text-sm">
+          Back to Home
+        </a>
+        <a
+          href="/contact"
+          class="w-full sm:w-auto px-7 py-3 bg-white/5 hover:bg-white/10 text-white font-semibold rounded-full border border-white/10 hover:border-white/20 transition-all text-sm">
+          Contact Us
+        </a>
+      </div>
+
+      <!-- Quick nav cards -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        {[
+          { label: 'Services',  href: '/services',  icon: 'M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2' },
+          { label: 'Pricing',   href: '/pricing',   icon: 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z' },
+          { label: 'Portfolio', href: '/portfolio', icon: 'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z' },
+          { label: 'About',     href: '/about',     icon: 'M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z' },
+        ].map(({ label, href, icon }) => (
+          <a
+            href={href}
+            class="flex flex-col items-center gap-2 px-4 py-5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all group">
+            <svg class="w-5 h-5 text-orange-400 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={icon} />
+            </svg>
+            <span class="text-sm font-medium text-zinc-300 group-hover:text-white transition-colors">{label}</span>
+          </a>
+        ))}
+      </div>
+
+    </div>
+  </main>
+
+</MainLayout>
