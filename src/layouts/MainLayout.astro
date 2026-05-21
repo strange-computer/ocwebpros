@@ -28,21 +28,44 @@ const canonicalURL = new URL(Astro.url.pathname, siteUrl);
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": ["ProfessionalService", "LocalBusiness"],
+  "@id": siteUrl.toString() + "#business",
   "name": "OCWebPros",
   "description": "Professional web design and local SEO services in Orange County, California. Custom websites built for local businesses with strategic SEO optimization.",
   "url": siteUrl.toString(),
-  "logo": new URL(ocwebprosLogo.src, siteUrl).toString(),
+  "logo": {
+    "@type": "ImageObject",
+    "url": new URL(ocwebprosLogo.src, siteUrl).toString()
+  },
   "image": new URL(ocwebprosLogo.src, siteUrl).toString(),
   "telephone": "+1-949-329-4437",
   "email": "hello@ocwebpros.com",
   "foundingDate": "2026",
   "priceRange": "$$",
+  "currenciesAccepted": "USD",
+  "paymentAccepted": "Credit Card, Bank Transfer",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Lake Forest",
     "addressRegion": "CA",
+    "postalCode": "92630",
     "addressCountry": "US"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 33.6469,
+    "longitude": -117.6892
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-949-329-4437",
+    "email": "hello@ocwebpros.com",
+    "contactType": "customer service",
+    "areaServed": "US-CA",
+    "availableLanguage": "English"
+  },
+  "sameAs": [
+    "https://share.google/tSH03wj1lOrG59DXD"
+  ],
   "areaServed": [
     {
       "@type": "City",
@@ -94,7 +117,7 @@ const organizationSchema = {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       "opens": "09:00",
-      "closes": "17:00"
+      "closes": "18:00"
     }
   ],
   "hasOfferCatalog": {
@@ -106,7 +129,7 @@ const organizationSchema = {
         "itemOffered": {
           "@type": "Service",
           "name": "Custom Web Design",
-          "description": "Professional custom website design and development for local businesses"
+          "description": "Professional custom website design and development for local businesses in Orange County"
         }
       },
       {
@@ -140,15 +163,11 @@ const organizationSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": siteUrl.toString() + "#website",
   "name": "OCWebPros",
   "url": siteUrl.toString(),
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": new URL("/services?q={search_term_string}", siteUrl).toString()
-    },
-    "query-input": "required name=search_term_string"
+  "publisher": {
+    "@id": siteUrl.toString() + "#business"
   }
 };
 
@@ -325,6 +344,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a href="/hosting" class="hover:text-white transition-colors">Hosting</a>
             <a href="/about" class="hover:text-white transition-colors">About</a>
             <a href="/contact" class="hover:text-white transition-colors">Contact</a>
+            <a href="https://share.google/tSH03wj1lOrG59DXD" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Verified on Google</a>
           </div>
         </div>
       </div>
