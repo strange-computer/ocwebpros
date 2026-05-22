@@ -6,6 +6,7 @@ interface Props {
   pageCSS?: string;
 }
 import '../styles/global.css';
+import '../styles/aos-minimal.css';
 import CartSidebar from '../components/CartSidebar.astro';
 import ocwebprosLogo from '../assets/ocwebpros_logo.png';
 import { Image } from 'astro:assets';
@@ -366,23 +367,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script is:inline src="/js/cart.js" defer></script>
     <CartSidebar />
 
-    <!-- AOS: fully deferred — CSS + JS loaded after page paint, not in critical bundle -->
+    <!-- AOS: bundled with page, execution deferred to after first paint -->
     <script>
+      import AOS from 'aos';
       window.addEventListener('load', function() {
         requestAnimationFrame(function() {
-          const link = document.createElement('link');
-          link.rel = 'stylesheet';
-          link.href = '/css/aos-minimal.css';
-          document.head.appendChild(link);
-          import('aos').then(function(m) {
-            m.default.init({
-              duration: 700,
-              easing: 'ease-out',
-              once: true,
-              offset: 100,
-              delay: 0,
-              disable: false
-            });
+          AOS.init({
+            duration: 700,
+            easing: 'ease-out',
+            once: true,
+            offset: 100,
+            delay: 0,
+            disable: false
           });
         });
       });
