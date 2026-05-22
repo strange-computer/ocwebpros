@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://ocwebpros.com',
-  output: 'server',
+  output: 'static',
   adapter: netlify(),
   vite: {
     plugins: [tailwindcss()]
