@@ -9,6 +9,7 @@ import '../styles/global.css';
 import '../styles/aos-minimal.css';
 import CartSidebar from '../components/CartSidebar.astro';
 import ocwebprosLogo from '../assets/ocwebpros_logo.png';
+import { Image } from 'astro:assets';
 const { 
   title = 'OCWebPros', 
   description = 'Professional web design and local SEO services in Orange County, CA. Custom websites built for local businesses with strategic optimization.',
@@ -106,6 +107,14 @@ const organizationSchema = {
     {
       "@type": "City",
       "name": "Tustin",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "California"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Rancho Santa Margarita",
       "containedInPlace": {
         "@type": "State",
         "name": "California"
@@ -263,7 +272,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
         <div class="flex items-center gap-2 min-w-0 flex-shrink">
           <a href="/" class="flex items-center flex-shrink-0">
-            <img src={ocwebprosLogo.src} alt="OCWebPros" class="h-8 w-auto" width={ocwebprosLogo.width} height={ocwebprosLogo.height} />
+            <Image src={ocwebprosLogo} alt="OCWebPros" width={104} height={64} class="h-8 w-auto" />
           </a>
           <a href="/" class="logo-text text-sm sm:text-base hover:text-white/80 transition">
             OCWebPros
