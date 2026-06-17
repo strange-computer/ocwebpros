@@ -1,6 +1,13 @@
 /* Minimal AOS CSS — only fade-up, fade-left, fade-right, zoom-in
    with delays: 0, 100, 150, 200, 300, 400, 450, 500, 600ms
-   Default duration (700ms) is applied by AOS.init via JS, not CSS selectors. */
+   Duration must be in CSS — AOS.init only sets data-aos-duration on body. */
+
+/* ── Duration (700ms default from AOS.init) ── */
+[data-aos][data-aos][data-aos-duration="700"],
+body[data-aos-duration="700"] [data-aos],
+[data-aos] {
+  transition-duration: 700ms;
+}
 
 /* ── Delay variants ── */
 [data-aos][data-aos][data-aos-delay="100"],

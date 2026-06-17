@@ -8,14 +8,20 @@ export const GET: APIRoute = async ({ site }) => {
     { url: '', priority: '1.0', changefreq: 'weekly' },
     { url: 'about', priority: '0.8', changefreq: 'monthly' },
     { url: 'services', priority: '0.9', changefreq: 'weekly' },
+    { url: 'services/web-design', priority: '0.9', changefreq: 'weekly' },
+    { url: 'services/local-seo', priority: '0.9', changefreq: 'weekly' },
+    { url: 'services/seo-strategy', priority: '0.9', changefreq: 'weekly' },
+    { url: 'services/ai-consulting', priority: '0.9', changefreq: 'weekly' },
     { url: 'service-areas', priority: '0.8', changefreq: 'monthly' },
     { url: 'pricing', priority: '0.9', changefreq: 'weekly' },
     { url: 'portfolio', priority: '0.8', changefreq: 'weekly' },
     { url: 'industries', priority: '0.8', changefreq: 'monthly' },
     { url: 'hosting', priority: '0.7', changefreq: 'monthly' },
     { url: 'support', priority: '0.7', changefreq: 'monthly' },
+    { url: 'website-maintenance-orange-county', priority: '0.8', changefreq: 'monthly' },
     { url: 'contact', priority: '0.9', changefreq: 'monthly' },
     { url: 'blog', priority: '0.8', changefreq: 'weekly' },
+    { url: 'newsletter', priority: '0.7', changefreq: 'monthly' },
   ];
 
   // Auto-discover all blog posts — excludes drafts, README, and test slugs
