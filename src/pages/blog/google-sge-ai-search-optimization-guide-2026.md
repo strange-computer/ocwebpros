@@ -325,7 +325,7 @@ Traditional SEO audits miss SGE‑specific vulnerabilities. OCWebPros offers **S
 
 We'll provide a prioritized 30‑day action plan tailored to your niche and geographic targets.
 
-[Request a free SGE vulnerability scan →](/contact) | [See our AI search optimization services →](/services#seo)
+[Request a free SGE vulnerability scan →](/contact) | [See our AI search optimization services →](/services/seo-strategy)
 
 ---
 

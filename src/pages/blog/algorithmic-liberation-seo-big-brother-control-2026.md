@@ -128,7 +128,7 @@ It's about taking back your visibility. It's about ranking on your own terms. It
 
 OCWebPros offers free, no‑obligation algorithmic vulnerability audits for Orange County businesses. We'll show you exactly where you're losing to the elites and how to fight back.
 
-[Claim your free audit →](/contact) | [Learn about our guerrilla SEO tactics →](/services#seo)
+[Claim your free audit →](/contact) | [Learn about our guerrilla SEO tactics →](/services/seo-strategy)
 
 ---
 

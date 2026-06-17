@@ -29,7 +29,7 @@ Google's AI Overviews and AI Mode don't just pull from your website—they pull 
 > **Ahrefs Insight:** 81.9% of top‑20 ranking pages already include AI assistance. Google evaluates quality, not production method. Focus on helpful, in‑depth content that beats existing rankings.
 
 ### How OCWebPros Implements AI‑First Optimization
-We audit client websites for AI‑readability, implement comprehensive schema markup, and create content designed to be **both human‑friendly and machine‑interpretable**. Our [technical SEO services](/services#technical-seo) ensure your site communicates clearly with AI systems.
+We audit client websites for AI‑readability, implement comprehensive schema markup, and create content designed to be **both human‑friendly and machine‑interpretable**. Our [technical SEO services](/services/seo-strategy) ensure your site communicates clearly with AI systems.
 
 ## Trend 2: Hyper‑Localized Content—Generic City Pages Are Ineffective
 
@@ -44,7 +44,7 @@ We audit client websites for AI‑readability, implement comprehensive schema ma
 Most local businesses stop at city‑level pages. By diving deeper into **neighborhood‑level content**, you cover a subtopic your competitors ignore—giving you a ranking edge for more specific, higher‑intent searches.
 
 ### Our Approach to Hyper‑Localization
-Our [content strategy services](/services#content-strategy) include neighborhood‑specific keyword research, localized content creation, and geographic pyramid structures that build authority from the neighborhood up.
+Our [content strategy services](/services/seo-strategy) include neighborhood‑specific keyword research, localized content creation, and geographic pyramid structures that build authority from the neighborhood up.
 
 ## Trend 3: Multi‑Channel Visibility—Don't Rely Solely on Google
 
@@ -62,7 +62,7 @@ Google Business Profile remains essential, but it's no longer the only game in t
 Maintain consistent **NAP** (Name, Address, Phone) across all platforms. Inconsistencies confuse both searchers and AI systems, damaging your credibility.
 
 ### How We Handle Multi‑Channel Presence
-Our [local SEO services](/services#local-seo) include platform‑by‑platform optimization, regular audit sweeps for NAP consistency, and reputation management across all relevant channels.
+Our [local SEO services](/services/local-seo) include platform‑by‑platform optimization, regular audit sweeps for NAP consistency, and reputation management across all relevant channels.
 
 ## Trend 4: Declining Organic Visibility & the Paid Ads Imperative
 
@@ -74,7 +74,7 @@ Ahrefs' research shows that single‑location profiles are losing organic visibi
 - **Diversify traffic sources**: Invest in email marketing, SMS campaigns, and community partnerships.
 
 ### The Data‑Driven Decision
-We analyze each client's specific market to determine the optimal **organic‑to‑paid mix**. Our [Google Ads management](/services#google-ads) focuses on high‑intent local keywords that complement organic rankings.
+We analyze each client's specific market to determine the optimal **organic‑to‑paid mix**. Our [Google Ads management](/contact) focuses on high‑intent local keywords that complement organic rankings.
 
 ## Trend 5: Voice & Conversational Search—Natural Language Is King
 
@@ -106,7 +106,7 @@ Google now treats **geotagged images** as trust signals for local businesses. Ph
 As augmented‑reality search grows, visual content will become even more important. Businesses with rich visual libraries will have a distinct advantage.
 
 ### How We Boost Visual Trust Signals
-Our [web design and photography partnerships](/services#web-design) ensure your visual content is professional, strategically tagged, and regularly updated across all platforms.
+Our [web design and photography partnerships](/services/web-design) ensure your visual content is professional, strategically tagged, and regularly updated across all platforms.
 
 ## Conclusion: Adapt Now or Get Left Behind
 

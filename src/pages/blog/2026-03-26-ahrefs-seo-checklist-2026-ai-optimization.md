@@ -43,7 +43,7 @@ Ahrefs' AI‑powered **"Identify intents"** button analyzes top‑ranking result
 > **Ahrefs Insight:** "Search intent is the most important ranking factor nobody talks about. If you don't match what the search results reward, you won't rank—no matter how good your content is."
 
 ### How OCWebPros Implements Keyword Research
-Our [SEO strategy services](/services#seo-strategy) begin with comprehensive keyword research using Ahrefs tools, competitor analysis, and intent mapping to ensure every piece of content targets real search demand.
+Our [SEO strategy services](/services/seo-strategy) begin with comprehensive keyword research using Ahrefs tools, competitor analysis, and intent mapping to ensure every piece of content targets real search demand.
 
 ## Part 2: On‑Page SEO Checklist (Ahrefs' 2026 Standards)
 
@@ -87,7 +87,7 @@ Internal links help search engines discover pages and pass PageRank. Use **descr
 - Geotag images for local businesses (trust signal).
 
 ### How OCWebPros Handles On‑Page Optimization
-Our [on‑page SEO services](/services#on-page-seo) include URL structure audits, title/meta optimization, heading hierarchy reviews, and comprehensive content gap analysis using Ahrefs tools.
+Our [on‑page SEO services](/services/seo-strategy) include URL structure audits, title/meta optimization, heading hierarchy reviews, and comprehensive content gap analysis using Ahrefs tools.
 
 ## Part 3: Technical SEO Foundation (Non‑Negotiable in 2026)
 
@@ -123,7 +123,7 @@ Help search engines and AI understand your content by implementing schema markup
 Free SSL certificates via Let's Encrypt make HTTPS mandatory. Mixed content (HTTP resources on HTTPS pages) can break security and hurt rankings.
 
 ### Our Technical SEO Approach
-OCWebPros' [technical SEO services](/services#technical-seo) include hosting audits, Core Web Vitals optimization, schema implementation, and ongoing monitoring via Ahrefs Site Audit.
+OCWebPros' [technical SEO services](/services/seo-strategy) include hosting audits, Core Web Vitals optimization, schema implementation, and ongoing monitoring via Ahrefs Site Audit.
 
 ## Part 4: AI Visibility and E‑E‑A‑T (The 2026 Differentiators)
 
@@ -157,7 +157,7 @@ As AI‑generated content floods the web, Google relies more heavily on E‑E‑
 - **Site Audit Patches** – Can automatically write thousands of meta descriptions optimized for AI readability.
 
 ### How We Boost AI Visibility for Clients
-Our [AI‑friendly content strategy](/services#content-strategy) ensures your content meets both human and AI quality standards, with regular E‑E‑A‑T audits and brand‑signal tracking.
+Our [AI‑friendly content strategy](/services/seo-strategy) ensures your content meets both human and AI quality standards, with regular E‑E‑A‑T audits and brand‑signal tracking.
 
 ## Part 5: Local SEO Integration (Orange County Focus)
 
@@ -185,7 +185,7 @@ Inconsistencies in Name, Address, Phone severely harm local rankings. Use a dire
 Target natural‑language queries like "Where's the best HVAC repair near me right now?" with plain‑language responses and explicit geographic context.
 
 ### Our Local SEO Process
-OCWebPros' [local SEO services](/services#local-seo) include hyper‑local content creation, Google Business Profile optimization, multi‑channel consistency audits, and voice‑search keyword targeting.
+OCWebPros' [local SEO services](/services/local-seo) include hyper‑local content creation, Google Business Profile optimization, multi‑channel consistency audits, and voice‑search keyword targeting.
 
 ## Conclusion: The 2026 SEO Playbook That Actually Works
 

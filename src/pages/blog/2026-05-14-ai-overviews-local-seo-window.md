@@ -63,7 +63,7 @@ AI Overviews pull content from websites that demonstrate clear topical authority
 - **FAQ Sections** – Answer common local questions (e.g., “Do you serve Garden Grove?” “What’s your emergency response time in Costa Mesa?”). AI often extracts Q&A pairs.
 - **Visual Content with Geotags** – Upload photos and videos with accurate EXIF location data. AI can read alt text and geotags to validate your local presence.
 
-> **Internal Link Opportunity:** Learn how our [content strategy services](/services#content-strategy) build hyperlocal authority that ranks in both organic and AI‑driven search.
+> **Internal Link Opportunity:** Learn how our [content strategy services](/services/seo-strategy) build hyperlocal authority that ranks in both organic and AI‑driven search.
 
 ### Step 3: Build Neighborhood‑Level Citations and Structured Data
 

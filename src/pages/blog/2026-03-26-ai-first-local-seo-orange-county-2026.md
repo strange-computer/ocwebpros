@@ -48,7 +48,7 @@ Your Google Business Profile (GBP) is no longer just a directory listing—it's 
 - **Complete every field**: Name, address, phone, hours, categories, attributes, services, products, menu (if applicable). Missing data means AI can't summarize your business accurately.
 - **Use precise, multi‑category selections**: Instead of just "Plumber," add "Emergency Plumber," "Water Heater Repair," "Pipe Leak Detection" to cover intent clusters.
 - **Post 5+ times weekly with geo‑tagged images**: AI treats recent activity as a freshness signal. Use generative AI tools to create posts quickly; ensure images include local landmarks.
-- **Automate review responses under 5 minutes**: Rapid, personalized review responses boost trust signals that AI evaluates. Our [reputation management services](/services#reputation-management) include AI‑powered response automation.
+- **Automate review responses under 5 minutes**: Rapid, personalized review responses boost trust signals that AI evaluates. Our [reputation management services](/services/local-seo) include AI‑powered response automation.
 - **Populate the Q&A section**: Anticipate customer questions and provide clear answers—this content is frequently extracted for AI overviews.
 
 #### Orange County Example: 
@@ -67,7 +67,7 @@ Structured data (schema markup) tells AI systems exactly what your business offe
 > **Technical Note:** Google's AI systems ignore generic "Service Area" pages that lack specific location details. Create neighborhood‑specific service pages (e.g., "Irvine web design," "Costa Mesa SEO") with unique, localized content.
 
 #### Our Implementation Process:
-Our [technical SEO services](/services#technical-seo) include comprehensive schema audits, implementation of all essential local business markup, and ongoing monitoring to ensure AI‑readability.
+Our [technical SEO services](/services/seo-strategy) include comprehensive schema audits, implementation of all essential local business markup, and ongoing monitoring to ensure AI‑readability.
 
 ### Step 3: Create Content for AI, Not Just Keywords
 
@@ -101,7 +101,7 @@ AI evaluates your business across multiple platforms—Google, Apple Maps, Yelp,
 - **Semantic Relevance**: Use clear, specific categories and terminology that AI associates with your services. A "web design agency" should also mention "e‑commerce development," "SEO," and "Orange County small business websites."
 
 #### Multi‑Channel Visibility Audit:
-Our [local SEO services](/services#local-seo) include a comprehensive cross‑platform audit, correction of inconsistencies, and ongoing monitoring to ensure your FACTS signals remain strong.
+Our [local SEO services](/services/local-seo) include a comprehensive cross‑platform audit, correction of inconsistencies, and ongoing monitoring to ensure your FACTS signals remain strong.
 
 ### Step 5: Prepare for Zero‑Click Searches and AI‑Mediated Discovery
 
@@ -114,7 +114,7 @@ In 2026, **over 60% of local queries result in zero clicks**—the answer appear
 - **Monitor AI search performance**: Use tools to track when your business appears in AI overviews and for which queries.
 
 #### The Hybrid Approach: SEO + Paid
-As organic visibility becomes more challenging due to AI mediation, complement your AI‑first SEO with targeted local paid advertising. Our [Google Ads management](/services#google-ads) focuses on high‑intent local keywords that capture searchers AI overviews might miss.
+As organic visibility becomes more challenging due to AI mediation, complement your AI‑first SEO with targeted local paid advertising. Our [Google Ads management](/contact) focuses on high‑intent local keywords that capture searchers AI overviews might miss.
 
 ## Orange County Case Study: AI‑First Optimization in Action
 
