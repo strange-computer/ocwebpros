@@ -5,7 +5,7 @@ description: "Stay ahead of the competition with these essential local SEO strat
 pubDate: 2026-05-18
 author: "OCWebPros Team"
 category: "SEO"
-image: "/images/seo.png"
+image: "/images/seo-trends.svg"
 ---
 
 # Local SEO Best Practices for 2026: What Orange County Businesses Need to Know

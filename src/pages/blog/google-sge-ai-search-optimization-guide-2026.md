@@ -122,13 +122,13 @@ SGE prioritizes content from authoritative sources. Your authority stack must be
     "name": "OCWebPros",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://ocwebpros.com/images/logo.png"
+      "url": "https://ocwebpros.com/images/LakeForestLogo.png"
     }
   },
   "description": "Google's Search Generative Experience now answers 84% of queries...",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://ocwebpros.com/blog/how-to-rank-google-sge-2026"
+    "@id": "https://ocwebpros.com/blog/google-sge-ai-search-optimization-guide-2026"
   }
 }
 ```

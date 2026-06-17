@@ -5,7 +5,7 @@ description: "In 2026, Google Business Profile is the single most critical facto
 pubDate: "2026-06-11"
 author: "OCWebPros Team"
 category: "Local SEO"
-image: "/images/google-business-profile-optimization.png"
+image: "/images/irvine-gbp.svg"
 draft: false
 ---
 

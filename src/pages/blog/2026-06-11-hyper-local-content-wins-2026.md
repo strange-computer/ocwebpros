@@ -5,7 +5,7 @@ description: "In the age of AI‑driven search, generic service pages no longer 
 pubDate: "2026-06-11"
 author: "OCWebPros Team"
 category: "Local SEO"
-image: "/images/local-horizon.png"
+image: "/images/horizon.png"
 draft: true
 ---
 

@@ -5,7 +5,7 @@ description: "Explore the top Orange County web design trends for 2026, from AI-
 pubDate: "2026-05-17"
 author: "OCWebPros Team"
 category: "Web Design"
-image: "/images/web-design-trends-2026.svg"
+image: "/images/web-design-mockup.png"
 draft: false
 ---
 
