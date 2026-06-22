@@ -1,11 +1,11 @@
 ---
-layout: ../layouts/BlogPostLayout.astro
+layout: ../../layouts/BlogPostLayout.astro
 title: "AI-Assisted Local Results Demand Structured Data: How to Optimize Your Business for AI Discovery"
 description: "Search engines and AI systems increasingly rely on structured data (schema markup) to understand local businesses. Learn how to implement LocalBusiness, FAQ, and review schemas to boost AI-driven visibility."
 pubDate: "2026-06-18"
 author: "OCWebPros Team"
 category: "Local SEO"
-image: "/images/blog/structured-data-local-ai.svg"
+image: "/images/local-seo-playbook.svg"
 draft: false
 ---
 

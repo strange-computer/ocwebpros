@@ -345,4 +345,4 @@ Costa Mesa e-commerce requires specialized SEO strategies that bridge online sho
 
 ---
 
-*About the author: This case study was created by the OCWebPros team based in Lake Forest, CA, serving Costa Mesa e-commerce businesses since 2015. We've helped dozens of Orange County online retailers achieve dramatic growth through targeted local SEO. Questions about Costa Mesa e-commerce SEO? [Contact us](/contact) or call (949) 555-COSTA.*
+*About the author: This case study was created by the OCWebPros team based in Lake Forest, CA, serving Costa Mesa e-commerce businesses since 2015. We've helped dozens of Orange County online retailers achieve dramatic growth through targeted local SEO. Questions about Costa Mesa e-commerce SEO? [Contact us](/contact).*

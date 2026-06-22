@@ -90,4 +90,4 @@ Orange County's competitive market demands websites that don't just keep up with
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County businesses since 2015. We've helped numerous local businesses achieve search dominance through forward-thinking web design. Questions about 2026 web design trends? [Contact us](/contact) or call (949) 555-OCWEB.*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County businesses since 2015. We've helped numerous local businesses achieve search dominance through forward-thinking web design. Questions about 2026 web design trends? [Contact us](/contact).*

@@ -54,4 +54,34 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/checkout"
+  to = "/your-plan"
+  status = 301
+
+[[redirects]]
+  from = "/checkout/"
+  to = "/your-plan/"
+  status = 301
+
+[[redirects]]
+  from = "/success"
+  to = "/pricing"
+  status = 301
+
+[[redirects]]
+  from = "/success/"
+  to = "/pricing/"
+  status = 301
+
+[[redirects]]
+  from = "/cancel"
+  to = "/pricing"
+  status = 301
+
+[[redirects]]
+  from = "/cancel/"
+  to = "/pricing/"
+  status = 301
+
 

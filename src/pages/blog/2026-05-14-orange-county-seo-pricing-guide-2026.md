@@ -319,6 +319,6 @@ Ready to get specific numbers for your business? Here's what to do:
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA. We've helped hundreds of Orange County businesses achieve real SEO results—not just vanity metrics. Have questions about Orange County SEO pricing? [Contact us](/contact) or call us at (949) 555-SEO.*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA. We've helped hundreds of Orange County businesses achieve real SEO results—not just vanity metrics. Have questions about Orange County SEO pricing? [Contact us](/contact).*
 
 *Last updated: May 2026*

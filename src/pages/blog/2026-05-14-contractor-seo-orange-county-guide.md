@@ -480,4 +480,4 @@ Contractor SEO in Orange County requires specialized expertise in service area b
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County contractors since 2015. We've helped numerous home service businesses achieve dramatic growth through targeted SEO strategies. Questions about contractor SEO? [Contact us](/contact) or call (949) 555-CONTRACTOR.*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County contractors since 2015. We've helped numerous home service businesses achieve dramatic growth through targeted SEO strategies. Questions about contractor SEO? [Contact us](/contact).*

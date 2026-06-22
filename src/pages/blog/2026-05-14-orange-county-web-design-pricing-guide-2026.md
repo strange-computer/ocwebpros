@@ -241,7 +241,7 @@ Before you sign anything, ask:
 
 At OCWebPros, we believe in **transparent, value-based pricing**. Here's how we structure it:
 
-### Starter Package: $4,500-7,500
+### Starter Package: $3,500
 - Custom 5-8 page website
 - Mobile-first responsive design
 - Basic SEO setup
@@ -325,7 +325,7 @@ Ask for:
 
 For most Orange County businesses looking for a professional website that actually drives growth:
 
-- **Minimum viable professional site:** $4,500-7,500
+- **Minimum viable professional site:** $3,500
 - **Solid growth-focused site:** $8,500-15,000  
 - **Comprehensive business asset:** $15,000-30,000+
 
@@ -347,6 +347,6 @@ Ready to get specific numbers for your business? Here's what to do:
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA. We've helped hundreds of Orange County businesses get websites that actually work—not just look pretty. Have questions about Orange County web design pricing? [Contact us](/contact) or call us at (949) 555-WEBS.*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA. We've helped hundreds of Orange County businesses get websites that actually work—not just look pretty. Have questions about Orange County web design pricing? [Contact us](/contact).*
 
 *Last updated: May 2026*

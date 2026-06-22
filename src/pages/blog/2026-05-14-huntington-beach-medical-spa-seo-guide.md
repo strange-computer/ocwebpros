@@ -485,4 +485,4 @@ Medical spa SEO in Huntington Beach requires specialized expertise in both SEO a
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Huntington Beach medical spas since 2015. We've helped multiple medspas achieve significant growth through HIPAA-compliant SEO strategies. Questions about medical spa SEO? [Contact us](/contact) or call (949) 555-MEDSPA.*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Huntington Beach medical spas since 2015. We've helped multiple medspas achieve significant growth through HIPAA-compliant SEO strategies. Questions about medical spa SEO? [Contact us](/contact).*

@@ -118,7 +118,7 @@ We built 42 consistent local citations across Orange County‑specific directori
 **Citation Consistency Protocol:**
 - **Name:** Irvine Family Dental Practice (exact match across all platforms)
 - **Address:** [Full street address, suite number, Irvine, CA 926XX]
-- **Phone:** (949) 555‑DENT (dedicated tracking number)
+- **Phone:** (949) 555-1234 (example format)
 - **Website:** Exact URL match
 - **Hours:** Identical across all platforms
 
@@ -339,7 +339,7 @@ If you're running a business in Orange County and struggling to show up when you
 2. Identify immediate opportunities for traffic growth
 3. Provide a custom 90‑day strategy tailored to your Orange County market
 
-[Contact us today](/contact) or call (949) 555‑OCSEO to schedule your free audit and learn how we can help you achieve 347%+ traffic growth in the next 90 days.
+[Contact us today](/contact) to schedule your free audit and learn how we can help you achieve 347%+ traffic growth in the next 90 days.
 
 ---
 

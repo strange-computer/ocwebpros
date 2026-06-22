@@ -452,4 +452,4 @@ Huntington Beach offers unparalleled opportunities for businesses that understan
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Huntington Beach businesses since 2015. We've helped numerous hotels, restaurants, surf shops, and services achieve search dominance in Surf City USA. Questions about Huntington Beach SEO? [Contact us](/contact) or call (949) 555-SURFHB.*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Huntington Beach businesses since 2015. We've helped numerous hotels, restaurants, surf shops, and services achieve search dominance in Surf City USA. Questions about Huntington Beach SEO? [Contact us](/contact).*

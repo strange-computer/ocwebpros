@@ -447,4 +447,4 @@ Tustin offers dynamic opportunities for businesses that understand its district 
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Tustin businesses since 2015. We've helped numerous companies achieve search dominance in Orange County's fastest-growing business markets. Questions about Tustin SEO? [Contact us](/contact) or call (949) 555-TUSTIN.*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Tustin businesses since 2015. We've helped numerous companies achieve search dominance in Orange County's fastest-growing business markets. Questions about Tustin SEO? [Contact us](/contact).*

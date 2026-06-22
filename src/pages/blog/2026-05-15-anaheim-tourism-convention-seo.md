@@ -508,4 +508,4 @@ Anaheim offers unparalleled opportunities for tourism businesses that understand
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Anaheim tourism businesses since 2015. We've helped numerous hotels, restaurants, and services achieve search dominance in Orange County's tourism capital. Questions about Anaheim tourism SEO? [Contact us](/contact) or call (949) 555-ANAHEIM.*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Anaheim tourism businesses since 2015. We've helped numerous hotels, restaurants, and services achieve search dominance in Orange County's tourism capital. Questions about Anaheim tourism SEO? [Contact us](/contact).*

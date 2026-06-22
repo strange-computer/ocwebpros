@@ -407,4 +407,4 @@ Laguna Beach offers unique opportunities for businesses that understand its dual
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Laguna Beach businesses since 2015. We've helped numerous hotels, galleries, restaurants, and services achieve search dominance in Orange County's premier coastal arts destination. Questions about Laguna Beach SEO? [Contact us](/contact) or call (949) 555-LAGUNA.*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Laguna Beach businesses since 2015. We've helped numerous hotels, galleries, restaurants, and services achieve search dominance in Orange County's premier coastal arts destination. Questions about Laguna Beach SEO? [Contact us](/contact).*

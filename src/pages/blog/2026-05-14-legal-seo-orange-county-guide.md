@@ -474,4 +474,4 @@ Legal SEO in Orange County requires specialized expertise in both SEO and legal 
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County law firms since 2015. We've helped multiple practices achieve significant growth through ethical SEO strategies. Questions about legal SEO? [Contact us](/contact) or call (949) 555-LEGAL.*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County law firms since 2015. We've helped multiple practices achieve significant growth through ethical SEO strategies. Questions about legal SEO? [Contact us](/contact).*

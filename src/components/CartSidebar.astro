@@ -6,9 +6,9 @@
       <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
       </svg>
-      Your Cart
+      Your Plan
     </h2>
-    <button id="closeCartBtn" aria-label="Close cart" class="p-2 hover:bg-white/10 rounded-lg transition-colors">
+    <button id="closeCartBtn" aria-label="Close plan" class="p-2 hover:bg-white/10 rounded-lg transition-colors">
       <svg class="w-5 h-5 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
       </svg>
@@ -20,16 +20,16 @@
     <!-- Items will be injected here by JavaScript -->
   </div>
 
-  <!-- Footer with totals and checkout -->
+  <!-- Footer with totals and plan review -->
   <div id="cartFooter" class="border-t border-white/10 p-6 bg-zinc-900/50 backdrop-blur-sm flex-shrink-0">
     <div id="cartTotals" class="space-y-3 mb-4">
       <!-- Totals will be injected here -->
     </div>
-    <a href="/checkout" id="checkoutBtn" class="block w-full px-6 py-3.5 bg-orange-700 text-white font-semibold rounded-full text-center hover:bg-orange-600 transition-colors btn-glow disabled:opacity-50 disabled:cursor-not-allowed">
-      Proceed to Checkout
+    <a href="/your-plan" id="planReviewBtn" class="block w-full px-6 py-3.5 bg-orange-700 text-white font-semibold rounded-full text-center hover:bg-orange-600 transition-colors btn-glow disabled:opacity-50 disabled:cursor-not-allowed">
+      Review Full Plan
     </a>
     <button id="clearCartBtn" class="block w-full mt-3 px-6 py-2 text-zinc-400 text-sm hover:text-white transition-colors">
-      Clear Cart
+      Clear Plan
     </button>
   </div>
 </div>
@@ -45,9 +45,12 @@
     const clearBtn = document.getElementById('clearCartBtn');
     const cartItemsContainer = document.getElementById('cartItems');
     const cartTotals = document.getElementById('cartTotals');
-    const checkoutBtn = document.getElementById('checkoutBtn');
+    const planReviewBtn = document.getElementById('planReviewBtn');
 
-    if (!sidebar || !overlay || !window.cart) return;
+    if (!sidebar || !overlay) return;
+
+    function initCart() {
+      if (!window.cart) return;
 
     // Open cart
     window.openCart = function() {
@@ -70,7 +73,7 @@
 
     // Clear cart
     clearBtn.addEventListener('click', function() {
-      if (confirm('Are you sure you want to clear your cart?')) {
+      if (confirm('Are you sure you want to clear your plan?')) {
         window.cart.clearCart();
         renderCart();
       }
@@ -88,10 +91,10 @@
             <svg class="w-16 h-16 text-zinc-600 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
             </svg>
-            <p class="text-zinc-400 text-sm">Your cart is empty</p>
+            <p class="text-zinc-400 text-sm">No services selected yet</p>
           </div>
         `;
-        checkoutBtn.classList.add('opacity-50', 'pointer-events-none');
+        planReviewBtn.classList.add('opacity-50', 'pointer-events-none');
       } else {
         cartItemsContainer.innerHTML = items.map(item => `
           <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-lg p-4">
@@ -123,7 +126,7 @@
           });
         });
 
-        checkoutBtn.classList.remove('opacity-50', 'pointer-events-none');
+        planReviewBtn.classList.remove('opacity-50', 'pointer-events-none');
       }
 
       // Render totals
@@ -138,22 +141,11 @@
         `;
       }
 
-      if (totals.monthly > 0 || totals.hostingIncluded) {
+      if (totals.monthly > 0) {
         totalsHTML += `
           <div class="flex justify-between text-sm">
             <span class="text-zinc-400">Monthly total:</span>
             <span class="text-white font-semibold">$${totals.monthly.toLocaleString()}/mo</span>
-          </div>
-        `;
-      }
-
-      if (totals.hostingIncluded) {
-        totalsHTML += `
-          <div class="flex items-center gap-2 py-2 px-3 bg-emerald-500/10 border border-emerald-500/20 rounded-lg">
-            <svg class="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span class="text-xs text-emerald-300 font-medium">FREE Managed Hosting included ($75/mo value)</span>
           </div>
         `;
       }
@@ -197,8 +189,7 @@
         price: btn.getAttribute('data-price'),
         category: btn.getAttribute('data-category'),
         type: btn.getAttribute('data-type'),
-        interval: btn.getAttribute('data-interval'),
-        stripeId: btn.getAttribute('data-stripe-id')
+        interval: btn.getAttribute('data-interval')
       };
 
       const result = window.cart.addItem(item);
@@ -229,5 +220,34 @@
 
     // Initialize badge on page load
     updateCartBadge();
+
+    const cartBtn = document.getElementById('cartBtn');
+    if (cartBtn) {
+      cartBtn.addEventListener('click', window.openCart);
+    }
+    }
+
+    function whenCartReady() {
+      if (window.cart) {
+        initCart();
+        return;
+      }
+      var attempts = 0;
+      var t = setInterval(function() {
+        attempts++;
+        if (window.cart) {
+          clearInterval(t);
+          initCart();
+        } else if (attempts > 40) {
+          clearInterval(t);
+        }
+      }, 50);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', whenCartReady);
+    } else {
+      whenCartReady();
+    }
   })();
 </script>

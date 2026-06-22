@@ -406,4 +406,4 @@ Orange, California presents unique SEO challenges, but also unique opportunities
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange businesses since 2015. We've helped numerous Orange companies overcome the unique "Orange" search challenge and achieve local search dominance. Questions about Orange SEO? [Contact us](/contact) or call (949) 555-ORANGE.*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange businesses since 2015. We've helped numerous Orange companies overcome the unique "Orange" search challenge and achieve local search dominance. Questions about Orange SEO? [Contact us](/contact).*

@@ -442,4 +442,4 @@ Fullerton's unique business environment requires specialized local SEO strategie
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Fullerton businesses since 2015. We've helped numerous Fullerton companies achieve significant growth through targeted local SEO strategies. Questions about Fullerton SEO? [Contact us](/contact) or call (949) 555-FULLERTON.*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Fullerton businesses since 2015. We've helped numerous Fullerton companies achieve significant growth through targeted local SEO strategies. Questions about Fullerton SEO? [Contact us](/contact).*

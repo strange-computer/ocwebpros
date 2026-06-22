@@ -15,10 +15,8 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-# Disallow checkout and success pages from indexing
-Disallow: /checkout
-Disallow: /success
-Disallow: /cancel
+# Disallow plan review page from indexing
+Disallow: /your-plan
 
 # Sitemap location
 Sitemap: https://ocwebpros.com/sitemap.xml

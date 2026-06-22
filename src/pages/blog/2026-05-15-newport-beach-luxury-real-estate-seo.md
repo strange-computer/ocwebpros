@@ -535,4 +535,4 @@ Newport Beach offers unparalleled opportunities for luxury real estate professio
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County luxury real estate professionals since 2015. We've helped numerous Newport Beach agents and brokers achieve search dominance in one of California's most competitive luxury markets. Questions about Newport Beach luxury real estate SEO? [Contact us](/contact) or call (949) 555-LUXURY.*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County luxury real estate professionals since 2015. We've helped numerous Newport Beach agents and brokers achieve search dominance in one of California's most competitive luxury markets. Questions about Newport Beach luxury real estate SEO? [Contact us](/contact).*
