@@ -40,26 +40,26 @@ Example JSON-LD for a local business:
   "url": "https://ocwebpros.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "123 Main St",
-    "addressLocality": "Santa Ana",
+    "addressLocality": "Lake Forest",
     "addressRegion": "CA",
-    "postalCode": "92701",
+    "postalCode": "92630",
     "addressCountry": "US"
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": "33.749",
-    "longitude": "-117.873"
+    "latitude": "33.6469",
+    "longitude": "-117.6892"
   },
-  "telephone": "+1-714-555-1234",
+  "telephone": "+1-949-329-4437",
   "openingHours": "Mo-Fr 09:00-17:00",
   "serviceArea": {
     "@type": "Place",
     "name": "Orange County, California"
   },
   "sameAs": [
-    "https://www.facebook.com/ocwebpros",
-    "https://www.linkedin.com/company/ocwebpros"
+    "https://share.google/tSH03wj1lOrG59DXD",
+    "https://clutch.co/profile/ocwebpros",
+    "https://www.crunchbase.com/organization/ocwebpros"
   ]
 }
 ```
