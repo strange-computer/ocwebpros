@@ -483,4 +483,4 @@ Garden Grove offers unique opportunities for businesses that understand its stat
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Garden Grove businesses since 2015. We've helped numerous companies achieve search dominance in Orange County's Vietnamese business hub. Questions about Garden Grove SEO? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Garden Grove businesses. We've helped numerous companies achieve search dominance in Orange County's Vietnamese business hub. Questions about Garden Grove SEO? [Contact us](/contact).*

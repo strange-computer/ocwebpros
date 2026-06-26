@@ -589,4 +589,4 @@ Orange County offers unparalleled opportunities for e-commerce businesses that u
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County e-commerce businesses since 2015. We've helped numerous online retailers achieve search dominance in one of California's most competitive e-commerce markets. Questions about Orange County e-commerce SEO? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County e-commerce businesses. We've helped numerous online retailers achieve search dominance in one of California's most competitive e-commerce markets. Questions about Orange County e-commerce SEO? [Contact us](/contact).*

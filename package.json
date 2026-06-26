@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "fetch-unsplash": "node scripts/fetch-unsplash-images.mjs"
   },
   "dependencies": {
     "@astrojs/netlify": "^6.6.4",

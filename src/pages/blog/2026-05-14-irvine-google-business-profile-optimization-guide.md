@@ -384,4 +384,4 @@ Your Google Business Profile is your #1 asset for Irvine local search visibility
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Irvine businesses since 2015. We've helped hundreds of Irvine companies optimize their Google Business Profiles for maximum local search visibility. Questions about Irvine GBP optimization? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Irvine businesses. We've helped hundreds of Irvine companies optimize their Google Business Profiles for maximum local search visibility. Questions about Irvine GBP optimization? [Contact us](/contact).*

@@ -526,4 +526,4 @@ Santa Ana presents unique opportunities for government contractors, non-profits,
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Santa Ana public sector organizations since 2015. We've helped numerous government contractors, non-profits, and community groups achieve search dominance in Orange County's county seat. Questions about Santa Ana public sector SEO? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Santa Ana public sector organizations. We've helped numerous government contractors, non-profits, and community groups achieve search dominance in Orange County's county seat. Questions about Santa Ana public sector SEO? [Contact us](/contact).*

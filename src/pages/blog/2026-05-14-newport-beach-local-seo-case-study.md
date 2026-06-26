@@ -318,4 +318,4 @@ Newport Beach luxury markets require specialized SEO strategies. What works for 
 
 ---
 
-*About the author: This case study was created by the OCWebPros team based in Lake Forest, CA, serving Newport Beach businesses since 2015. We've helped dozens of Newport Beach luxury service providers achieve dramatic growth through targeted local SEO. Questions about Newport Beach SEO? [Contact us](/contact).*
+*About the author: This case study was created by the OCWebPros team based in Lake Forest, CA, serving Newport Beach businesses. We've helped dozens of Newport Beach luxury service providers achieve dramatic growth through targeted local SEO. Questions about Newport Beach SEO? [Contact us](/contact).*

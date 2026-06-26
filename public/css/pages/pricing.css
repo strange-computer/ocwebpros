@@ -14,12 +14,19 @@
         box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5), 0 0 30px rgba(234, 88, 12, 0.08);
     }
 
-    /* Web Design feature list items: own compositor layer so one box doesn't grey out on scroll */
-    .page-pricing .web-design-pricing-card ul.grid li {
+    /* Web Design feature grid: compositor layer + subtle row grouping */
+    .page-pricing .web-design-pricing-card .web-design-feature-chip {
         transform: translateZ(0);
     }
-    .page-pricing .web-design-pricing-card ul.grid li:hover {
+    .page-pricing .web-design-pricing-card .web-design-feature-chip:hover {
         transform: translateZ(0) translateY(-2px);
+        background: rgba(255, 255, 255, 0.06);
+    }
+    .page-pricing .web-design-pricing-card .web-design-feature-grid .web-design-feature-chip:nth-child(n + 4):nth-child(-n + 6) {
+        background: rgba(251, 146, 60, 0.04);
+    }
+    .page-pricing .web-design-pricing-card .web-design-feature-grid .web-design-feature-chip:nth-child(n + 7) {
+        background: rgba(168, 85, 247, 0.04);
     }
 
     /* Local SEO Pricing cards: stay on own GPU layer so they don't jump layers on hover/scroll */

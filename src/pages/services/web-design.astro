@@ -1,5 +1,7 @@
 ---
 import MainLayout from '../../layouts/MainLayout.astro';
+import SpotlightImage from '../../components/SpotlightImage.astro';
+import WebDesignFeatureGrid from '../../components/WebDesignFeatureGrid.astro';
 ---
 <MainLayout 
   title="Web Design Services Orange County CA | OCWebPros" 
@@ -37,7 +39,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
       <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
         <div class="w-full md:w-1/2 backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-8 md:p-10" data-aos="fade-right">
           <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6">
-            <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18"/></svg>
+            <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
           </div>
           <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Built for Real Businesses</h2>
           <p class="text-zinc-400 mb-6 text-lg leading-relaxed">Your website should authentically represent your brand and drive measurable results. We focus on content strategy, conversion optimization, and technical performance - not bloated templates.</p>
@@ -48,9 +50,10 @@ import MainLayout from '../../layouts/MainLayout.astro';
             <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>AI-ready structure with schema markup and semantic HTML</span></li>
           </ul>
         </div>
-        <div class="w-full md:w-1/2 h-64 sm:h-80 md:h-[500px] border border-white/10 rounded-xl overflow-hidden" data-aos="fade-left">
-          <img src="/images/web-design-mockup.png" alt="Custom web design portfolio mockup for Orange County business" class="w-full h-full object-cover" />
-        </div>
+        <SpotlightImage
+          src="/images/unsplash/services-web-design.jpg"
+          alt="Web designer working on a modern website layout"
+        />
       </div>
     </section>
 
@@ -72,7 +75,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
               <p class="text-zinc-400 text-sm leading-relaxed max-w-xl mx-auto">High-performance websites built to meet Core Web Vitals standards and capture local market share.</p>
             </div>
 
-            <div class="flex flex-col md:grid gap-6 md:grid-cols-[1fr_auto] md:items-stretch">
+            <div class="flex flex-col md:grid gap-6 md:grid-cols-[1.15fr_auto] md:items-stretch">
               <div class="order-2 md:order-1 md:col-start-1 md:row-start-1 md:pr-8 min-w-0">
                 <div class="hidden md:block text-center mb-4">
                   <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-orange-400 mb-4">
@@ -82,32 +85,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
                   <h2 class="text-2xl md:text-4xl font-bold mb-2 text-white tracking-tight">The &quot;Authority&quot; Website</h2>
                   <p class="text-zinc-400 text-sm leading-relaxed max-w-xl mx-auto">High-performance websites built to meet Core Web Vitals standards and capture local market share.</p>
                 </div>
-                <ul class="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-2">
-                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
-                    <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <span class="text-sm text-zinc-300">Strategy-First Sitemap</span>
-                  </li>
-                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
-                    <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <span class="text-sm text-zinc-300">Conversion-Engineered UI</span>
-                  </li>
-                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
-                    <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <span class="text-sm text-zinc-300">90+ Google Speed Score</span>
-                  </li>
-                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
-                    <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <span class="text-sm text-zinc-300">Local Schema Injection</span>
-                  </li>
-                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
-                    <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <span class="text-sm text-zinc-300">Mobile-First &quot;Thumb&quot; UX</span>
-                  </li>
-                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
-                    <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <span class="text-sm text-zinc-300">Analytics Setup &amp; Dashboard</span>
-                  </li>
-                </ul>
+                <WebDesignFeatureGrid />
               </div>
 
               <div class="contents md:flex md:flex-col md:gap-4 md:pl-8 md:border-l md:border-white/10 md:col-start-2 md:row-start-1 md:justify-center">
@@ -138,7 +116,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <div data-aos="fade-up" data-aos-delay="0">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
-            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">Custom Design</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Purpose-built layouts that reflect your brand and guide visitors toward action - no generic themes.</p>
@@ -159,24 +137,24 @@ import MainLayout from '../../layouts/MainLayout.astro';
         </div>
         <div data-aos="fade-up" data-aos-delay="300">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
-            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">AI-Ready Structure</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Semantic HTML, structured data, and clean site architecture that supports AI-generated content and search visibility.</p>
         </div>
         <div data-aos="fade-up" data-aos-delay="400">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
-            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c1.657 0 3-1.567 3-3.5S13.657 4 12 4 9 5.567 9 7.5 10.343 11 12 11zm0 0v9m-7-5h14"/></svg>
+            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">Performance &amp; Security</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Best practices for speed, SSL, and security baked in from day one - not bolted on after launch.</p>
         </div>
         <div data-aos="fade-up" data-aos-delay="500">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
-            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">Easy to Manage</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed">Update copy and images yourself, or lean on us - we keep things simple either way.</p>
+          <p class="text-sm text-zinc-400 leading-relaxed">Need a text or image change? Send it our way. We handle updates for you - no CMS to learn, no code to touch.</p>
         </div>
       </div>
     </section>
@@ -275,7 +253,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
     <!-- CTA -->
     <div class="text-center py-12 sm:py-16 md:py-24 px-4 sm:px-6 md:px-8" data-aos="fade-up">
       <h2 class="text-2xl md:text-3xl font-bold mb-4 text-white">Ready to build your authority website?</h2>
-      <p class="text-zinc-400 mb-8 max-w-xl mx-auto">Tell us about your business and we&apos;ll outline a clear plan - no pressure, no jargon.</p>
+      <p class="text-zinc-400 mb-8 max-w-xl mx-auto text-balance">Tell us about your business and we&apos;ll outline a clear plan. No pressure, no jargon.</p>
       <div class="inline-flex flex-col sm:flex-row gap-4">
         <a href="/contact" class="px-10 py-5 bg-orange-700 text-white font-bold rounded-full hover:bg-orange-600 transition-colors text-lg btn-glow">
           Request a free consult

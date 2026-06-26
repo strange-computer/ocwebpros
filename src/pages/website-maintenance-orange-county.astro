@@ -1,9 +1,10 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
+import SpotlightImage from '../components/SpotlightImage.astro';
 ---
 <MainLayout 
   title="Website Maintenance Orange County CA | OCWebPros" 
-  description="Website maintenance for Orange County businesses. Security updates, daily backups, performance monitoring, content updates, and SEO health checks - with local support from Lake Forest, CA. Plans from $50/mo."
+  description="Website maintenance for Orange County businesses. Security updates, daily backups, performance monitoring, and content updates - with local support from Lake Forest, CA. Plans from $50/mo."
   bodyClass="page-support page-maintenance"
   pageCSS="/css/pages/support.css">
 
@@ -18,13 +19,13 @@ import MainLayout from '../layouts/MainLayout.astro';
         Website Maintenance in <span class="text-gradient-orange">Orange County</span>
       </h1>
       <p class="text-zinc-400 text-lg leading-relaxed max-w-3xl mx-auto">
-        Keep your site secure, fast, and visible - with proactive maintenance from a local team in Lake Forest. No overseas handoffs, no ticket queues.
+        Keep your site secure, fast, and reliable - with proactive maintenance from a local team in Lake Forest. No overseas handoffs, no ticket queues.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
         <a href="/contact" class="px-8 py-3.5 bg-orange-700 text-white font-semibold rounded-full hover:bg-orange-600 transition-colors btn-glow text-sm md:text-base">
           Get a Free Maintenance Audit
         </a>
-        <a href="/pricing" class="px-8 py-3.5 bg-white/5 text-white font-semibold rounded-full border border-white/10 hover:bg-white/10 transition-colors text-sm md:text-base">
+        <a href="/pricing#support" class="px-8 py-3.5 bg-white/5 text-white font-semibold rounded-full border border-white/10 hover:bg-white/10 transition-colors text-sm md:text-base">
           View Pricing
         </a>
       </div>
@@ -39,34 +40,36 @@ import MainLayout from '../layouts/MainLayout.astro';
           <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6">
             <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
           </div>
-          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">More Than Plugin Updates</h2>
-          <p class="text-zinc-400 mb-6 text-lg leading-relaxed">Your website is your digital storefront. For Orange County businesses in Irvine, Mission Viejo, and beyond, effective maintenance is a proactive strategy - not a checkbox.</p>
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">More Than Occasional Updates</h2>
+          <p class="text-zinc-400 mb-6 text-lg leading-relaxed">Your website is your digital storefront. For Orange County businesses in Irvine, Mission Viejo, and beyond, effective maintenance is proactive upkeep, not a checkbox.</p>
           <ul class="space-y-3 text-zinc-300">
-            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Security updates, malware scanning, and SSL monitoring</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Security and dependency updates, malware scanning, and SSL monitoring</span></li>
             <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Daily automated backups with one-click restore</span></li>
-            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Regular content updates and SEO health checks</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Regular content updates and technical site health checks</span></li>
             <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Direct email and phone support from Lake Forest, CA</span></li>
           </ul>
         </div>
-        <div class="w-full md:w-1/2 h-64 sm:h-80 md:h-[500px] border border-white/10 rounded-xl overflow-hidden" data-aos="fade-left">
-          <img src="/images/WallofCodeBlock.png" alt="Website maintenance dashboard for Orange County business" class="w-full h-full object-cover" />
-        </div>
+        <SpotlightImage
+          src="/images/unsplash/support-development.jpg"
+          alt="Developer maintaining a business website at a laptop"
+          aos="fade-left"
+        />
       </div>
     </section>
 
     <!-- Five Pillars -->
     <section class="max-w-7xl mx-auto pt-2 md:pt-4 pb-16 md:pb-24 px-4 sm:px-6 md:px-8">
       <div class="text-center mb-12" data-aos="fade-up">
-        <h2 class="text-2xl md:text-3xl font-bold mb-2 text-white">What Maintenance Actually Includes</h2>
-        <p class="text-zinc-400 text-sm md:text-base">Five essential areas every Orange County business website needs.</p>
+        <h2 class="text-2xl md:text-3xl font-bold mb-2 text-white">What Website Maintenance Includes</h2>
+        <p class="text-zinc-400 text-sm md:text-base max-w-2xl mx-auto">Support covers website operations: code, speed, backups, and edits.</p>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-6" data-aos="fade-up" data-aos-delay="0">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
             <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">Security &amp; Monitoring</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed">Core software updates, firewall protection, malware scanning, and brute-force login prevention - with alerts sent directly to you.</p>
+          <p class="text-sm text-zinc-400 leading-relaxed">Security and dependency updates, firewall protection, malware scanning, and brute-force login prevention - with alerts sent directly to you.</p>
         </div>
         <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-6" data-aos="fade-up" data-aos-delay="100">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
@@ -89,14 +92,14 @@ import MainLayout from '../layouts/MainLayout.astro';
           <h3 class="text-xl font-bold text-white mb-2">Content Updates</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Service changes, team updates, testimonials, and seasonal offers - keep your site fresh without managing a freelancer.</p>
         </div>
-        <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-6 sm:col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="400">
+        <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-6" data-aos="fade-up" data-aos-delay="400">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
             <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
           </div>
-          <h3 class="text-xl font-bold text-white mb-2">SEO Health Checks</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed">Broken-link audits, sitemap validation, meta-tag reviews, GBP updates, and local citation consistency - so rankings don&apos;t quietly slip.</p>
+          <h3 class="text-xl font-bold text-white mb-2">Technical Site Checks</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Broken-link scans, sitemap validation, redirect checks, and post-update verification, keeping your site&apos;s technical foundation solid.</p>
         </div>
-        <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-6 sm:col-span-2 lg:col-span-2" data-aos="fade-up" data-aos-delay="500">
+        <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-6" data-aos="fade-up" data-aos-delay="500">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
             <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           </div>
@@ -113,10 +116,11 @@ import MainLayout from '../layouts/MainLayout.astro';
         <div class="relative">
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-orange-400 mb-4">
             <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
-            Maintenance Plans
+            Support Plans
           </div>
-          <h2 class="text-2xl md:text-3xl font-bold mb-2 text-white">Transparent monthly pricing</h2>
-          <p class="text-zinc-400 text-sm md:text-base">Clear inclusions, no hidden fees - pick the level that fits your business.</p>
+          <h2 class="text-2xl md:text-3xl font-bold mb-2 text-white">Choose your plan</h2>
+          <p class="text-zinc-400 text-sm md:text-base">Monthly plans to fit your business needs</p>
+          <p class="text-zinc-500 text-sm mt-3">Support plans are for websites we&apos;ve built and host: security updates, performance monitoring, content edits, and ongoing upkeep.</p>
         </div>
       </div>
 
@@ -129,23 +133,23 @@ import MainLayout from '../layouts/MainLayout.astro';
               <h3 class="text-xl font-bold text-white mb-2">The &quot;Technical&quot; Plan</h3>
               <div class="text-4xl font-bold text-white mb-1"><span class="text-lg align-top">$</span>50</div>
               <p class="text-zinc-400 text-sm">per month</p>
-              <p class="text-zinc-400 text-sm mt-2">For businesses that just want technical security.</p>
+              <p class="text-zinc-400 text-sm mt-2">For businesses that want ongoing technical upkeep.</p>
             </div>
             <ul class="space-y-2 mb-6 flex-1">
-              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span class="text-sm text-zinc-300">Weekly plugin and security updates</span>
+                <span class="text-sm text-zinc-300">Security &amp; Dependency Updates: We keep your site&apos;s code and dependencies current and secure.</span>
               </li>
-              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span class="text-sm text-zinc-300">Visual regression testing after updates</span>
+                <span class="text-sm text-zinc-300">Post-Update Checks: We verify updates didn&apos;t break your design or layout.</span>
               </li>
-              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span class="text-sm text-zinc-300">Database optimization and monthly report</span>
+                <span class="text-sm text-zinc-300">Monthly PDF Report: Clear summary of updates and site performance.</span>
               </li>
             </ul>
-            <a href="/pricing" class="block w-full px-6 py-3 bg-white/5 text-white font-semibold rounded-full text-center border border-white/10 hover:bg-white/10 transition-colors text-sm mt-auto">Get Started</a>
+            <a href="/pricing#support" class="block w-full px-6 py-3 bg-white/5 text-white font-semibold rounded-full text-center border border-white/10 hover:bg-white/10 transition-colors text-sm mt-auto">Get Started</a>
           </div>
         </div>
 
@@ -153,7 +157,7 @@ import MainLayout from '../layouts/MainLayout.astro';
           <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-transparent to-transparent pointer-events-none"></div>
           <div class="absolute inset-0 bg-gradient-to-tl from-purple-500/5 via-transparent to-transparent pointer-events-none"></div>
           <div class="absolute top-4 right-4">
-            <span class="px-2 py-1 bg-orange-500 text-white text-xs font-semibold rounded-full">Recommended</span>
+            <span class="px-2 py-1 bg-orange-700 text-white text-xs font-semibold rounded-full">Recommended</span>
           </div>
           <div class="relative flex flex-col flex-1">
             <div class="mb-6">
@@ -163,24 +167,26 @@ import MainLayout from '../layouts/MainLayout.astro';
               <p class="text-zinc-400 text-sm mt-2">For businesses that need regular website updates.</p>
             </div>
             <ul class="space-y-2 mb-6 flex-1">
-              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-emerald-500/5 border border-emerald-500/20">
-                <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span class="text-sm font-semibold text-emerald-400">Everything in Technical, PLUS:</span>
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg transition-all duration-200 ease-out hover:-translate-y-0.5" style="background-color: rgba(180, 80, 200, 0.15); border: 1px solid rgba(180, 80, 200, 0.3);">
+                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #B450C8;">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-sm font-semibold" style="color: #B450C8;">Everything in Technical, PLUS:</span>
               </li>
-              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span class="text-sm text-zinc-300">1 hour of content edits per month</span>
+                <span class="text-sm text-zinc-300">1 Hour of Content Edits: Send us your text/image changes, and we do them for you.</span>
               </li>
-              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span class="text-sm text-zinc-300">Priority support with 24-hour turnaround</span>
+                <span class="text-sm text-zinc-300">Priority Support: You skip the line. 24-hour turnaround guarantee.</span>
               </li>
-              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span class="text-sm text-zinc-300">Quarterly performance and SEO audits</span>
+                <span class="text-sm text-zinc-300">Performance Audits: Regular checkups to ensure Google still loves your speed.</span>
               </li>
             </ul>
-            <a href="/pricing" class="block w-full px-6 py-3 bg-orange-700 text-white font-semibold rounded-full text-center hover:bg-orange-600 transition-colors btn-glow text-sm mt-auto">Get Started</a>
+            <a href="/pricing#support" class="block w-full px-6 py-3 bg-orange-700 text-white font-semibold rounded-full text-center hover:bg-orange-600 transition-colors btn-glow text-sm mt-auto">Get Started</a>
           </div>
         </div>
 
@@ -195,20 +201,22 @@ import MainLayout from '../layouts/MainLayout.astro';
               <p class="text-zinc-400 text-sm mt-2">For high-traffic sites or businesses that need maximum support.</p>
             </div>
             <ul class="space-y-2 mb-6 flex-1">
-              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-emerald-500/5 border border-emerald-500/20">
-                <svg class="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span class="text-sm font-semibold text-emerald-400">Everything in Content, PLUS:</span>
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg transition-all duration-200 ease-out hover:-translate-y-0.5" style="background-color: rgba(180, 80, 200, 0.15); border: 1px solid rgba(180, 80, 200, 0.3);">
+                <svg class="w-5 h-5 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="color: #B450C8;">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-sm font-semibold" style="color: #B450C8;">Everything in Content, PLUS:</span>
               </li>
-              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span class="text-sm text-zinc-300">2 hours of content edits per month</span>
+                <span class="text-sm text-zinc-300">2 Hours of Content Edits: Text, images, and small changes when you need them.</span>
               </li>
-              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5">
+              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span class="text-sm text-zinc-300">Emergency response for downtime and urgent issues</span>
+                <span class="text-sm text-zinc-300">Emergency Response: Immediate top priority for downtime, bugs, and urgent site issues.</span>
               </li>
             </ul>
-            <a href="/pricing" class="block w-full px-6 py-3 bg-white/5 text-white font-semibold rounded-full text-center border border-white/10 hover:bg-white/10 transition-colors text-sm mt-auto">Get Started</a>
+            <a href="/pricing#support" class="block w-full px-6 py-3 bg-white/5 text-white font-semibold rounded-full text-center border border-white/10 hover:bg-white/10 transition-colors text-sm mt-auto">Get Started</a>
           </div>
         </div>
       </div>
@@ -219,7 +227,7 @@ import MainLayout from '../layouts/MainLayout.astro';
       <div class="grid md:grid-cols-3 gap-6">
         <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-8" data-aos="fade-up">
           <h3 class="text-xl font-bold text-white mb-3">Managed Hosting</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed mb-4">Pair maintenance with managed hosting - daily backups, CDN, SSL, and 24/7 uptime monitoring included.</p>
+          <p class="text-sm text-zinc-400 leading-relaxed mb-4">Pair maintenance with managed hosting: CDN, SSL, deploy rollback, and uptime monitoring included.</p>
           <a href="/hosting" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors inline-flex items-center gap-1">
             View hosting plans
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
@@ -227,17 +235,17 @@ import MainLayout from '../layouts/MainLayout.astro';
         </div>
         <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-8" data-aos="fade-up" data-aos-delay="100">
           <h3 class="text-xl font-bold text-white mb-3">Full Support Details</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed mb-4">See everything our support team handles - from plugin conflicts to content edits and emergency fixes.</p>
+          <p class="text-sm text-zinc-400 leading-relaxed mb-4">See everything our support team handles - from layout issues and broken forms to content edits and emergency fixes.</p>
           <a href="/support" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors inline-flex items-center gap-1">
             Explore web support
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
           </a>
         </div>
         <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-8" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="text-xl font-bold text-white mb-3">2026 Maintenance Guide</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed mb-4">Deep dive into what Orange County businesses actually need - security, backups, performance, content, and SEO.</p>
-          <a href="/blog/website-maintenance-orange-county" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors inline-flex items-center gap-1">
-            Read the full guide
+          <h3 class="text-xl font-bold text-white mb-3">Local SEO Services</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed mb-4">Grow your presence on Google Maps, build citations, publish local content, and improve rankings. Local SEO plans start at $500/mo.</p>
+          <a href="/services/local-seo" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors inline-flex items-center gap-1">
+            View Local SEO plans
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
           </a>
         </div>

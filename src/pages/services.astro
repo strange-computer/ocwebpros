@@ -1,5 +1,7 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
+import SpotlightImage from '../components/SpotlightImage.astro';
+import WebDesignFeatureGrid from '../components/WebDesignFeatureGrid.astro';
 ---
 <MainLayout 
   title="Services | OCWebPros" 
@@ -40,10 +42,11 @@ import MainLayout from '../layouts/MainLayout.astro';
             <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Clean code that loads fast and works for every visitor</span></li>
           </ul>
         </div>
-        <!-- Mockup Image (Right on desktop, top on mobile) -->
-        <div class="w-full md:w-1/2 h-64 sm:h-80 md:h-[500px] border border-white/10 rounded-xl overflow-hidden" data-aos="fade-left">
-          <img src="/images/web-design-mockup.png" alt="Web Design Portfolio Mockup" class="w-full h-full object-cover" />
-        </div>
+        <!-- Image (Right on desktop, top on mobile) -->
+        <SpotlightImage
+          src="/images/unsplash/services-web-design.jpg"
+          alt="Web designer working on a modern website layout"
+        />
       </div>
     </section>
 
@@ -69,7 +72,7 @@ import MainLayout from '../layouts/MainLayout.astro';
             </div>
 
             <!-- Mobile: badge/headline (top) → price → features → CTA. Desktop: left = badge+headline+features, right = price+CTA -->
-            <div class="flex flex-col md:grid gap-6 md:grid-cols-[1fr_auto] md:items-stretch">
+            <div class="flex flex-col md:grid gap-6 md:grid-cols-[1.15fr_auto] md:items-stretch">
               <!-- Left column: badge + headline (desktop only) + features -->
               <div class="order-2 md:order-1 md:col-start-1 md:row-start-1 md:pr-8 min-w-0">
                 <div class="hidden md:block text-center mb-4">
@@ -80,44 +83,7 @@ import MainLayout from '../layouts/MainLayout.astro';
                   <h2 class="text-2xl md:text-4xl font-bold mb-2 text-white tracking-tight">The &quot;Authority&quot; Website</h2>
                   <p class="text-zinc-400 text-sm leading-relaxed max-w-xl mx-auto">High-performance websites built to meet Core Web Vitals standards and capture local market share.</p>
                 </div>
-                <ul class="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-2">
-                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
-                    <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span class="text-sm text-zinc-300">Strategy-First Sitemap</span>
-                  </li>
-                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
-                    <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span class="text-sm text-zinc-300">Conversion-Engineered UI</span>
-                  </li>
-                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
-                    <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span class="text-sm text-zinc-300">90+ Google Speed Score</span>
-                  </li>
-                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
-                    <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span class="text-sm text-zinc-300">Local Schema Injection</span>
-                  </li>
-                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
-                    <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span class="text-sm text-zinc-300">Mobile-First "Thumb" UX</span>
-                  </li>
-                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
-                    <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span class="text-sm text-zinc-300">Analytics Setup &amp; Dashboard</span>
-                  </li>
-                </ul>
+                <WebDesignFeatureGrid />
               </div>
 
               <!-- Right column: price + CTA in one block (single cell on desktop, display:contents on mobile for order) -->
@@ -131,7 +97,7 @@ import MainLayout from '../layouts/MainLayout.astro';
                 </div>
                 <!-- CTA (mobile order 3) -->
                 <div class="order-3 md:order-none text-center flex flex-col items-center">
-                  <a href="/pricing" class="inline-block px-8 py-3.5 bg-orange-700 text-white font-semibold rounded-full hover:bg-orange-600 transition-colors btn-glow text-sm md:text-base">
+                  <a href="/pricing#web-design" class="inline-block px-8 py-3.5 bg-orange-700 text-white font-semibold rounded-full hover:bg-orange-600 transition-colors btn-glow text-sm md:text-base">
                     Secure Your Build Slot
                   </a>
                 </div>
@@ -147,45 +113,45 @@ import MainLayout from '../layouts/MainLayout.astro';
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <div data-aos="fade-up" data-aos-delay="0">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
-            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">Custom Design</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Your website should authentically represent your brand and objectives. We focus on content strategy and conversion optimization, not generic themes.</p>
         </div>
         <div data-aos="fade-up" data-aos-delay="100">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
-            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h10"/></svg>
+            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">Modern Features</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Animations, galleries, forms, and social - implemented lightly so pages stay fast.</p>
         </div>
         <div data-aos="fade-up" data-aos-delay="200">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
-            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
+            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">Built to Last</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Streamlined architecture, optimized performance, mobile-responsive. Simple to update and built to scale alongside your business.</p>
         </div>
         <div data-aos="fade-up" data-aos-delay="300">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
-            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c1.657 0 3-1.567 3-3.5S13.657 4 12 4 9 5.567 9 7.5 10.343 11 12 11zm0 0v9m-7-5h14"/></svg>
+            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">Performance & Security</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Best practices for speed and security baked in from day one.</p>
         </div>
         <div data-aos="fade-up" data-aos-delay="400">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
-            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h10M4 18h6"/></svg>
+            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H5a1 1 0 01-1-1v-4zM14 15a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z"/></svg>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">Scalable Architecture</h3>
           <p class="text-sm text-zinc-400 leading-relaxed">Flexible content structure so pages, sections, and features can be added later without a rebuild.</p>
         </div>
         <div data-aos="fade-up" data-aos-delay="500">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
-            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">Easy Content Management</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed">Update copy and images yourself, or lean on us - we keep things simple either way.</p>
+          <p class="text-sm text-zinc-400 leading-relaxed">Need a text or image change? Send it our way. We handle updates for you - no CMS to learn, no code to touch.</p>
         </div>
       </div>
     </section>
@@ -193,10 +159,12 @@ import MainLayout from '../layouts/MainLayout.astro';
     <!-- Local SEO Spotlight Section -->
     <section id="local-seo" class="max-w-7xl mx-auto py-16 md:py-24 px-4 sm:px-6">
       <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-        <!-- Mockup Image (Left on desktop, top on mobile) -->
-        <div class="w-full md:w-1/2 h-64 sm:h-80 md:h-[500px] border border-white/10 rounded-xl overflow-hidden order-1 md:order-1" data-aos="fade-left">
-          <img src="/images/local-seo-mockup.png" alt="Local SEO Dashboard Mockup" class="w-full h-full object-cover" />
-        </div>
+        <!-- Image (Left on desktop, top on mobile) -->
+        <SpotlightImage
+          src="/images/unsplash/services-local-seo.jpg"
+          alt="Local business location on a map search result"
+          class="order-1 md:order-1"
+        />
         <!-- Text Content (Right on desktop, bottom on mobile) -->
         <div class="w-full md:w-1/2 backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-8 md:p-10 order-2 md:order-2" data-aos="fade-right">
           <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6">
@@ -240,7 +208,7 @@ import MainLayout from '../layouts/MainLayout.astro';
                 <span class="text-lg align-top">$</span>500
               </div>
               <p class="text-zinc-400 text-sm">per month</p>
-              <p class="text-orange-400 text-xs font-medium mt-2">Who is this for? Maintenance Mode</p>
+              <p class="text-orange-400 text-xs font-medium mt-2">Who is this for? Visibility Upkeep</p>
               <p class="text-zinc-400 text-sm mt-2">For established businesses that need to keep their digital doors open and technical health green.</p>
             </div>
             <ul class="space-y-2 mb-6 flex-1">
@@ -254,13 +222,13 @@ import MainLayout from '../layouts/MainLayout.astro';
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-sm text-zinc-300">Technical Health Monitor: Monthly link &amp; error fixes.</span>
+                <span class="text-sm text-zinc-300">Search Health Monitor: Monthly crawl errors, index issues, and broken internal link fixes.</span>
               </li>
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-sm text-zinc-300">Review Management: We monitor and alert you to new reviews.</span>
+                <span class="text-sm text-zinc-300">Review Management: Monitor Google &amp; Yelp, alert you to every new review, and flag suspicious or policy-violating ones.</span>
               </li>
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -269,7 +237,7 @@ import MainLayout from '../layouts/MainLayout.astro';
                 <span class="text-sm text-zinc-300">Citation Upkeep: Keeping your address consistent on Yelp/Bing.</span>
               </li>
             </ul>
-            <a href="/pricing" class="block w-full px-6 py-3 bg-white/5 text-white font-semibold rounded-full text-center border border-white/10 hover:bg-white/10 transition-colors text-sm mt-auto">
+            <a href="/pricing#local-seo" class="block w-full px-6 py-3 bg-white/5 text-white font-semibold rounded-full text-center border border-white/10 hover:bg-white/10 transition-colors text-sm mt-auto">
               Get Started
             </a>
           </div>
@@ -280,7 +248,7 @@ import MainLayout from '../layouts/MainLayout.astro';
           <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-transparent to-transparent pointer-events-none"></div>
           <div class="absolute inset-0 bg-gradient-to-tl from-purple-500/5 via-transparent to-transparent pointer-events-none"></div>
           <div class="absolute top-4 right-4">
-            <span class="px-2 py-1 bg-orange-500 text-white text-xs font-semibold rounded-full">Recommended</span>
+            <span class="px-2 py-1 bg-orange-700 text-white text-xs font-semibold rounded-full">Recommended</span>
           </div>
           <div class="relative flex flex-col flex-1">
             <div class="mb-6">
@@ -321,7 +289,7 @@ import MainLayout from '../layouts/MainLayout.astro';
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-sm text-zinc-300">Content Optimization: Regular updates and testing to improve engagement and rankings.</span>
+                <span class="text-sm text-zinc-300">On-Page SEO Optimization: Keyword-focused updates to titles, headings, internal links, and page copy.</span>
               </li>
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -330,7 +298,7 @@ import MainLayout from '../layouts/MainLayout.astro';
                 <span class="text-sm text-zinc-300">Live Dashboard: 24/7 view of your keyword rankings.</span>
               </li>
             </ul>
-            <a href="/pricing" class="block w-full px-6 py-3 bg-orange-700 text-white font-semibold rounded-full text-center hover:bg-orange-600 transition-colors btn-glow text-sm mt-auto">
+            <a href="/pricing#local-seo" class="block w-full px-6 py-3 bg-orange-700 text-white font-semibold rounded-full text-center hover:bg-orange-600 transition-colors btn-glow text-sm mt-auto">
               Get Started
             </a>
           </div>
@@ -367,13 +335,13 @@ import MainLayout from '../layouts/MainLayout.astro';
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-sm text-zinc-300">Conversion Rate Optimization (CRO): Heatmap analysis to identify and fix issues preventing visitor conversions.</span>
+                <span class="text-sm text-zinc-300">Conversion Rate Optimization (CRO): Ongoing analysis to identify and fix issues preventing visitor conversions.</span>
               </li>
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-sm text-zinc-300">Local Media Outreach: Quarterly PR campaigns and expert positioning for regional news coverage opportunities.</span>
+                <span class="text-sm text-zinc-300">Local Media Outreach: Online press releases with Orange County local angles, published on your site and distributed through major PR channels.</span>
               </li>
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -382,7 +350,7 @@ import MainLayout from '../layouts/MainLayout.astro';
                 <span class="text-sm text-zinc-300">Monthly Conversion Audit: We analyze your site and suggest improvements to increase leads.</span>
               </li>
             </ul>
-            <a href="/pricing" class="block w-full px-6 py-3 bg-white/5 text-white font-semibold rounded-full text-center border border-white/10 hover:bg-white/10 transition-colors text-sm mt-auto">
+            <a href="/pricing#local-seo" class="block w-full px-6 py-3 bg-white/5 text-white font-semibold rounded-full text-center border border-white/10 hover:bg-white/10 transition-colors text-sm mt-auto">
               Get Started
             </a>
           </div>

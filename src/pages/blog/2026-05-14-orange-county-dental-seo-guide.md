@@ -453,4 +453,4 @@ Dental SEO in Orange County requires specialized expertise—both in SEO and HIP
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County dental practices since 2015. We've helped dozens of dentists achieve dramatic growth through HIPAA-compliant SEO strategies. Questions about dental SEO? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County dental practices. We've helped dozens of dentists achieve dramatic growth through HIPAA-compliant SEO strategies. Questions about dental SEO? [Contact us](/contact).*

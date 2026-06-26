@@ -1,9 +1,10 @@
 ---
 import MainLayout from '../../layouts/MainLayout.astro';
+import SpotlightImage from '../../components/SpotlightImage.astro';
 ---
 <MainLayout 
   title="SEO Strategy Services Orange County CA | OCWebPros" 
-  description="Data-driven SEO strategy for Orange County businesses. Ahrefs-powered keyword research, topic cluster planning, competitor gap analysis, and intent mapping. Plans from $500/mo."
+  description="Data-driven SEO for Orange County businesses. Keyword research, topic planning, and competitor analysis delivered through monthly SEO plans from $500/mo."
   bodyClass="page-services page-seo-strategy"
   pageCSS="/css/pages/services.css">
 
@@ -18,11 +19,11 @@ import MainLayout from '../../layouts/MainLayout.astro';
         SEO Strategy for <span class="text-gradient-orange">Orange County</span>
       </h1>
       <p class="text-zinc-400 text-lg leading-relaxed max-w-3xl mx-auto">
-        Data-driven search strategy built on real keyword demand, competitor gaps, and search intent - not guesswork or outdated checklists.
+        Data-driven search strategy built on real keyword demand, competitor gaps, and search intent - delivered through our monthly SEO plans.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
         <a href="/contact" class="px-8 py-3.5 bg-orange-700 text-white font-semibold rounded-full hover:bg-orange-600 transition-colors btn-glow text-sm md:text-base">
-          Request a Strategy Session
+          Request a Consult
         </a>
         <a href="/pricing" class="px-8 py-3.5 bg-white/5 text-white font-semibold rounded-full border border-white/10 hover:bg-white/10 transition-colors text-sm md:text-base">
           View Pricing
@@ -40,7 +41,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
             <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
           </div>
           <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Strategy Before Tactics</h2>
-          <p class="text-zinc-400 mb-6 text-lg leading-relaxed">Ranking in 2026 means building topical authority, matching search intent, and covering the subtopics your competitors already own. We start with research and architecture - then execute with precision.</p>
+          <p class="text-zinc-400 mb-6 text-lg leading-relaxed">Ranking in 2026 means building topical authority, matching search intent, and covering the subtopics your competitors already own. On Growth and Dominance plans, we start with research and architecture - then execute month over month.</p>
           <ul class="space-y-3 text-zinc-300">
             <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Ahrefs-powered keyword research and fan-out topic analysis</span></li>
             <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Competitor gap analysis to find overlooked ranking opportunities</span></li>
@@ -48,9 +49,10 @@ import MainLayout from '../../layouts/MainLayout.astro';
             <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Search intent mapping before a single page gets written</span></li>
           </ul>
         </div>
-        <div class="w-full md:w-1/2 h-64 sm:h-80 md:h-[500px] border border-white/10 rounded-xl overflow-hidden flex items-center justify-center bg-zinc-900/50" data-aos="fade-left">
-          <img src="/images/seo-trends.svg" alt="SEO strategy and keyword research for Orange County businesses" class="w-full h-full object-contain p-8" />
-        </div>
+        <SpotlightImage
+          src="/images/unsplash/services-seo-strategy.jpg"
+          alt="SEO strategy and analytics review on laptop"
+        />
       </div>
     </section>
 
@@ -58,7 +60,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
     <section class="max-w-7xl mx-auto pt-2 md:pt-4 pb-16 md:pb-24 px-4 sm:px-6 md:px-8">
       <div class="text-center mb-12" data-aos="fade-up">
         <h2 class="text-2xl md:text-3xl font-bold mb-2 text-white">What Our SEO Strategy Includes</h2>
-        <p class="text-zinc-400 text-sm md:text-base">Research, planning, and execution built for how search works today - including AI-driven results.</p>
+        <p class="text-zinc-400 text-sm md:text-base max-w-2xl mx-auto">How we approach SEO across our plans. Full research, content strategy, and gap analysis are included on Growth and Dominance; Foundation focuses on technical and local upkeep.</p>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <div data-aos="fade-up" data-aos-delay="0">
@@ -113,10 +115,10 @@ import MainLayout from '../../layouts/MainLayout.astro';
         <div class="relative">
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-orange-400 mb-4">
             <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
-            Strategy Plans
+            Local SEO Plans
           </div>
           <h2 class="text-2xl md:text-3xl font-bold mb-2 text-white">Choose your plan</h2>
-          <p class="text-zinc-400 text-sm md:text-base">From technical maintenance to full content-driven growth</p>
+          <p class="text-zinc-400 text-sm md:text-base">Monthly SEO service - pick the level of strategy and execution you need</p>
         </div>
       </div>
 
@@ -152,7 +154,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
         <div class="local-seo-pricing-card backdrop-blur-[12px] border-2 border-orange-500/50 rounded-2xl p-6 md:p-8 overflow-hidden relative flex flex-col transition-all duration-300 ease-out" style="background: rgba(24, 24, 27, 0.6);">
           <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-transparent to-transparent pointer-events-none"></div>
           <div class="absolute top-4 right-4">
-            <span class="px-2 py-1 bg-orange-500 text-white text-xs font-semibold rounded-full">Recommended</span>
+            <span class="px-2 py-1 bg-orange-700 text-white text-xs font-semibold rounded-full">Recommended</span>
           </div>
           <div class="relative flex flex-col flex-1">
             <div class="mb-6">
@@ -205,7 +207,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
               </li>
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span class="text-sm text-zinc-300">Conversion rate optimization and heatmap analysis</span>
+                <span class="text-sm text-zinc-300">Conversion rate optimization and ongoing analysis</span>
               </li>
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
@@ -291,10 +293,10 @@ import MainLayout from '../../layouts/MainLayout.astro';
     <section class="max-w-7xl mx-auto py-16 md:py-24 px-4 sm:px-6 md:px-8">
       <div class="grid md:grid-cols-2 gap-6">
         <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-8" data-aos="fade-up">
-          <h3 class="text-xl font-bold text-white mb-3">Local SEO Execution</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed mb-4">Strategy is only half the battle. Our local SEO packages handle Google Business Profile, citations, and Maps visibility day to day.</p>
+          <h3 class="text-xl font-bold text-white mb-3">Local SEO Day to Day</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed mb-4">Every plan includes hands-on local work - Google Business Profile, citations, and Maps visibility. See how we handle the ongoing execution side.</p>
           <a href="/services/local-seo" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors inline-flex items-center gap-1">
-            Explore local SEO packages
+            How we execute local SEO
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
           </a>
         </div>
@@ -312,10 +314,10 @@ import MainLayout from '../../layouts/MainLayout.astro';
     <!-- CTA -->
     <div class="text-center py-12 sm:py-16 md:py-24 px-4 sm:px-6 md:px-8" data-aos="fade-up">
       <h2 class="text-2xl md:text-3xl font-bold mb-4 text-white">Ready for a data-driven SEO plan?</h2>
-      <p class="text-zinc-400 mb-8 max-w-xl mx-auto">Book a free strategy session and we&apos;ll map your keyword opportunities, competitor gaps, and next steps.</p>
+      <p class="text-zinc-400 mb-8 max-w-xl mx-auto">Request a consult to find the right plan. Full keyword research and competitor analysis start on Growth or Dominance.</p>
       <div class="inline-flex flex-col sm:flex-row gap-4">
         <a href="/contact" class="px-10 py-5 bg-orange-700 text-white font-bold rounded-full hover:bg-orange-600 transition-colors text-lg btn-glow">
-          Request a strategy session
+          Request a consult
         </a>
         <a href="/pricing" class="px-10 py-5 bg-white/5 text-white font-bold rounded-full border border-white/10 hover:bg-white/10 transition-colors text-lg">
           View all pricing

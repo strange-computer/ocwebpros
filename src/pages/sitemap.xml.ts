@@ -45,10 +45,12 @@ export const GET: APIRoute = async ({ site }) => {
   const pages = [...staticPages, ...blogPages];
   const buildTime = new Date().toISOString();
 
+  const sitemapLoc = (path: string) => (path ? `${siteUrl}/${path}/` : `${siteUrl}/`);
+
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${pages.map(page => `  <url>
-    <loc>${siteUrl}${page.url ? '/' + page.url : ''}</loc>
+    <loc>${sitemapLoc(page.url)}</loc>
     <lastmod>${('lastmod' in page ? page.lastmod : buildTime)}</lastmod>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority}</priority>

@@ -1,9 +1,10 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
+import SpotlightImage from '../components/SpotlightImage.astro';
 ---
 <MainLayout 
   title="Managed Hosting | OCWebPros" 
-  description="Managed web hosting with global CDN, SSL, uptime monitoring, and site version history. $75/mo. Built for Orange County businesses."
+  description="Managed hosting for OCWebPros-built sites. Global CDN, auto-renewing SSL, deploy rollback, and uptime monitoring. $75/mo."
   bodyClass="page-hosting"
   pageCSS="/css/pages/hosting.css">
 
@@ -19,7 +20,7 @@ import MainLayout from '../layouts/MainLayout.astro';
         Hosting That <span class="text-gradient-orange">Actually Works</span>
       </h1>
       <p class="text-zinc-400 text-lg leading-relaxed">
-        Fully managed hosting designed for businesses that can't afford downtime. We handle the technical details so you can focus on what matters.
+        Fully managed hosting for sites we build: modern cloud infrastructure, always-on SSL, and a team that handles the technical side so you don&apos;t have to.
       </p>
     </div>
   </header>
@@ -40,6 +41,7 @@ import MainLayout from '../layouts/MainLayout.astro';
               </div>
               <h2 class="text-2xl md:text-4xl font-bold mb-2 text-white tracking-tight">The &quot;Peace of Mind&quot; Protocol</h2>
               <p class="text-zinc-400 text-sm leading-relaxed">We don&apos;t just host your site. We guard it.</p>
+              <p class="text-zinc-500 text-xs mt-2">For websites we&apos;ve built and deploy.</p>
             </div>
             <!-- Mobile: badge/headline (top) → price → features → CTA → Tech Bar. Desktop: left = badge+headline+features, right = price+CTA+Tech Bar -->
             <div class="flex flex-col md:grid gap-6 md:grid-cols-[1fr_auto] md:items-stretch">
@@ -52,11 +54,12 @@ import MainLayout from '../layouts/MainLayout.astro';
                   </div>
                   <h2 class="text-2xl md:text-4xl font-bold mb-2 text-white tracking-tight">The &quot;Peace of Mind&quot; Protocol</h2>
                   <p class="text-zinc-400 text-sm leading-relaxed max-w-xl mx-auto">We don&apos;t just host your site. We guard it.</p>
+                  <p class="text-zinc-500 text-xs mt-2">For websites we&apos;ve built and deploy.</p>
                 </div>
                 <ul class="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-2">
                   <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                     <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <div><span class="text-sm font-semibold text-white block">Site Version History</span><span class="text-xs text-zinc-400">Every update is saved. If something goes wrong, we can restore an earlier version quickly.</span></div>
+                    <div><span class="text-sm font-semibold text-white block">Deploy Rollback</span><span class="text-xs text-zinc-400">Every publish is saved. Roll back to a previous version instantly if an update causes trouble.</span></div>
                   </li>
                   <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                     <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
@@ -64,11 +67,11 @@ import MainLayout from '../layouts/MainLayout.astro';
                   </li>
                   <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                     <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <div><span class="text-sm font-semibold text-white block">Real-Time Uptime Shield</span><span class="text-xs text-zinc-400">We monitor around the clock and address issues as soon as we're alerted.</span></div>
+                    <div><span class="text-sm font-semibold text-white block">Uptime Monitoring</span><span class="text-xs text-zinc-400">We check that your site stays online and respond quickly if something goes wrong.</span></div>
                   </li>
                   <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                     <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <div><span class="text-sm font-semibold text-white block">Edge Security &amp; DDoS Protection</span><span class="text-xs text-zinc-400">Built-in protection against traffic spikes and common web threats.</span></div>
+                    <div><span class="text-sm font-semibold text-white block">Edge Security &amp; DDoS Protection</span><span class="text-xs text-zinc-400">Built-in edge protection against DDoS attacks and sudden traffic spikes.</span></div>
                   </li>
                   <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                     <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
@@ -76,7 +79,7 @@ import MainLayout from '../layouts/MainLayout.astro';
                   </li>
                   <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                     <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <div><span class="text-sm font-semibold text-white block">Zero-Downtime Migration</span><span class="text-xs text-zinc-400">We handle migration to your managed environment for free. No stress.</span></div>
+                    <div><span class="text-sm font-semibold text-white block">Managed DNS &amp; Domain Setup</span><span class="text-xs text-zinc-400">We configure your domain and DNS at launch so your site goes live without the headache.</span></div>
                   </li>
                 </ul>
               </div>
@@ -89,8 +92,8 @@ import MainLayout from '../layouts/MainLayout.astro';
                   <p class="text-zinc-400 text-sm">per month</p>
                 </div>
                 <div class="order-3 md:order-none text-center flex flex-col items-center">
-                  <a href="/pricing" class="inline-block px-8 py-3.5 bg-orange-700 text-white font-semibold rounded-full hover:bg-orange-600 transition-colors btn-glow text-sm md:text-base">
-                    Migrate to Managed Hosting
+                  <a href="/pricing#hosting" class="inline-block px-8 py-3.5 bg-orange-700 text-white font-semibold rounded-full hover:bg-orange-600 transition-colors btn-glow text-sm md:text-base">
+                    Get Started
                   </a>
                 </div>
               </div>
@@ -100,16 +103,16 @@ import MainLayout from '../layouts/MainLayout.astro';
       </div>
     </section>
 
-    <!-- Zero Maintenance. Maximum Performance -->
+    <!-- We Handle the Server. You Get the Speed. -->
     <section class="max-w-7xl mx-auto pt-8 md:pt-12 pb-16 md:pb-24 px-6 md:px-8">
-      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center" data-aos="fade-up">Zero Maintenance. Maximum Performance.</h2>
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center" data-aos="fade-up">We Handle the Infrastructure. You Get the Speed.</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <div class="group hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="0">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
             <svg class="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/></svg>
           </div>
-          <h3 class="text-xl font-bold text-white mb-2">Purpose-Built Hosting</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed">Your site runs on modern cloud infrastructure tuned for speed and reliability, not a crowded shared server with hundreds of unrelated sites.</p>
+          <h3 class="text-xl font-bold text-white mb-2">Modern Cloud Hosting</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Your site runs on globally distributed cloud infrastructure, not a crowded shared server with hundreds of unrelated sites.</p>
         </div>
         <div class="group hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="100">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
@@ -123,7 +126,7 @@ import MainLayout from '../layouts/MainLayout.astro';
             <svg class="w-8 h-8 text-orange-500 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
           </div>
           <h3 class="text-xl font-bold text-white mb-2">Proactive Monitoring</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed">Our systems track performance metrics continuously. We catch and resolve issues before they become problems, often before you even notice.</p>
+          <p class="text-sm text-zinc-400 leading-relaxed">We monitor uptime and deploy health. When something looks off, we investigate and roll back or fix it, often before you notice.</p>
         </div>
       </div>
     </section>
@@ -137,21 +140,18 @@ import MainLayout from '../layouts/MainLayout.astro';
             <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
           </div>
           <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Built for Your Business</h2>
-          <p class="text-zinc-400 mb-6 text-lg leading-relaxed">We use enterprise-grade cloud infrastructure and manage it for you, so you get strong performance, security, and reliability without the hassle. Every environment is tailored to your specific needs.</p>
+          <p class="text-zinc-400 mb-6 text-lg leading-relaxed">We use modern cloud infrastructure and manage it for you, so you get strong performance, security, and reliability without the hassle. Each site gets its own configured environment.</p>
           <ul class="space-y-3 text-zinc-300">
-            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Custom-configured environments, not one-size-fits-all plans</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Per-site configuration: CDN, cache headers, and security rules tuned for your build</span></li>
             <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>HTTPS, edge protection, and uptime monitoring included</span></li>
             <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Local support team that actually understands your business</span></li>
           </ul>
         </div>
         <!-- Mockup (Right on desktop, top on mobile) -->
-        <div class="w-full md:w-1/2 h-96 md:h-[500px] border border-white/10 rounded-xl overflow-hidden" data-aos="fade-left">
-          <img
-            src="/images/laptop-cutout.png"
-            alt="Hosting Dashboard Mockup"
-            class="w-full h-full object-cover"
-          />
-        </div>
+        <SpotlightImage
+          src="/images/unsplash/hosting-infrastructure.jpg"
+          alt="Server cooling fans in a data center"
+        />
       </div>
     </section>
 
@@ -159,13 +159,10 @@ import MainLayout from '../layouts/MainLayout.astro';
     <section class="max-w-7xl mx-auto py-16 md:py-24 bg-zinc-900/30 border-y border-white/5">
       <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
         <!-- Mockup (Left on desktop, top on mobile) -->
-        <div class="w-full md:w-1/2 h-96 md:h-[500px] border border-white/10 rounded-xl overflow-hidden order-1 md:order-1" data-aos="fade-left">
-          <img
-            src="/images/security.png"
-            alt="Security Dashboard Mockup"
-            class="w-full h-full object-cover"
-          />
-        </div>
+        <SpotlightImage
+          src="/images/unsplash/hosting-security.jpg"
+          alt="Padlock on a keyboard representing website security"
+        />
         <!-- Text Content (Right on desktop, bottom on mobile) -->
         <div class="w-full md:w-1/2 backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-8 md:p-10 order-2 md:order-2" data-aos="fade-right">
           <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6">
@@ -176,7 +173,7 @@ import MainLayout from '../layouts/MainLayout.astro';
           <ul class="space-y-3 text-zinc-300">
             <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>HTTPS enforced site-wide with automatic certificate renewal</span></li>
             <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Edge-level DDoS protection and traffic filtering</span></li>
-            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Site version history so you can recover quickly if something goes wrong</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Deploy rollback so you can recover quickly if something goes wrong</span></li>
           </ul>
         </div>
       </div>
@@ -190,8 +187,8 @@ import MainLayout from '../layouts/MainLayout.astro';
           <div class="w-8 h-8 flex items-center justify-center mb-3">
             <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
           </div>
-          <h3 class="text-lg font-bold text-white mb-2">Site Version History</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed">Every update is saved. Restore an earlier version of your site quickly if something goes wrong.</p>
+          <h3 class="text-lg font-bold text-white mb-2">Deploy Rollback</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Every publish is saved. Roll back to a previous version instantly if an update causes trouble.</p>
         </div>
         <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-white/20 transition-all" data-aos="fade-up" data-aos-delay="100">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
@@ -204,8 +201,8 @@ import MainLayout from '../layouts/MainLayout.astro';
           <div class="w-8 h-8 flex items-center justify-center mb-3">
             <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
           </div>
-          <h3 class="text-lg font-bold text-white mb-2">Performance Optimization</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed">Global CDN delivery, edge caching, and performance tuning included.</p>
+          <h3 class="text-lg font-bold text-white mb-2">Performance &amp; Caching</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Global CDN delivery, edge caching, and optimized cache headers for fast page loads.</p>
         </div>
         <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-white/20 transition-all" data-aos="fade-up" data-aos-delay="300">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
@@ -219,7 +216,7 @@ import MainLayout from '../layouts/MainLayout.astro';
             <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
           </div>
           <h3 class="text-lg font-bold text-white mb-2">Uptime Monitoring</h3>
-          <p class="text-sm text-zinc-400 leading-relaxed">Continuous monitoring with alerts when something needs attention.</p>
+          <p class="text-sm text-zinc-400 leading-relaxed">We monitor whether your site is up and respond quickly if it goes down.</p>
         </div>
         <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 hover:border-white/20 transition-all" data-aos="fade-up" data-aos-delay="500">
           <div class="w-8 h-8 flex items-center justify-center mb-3">
@@ -233,9 +230,9 @@ import MainLayout from '../layouts/MainLayout.astro';
 
     <!-- FAQ -->
     <section class="max-w-7xl mx-auto py-16 md:py-24 px-6 md:px-8 bg-zinc-900/30 border-y border-white/5">
-      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center" data-aos="fade-up">Common Questions</h2>
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center" data-aos="fade-up" data-aos-offset="320">Common Questions</h2>
       <div class="max-w-3xl mx-auto space-y-4">
-        <div class="faq-item backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-xl overflow-hidden transition-all" data-aos="fade-up" data-aos-delay="100">
+        <div class="faq-item backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-xl overflow-hidden transition-all" data-aos="fade-up" data-aos-offset="320">
           <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-white/10 transition-colors" aria-expanded="false">
             <h3 class="font-bold text-white pr-4">What kind of infrastructure do you use?</h3>
             <svg class="w-5 h-5 text-orange-500 flex-shrink-0 faq-icon transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -244,11 +241,11 @@ import MainLayout from '../layouts/MainLayout.astro';
           </button>
           <div class="faq-answer overflow-hidden transition-all duration-300">
             <div class="px-6 pb-6 pt-0 border-t border-white/5">
-              <p class="text-sm text-zinc-300 leading-relaxed pt-4">We use professional cloud infrastructure and manage it end-to-end for you. That gives us the control we need over performance, security, and reliability, so your site stays fast and secure without you having to think about servers.</p>
+              <p class="text-sm text-zinc-300 leading-relaxed pt-4">We host on modern cloud infrastructure with a global CDN, automatic HTTPS, and edge-level DDoS protection. Because your site is built as static pages, not running on a traditional server, there&apos;s no server software to patch or database to compromise. We manage the platform so you don&apos;t have to think about it.</p>
             </div>
           </div>
         </div>
-        <div class="faq-item backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-xl overflow-hidden transition-all" data-aos="fade-up" data-aos-delay="200">
+        <div class="faq-item backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-xl overflow-hidden transition-all" data-aos="fade-up" data-aos-offset="320" data-aos-delay="50">
           <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-white/10 transition-colors" aria-expanded="false">
             <h3 class="font-bold text-white pr-4">What if I want to use a different host?</h3>
             <svg class="w-5 h-5 text-orange-500 flex-shrink-0 faq-icon transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -261,7 +258,7 @@ import MainLayout from '../layouts/MainLayout.astro';
             </div>
           </div>
         </div>
-        <div class="faq-item backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-xl overflow-hidden transition-all" data-aos="fade-up" data-aos-delay="300">
+        <div class="faq-item backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-xl overflow-hidden transition-all" data-aos="fade-up" data-aos-offset="320" data-aos-delay="100">
           <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-white/10 transition-colors" aria-expanded="false">
             <h3 class="font-bold text-white pr-4">How do you handle security threats?</h3>
             <svg class="w-5 h-5 text-orange-500 flex-shrink-0 faq-icon transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -274,7 +271,7 @@ import MainLayout from '../layouts/MainLayout.astro';
             </div>
           </div>
         </div>
-        <div class="faq-item backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-xl overflow-hidden transition-all" data-aos="fade-up" data-aos-delay="400">
+        <div class="faq-item backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-xl overflow-hidden transition-all" data-aos="fade-up" data-aos-offset="320" data-aos-delay="150">
           <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-white/10 transition-colors" aria-expanded="false">
             <h3 class="font-bold text-white pr-4">What's your response time for outages?</h3>
             <svg class="w-5 h-5 text-orange-500 flex-shrink-0 faq-icon transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -283,11 +280,11 @@ import MainLayout from '../layouts/MainLayout.astro';
           </button>
           <div class="faq-answer overflow-hidden transition-all duration-300">
             <div class="px-6 pb-6 pt-0 border-t border-white/5">
-              <p class="text-sm text-zinc-300 leading-relaxed pt-4">Our monitoring systems alert us as soon as something goes wrong. We investigate promptly and work to restore service quickly, often by restoring an earlier version of your site.</p>
+              <p class="text-sm text-zinc-300 leading-relaxed pt-4">Our monitoring alerts us when something goes wrong. We investigate promptly and can roll back to a previous deploy to restore service quickly.</p>
             </div>
           </div>
         </div>
-        <div class="faq-item backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-xl overflow-hidden transition-all" data-aos="fade-up" data-aos-delay="500">
+        <div class="faq-item backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-xl overflow-hidden transition-all" data-aos="fade-up" data-aos-offset="320" data-aos-delay="200">
           <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-white/10 transition-colors" aria-expanded="false">
             <h3 class="font-bold text-white pr-4">Can you handle traffic spikes?</h3>
             <svg class="w-5 h-5 text-orange-500 flex-shrink-0 faq-icon transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -296,11 +293,11 @@ import MainLayout from '../layouts/MainLayout.astro';
           </button>
           <div class="faq-answer overflow-hidden transition-all duration-300">
             <div class="px-6 pb-6 pt-0 border-t border-white/5">
-              <p class="text-sm text-zinc-300 leading-relaxed pt-4">Absolutely. Our infrastructure is designed to scale automatically. Whether you're running a promotion or experiencing viral traffic, your site stays fast and available.</p>
+              <p class="text-sm text-zinc-300 leading-relaxed pt-4">Yes. Static sites served through a global CDN handle traffic spikes naturally. Whether you&apos;re running a promotion or seeing a sudden rush of visitors, your site stays fast and available.</p>
             </div>
           </div>
         </div>
-        <div class="faq-item backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-xl overflow-hidden transition-all" data-aos="fade-up" data-aos-delay="600">
+        <div class="faq-item backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-xl overflow-hidden transition-all" data-aos="fade-up" data-aos-offset="320" data-aos-delay="250">
           <button class="faq-question w-full text-left p-6 flex items-center justify-between hover:bg-white/10 transition-colors" aria-expanded="false">
             <h3 class="font-bold text-white pr-4">What makes you different from other hosts?</h3>
             <svg class="w-5 h-5 text-orange-500 flex-shrink-0 faq-icon transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -309,7 +306,7 @@ import MainLayout from '../layouts/MainLayout.astro';
           </button>
           <div class="faq-answer overflow-hidden transition-all duration-300">
             <div class="px-6 pb-6 pt-0 border-t border-white/5">
-              <p class="text-sm text-zinc-300 leading-relaxed pt-4">We&apos;re local, we manage enterprise-grade infrastructure for you, and we actually care about your business. You&apos;ll work directly with the team that manages your hosting. No overseas call centers or automated responses.</p>
+              <p class="text-sm text-zinc-300 leading-relaxed pt-4">We&apos;re local, we manage the hosting platform for sites we build, and we actually care about your business. You&apos;ll work directly with the team that deploys and maintains your site. No overseas call centers or chatbots.</p>
             </div>
           </div>
         </div>
@@ -364,7 +361,7 @@ import MainLayout from '../layouts/MainLayout.astro';
     </script>
 
     <!-- CTA -->
-    <section class="text-center py-16 md:py-24 px-6 md:px-8" data-aos="fade-up">
+    <section class="text-center py-16 md:py-24 px-6 md:px-8" data-aos="fade-up" data-aos-offset="320">
       <div class="inline-flex flex-col sm:flex-row gap-4">
         <a href="/contact" class="px-10 py-5 bg-orange-700 text-white font-bold rounded-full hover:bg-orange-600 transition-colors text-lg btn-glow">
           Talk to our team

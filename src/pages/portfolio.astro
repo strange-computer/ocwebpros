@@ -6,16 +6,40 @@ const projects = [
     title: 'Honkpill',
     image: '/images/honkpill.com_.png',
     alt: 'Honkpill product site preview',
+    url: 'https://honkpill.com',
+    description: 'E-commerce site for collectible merchandise with a bold, personality-driven brand.',
+    tags: ['E-commerce', 'Product Pages', 'Brand'],
+    highlights: [
+      'Shop layout built around a hero product',
+      'Cart and checkout tuned for mobile',
+      'Playful copy without sacrificing clarity',
+    ],
   },
   {
     title: 'Tempting Design',
     image: '/images/temptingdesign.com_.png',
     alt: 'Tempting Design site preview',
+    url: 'https://temptingdesign.com',
+    description: 'Subscription design service with tiered plans, FAQs, and a clear signup path.',
+    tags: ['SaaS', 'Landing Page', 'Subscriptions'],
+    highlights: [
+      'Plan comparison and pricing front and center',
+      'Long-form service page that answers objections',
+      'Login and subscribe flows for returning clients',
+    ],
   },
   {
     title: 'Gondola Adventure Club',
     image: '/images/mint.gondolaadventureclub.com_.png',
     alt: 'Gondola Adventure Club Mint preview',
+    url: 'https://gondolaadventureclub.com',
+    description: 'Web3 collectibles project with a mint experience and collection showcase.',
+    tags: ['Web3', 'Mint Page', 'Interactive'],
+    highlights: [
+      'Mint details and supply info at a glance',
+      'Wallet connect and collection presentation',
+      'Character traits and team sections for the drop',
+    ],
   },
 ];
 ---
@@ -55,17 +79,30 @@ const projects = [
             </div>
             <div class="px-2 pb-2">
               <h3 class="text-lg font-semibold mb-1 text-white">{project.title}</h3>
-              <p class="text-sm text-zinc-400 mb-3">Modern, fast, and mobile‑first with clear calls to action.</p>
+              <p class="text-sm text-zinc-400 mb-3">{project.description}</p>
               <div class="flex flex-wrap gap-2 mb-3">
-                <span class="px-2 py-1 text-[11px] rounded bg-white/5 border border-white/10 text-zinc-300">Design</span>
-                <span class="px-2 py-1 text-[11px] rounded bg-white/5 border border-white/10 text-zinc-300">Build</span>
-                <span class="px-2 py-1 text-[11px] rounded bg-white/5 border border-white/10 text-zinc-300">Local SEO</span>
+                {project.tags.map((tag) => (
+                  <span class="px-2 py-1 text-[11px] rounded bg-white/5 border border-white/10 text-zinc-300">{tag}</span>
+                ))}
               </div>
-              <ul class="text-[12px] text-zinc-400 space-y-1">
-                <li class="flex gap-2"><span class="text-orange-400">•</span> Clear service pages and CTAs</li>
-                <li class="flex gap-2"><span class="text-orange-400">•</span> Lightweight animations</li>
-                <li class="flex gap-2"><span class="text-orange-400">•</span> Fast on mobile</li>
+              <ul class="text-[12px] text-zinc-400 space-y-1 mb-4">
+                {project.highlights.map((item) => (
+                  <li class="flex gap-2"><span class="text-orange-400">•</span> {item}</li>
+                ))}
               </ul>
+              {project.url && (
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors inline-flex items-center gap-1"
+                >
+                  Visit site
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                  </svg>
+                </a>
+              )}
             </div>
           </div>
         ))}

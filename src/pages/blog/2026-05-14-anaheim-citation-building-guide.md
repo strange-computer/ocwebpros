@@ -441,4 +441,4 @@ Citation building isn't about quantity—it's about quality, consistency, and An
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Anaheim businesses since 2015. We've helped hundreds of Anaheim companies build citations that drive real local search results. Questions about Anaheim citation building? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Anaheim businesses. We've helped hundreds of Anaheim companies build citations that drive real local search results. Questions about Anaheim citation building? [Contact us](/contact).*

@@ -1,5 +1,6 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
+import WebDesignFeatureGrid from '../components/WebDesignFeatureGrid.astro';
 ---
 <MainLayout 
   title="Pricing | OCWebPros" 
@@ -25,7 +26,7 @@ import MainLayout from '../layouts/MainLayout.astro';
 
   <main class="pb-16 sm:pb-24 px-4 sm:px-6 md:px-8">
     <!-- Web Design Pricing Box -->
-    <section class="max-w-7xl mx-auto pt-4 md:pt-8 pb-12 md:pb-16 px-4 sm:px-6">
+    <section id="web-design" class="max-w-7xl mx-auto pt-4 md:pt-8 pb-12 md:pb-16 px-4 sm:px-6 scroll-mt-28">
       <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-8 md:p-12 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-transparent to-transparent pointer-events-none"></div>
         <div class="relative">
@@ -53,7 +54,7 @@ import MainLayout from '../layouts/MainLayout.astro';
             </div>
 
             <!-- Mobile: badge/headline (top) → price → features → CTA. Desktop: left = badge+headline+features, right = price+CTA -->
-            <div class="flex flex-col md:grid gap-6 md:grid-cols-[1fr_auto] md:items-stretch">
+            <div class="flex flex-col md:grid gap-6 md:grid-cols-[1.15fr_auto] md:items-stretch">
               <!-- Left column: badge + headline (desktop only) + features -->
               <div class="order-2 md:order-1 md:col-start-1 md:row-start-1 md:pr-8 min-w-0">
                 <div class="hidden md:block text-center mb-4">
@@ -64,44 +65,7 @@ import MainLayout from '../layouts/MainLayout.astro';
                   <h2 class="text-2xl md:text-4xl font-bold mb-2 text-white tracking-tight">The &quot;Authority&quot; Website</h2>
                   <p class="text-zinc-400 text-sm leading-relaxed max-w-xl mx-auto">High-performance websites built to meet Core Web Vitals standards and capture local market share.</p>
                 </div>
-                <ul class="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-2">
-                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
-                    <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span class="text-sm text-zinc-300">Strategy-First Sitemap</span>
-                  </li>
-                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
-                    <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span class="text-sm text-zinc-300">Conversion-Engineered UI</span>
-                  </li>
-                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
-                    <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span class="text-sm text-zinc-300">90+ Google Speed Score</span>
-                  </li>
-                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
-                    <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span class="text-sm text-zinc-300">Local Schema Injection</span>
-                  </li>
-                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
-                    <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span class="text-sm text-zinc-300">Mobile-First "Thumb" UX</span>
-                  </li>
-                  <li class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
-                    <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                    <span class="text-sm text-zinc-300">Analytics Setup &amp; Dashboard</span>
-                  </li>
-                </ul>
+                <WebDesignFeatureGrid />
               </div>
 
               <!-- Right column: price + CTA in one block (single cell on desktop, display:contents on mobile for order) -->
@@ -134,7 +98,7 @@ import MainLayout from '../layouts/MainLayout.astro';
     </section>
 
     <!-- Local SEO Pricing Tiers -->
-    <section class="max-w-7xl mx-auto pt-4 md:pt-8 pb-12 md:pb-16 px-4 sm:px-6">
+    <section id="local-seo" class="max-w-7xl mx-auto pt-4 md:pt-8 pb-12 md:pb-16 px-4 sm:px-6 scroll-mt-28">
       <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-8 md:p-12 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-transparent to-transparent pointer-events-none"></div>
         <div class="relative">
@@ -167,7 +131,7 @@ import MainLayout from '../layouts/MainLayout.astro';
                 <span class="text-lg align-top">$</span>500
               </div>
               <p class="text-zinc-400 text-sm">per month</p>
-              <p class="text-orange-400 text-xs font-medium mt-2">Who is this for? Maintenance Mode</p>
+              <p class="text-orange-400 text-xs font-medium mt-2">Who is this for? Visibility Upkeep</p>
               <p class="text-zinc-400 text-sm mt-2">For established businesses that need to keep their digital doors open and technical health green.</p>
             </div>
             <ul class="space-y-2 mb-6 flex-1">
@@ -181,13 +145,13 @@ import MainLayout from '../layouts/MainLayout.astro';
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-sm text-zinc-300">Technical Health Monitor: Monthly link &amp; error fixes.</span>
+                <span class="text-sm text-zinc-300">Search Health Monitor: Monthly crawl errors, index issues, and broken internal link fixes.</span>
               </li>
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-sm text-zinc-300">Review Management: We monitor and alert you to new reviews.</span>
+                <span class="text-sm text-zinc-300">Review Management: Monitor Google &amp; Yelp, alert you to every new review, and flag suspicious or policy-violating ones.</span>
               </li>
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -213,7 +177,7 @@ import MainLayout from '../layouts/MainLayout.astro';
           <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-transparent to-transparent pointer-events-none"></div>
           <div class="absolute inset-0 bg-gradient-to-tl from-purple-500/5 via-transparent to-transparent pointer-events-none"></div>
           <div class="absolute top-4 right-4">
-            <span class="px-2 py-1 bg-orange-500 text-white text-xs font-semibold rounded-full">Recommended</span>
+            <span class="px-2 py-1 bg-orange-700 text-white text-xs font-semibold rounded-full">Recommended</span>
           </div>
           <div class="relative flex flex-col flex-1">
             <div class="mb-6">
@@ -254,7 +218,7 @@ import MainLayout from '../layouts/MainLayout.astro';
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-sm text-zinc-300">Content Optimization: Regular updates and testing to improve engagement and rankings.</span>
+                <span class="text-sm text-zinc-300">On-Page SEO Optimization: Keyword-focused updates to titles, headings, internal links, and page copy.</span>
               </li>
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -306,13 +270,13 @@ import MainLayout from '../layouts/MainLayout.astro';
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-sm text-zinc-300">Conversion Rate Optimization (CRO): Heatmap analysis to identify and fix issues preventing visitor conversions.</span>
+                <span class="text-sm text-zinc-300">Conversion Rate Optimization (CRO): Ongoing analysis to identify and fix issues preventing visitor conversions.</span>
               </li>
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <span class="text-sm text-zinc-300">Local Media Outreach: Quarterly PR campaigns and expert positioning for regional news coverage opportunities.</span>
+                <span class="text-sm text-zinc-300">Local Media Outreach: Online press releases with Orange County local angles, published on your site and distributed through major PR channels.</span>
               </li>
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -338,13 +302,14 @@ import MainLayout from '../layouts/MainLayout.astro';
     </section>
 
     <!-- Support Pricing Tiers -->
-    <section class="max-w-7xl mx-auto pt-4 md:pt-8 pb-12 md:pb-16 px-4 sm:px-6">
+    <section id="support" class="max-w-7xl mx-auto pt-4 md:pt-8 pb-12 md:pb-16 px-4 sm:px-6 scroll-mt-28">
       <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-8 md:p-12 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-transparent to-transparent pointer-events-none"></div>
         <div class="relative">
           <div class="text-center mb-8 md:mb-12">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-3">Website Support</h2>
             <p class="text-zinc-400 text-lg max-w-2xl mx-auto">Keep your site running smoothly. We handle updates, fixes, performance checks, and content changes so you don&apos;t have to worry about technical problems. Monthly maintenance and on-demand help.</p>
+            <p class="text-zinc-500 text-sm max-w-2xl mx-auto mt-4">Support plans are for websites we&apos;ve built and host.</p>
           </div>
       <div class="relative text-center mb-8" data-aos="fade-up">
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-48 md:w-96 md:h-56 bg-gradient-to-tr from-orange-500/15 to-purple-500/15 blur-3xl rounded-full pointer-events-none" aria-hidden="true"></div>
@@ -383,11 +348,7 @@ import MainLayout from '../layouts/MainLayout.astro';
               </li>
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span class="text-sm text-zinc-300">Performance Monitoring: Regular checks to keep your site fast.</span>
-              </li>
-              <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
-                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span class="text-sm text-zinc-300">Monthly PDF Report: Proof that we are working.</span>
+                <span class="text-sm text-zinc-300">Monthly PDF Report: Clear summary of updates and site performance.</span>
               </li>
             </ul>
             <button class="add-to-cart block w-full px-6 py-3 bg-white/5 text-white font-semibold rounded-full text-center border border-white/10 hover:bg-white/10 transition-colors text-sm mt-auto cursor-pointer"
@@ -407,7 +368,7 @@ import MainLayout from '../layouts/MainLayout.astro';
           <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-transparent to-transparent pointer-events-none"></div>
           <div class="absolute inset-0 bg-gradient-to-tl from-purple-500/5 via-transparent to-transparent pointer-events-none"></div>
           <div class="absolute top-4 right-4">
-            <span class="px-2 py-1 bg-orange-500 text-white text-xs font-semibold rounded-full">Recommended</span>
+            <span class="px-2 py-1 bg-orange-700 text-white text-xs font-semibold rounded-full">Recommended</span>
           </div>
           <div class="relative flex flex-col flex-1">
             <div class="mb-6">
@@ -435,7 +396,7 @@ import MainLayout from '../layouts/MainLayout.astro';
               </li>
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span class="text-sm text-zinc-300">Performance Audits: Quarterly checkups to ensure Google still loves your speed.</span>
+                <span class="text-sm text-zinc-300">Performance Audits: Regular checkups to ensure Google still loves your speed.</span>
               </li>
             </ul>
             <button class="add-to-cart block w-full px-6 py-3 bg-orange-700 text-white font-semibold rounded-full text-center hover:bg-orange-600 transition-colors btn-glow text-sm mt-auto cursor-pointer"
@@ -495,14 +456,14 @@ import MainLayout from '../layouts/MainLayout.astro';
       </div>
     </section>
 
-    <!-- Hosting Pricing: The "Peace of Mind" Protocol -->
-    <section class="max-w-7xl mx-auto pt-4 md:pt-8 pb-12 md:pb-16 px-4 sm:px-6">
+    <section id="hosting" class="max-w-7xl mx-auto pt-4 md:pt-8 pb-12 md:pb-16 px-4 sm:px-6 scroll-mt-28">
       <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-8 md:p-12 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/5 via-transparent to-transparent pointer-events-none"></div>
         <div class="relative">
           <div class="text-center mb-8 md:mb-12">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-3">Managed Hosting</h2>
-            <p class="text-zinc-400 text-lg max-w-2xl mx-auto">Where your website lives. We manage the server, security, backups, and monitoring that keep your site online 24/7. Fast, secure infrastructure with zero downtime. Monthly service.</p>
+            <p class="text-zinc-400 text-lg max-w-2xl mx-auto">Where your website lives. We manage the infrastructure, SSL, CDN, and monitoring for sites we&apos;ve built: globally distributed, secure, and always deployable. Monthly add-on.</p>
+            <p class="text-zinc-500 text-sm max-w-2xl mx-auto mt-4">Hosting is for websites we&apos;ve built and deploy.</p>
           </div>
           <div class="max-w-5xl mx-auto">
         <div class="hosting-pricing-card backdrop-blur-[12px] border border-emerald-500/20 rounded-2xl p-6 md:p-8 overflow-hidden relative flex flex-col transition-all duration-300 ease-out shadow-[0_0_30px_rgba(16,185,129,0.08)]" style="background: rgba(24, 24, 27, 0.6);">
@@ -533,7 +494,7 @@ import MainLayout from '../layouts/MainLayout.astro';
                 <ul class="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-2">
                   <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                     <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <div><span class="text-sm font-semibold text-white block">Site Version History</span><span class="text-xs text-zinc-400">Every update is saved. If something goes wrong, we can restore an earlier version quickly.</span></div>
+                    <div><span class="text-sm font-semibold text-white block">Deploy Rollback</span><span class="text-xs text-zinc-400">Every publish is saved. Roll back to a previous version instantly if an update causes trouble.</span></div>
                   </li>
                   <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                     <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
@@ -541,11 +502,11 @@ import MainLayout from '../layouts/MainLayout.astro';
                   </li>
                   <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                     <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <div><span class="text-sm font-semibold text-white block">Real-Time Uptime Shield</span><span class="text-xs text-zinc-400">We monitor around the clock and address issues as soon as we're alerted.</span></div>
+                    <div><span class="text-sm font-semibold text-white block">Uptime Monitoring</span><span class="text-xs text-zinc-400">We check that your site stays online and respond quickly if something goes wrong.</span></div>
                   </li>
                   <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                     <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <div><span class="text-sm font-semibold text-white block">Edge Security &amp; DDoS Protection</span><span class="text-xs text-zinc-400">Built-in protection against traffic spikes and common web threats.</span></div>
+                    <div><span class="text-sm font-semibold text-white block">Edge Security &amp; DDoS Protection</span><span class="text-xs text-zinc-400">Built-in edge protection against DDoS attacks and sudden traffic spikes.</span></div>
                   </li>
                   <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                     <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
@@ -553,7 +514,7 @@ import MainLayout from '../layouts/MainLayout.astro';
                   </li>
                   <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                     <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <div><span class="text-sm font-semibold text-white block">Zero-Downtime Migration</span><span class="text-xs text-zinc-400">We handle migration to your managed environment for free. No stress.</span></div>
+                    <div><span class="text-sm font-semibold text-white block">Managed DNS &amp; Domain Setup</span><span class="text-xs text-zinc-400">We configure your domain and DNS at launch so your site goes live without the headache.</span></div>
                   </li>
                 </ul>
               </div>

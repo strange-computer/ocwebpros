@@ -1,0 +1,28 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+  aos?: string;
+  class?: string;
+}
+
+const {
+  src,
+  alt,
+  aos = 'fade-left',
+  class: className = '',
+} = Astro.props;
+---
+
+<div
+  class={`w-full md:w-1/2 h-96 md:h-[500px] border border-white/10 rounded-xl overflow-hidden relative ${className}`}
+  data-aos={aos}
+>
+  <img
+    src={src}
+    alt={alt}
+    class="w-full h-full object-cover object-center brightness-75 contrast-110 saturate-90"
+    loading="lazy"
+  />
+  <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-zinc-900/30 pointer-events-none"></div>
+</div>

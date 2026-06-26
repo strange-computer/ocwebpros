@@ -558,4 +558,4 @@ Orange County healthcare presents unique challenges and opportunities. Strict HI
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County healthcare practices since 2015. We've helped numerous medical providers achieve search dominance while maintaining strict HIPAA compliance. Questions about Orange County healthcare SEO? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County healthcare practices. We've helped numerous medical providers achieve search dominance while maintaining strict HIPAA compliance. Questions about Orange County healthcare SEO? [Contact us](/contact).*

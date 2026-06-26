@@ -1,9 +1,10 @@
 ---
 import MainLayout from '../../layouts/MainLayout.astro';
+import SpotlightImage from '../../components/SpotlightImage.astro';
 ---
 <MainLayout 
   title="Local SEO Services Orange County CA | OCWebPros" 
-  description="Local SEO for Orange County businesses. Google Business Profile optimization, weekly photo uploads, post scheduling, citation management, and content strategy. Plans from $500/mo."
+  description="Local SEO for Orange County businesses. Google Business Profile optimization, photo uploads, post scheduling, citation management, and content strategy. Plans from $500/mo."
   bodyClass="page-services page-local-seo"
   pageCSS="/css/pages/services.css">
 
@@ -35,9 +36,12 @@ import MainLayout from '../../layouts/MainLayout.astro';
     <!-- Spotlight -->
     <section class="max-w-7xl mx-auto pt-8 md:pt-12 pb-16 md:pb-24 px-4 sm:px-6">
       <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-        <div class="w-full md:w-1/2 h-64 sm:h-80 md:h-[500px] border border-white/10 rounded-xl overflow-hidden order-1" data-aos="fade-left">
-          <img src="/images/local-seo-mockup.png" alt="Local SEO dashboard mockup for Orange County business" class="w-full h-full object-cover" />
-        </div>
+        <SpotlightImage
+          class="order-1"
+          aos="fade-left"
+          src="/images/unsplash/services-local-seo.jpg"
+          alt="Local business search results on a phone map"
+        />
         <div class="w-full md:w-1/2 backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-8 md:p-10 order-2" data-aos="fade-right">
           <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6">
             <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
@@ -45,9 +49,9 @@ import MainLayout from '../../layouts/MainLayout.astro';
           <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Get Found by Local Customers</h2>
           <p class="text-zinc-400 mb-6 text-lg leading-relaxed">When someone in Orange County searches for your service, you should show up - in organic results, on Google Maps, and across the platforms that influence local rankings.</p>
           <ul class="space-y-3 text-zinc-300">
-            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Google Business Profile setup, optimization, and weekly posts</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Google Business Profile setup, optimization, and regular posts</span></li>
             <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>On-page SEO: titles, meta, headings, and internal links</span></li>
-            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Weekly photo uploads, post scheduling, and performance reporting</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Regular photos, posts, and performance reports</span></li>
             <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Citation consistency across Yelp, Bing, and local directories</span></li>
           </ul>
         </div>
@@ -80,7 +84,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
                 <span class="text-lg align-top">$</span>500
               </div>
               <p class="text-zinc-400 text-sm">per month</p>
-              <p class="text-orange-400 text-xs font-medium mt-2">Who is this for? Maintenance Mode</p>
+              <p class="text-orange-400 text-xs font-medium mt-2">Who is this for? Visibility Upkeep</p>
               <p class="text-zinc-400 text-sm mt-2">For established businesses that need to keep their digital doors open and technical health green.</p>
             </div>
             <ul class="space-y-2 mb-6 flex-1">
@@ -90,11 +94,11 @@ import MainLayout from '../../layouts/MainLayout.astro';
               </li>
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span class="text-sm text-zinc-300">Technical Health Monitor: Monthly link &amp; error fixes.</span>
+                <span class="text-sm text-zinc-300">Search Health Monitor: Monthly crawl errors, index issues, and broken internal link fixes.</span>
               </li>
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span class="text-sm text-zinc-300">Review Management: We monitor and alert you to new reviews.</span>
+                <span class="text-sm text-zinc-300">Review Management: Monitor Google &amp; Yelp, alert you to every new review, and flag suspicious or policy-violating ones.</span>
               </li>
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
@@ -112,7 +116,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
           <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-transparent to-transparent pointer-events-none"></div>
           <div class="absolute inset-0 bg-gradient-to-tl from-purple-500/5 via-transparent to-transparent pointer-events-none"></div>
           <div class="absolute top-4 right-4">
-            <span class="px-2 py-1 bg-orange-500 text-white text-xs font-semibold rounded-full">Recommended</span>
+            <span class="px-2 py-1 bg-orange-700 text-white text-xs font-semibold rounded-full">Recommended</span>
           </div>
           <div class="relative flex flex-col flex-1">
             <div class="mb-6">
@@ -143,7 +147,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
               </li>
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span class="text-sm text-zinc-300">Content Optimization: Regular updates and testing to improve engagement and rankings.</span>
+                <span class="text-sm text-zinc-300">On-Page SEO Optimization: Keyword-focused updates to titles, headings, internal links, and page copy.</span>
               </li>
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
@@ -181,11 +185,11 @@ import MainLayout from '../../layouts/MainLayout.astro';
               </li>
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span class="text-sm text-zinc-300">Conversion Rate Optimization (CRO): Heatmap analysis to identify and fix issues preventing visitor conversions.</span>
+                <span class="text-sm text-zinc-300">Conversion Rate Optimization (CRO): Ongoing analysis to identify and fix issues preventing visitor conversions.</span>
               </li>
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                <span class="text-sm text-zinc-300">Local Media Outreach: Quarterly PR campaigns and expert positioning for regional news coverage opportunities.</span>
+                <span class="text-sm text-zinc-300">Local Media Outreach: Online press releases with Orange County local angles, published on your site and distributed through major PR channels.</span>
               </li>
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
                 <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>

@@ -365,4 +365,4 @@ Santa Ana restaurant SEO requires specialized understanding of cultural authenti
 
 ---
 
-*About the author: This case study was created by the OCWebPros team based in Lake Forest, CA, serving Santa Ana restaurants since 2015. We've helped numerous Orange County restaurants achieve dramatic growth through cultural authenticity and local SEO strategies. Questions about Santa Ana restaurant SEO? [Contact us](/contact).*
+*About the author: This case study was created by the OCWebPros team based in Lake Forest, CA, serving Santa Ana restaurants. We've helped numerous Orange County restaurants achieve dramatic growth through cultural authenticity and local SEO strategies. Questions about Santa Ana restaurant SEO? [Contact us](/contact).*

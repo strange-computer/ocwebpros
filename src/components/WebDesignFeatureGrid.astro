@@ -1,0 +1,33 @@
+---
+const features: (string | [string, string])[] = [
+  ['Fully Custom', 'No Templates'],
+  'Conversion-Focused Layouts & CTAs',
+  'Mobile-First for Calls & Forms',
+  '90+ PageSpeed / Core Web Vitals',
+  'Local SEO Foundations Built In',
+  'Analytics for Calls, Forms & Traffic',
+  'Scalable Site Architecture',
+  'Service & Location Page Structure',
+  'Your Brand, Clearly Communicated',
+];
+---
+<ul class="web-design-feature-grid grid grid-cols-2 md:grid-cols-3 gap-x-2.5 gap-y-3 items-stretch">
+  {features.map((text) => (
+    <li class="web-design-feature-chip flex items-center gap-3 py-3 px-4 rounded-lg h-full bg-white/[0.03] border border-white/5 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-white/[0.06] hover:border-white/10">
+      <span class="w-6 h-6 rounded-md bg-orange-500/10 flex items-center justify-center flex-shrink-0" aria-hidden="true">
+        <svg class="w-3.5 h-3.5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </span>
+      {Array.isArray(text) ? (
+        <span class="text-xs text-zinc-300 flex flex-col gap-1 leading-snug min-w-0">
+          {text.map((line) => (
+            <span>{line}</span>
+          ))}
+        </span>
+      ) : (
+        <span class="text-xs leading-snug text-zinc-300 min-w-0">{text}</span>
+      )}
+    </li>
+  ))}
+</ul>
