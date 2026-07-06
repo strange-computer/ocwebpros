@@ -119,6 +119,24 @@ const images = [
     orientation: 'landscape',
     filename: 'blog-south-oc.jpg',
   },
+  {
+    id: 'blog-irvine-pricing',
+    query: 'modern office building glass tech campus',
+    orientation: 'landscape',
+    filename: 'blog-irvine-pricing.jpg',
+  },
+  {
+    id: 'blog-newport-beach-pricing',
+    query: 'newport beach california harbor yachts',
+    orientation: 'landscape',
+    filename: 'blog-newport-beach-pricing.jpg',
+  },
+  {
+    id: 'blog-mission-viejo-pricing',
+    query: 'small business owner planning budget laptop',
+    orientation: 'landscape',
+    filename: 'blog-mission-viejo-pricing.jpg',
+  },
 ];
 
 async function searchPhoto(accessKey, query, orientation) {
