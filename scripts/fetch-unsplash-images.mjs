@@ -89,6 +89,30 @@ const images = [
     orientation: 'landscape',
     filename: 'blog-santa-ana.jpg',
   },
+  {
+    id: 'blog-brea',
+    query: 'shopping mall retail storefront modern',
+    orientation: 'landscape',
+    filename: 'blog-brea.jpg',
+  },
+  {
+    id: 'blog-yorba-linda',
+    query: 'luxury suburban home california landscaping',
+    orientation: 'landscape',
+    filename: 'blog-yorba-linda.jpg',
+  },
+  {
+    id: 'blog-fountain-valley',
+    query: 'modern dental office clinic',
+    orientation: 'landscape',
+    filename: 'blog-fountain-valley.jpg',
+  },
+  {
+    id: 'blog-north-oc',
+    query: 'orange county california suburb aerial',
+    orientation: 'landscape',
+    filename: 'blog-north-oc.jpg',
+  },
 ];
 
 async function searchPhoto(accessKey, query, orientation) {
