@@ -10,6 +10,7 @@ import '../styles/aos-minimal.css';
 import CartSidebar from '../components/CartSidebar.astro';
 import ocwebprosLogo from '../assets/ocwebpros_logo.png';
 import { Image } from 'astro:assets';
+import { cityRegistry } from '../data/cityRegistry';
 const { 
   title = 'OCWebPros', 
   description = 'Professional web design and local SEO services in Orange County, CA. Custom websites built for local businesses with strategic optimization.',
@@ -72,54 +73,14 @@ const organizationSchema = {
     "https://www.hotfrog.com/company/e5c8ed6667cb34f7e45c5f6f292e93df"
   ],
   "areaServed": [
-    {
+    ...cityRegistry.map((city) => ({
       "@type": "City",
-      "name": "Lake Forest",
+      "name": city.name,
       "containedInPlace": {
         "@type": "State",
         "name": "California"
       }
-    },
-    {
-      "@type": "City",
-      "name": "Irvine",
-      "containedInPlace": {
-        "@type": "State",
-        "name": "California"
-      }
-    },
-    {
-      "@type": "City",
-      "name": "Mission Viejo",
-      "containedInPlace": {
-        "@type": "State",
-        "name": "California"
-      }
-    },
-    {
-      "@type": "City",
-      "name": "Laguna Hills",
-      "containedInPlace": {
-        "@type": "State",
-        "name": "California"
-      }
-    },
-    {
-      "@type": "City",
-      "name": "Tustin",
-      "containedInPlace": {
-        "@type": "State",
-        "name": "California"
-      }
-    },
-    {
-      "@type": "City",
-      "name": "Rancho Santa Margarita",
-      "containedInPlace": {
-        "@type": "State",
-        "name": "California"
-      }
-    },
+    })),
     {
       "@type": "Place",
       "name": "Orange County, California"
@@ -213,6 +174,7 @@ const breadcrumbSchema = {
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL.toString()} />
+    <link rel="alternate" type="application/rss+xml" title="OCWebPros Blog" href="/rss.xml" />
 
     <!-- Favicons -->
     <link rel="icon" href="/favicon.ico" sizes="any" />

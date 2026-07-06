@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -65,6 +65,30 @@ const images = [
     orientation: 'landscape',
     filename: 'services-seo-strategy.jpg',
   },
+  {
+    id: 'blog-anaheim-web-design',
+    query: 'Anaheim California downtown',
+    orientation: 'landscape',
+    filename: 'blog-anaheim-web-design.jpg',
+  },
+  {
+    id: 'blog-huntington-beach',
+    query: 'Huntington Beach pier California sunset',
+    orientation: 'landscape',
+    filename: 'blog-huntington-beach.jpg',
+  },
+  {
+    id: 'blog-little-saigon',
+    query: 'Vietnamese restaurant pho food',
+    orientation: 'landscape',
+    filename: 'blog-little-saigon.jpg',
+  },
+  {
+    id: 'blog-santa-ana',
+    query: 'mexican restaurant tacos authentic',
+    orientation: 'landscape',
+    filename: 'blog-santa-ana.jpg',
+  },
 ];
 
 async function searchPhoto(accessKey, query, orientation) {
@@ -109,6 +133,11 @@ async function main() {
   mkdirSync(imagesDir, { recursive: true });
 
   for (const image of images) {
+    const destinationPath = join(imagesDir, image.filename);
+    if (existsSync(destinationPath)) {
+      console.log(`Skipping (exists): ${image.filename}`);
+      continue;
+    }
     console.log(`Fetching: ${image.id} (${image.query})`);
     const photo = await searchPhoto(accessKey, image.query, image.orientation);
     await trackDownload(accessKey, photo);

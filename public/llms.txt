@@ -1,0 +1,53 @@
+# OCWebPros
+
+> OCWebPros is a web design and local SEO agency based in Lake Forest, California, serving small and mid-size businesses across 24 Orange County cities. We build custom websites and run local SEO campaigns (Google Business Profile optimization, citations, reviews, city-specific landing pages) that help OC businesses rank in Google Maps and organic search.
+
+Contact: hello@ocwebpros.com | +1-949-329-4437 | https://ocwebpros.com/contact/
+
+## Services
+
+- [Custom Web Design](https://ocwebpros.com/services/web-design/): Custom-coded, mobile-first websites with local schema and Core Web Vitals optimization built in. No page builders or templates.
+- [Local SEO](https://ocwebpros.com/services/local-seo/): Google Business Profile optimization, citation building, review strategy, and city-specific landing pages for Orange County businesses.
+- [SEO Strategy](https://ocwebpros.com/services/seo-strategy/): Keyword research, content planning, and technical SEO audits.
+- [AI Consulting](https://ocwebpros.com/services/ai-consulting/): AI search readiness (AI Overviews, ChatGPT, Perplexity) and AI adoption for small businesses.
+- [Website Maintenance](https://ocwebpros.com/website-maintenance-orange-county/): Ongoing updates, security patches, and technical support.
+- [Managed Hosting](https://ocwebpros.com/hosting/): Managed hosting with global CDN, auto-renewing SSL, and uptime monitoring.
+
+## Service Areas
+
+We serve all of Orange County, CA, with dedicated local SEO and web design pages for each city:
+
+- [Lake Forest](https://ocwebpros.com/local-seo/lake-forest/) (home base)
+- [Irvine](https://ocwebpros.com/local-seo/irvine/)
+- [Anaheim](https://ocwebpros.com/local-seo/anaheim/)
+- [Santa Ana](https://ocwebpros.com/local-seo/santa-ana/)
+- [Huntington Beach](https://ocwebpros.com/local-seo/huntington-beach/)
+- [Garden Grove](https://ocwebpros.com/local-seo/garden-grove/)
+- [Mission Viejo](https://ocwebpros.com/local-seo/mission-viejo/)
+- [Rancho Santa Margarita](https://ocwebpros.com/local-seo/rancho-santa-margarita/)
+- [Newport Beach](https://ocwebpros.com/local-seo/newport-beach/)
+- [Costa Mesa](https://ocwebpros.com/local-seo/costa-mesa/)
+- [Fullerton](https://ocwebpros.com/local-seo/fullerton/)
+- [Tustin](https://ocwebpros.com/local-seo/tustin/)
+- [Orange](https://ocwebpros.com/local-seo/orange/)
+- [Westminster](https://ocwebpros.com/local-seo/westminster/)
+- [Fountain Valley](https://ocwebpros.com/local-seo/fountain-valley/)
+- [Brea](https://ocwebpros.com/local-seo/brea/)
+- [Yorba Linda](https://ocwebpros.com/local-seo/yorba-linda/)
+- [Laguna Beach](https://ocwebpros.com/local-seo/laguna-beach/)
+- [Laguna Niguel](https://ocwebpros.com/local-seo/laguna-niguel/)
+- [Laguna Hills](https://ocwebpros.com/local-seo/laguna-hills/)
+- [Aliso Viejo](https://ocwebpros.com/local-seo/aliso-viejo/)
+- [San Clemente](https://ocwebpros.com/local-seo/san-clemente/)
+- [Dana Point](https://ocwebpros.com/local-seo/dana-point/)
+- [San Juan Capistrano](https://ocwebpros.com/local-seo/san-juan-capistrano/)
+
+Web design pages follow the same pattern at https://ocwebpros.com/web-design/{city}/ — full list at https://ocwebpros.com/service-areas/
+
+## Key Pages
+
+- [Pricing](https://ocwebpros.com/pricing/): Transparent web design and SEO package pricing.
+- [Portfolio](https://ocwebpros.com/portfolio/): Client work and case studies.
+- [Industries](https://ocwebpros.com/industries/): Dental, legal, contractors, restaurants, medical spas, e-commerce, and more.
+- [Blog](https://ocwebpros.com/blog/): 70+ guides on Orange County local SEO, web design, and AI search. RSS: https://ocwebpros.com/rss.xml
+- [Service Areas](https://ocwebpros.com/service-areas/): All 24 Orange County cities we serve.
