@@ -137,6 +137,24 @@ const images = [
     orientation: 'landscape',
     filename: 'blog-mission-viejo-pricing.jpg',
   },
+  {
+    id: 'blog-hb-pricing',
+    query: 'surf shop surfboards retail beach',
+    orientation: 'landscape',
+    filename: 'blog-hb-pricing.jpg',
+  },
+  {
+    id: 'blog-costa-mesa-pricing',
+    query: 'boutique retail store interior modern design',
+    orientation: 'landscape',
+    filename: 'blog-costa-mesa-pricing.jpg',
+  },
+  {
+    id: 'blog-fullerton-pricing',
+    query: 'restaurant bar downtown night neon',
+    orientation: 'landscape',
+    filename: 'blog-fullerton-pricing.jpg',
+  },
 ];
 
 async function searchPhoto(accessKey, query, orientation) {
