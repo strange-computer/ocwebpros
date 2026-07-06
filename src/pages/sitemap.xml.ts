@@ -1,9 +1,22 @@
 import type { APIRoute } from 'astro';
+import { cityLocalSeoPages } from '../data/cityLocalSeoPages';
+import { cityWebDesignPages } from '../data/cityWebDesignPages';
 
 export const GET: APIRoute = async ({ site }) => {
   const siteUrl = (site?.toString() || 'https://ocwebpros.com').replace(/\/$/, '');
 
-  // Static pages
+  const citySeoPages = cityLocalSeoPages.map((city) => ({
+    url: `local-seo/${city.slug}`,
+    priority: '0.9',
+    changefreq: 'weekly',
+  }));
+
+  const cityWebPages = cityWebDesignPages.map((city) => ({
+    url: `web-design/${city.slug}`,
+    priority: '0.9',
+    changefreq: 'weekly',
+  }));
+
   const staticPages = [
     { url: '', priority: '1.0', changefreq: 'weekly' },
     { url: 'about', priority: '0.8', changefreq: 'monthly' },
@@ -22,9 +35,10 @@ export const GET: APIRoute = async ({ site }) => {
     { url: 'contact', priority: '0.9', changefreq: 'monthly' },
     { url: 'blog', priority: '0.8', changefreq: 'weekly' },
     { url: 'newsletter', priority: '0.7', changefreq: 'monthly' },
+    ...citySeoPages,
+    ...cityWebPages,
   ];
 
-  // Auto-discover all blog posts — excludes drafts, README, and test slugs
   const allPosts = await import.meta.glob('./blog/*.md', { eager: true }) as Record<string, { frontmatter: { draft?: boolean; pubDate?: string } }>;
   const blogPages = Object.entries(allPosts)
     .filter(([path, post]) => {

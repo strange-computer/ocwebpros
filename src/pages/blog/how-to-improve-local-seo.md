@@ -41,7 +41,7 @@ Key directories to claim:
 
 Don't just say you "serve Orange County." Create dedicated pages for each city you target:
 
-- Service pages for each location (e.g., "Web Design in Irvine")
+- Service pages for each location (e.g., "Web Design in Irvine") — see our [Irvine web design](/web-design/irvine) and [local SEO](/local-seo/irvine) pages as examples
 - Blog posts about local topics
 - Case studies featuring local clients
 - Content that mentions local landmarks and neighborhoods

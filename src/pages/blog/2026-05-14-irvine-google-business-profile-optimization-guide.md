@@ -6,6 +6,14 @@ pubDate: "2026-05-14"
 author: "OCWebPros Team"
 category: "Local SEO"
 image: "/images/irvine-gbp.svg"
+city: irvine
+relatedPosts:
+  - title: "How We Increased Irvine Dental Traffic by 347%"
+    slug: 2026-05-18-orange-county-web-traffic-case-study
+  - title: "The Orange County Local SEO Playbook 2026"
+    slug: 2026-05-14-orange-county-local-seo-playbook-2026
+  - title: "5 Ways to Improve Your Local SEO in Orange County"
+    slug: how-to-improve-local-seo
 draft: false
 ---
 
@@ -16,6 +24,8 @@ draft: false
 If you're running a business in Irvine and not showing up when people search for what you do, you're leaving money on the table. Irvine isn't just another Orange County city—it's a tech hub, a university town, and a collection of distinct neighborhoods that each require different optimization approaches.
 
 At OCWebPros, we've helped hundreds of Irvine businesses optimize their Google Business Profiles (GBP) to dominate local search. In this guide, we'll share our exact Irvine-specific strategies that get businesses ranking at the top of Google.
+
+**Looking to hire an Irvine local SEO agency?** See our dedicated [Local SEO Services in Irvine](/local-seo/irvine) page for pricing, process, and a free audit.
 
 ## Why Irvine GBP Optimization is Different
 

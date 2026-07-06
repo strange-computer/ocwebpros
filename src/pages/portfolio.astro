@@ -42,6 +42,36 @@ const projects = [
     ],
   },
 ];
+
+const caseStudies = [
+  {
+    title: 'Irvine Dental Practice',
+    location: 'Irvine, CA',
+    result: '347% organic traffic growth in 90 days',
+    description: 'Local SEO, content strategy, and technical fixes transformed an Irvine dental practice from page 3 to top 3 for 12 key local terms.',
+    tags: ['Local SEO', 'Irvine', 'Healthcare'],
+    link: '/blog/2026-05-18-orange-county-web-traffic-case-study',
+    serviceLink: '/local-seo/irvine',
+  },
+  {
+    title: 'Mission Viejo Professional Services',
+    location: 'Mission Viejo, CA',
+    result: 'Master-planned community SEO strategy',
+    description: 'Professional services SEO tailored to Mission Viejo\'s affluent, family-oriented market — GBP optimization, city pages, and review velocity.',
+    tags: ['Local SEO', 'Mission Viejo', 'Professional Services'],
+    link: '/blog/2026-05-15-mission-viejo-professional-services-seo',
+    serviceLink: '/local-seo/mission-viejo',
+  },
+  {
+    title: 'Rancho Santa Margarita Local Market',
+    location: 'Rancho Santa Margarita, CA',
+    result: 'First-mover local SEO advantage',
+    description: 'Dedicated RSM landing pages, GBP strategy, and citation building for South OC businesses in a tight-knit community market.',
+    tags: ['Local SEO', 'RSM', 'Small Business'],
+    link: '/blog/2026-07-06-rancho-santa-margarita-local-seo-guide',
+    serviceLink: '/local-seo/rancho-santa-margarita',
+  },
+];
 ---
 <MainLayout 
   title="Portfolio | OCWebPros" 
@@ -103,6 +133,35 @@ const projects = [
                   </svg>
                 </a>
               )}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Local SEO Case Studies -->
+    <section class="max-w-7xl mx-auto mt-16 pt-16 border-t border-white/10">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <h2 class="text-2xl md:text-3xl font-bold mb-3 text-white">Local SEO &amp; Web Results</h2>
+        <p class="text-zinc-400 text-sm md:text-base max-w-2xl mx-auto">City-specific strategies and measurable outcomes for Orange County businesses.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        {caseStudies.map((study, i) => (
+          <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-8" data-aos="fade-up" data-aos-delay={i * 100}>
+            <div class="inline-flex items-center gap-2 px-2 py-1 rounded-full bg-orange-500/10 border border-orange-500/30 text-xs font-medium text-orange-400 mb-4">
+              {study.location}
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">{study.title}</h3>
+            <p class="text-sm font-semibold text-orange-400 mb-3">{study.result}</p>
+            <p class="text-sm text-zinc-400 mb-4 leading-relaxed">{study.description}</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              {study.tags.map((tag) => (
+                <span class="px-2 py-1 text-[11px] rounded bg-white/5 border border-white/10 text-zinc-300">{tag}</span>
+              ))}
+            </div>
+            <div class="flex flex-col gap-2">
+              <a href={study.link} class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors">Read case study →</a>
+              <a href={study.serviceLink} class="text-sm text-zinc-400 hover:text-orange-300 transition-colors">Local SEO services →</a>
             </div>
           </div>
         ))}

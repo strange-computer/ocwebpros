@@ -6,6 +6,14 @@ pubDate: "2026-05-18"
 author: "OCWebPros Team"
 category: "Case Studies"
 image: "/images/dental-seo.svg"
+city: irvine
+relatedPosts:
+  - title: "Irvine Google Business Profile Optimization Guide"
+    slug: 2026-05-14-irvine-google-business-profile-optimization-guide
+  - title: "Orange County Dental SEO Guide"
+    slug: 2026-05-14-orange-county-dental-seo-guide
+  - title: "The Orange County Local SEO Playbook 2026"
+    slug: 2026-05-14-orange-county-local-seo-playbook-2026
 draft: false
 ---
 
@@ -16,6 +24,8 @@ draft: false
 When an established dental practice in Irvine came to us, they were frustrated. Despite offering premium services and having a beautiful office, they were stuck at 150 website visitors per month and ranked on page 3 for even basic "Irvine dentist" searches. 90 days later, they were averaging 672 monthly organic visitors—a 347% increase—and ranking in the top 3 for 12 key local search terms.
 
 This Orange County web design case study breaks down exactly what we did, why it worked in Irvine's hyper‑competitive market, and how any local business in Orange County can apply these strategies to achieve similar local SEO results.
+
+**Hire us for Irvine local SEO:** See our [Local SEO Services in Irvine](/local-seo/irvine) page for plans and a free audit.
 
 ## Client Background: Irvine Family Dental Practice
 

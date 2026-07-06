@@ -6,6 +6,12 @@ pubDate: "2026-05-14"
 author: "OCWebPros Team"
 category: "Case Studies"
 image: "/images/restaurant-seo.svg"
+city: santa-ana
+relatedPosts:
+  - title: "Santa Ana Government & Non-Profit SEO"
+    slug: 2026-05-15-santa-ana-government-nonprofit-seo
+  - title: "Restaurant Website Design Orange County"
+    slug: restaurant-website-design-orange-county
 draft: false
 ---
 
@@ -16,6 +22,8 @@ draft: false
 When a family-owned Mexican restaurant in downtown Santa Ana came to us, they were struggling to compete with chain restaurants and delivery apps. Despite having authentic food and a great location, they were virtually invisible online. Six months later, they had achieved 250% online order growth and become a top destination for authentic Mexican cuisine in Orange County.
 
 This case study breaks down exactly what we did, why it worked specifically for Santa Ana restaurants, and how you can apply these strategies to your restaurant.
+
+**Need Santa Ana local SEO or web design?** See our [Local SEO Services in Santa Ana](/local-seo/santa-ana) and [Web Design in Santa Ana](/web-design/santa-ana) pages.
 
 ## Client Background: Downtown Santa Ana Mexican Restaurant
 

@@ -1,5 +1,34 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
+import CityServiceAreaCard from '../components/CityServiceAreaCard.astro';
+import { primaryCities, additionalCities } from '../data/cityRegistry';
+
+const primaryCardCopy: Record<string, { lead: string; detail: string }> = {
+  'lake-forest': {
+    lead: 'OCWebPros is based right here in Lake Forest. We know the local business community - from Foothill Ranch Towne Centre to The Orchard on El Toro Road.',
+    detail: 'Lake Forest businesses benefit from our hyper‑local understanding of South OC consumer behavior and search trends.',
+  },
+  irvine: {
+    lead: "Irvine's competitive business environment demands websites that stand out. We build custom sites for Irvine companies that need to compete with national brands.",
+    detail: 'From the Irvine Spectrum to the John Wayne Airport area, we understand the premium expectations of Irvine consumers and businesses.',
+  },
+  'mission-viejo': {
+    lead: "Mission Viejo's family‑oriented market values trust and local connection. Our websites for Mission Viejo businesses emphasize community relevance and ease of use.",
+    detail: "Whether you're near The Shops at Mission Viejo or the Lake, we build sites that resonate with South OC families.",
+  },
+  'rancho-santa-margarita': {
+    lead: "RSM's tight‑knit business community values personalized service. As neighbors in Lake Forest, we provide the local touch RSM businesses expect.",
+    detail: "From the Trabuco Canyon area to the Central Park, we understand RSM's unique market dynamics.",
+  },
+  'laguna-hills': {
+    lead: "Laguna Hills' concentration of medical practices and professional services requires websites that build credibility and facilitate patient/client communication.",
+    detail: 'Near Five Lagunas and Saddleback Memorial, we build sites that meet the high standards of Laguna Hills professionals.',
+  },
+  'aliso-viejo': {
+    lead: "Aliso Viejo's newer developments and corporate centers demand modern, responsive web design. We build sites that match Aliso Viejo's contemporary aesthetic.",
+    detail: 'From Aliso Viejo Town Center to The Commons, we understand the expectations of Aliso Viejo businesses and residents.',
+  },
+};
 ---
 <MainLayout 
   title="Web Design Service Areas Orange County CA | OCWebPros" 
@@ -46,131 +75,14 @@ import MainLayout from '../layouts/MainLayout.astro';
       </p>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Lake Forest -->
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/20 border border-orange-500/30 text-xs font-medium text-orange-400 mb-4">
-            <span class="w-2 h-2 rounded-full bg-orange-500"></span>
-            Our Home Base
-          </div>
-          <h3 class="text-2xl font-bold text-white mb-3">Lake Forest</h3>
-          <p class="text-zinc-400 mb-4">
-            OCWebPros is based right here in Lake Forest. We know the local business community - from Foothill Ranch Towne Centre to The Orchard on El Toro Road.
-          </p>
-          <p class="text-zinc-400 mb-6">
-            Lake Forest businesses benefit from our hyper‑local understanding of South OC consumer behavior and search trends.
-          </p>
-          <p class="text-zinc-400 mb-4 text-sm">
-            <a href="/blog/choose-web-design-agency-orange-county" class="text-orange-400 hover:text-orange-300 underline">Read our guide:</a> How to Choose a Web Design Agency in Orange County
-          </p>
-          <a href="/contact" class="text-orange-400 font-medium hover:text-orange-300 transition-colors">
-            Request Lake Forest Consultation →
-          </a>
-        </div>
-
-        <!-- Irvine -->
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/20 border border-orange-500/30 text-xs font-medium text-orange-400 mb-4">
-            <span class="w-2 h-2 rounded-full bg-orange-500"></span>
-            Tech & Startup Hub
-          </div>
-          <h3 class="text-2xl font-bold text-white mb-3">Irvine</h3>
-          <p class="text-zinc-400 mb-4">
-            Irvine's competitive business environment demands websites that stand out. We build custom sites for Irvine companies that need to compete with national brands.
-          </p>
-          <p class="text-zinc-400 mb-6">
-            From the Irvine Spectrum to the John Wayne Airport area, we understand the premium expectations of Irvine consumers and businesses.
-          </p>
-          <p class="text-zinc-400 mb-4 text-sm">
-            <a href="/blog/ecommerce-website-design-orange-county-2026-trends" class="text-orange-400 hover:text-orange-300 underline">Explore e‑commerce trends:</a> E‑commerce Website Design Orange County: 2026 Trends
-          </p>
-          <a href="/contact" class="text-orange-400 font-medium hover:text-orange-300 transition-colors">
-            Request Irvine Consultation →
-          </a>
-        </div>
-
-        <!-- Mission Viejo -->
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/20 border border-orange-500/30 text-xs font-medium text-orange-400 mb-4">
-            <span class="w-2 h-2 rounded-full bg-orange-500"></span>
-            Family‑Focused Community
-          </div>
-          <h3 class="text-2xl font-bold text-white mb-3">Mission Viejo</h3>
-          <p class="text-zinc-400 mb-4">
-            Mission Viejo's family‑oriented market values trust and local connection. Our websites for Mission Viejo businesses emphasize community relevance and ease of use.
-          </p>
-          <p class="text-zinc-400 mb-6">
-            Whether you're near The Shops at Mission Viejo or the Lake, we build sites that resonate with South OC families.
-          </p>
-          <p class="text-zinc-400 mb-4 text-sm">
-            <a href="/blog/restaurant-website-design-orange-county" class="text-orange-400 hover:text-orange-300 underline">Restaurant owners:</a> See our Restaurant Website Design Orange County guide
-          </p>
-          <a href="/contact" class="text-orange-400 font-medium hover:text-orange-300 transition-colors">
-            Request Mission Viejo Consultation →
-          </a>
-        </div>
-
-        <!-- Rancho Santa Margarita -->
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/20 border border-orange-500/30 text-xs font-medium text-orange-400 mb-4">
-            <span class="w-2 h-2 rounded-full bg-orange-500"></span>
-            Growing South OC City
-          </div>
-          <h3 class="text-2xl font-bold text-white mb-3">Rancho Santa Margarita</h3>
-          <p class="text-zinc-400 mb-4">
-            RSM's tight‑knit business community values personalized service. As neighbors in Lake Forest, we provide the local touch RSM businesses expect.
-          </p>
-          <p class="text-zinc-400 mb-6">
-            From the Trabuco Canyon area to the Central Park, we understand RSM's unique market dynamics.
-          </p>
-          <p class="text-zinc-400 mb-4 text-sm">
-            <a href="/blog/2026-05-14-orange-county-seo-pricing-guide-2026" class="text-orange-400 hover:text-orange-300 underline">Budget planning:</a> How Much Does Local SEO Cost in Orange County?
-          </p>
-          <a href="/contact" class="text-orange-400 font-medium hover:text-orange-300 transition-colors">
-            Request RSM Consultation →
-          </a>
-        </div>
-
-        <!-- Laguna Hills -->
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/20 border border-orange-500/30 text-xs font-medium text-orange-400 mb-4">
-            <span class="w-2 h-2 rounded-full bg-orange-500"></span>
-            Medical & Professional Hub
-          </div>
-          <h3 class="text-2xl font-bold text-white mb-3">Laguna Hills</h3>
-          <p class="text-zinc-400 mb-4">
-            Laguna Hills' concentration of medical practices and professional services requires websites that build credibility and facilitate patient/client communication.
-          </p>
-          <p class="text-zinc-400 mb-6">
-            Near Five Lagunas and Saddleback Memorial, we build sites that meet the high standards of Laguna Hills professionals.
-          </p>
-          <p class="text-zinc-400 mb-4 text-sm">
-            <a href="/blog/2026-05-15-orange-county-healthcare-seo-hipaa" class="text-orange-400 hover:text-orange-300 underline">For medical practices:</a> Orange County Healthcare SEO &amp; HIPAA-Compliant Marketing
-          </p>
-          <a href="/contact" class="text-orange-400 font-medium hover:text-orange-300 transition-colors">
-            Request Laguna Hills Consultation →
-          </a>
-        </div>
-
-        <!-- Aliso Viejo -->
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/20 border border-orange-500/30 text-xs font-medium text-orange-400 mb-4">
-            <span class="w-2 h-2 rounded-full bg-orange-500"></span>
-            Modern Suburban Center
-          </div>
-          <h3 class="text-2xl font-bold text-white mb-3">Aliso Viejo</h3>
-          <p class="text-zinc-400 mb-4">
-            Aliso Viejo's newer developments and corporate centers demand modern, responsive web design. We build sites that match Aliso Viejo's contemporary aesthetic.
-          </p>
-          <p class="text-zinc-400 mb-6">
-            From Aliso Viejo Town Center to The Commons, we understand the expectations of Aliso Viejo businesses and residents.
-          </p>
-          <p class="text-zinc-400 mb-4 text-sm">
-            <a href="/blog/2026-05-17-oc-web-design-trends-2026" class="text-orange-400 hover:text-orange-300 underline">Modern design:</a> Orange County Web Design Trends 2026
-          </p>
-          <a href="/contact" class="text-orange-400 font-medium hover:text-orange-300 transition-colors">
-            Request Aliso Viejo Consultation →
-          </a>
-        </div>
+        {primaryCities.map((city) => (
+          <CityServiceAreaCard
+            city={city}
+            variant="primary"
+            cardLead={primaryCardCopy[city.slug]?.lead}
+            cardDetail={primaryCardCopy[city.slug]?.detail}
+          />
+        ))}
       </div>
     </section>
 
@@ -178,40 +90,13 @@ import MainLayout from '../layouts/MainLayout.astro';
     <section class="pt-8 pb-16">
       <h2 class="text-3xl md:text-4xl font-bold mb-8 text-white">Also Serving These Orange County Cities</h2>
       <p class="text-zinc-400 mb-8 text-lg">
-        While our deepest expertise is in South OC, we provide web design and SEO services to businesses throughout Orange County.
+        Dedicated local SEO and web design pages for every city we serve — click any city for service details, pricing, and FAQs.
       </p>
 
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-        <div class="bg-white/5 border border-white/10 rounded-xl p-4 text-center">
-          <div class="text-white font-medium">San Clemente</div>
-        </div>
-        <div class="bg-white/5 border border-white/10 rounded-xl p-4 text-center">
-          <div class="text-white font-medium">Dana Point</div>
-        </div>
-        <div class="bg-white/5 border border-white/10 rounded-xl p-4 text-center">
-          <div class="text-white font-medium">San Juan Capistrano</div>
-        </div>
-        <a href="/blog/2026-05-15-laguna-beach-tourism-seo" class="bg-white/5 border border-white/10 rounded-xl p-4 text-center hover:border-orange-500/30 hover:bg-white/10 transition-colors">
-          <div class="text-white font-medium">Laguna Beach</div>
-        </a>
-        <div class="bg-white/5 border border-white/10 rounded-xl p-4 text-center">
-          <div class="text-white font-medium">Laguna Niguel</div>
-        </div>
-        <a href="/blog/2026-05-14-newport-beach-local-seo-case-study" class="bg-white/5 border border-white/10 rounded-xl p-4 text-center hover:border-orange-500/30 hover:bg-white/10 transition-colors">
-          <div class="text-white font-medium">Newport Beach</div>
-        </a>
-        <a href="/blog/2026-05-14-costa-mesa-ecommerce-seo-case-study" class="bg-white/5 border border-white/10 rounded-xl p-4 text-center hover:border-orange-500/30 hover:bg-white/10 transition-colors">
-          <div class="text-white font-medium">Costa Mesa</div>
-        </a>
-        <a href="/blog/2026-05-15-tustin-business-optimization" class="bg-white/5 border border-white/10 rounded-xl p-4 text-center hover:border-orange-500/30 hover:bg-white/10 transition-colors">
-          <div class="text-white font-medium">Tustin</div>
-        </a>
-        <a href="/blog/2026-05-15-orange-city-seo-strategy" class="bg-white/5 border border-white/10 rounded-xl p-4 text-center hover:border-orange-500/30 hover:bg-white/10 transition-colors">
-          <div class="text-white font-medium">Orange</div>
-        </a>
-        <a href="/blog/2026-05-14-fullerton-local-seo-guide" class="bg-white/5 border border-white/10 rounded-xl p-4 text-center hover:border-orange-500/30 hover:bg-white/10 transition-colors">
-          <div class="text-white font-medium">Fullerton</div>
-        </a>
+        {additionalCities.map((city) => (
+          <CityServiceAreaCard city={city} variant="compact" />
+        ))}
       </div>
     </section>
 

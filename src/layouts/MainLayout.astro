@@ -19,7 +19,7 @@ const {
 // Highlight active nav link based on current path
 const currentPath = Astro.url.pathname.replace(/\/+$/, '') || '/';
 const navClass = (href: string) =>
-  `hover:text-white transition-colors ${currentPath === href || (href !== '/' && currentPath.startsWith(href)) ? 'text-white' : ''}`;
+  `hover:text-white transition-colors ${currentPath === href || (href !== '/' && currentPath.startsWith(href)) || (href === '/service-areas' && (currentPath.startsWith('/local-seo') || currentPath.startsWith('/web-design'))) ? 'text-white' : ''}`;
 
 // Get the full URL for schema
 const siteUrl = Astro.site || new URL(Astro.url.origin);
@@ -254,6 +254,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {pathSegments.length > 0 && (
       <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
     )}
+    <slot name="head" />
     
     {pageCSS && (
       <>
@@ -281,6 +282,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
           <a href="/services" class={navClass('/services')}>Services</a>
+          <a href="/service-areas" class={navClass('/service-areas')}>Service Areas</a>
           <a href="/pricing" class={navClass('/pricing')}>Pricing</a>
           <a href="/industries" class={navClass('/industries')}>Industries</a>
           <a href="/portfolio" class={navClass('/portfolio')}>Portfolio</a>
@@ -320,6 +322,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="flex flex-col h-full pt-20 pb-8 px-6">
         <div class="flex flex-col gap-1">
           <a href="/services" class={`py-3 px-4 rounded-lg text-base font-medium transition-colors ${navClass('/services')}`}>Services</a>
+          <a href="/service-areas" class={`py-3 px-4 rounded-lg text-base font-medium transition-colors ${navClass('/service-areas')}`}>Service Areas</a>
           <a href="/pricing" class={`py-3 px-4 rounded-lg text-base font-medium transition-colors ${navClass('/pricing')}`}>Pricing</a>
           <a href="/industries" class={`py-3 px-4 rounded-lg text-base font-medium transition-colors ${navClass('/industries')}`}>Industries</a>
           <a href="/portfolio" class={`py-3 px-4 rounded-lg text-base font-medium transition-colors ${navClass('/portfolio')}`}>Portfolio</a>

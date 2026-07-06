@@ -6,6 +6,12 @@ pubDate: "2026-05-14"
 author: "OCWebPros Team"
 category: "Case Studies"
 image: "/images/newport-beach-case-study.svg"
+city: newport-beach
+relatedPosts:
+  - title: "Newport Beach Luxury Real Estate SEO"
+    slug: 2026-05-15-newport-beach-luxury-real-estate-seo
+  - title: "Laguna Beach Tourism SEO Guide"
+    slug: 2026-05-15-laguna-beach-tourism-seo
 draft: false
 ---
 
@@ -16,6 +22,8 @@ draft: false
 When a high-end concierge service in Newport Beach came to us, they were struggling. Despite offering premium services to affluent clients, they were virtually invisible in local search. Six months later, they were generating 400% more qualified leads and had become the go-to service in their niche.
 
 This case study breaks down exactly what we did, why it worked for the Newport Beach luxury market, and how you can apply these strategies to your business.
+
+**Hire us for Newport Beach local SEO:** See our [Local SEO Services in Newport Beach](/local-seo/newport-beach) page for plans and a free audit.
 
 ## Client Background: Newport Beach Concierge Service
 

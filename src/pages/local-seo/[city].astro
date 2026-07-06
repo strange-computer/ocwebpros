@@ -1,0 +1,15 @@
+---
+import CityServicePage from '../../components/CityServicePage.astro';
+import { cityLocalSeoPages } from '../../data/cityLocalSeoPages';
+
+export function getStaticPaths() {
+  return cityLocalSeoPages.map((city) => ({
+    params: { city: city.slug },
+    props: { city },
+  }));
+}
+
+const { city } = Astro.props;
+---
+
+<CityServicePage city={city} serviceKind="local-seo" allCities={cityLocalSeoPages} />

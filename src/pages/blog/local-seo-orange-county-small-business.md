@@ -10,6 +10,8 @@ image: "/images/local-seo-mockup.png"
 
 If your business serves customers in Orange County — whether you're a contractor in Mission Viejo, a restaurant in Lake Forest, or a med spa in Irvine — local SEO is the highest-ROI marketing you can do in 2026. Here's why, and what it actually involves.
 
+**South OC businesses:** We offer dedicated local SEO pages for [Irvine](/local-seo/irvine), [Mission Viejo](/local-seo/mission-viejo), and [Rancho Santa Margarita](/local-seo/rancho-santa-margarita).
+
 ## What Is Local SEO?
 
 Local SEO is the process of making your business show up when nearby customers search for what you offer. When someone types "web designer near me" or "plumber Lake Forest CA" into Google, local SEO determines who appears in those results — and who doesn't.
