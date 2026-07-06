@@ -7,6 +7,8 @@ author: "OCWebPros Team"
 category: "Local SEO"
 image: "/images/unsplash/blog-north-oc.jpg"
 relatedPosts:
+  - title: "South Orange County Local SEO: City-by-City Guide"
+    slug: 2026-07-06-south-orange-county-local-seo-guide
   - title: "Anaheim Tourism & Convention SEO Guide"
     slug: 2026-05-15-anaheim-tourism-convention-seo
   - title: "Fullerton Local SEO Guide"

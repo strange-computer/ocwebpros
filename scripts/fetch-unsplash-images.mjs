@@ -113,6 +113,12 @@ const images = [
     orientation: 'landscape',
     filename: 'blog-north-oc.jpg',
   },
+  {
+    id: 'blog-south-oc',
+    query: 'mission viejo california hills neighborhood',
+    orientation: 'landscape',
+    filename: 'blog-south-oc.jpg',
+  },
 ];
 
 async function searchPhoto(accessKey, query, orientation) {
