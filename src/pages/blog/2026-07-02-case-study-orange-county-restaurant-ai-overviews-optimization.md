@@ -1,11 +1,14 @@
 ---
+layout: ../../layouts/BlogPostLayout.astro
 title: "Case Study: How an Orange County Restaurant 3x Revenue with AI Overviews Optimization"
 description: "Real-world case study showing how a local Orange County restaurant increased revenue by 300% through strategic AI Overviews optimization and review velocity management."
-date: "2026-07-02"
+pubDate: "2026-07-02"
 author: "OCWebPros Case Studies"
 category: "Case Studies"
+image: "/images/server.png"
 draft: false
 ---
+
 
 # Case Study: How an Orange County Restaurant 3x Revenue with AI Overviews Optimization
 

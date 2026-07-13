@@ -1,11 +1,14 @@
 ---
+layout: ../../layouts/BlogPostLayout.astro
 title: "Why Mobile‑First Design Is Non‑Negotiable for Orange County Businesses in 2026"
-date: "2026-05-17"
 description: "Over 70% of local searches now happen on mobile devices. Learn why a true mobile‑first website is essential for Orange County businesses—and how to implement it."
+pubDate: "2026-05-17"
 author: "OCWebPros"
 category: "Web Design"
-featured: false
+image: "/images/server.png"
+draft: false
 ---
+
 
 If your Orange County business website still treats mobile as an “afterthought,” you’re leaving money on the table—and handing customers to competitors who understand that mobile‑first design is no longer optional.
 

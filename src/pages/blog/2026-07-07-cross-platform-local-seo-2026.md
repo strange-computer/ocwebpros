@@ -1,8 +1,14 @@
 ---
+layout: ../../layouts/BlogPostLayout.astro
 title: "Beyond Google: The Cross‑Platform Reality of Local SEO in 2026"
-date: "2026-07-07"
 description: "Why local businesses must expand beyond Google Business Profile to Bing Places, Apple Maps, AI search, and voice assistants to stay visible in 2026."
+pubDate: "2026-07-07"
+author: "OCWebPros Team"
+category: "Local SEO"
+image: "/images/server.png"
+draft: false
 ---
+
 
 If you're still treating your Google Business Profile as the only local listing that matters, you're already behind. The reality of local search in 2026 isn't just about ranking in Google's local pack—it's about being discoverable everywhere people look.
 

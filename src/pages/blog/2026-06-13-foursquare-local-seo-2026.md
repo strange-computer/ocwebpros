@@ -1,8 +1,14 @@
 ---
-title: Why Foursquare is Now Critical for Local SEO in 2026 (and How to Optimize It)
-date: 2026-06-13
-description: Foursquare has become a top data source for AI‑powered local search. Inconsistent directory listings hurt AI discovery. Learn how to claim and optimize your Foursquare profile for 2026 local SEO.
+layout: ../../layouts/BlogPostLayout.astro
+title: "Why Foursquare is Now Critical for Local SEO in 2026 (and How to Optimize It)"
+description: "Foursquare has become a top data source for AI‑powered local search. Inconsistent directory listings hurt AI discovery. Learn how to claim and optimize your Foursquare profile for 2026 local SEO."
+pubDate: "2026-06-13"
+author: "OCWebPros Team"
+category: "Local SEO"
+image: "/images/server.png"
+draft: false
 ---
+
 
 If you still think of Foursquare as a quirky check‑in app from the 2010s, it’s time for a serious update. In 2026, Foursquare has quietly become one of the most important data sources for AI‑driven local search—especially for ChatGPT, voice assistants, and other conversational AI systems.
 

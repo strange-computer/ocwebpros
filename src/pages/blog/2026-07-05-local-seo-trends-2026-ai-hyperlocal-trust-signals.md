@@ -1,8 +1,14 @@
 ---
+layout: ../../layouts/BlogPostLayout.astro
 title: "Local SEO Trends 2026: AI, Hyperlocal Content, and Trust Signals for Small Businesses"
-date: 2026-07-05
 description: "AI-driven local search changes, hyperlocal content outperforming generic pages, and trust signals are reshaping local SEO for small businesses in 2026. Here's how to adapt."
+pubDate: "2026-07-05"
+author: "OCWebPros Team"
+category: "Local SEO"
+image: "/images/server.png"
+draft: false
 ---
+
 
 As 2026 unfolds, local search is undergoing its most significant transformation in years. AI systems are redefining how local businesses are discovered, hyperlocal content is outperforming generic city pages, and trust signals have become more critical than ever. Small businesses that adapt to these three trends will gain visibility, attract more customers, and future-proof their online presence.
 

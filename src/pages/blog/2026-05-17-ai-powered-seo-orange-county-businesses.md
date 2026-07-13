@@ -1,11 +1,14 @@
 ---
+layout: ../../layouts/BlogPostLayout.astro
 title: "Why Orange County Businesses Need AI-Powered SEO in 2026"
-date: "2026-05-17"
 description: "AI is transforming local search. Orange County businesses that embrace AI-powered SEO will dominate their markets while competitors cling to outdated tactics."
+pubDate: "2026-05-17"
 author: "OCWebPros"
-category: "SEO"
-featured: false
+category: "Local SEO"
+image: "/images/server.png"
+draft: false
 ---
+
 
 If you're running a business in Orange County—from a dental practice in Irvine to a surf shop in Huntington Beach—you've probably heard about "AI SEO." But what does it actually mean for your local visibility, and why is 2026 the year you can't afford to ignore it?
 

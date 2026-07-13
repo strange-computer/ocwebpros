@@ -1,11 +1,14 @@
 ---
+layout: ../../layouts/BlogPostLayout.astro
 title: "Video SEO for Local Businesses in 2026: Why It's No Longer Optional"
-date: "2026-05-17"
 description: "Video is now a core SEO channel, not just a 'nice‑to‑have.' Learn how Orange County businesses can use YouTube, Shorts, and hyper‑local video to dominate local search results."
+pubDate: "2026-05-17"
 author: "OCWebPros"
-category: "SEO"
-featured: false
+category: "Local SEO"
+image: "/images/server.png"
+draft: false
 ---
+
 
 If you're a local business in Orange County—whether you're a dentist in Irvine, a plumber in Anaheim, or a restaurant in Newport Beach—you've likely been told to “get on video.” But in 2026, video isn't just another marketing channel; it's a fundamental part of how Google and other search engines decide who shows up for local searches.
 

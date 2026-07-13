@@ -1,8 +1,14 @@
 ---
+layout: ../../layouts/BlogPostLayout.astro
 title: "AI‑Driven Local Search 2026: Why Conversational Content Wins"
-date: 2026-06-12
 description: "Local search in 2026 is powered by AI that extracts and summarizes business information. Clear, conversational content outperforms keyword‑stuffed pages. Here's how to adapt."
+pubDate: "2026-06-12"
+author: "OCWebPros Team"
+category: "Local SEO"
+image: "/images/server.png"
+draft: false
 ---
+
 
 Local search isn't what it used to be. If you're still trying to rank by stuffing keywords into meta tags and headers, you're already behind. In 2026, local search is dominated by AI systems that read, understand, and summarize your content—and they prefer clarity over density.
 

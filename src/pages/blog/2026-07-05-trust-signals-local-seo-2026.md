@@ -1,9 +1,14 @@
 ---
+layout: ../../layouts/BlogPostLayout.astro
 title: "Why Trust Signals Are More Critical Than Ever for Local SEO in 2026"
-date: 2026-07-05
 description: "AI-driven local search now weighs recent reviews, visual content, and structured data as primary trust signals. Here's how to adapt."
+pubDate: "2026-07-05"
+author: "OCWebPros Team"
 category: "Local SEO"
+image: "/images/server.png"
+draft: false
 ---
+
 
 For years, local SEO has been about listings, citations, and a well-optimized Google Business Profile. Those fundamentals still matter, but in 2026, the game has shifted toward **trust**. Not just the old-school "trust" of backlinks and domain authority, but the kind of trust that signals to AI and search engines that your business is real, active, and worthy of showing up when someone asks.
 

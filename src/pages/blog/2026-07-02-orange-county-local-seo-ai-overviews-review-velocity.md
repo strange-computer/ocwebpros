@@ -1,11 +1,14 @@
 ---
+layout: ../../layouts/BlogPostLayout.astro
 title: "Orange County Local SEO July 2026: AI Overviews and Review Velocity Strategies"
 description: "Latest local SEO strategies for Orange County businesses in July 2026, focusing on AI Overviews optimization and review velocity tactics for competitive advantage."
-date: "2026-07-02"
+pubDate: "2026-07-02"
 author: "OCWebPros Team"
 category: "Local SEO"
+image: "/images/server.png"
 draft: false
 ---
+
 
 # Orange County Local SEO July 2026: AI Overviews and Review Velocity Strategies
 

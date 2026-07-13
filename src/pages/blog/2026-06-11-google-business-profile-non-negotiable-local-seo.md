@@ -1,8 +1,14 @@
 ---
+layout: ../../layouts/BlogPostLayout.astro
 title: "Google Business Profile: The Non‑Negotiable Foundation of Local SEO in 2026"
-date: 2026-06-11
 description: "In AI‑driven local search, a fully optimized Google Business Profile is the single most critical factor for visibility. Here’s what small businesses must do now."
+pubDate: "2026-06-11"
+author: "OCWebPros Team"
+category: "Local SEO"
+image: "/images/server.png"
+draft: false
 ---
+
 
 If you’re a small business owner looking for more local customers in 2026, there’s one piece of digital real estate you cannot afford to neglect: your Google Business Profile (GBP). Everything else—your website, social media, paid ads—rests on this foundation. In today’s AI‑powered local search ecosystem, a poorly maintained GBP is like having a storefront with the lights off and the door locked.
 

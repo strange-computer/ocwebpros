@@ -1,8 +1,14 @@
 ---
+layout: ../../layouts/BlogPostLayout.astro
 title: "AI‑Driven Local Discovery: How to Win Visibility in 2026's AI‑First Search"
-date: 2026-06-13
 description: "AI Overviews and conversational AI tools now dominate local‑intent queries. Here’s how small businesses can adapt their local SEO strategy for AI‑first discovery."
+pubDate: "2026-06-13"
+author: "OCWebPros Team"
+category: "Local SEO"
+image: "/images/server.png"
+draft: false
 ---
+
 
 If you’re still optimizing your local SEO for traditional map packs and organic results, you’re already behind. In 2026, the game has changed: AI‑driven discovery now controls a majority of local‑intent searches. AI Overviews appear above map packs, and conversational tools like ChatGPT, Perplexity, and Gemini are becoming primary sources for “best X near me” queries. About 45% of people now use AI tools for local recommendations—up from single‑digit percentages just a year ago.
 
