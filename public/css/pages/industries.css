@@ -1,5 +1,9 @@
 @layer pages {
-  /* Page-specific styles for Industries */
+    .page-industries .industry-sector-card {
+        transform: translateZ(0);
+    }
+
+    .page-industries .industry-resource-card {
+        transform: translateZ(0);
+    }
 }
-
-

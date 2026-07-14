@@ -5,6 +5,7 @@ import MainLayout from '../../layouts/MainLayout.astro';
 const allPosts = await Astro.glob('./*.md');
 const posts = allPosts
   .filter(post => !post.url?.includes('index') && !post.url?.includes('README'))
+  .filter(post => post.frontmatter?.draft !== true)
   .sort((a, b) => {
     const dateA = new Date(a.frontmatter.pubDate || 0);
     const dateB = new Date(b.frontmatter.pubDate || 0);
