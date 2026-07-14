@@ -18,8 +18,8 @@ import WebDesignFeatureGrid from '../components/WebDesignFeatureGrid.astro';
       <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4">
         Clear pricing for <span class="text-gradient-orange">every service</span>
       </h1>
-      <p class="text-zinc-400 text-lg leading-relaxed">
-        Transparent pricing for web design, SEO, support, and hosting. Built for real businesses.
+      <p class="text-zinc-400 text-lg leading-relaxed max-w-2xl mx-auto">
+        Transparent pricing for web design, SEO, support, and hosting. Every number comes with real scope — so you know what you&apos;re buying before we talk.
       </p>
     </div>
   </header>
@@ -72,10 +72,12 @@ import WebDesignFeatureGrid from '../components/WebDesignFeatureGrid.astro';
               <div class="contents md:flex md:flex-col md:gap-4 md:pl-8 md:border-l md:border-white/10 md:col-start-2 md:row-start-1 md:justify-center">
                 <!-- Price (mobile order 1) -->
                 <div class="order-1 md:order-none text-center flex flex-col items-center">
+                  <p class="text-orange-400 text-xs font-semibold uppercase tracking-wide mb-2">Starting at</p>
                   <div class="text-4xl md:text-5xl font-bold text-white mb-1">
                     <span class="text-xl md:text-2xl align-top">$</span>3,500
                   </div>
-                  <p class="text-zinc-400 text-sm">One-Time Investment</p>
+                  <p class="text-zinc-400 text-sm">One-Time Project</p>
+                  <p class="text-zinc-500 text-xs mt-2 max-w-[200px]">Most builds land between $3,500 and $5,000</p>
                 </div>
                 <!-- CTA (mobile order 3) -->
                 <div class="order-3 md:order-none text-center flex flex-col items-center">
@@ -92,6 +94,45 @@ import WebDesignFeatureGrid from '../components/WebDesignFeatureGrid.astro';
             </div>
           </div>
         </div>
+
+          <!-- Starter scope + price drivers -->
+          <div class="max-w-5xl mx-auto mt-8 md:mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="pricing-scope-card backdrop-blur-[12px] border border-white/10 rounded-2xl p-6 md:p-8 relative overflow-hidden" style="background: rgba(24, 24, 27, 0.5);">
+              <div class="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-transparent to-transparent pointer-events-none"></div>
+              <div class="relative">
+                <h3 class="text-lg font-bold text-white mb-1">What&apos;s included at the starting price</h3>
+                <p class="text-zinc-500 text-sm mb-5">The baseline &quot;Authority&quot; package — built for most local businesses.</p>
+                <ul class="space-y-2.5">
+                  <li class="flex items-start gap-2.5 text-sm text-zinc-300"><span class="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2 flex-shrink-0"></span>Up to 5–7 core pages (Home, About, Services, Contact, and more)</li>
+                  <li class="flex items-start gap-2.5 text-sm text-zinc-300"><span class="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2 flex-shrink-0"></span>Custom mobile-first design — no templates</li>
+                  <li class="flex items-start gap-2.5 text-sm text-zinc-300"><span class="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2 flex-shrink-0"></span>Contact &amp; lead forms wired and tested</li>
+                  <li class="flex items-start gap-2.5 text-sm text-zinc-300"><span class="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2 flex-shrink-0"></span>Local SEO foundations &amp; analytics setup</li>
+                  <li class="flex items-start gap-2.5 text-sm text-zinc-300"><span class="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2 flex-shrink-0"></span>Two revision rounds before launch</li>
+                  <li class="flex items-start gap-2.5 text-sm text-zinc-300"><span class="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2 flex-shrink-0"></span>Typical launch in 4–6 weeks</li>
+                </ul>
+                <p class="text-zinc-500 text-xs mt-5 pt-5 border-t border-white/10">
+                  <span class="text-emerald-400 font-medium">Managed hosting ($75/mo) is required</span> for every site we build. SEO and support are optional add-ons you can stack later.
+                </p>
+              </div>
+            </div>
+
+            <div class="pricing-scope-card backdrop-blur-[12px] border border-white/10 rounded-2xl p-6 md:p-8 relative overflow-hidden" style="background: rgba(24, 24, 27, 0.5);">
+              <div class="absolute inset-0 bg-gradient-to-br from-purple-500/5 via-transparent to-transparent pointer-events-none"></div>
+              <div class="relative">
+                <h3 class="text-lg font-bold text-white mb-1">What can increase your investment</h3>
+                <p class="text-zinc-500 text-sm mb-5">Not arbitrary — these are the things that add real build time.</p>
+                <ul class="space-y-2.5">
+                  <li class="flex items-start gap-2.5 text-sm text-zinc-300"><span class="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></span>Extra service or location pages</li>
+                  <li class="flex items-start gap-2.5 text-sm text-zinc-300"><span class="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></span>Full copywriting from scratch</li>
+                  <li class="flex items-start gap-2.5 text-sm text-zinc-300"><span class="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></span>Advanced forms, booking, or payment flows</li>
+                  <li class="flex items-start gap-2.5 text-sm text-zinc-300"><span class="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></span>E-commerce or product catalog functionality</li>
+                  <li class="flex items-start gap-2.5 text-sm text-zinc-300"><span class="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></span>Content migration from an existing website</li>
+                  <li class="flex items-start gap-2.5 text-sm text-zinc-300"><span class="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></span>Accelerated launch timelines</li>
+                </ul>
+                <p class="text-zinc-500 text-xs mt-5 pt-5 border-t border-white/10">We&apos;ll walk through scope on your consultation call — no surprise invoice at the end.</p>
+              </div>
+            </div>
+          </div>
       </div>
         </div>
       </div>
@@ -131,7 +172,7 @@ import WebDesignFeatureGrid from '../components/WebDesignFeatureGrid.astro';
                 <span class="text-lg align-top">$</span>500
               </div>
               <p class="text-zinc-400 text-sm">per month</p>
-              <p class="text-orange-400 text-xs font-medium mt-2">Who is this for? Visibility Upkeep</p>
+              <p class="text-orange-400 text-xs font-medium mt-2">Maintain listings, technical health &amp; GBP activity</p>
               <p class="text-zinc-400 text-sm mt-2">For established businesses that need to keep their digital doors open and technical health green.</p>
             </div>
             <ul class="space-y-2 mb-6 flex-1">
@@ -186,7 +227,7 @@ import WebDesignFeatureGrid from '../components/WebDesignFeatureGrid.astro';
                 <span class="text-lg align-top">$</span>1,250
               </div>
               <p class="text-zinc-400 text-sm">per month</p>
-              <p class="text-orange-400 text-xs font-medium mt-2">Who is this for? Expansion Mode</p>
+              <p class="text-orange-400 text-xs font-medium mt-2">Content, page optimization &amp; local authority</p>
               <p class="text-zinc-400 text-sm mt-2">For businesses ready to expand their service area and capture high-intent leads from competitors.</p>
             </div>
             <ul class="space-y-2 mb-6 flex-1">
@@ -250,8 +291,8 @@ import WebDesignFeatureGrid from '../components/WebDesignFeatureGrid.astro';
                 <span class="text-lg align-top">$</span>3,000
               </div>
               <p class="text-zinc-400 text-sm">per month</p>
-              <p class="text-orange-400 text-xs font-medium mt-2">Who is this for? Aggressive Growth</p>
-              <p class="text-zinc-400 text-sm mt-2">For franchises or aggressive brands that want to be the undisputed #1 choice in the region.</p>
+              <p class="text-orange-400 text-xs font-medium mt-2">Multi-city expansion with heavier content &amp; outreach</p>
+              <p class="text-zinc-400 text-sm mt-2">For franchises and ambitious brands pushing into multiple cities or service areas across Orange County.</p>
             </div>
             <ul class="space-y-2 mb-6 flex-1">
               <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-emerald-500/5 border border-emerald-500/20 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-emerald-500/10 hover:border-emerald-500/30">
@@ -296,6 +337,38 @@ import WebDesignFeatureGrid from '../components/WebDesignFeatureGrid.astro';
             </button>
           </div>
         </div>
+      </div>
+
+      <!-- SEO deliverables at a glance -->
+      <div class="max-w-6xl mx-auto mt-10 md:mt-14">
+        <div class="text-center mb-6">
+          <h3 class="text-xl md:text-2xl font-bold text-white mb-2">Deliverables at a glance</h3>
+          <p class="text-zinc-500 text-sm max-w-xl mx-auto">Concrete scope behind each tier — so you know what you&apos;re signing up for.</p>
+        </div>
+
+        <div class="seo-deliverables-table overflow-x-auto rounded-2xl border border-white/10 backdrop-blur-[12px]" style="background: rgba(24, 24, 27, 0.5);">
+          <table class="w-full min-w-[640px] text-sm text-left">
+            <thead>
+              <tr class="border-b border-white/10">
+                <th class="py-4 px-4 md:px-6 text-zinc-400 font-medium w-[28%]">Deliverable</th>
+                <th class="py-4 px-4 text-white font-semibold w-[24%]">Foundation<br><span class="text-zinc-500 font-normal text-xs">$500/mo</span></th>
+                <th class="py-4 px-4 text-orange-400 font-semibold w-[24%]">Growth Engine<br><span class="text-zinc-500 font-normal text-xs">$1,250/mo</span></th>
+                <th class="py-4 px-4 md:px-6 text-white font-semibold w-[24%]">Market Dominance<br><span class="text-zinc-500 font-normal text-xs">$3,000/mo</span></th>
+              </tr>
+            </thead>
+            <tbody class="text-zinc-300">
+              <tr class="border-b border-white/5"><td class="py-3 px-4 md:px-6 text-zinc-400">Pages optimized</td><td class="py-3 px-4">Technical fixes only</td><td class="py-3 px-4">Up to 5 pages/mo</td><td class="py-3 px-4 md:px-6">Up to 10 pages/mo</td></tr>
+              <tr class="border-b border-white/5"><td class="py-3 px-4 md:px-6 text-zinc-400">Blog articles</td><td class="py-3 px-4">—</td><td class="py-3 px-4">2/mo (we write them)</td><td class="py-3 px-4 md:px-6">4/mo (we write them)</td></tr>
+              <tr class="border-b border-white/5"><td class="py-3 px-4 md:px-6 text-zinc-400">Google Business Profile</td><td class="py-3 px-4" colspan="3">Weekly posts &amp; spam monitoring (all tiers)</td></tr>
+              <tr class="border-b border-white/5"><td class="py-3 px-4 md:px-6 text-zinc-400">Local outreach</td><td class="py-3 px-4">Citation upkeep</td><td class="py-3 px-4">Monthly link building</td><td class="py-3 px-4 md:px-6">Link building + local PR</td></tr>
+              <tr class="border-b border-white/5"><td class="py-3 px-4 md:px-6 text-zinc-400">Reporting</td><td class="py-3 px-4">Monthly health report</td><td class="py-3 px-4">Live dashboard + monthly review</td><td class="py-3 px-4 md:px-6">Dashboard + CRO audit</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="text-zinc-500 text-xs text-center mt-5 max-w-2xl mx-auto leading-relaxed">
+          We don&apos;t guarantee specific rankings — nobody honestly can. We focus on measurable improvements in visibility, qualified traffic, calls, forms, and local-search performance.
+        </p>
       </div>
         </div>
       </div>
@@ -462,8 +535,8 @@ import WebDesignFeatureGrid from '../components/WebDesignFeatureGrid.astro';
         <div class="relative">
           <div class="text-center mb-8 md:mb-12">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-3">Managed Hosting</h2>
-            <p class="text-zinc-400 text-lg max-w-2xl mx-auto">Where your website lives. We manage the infrastructure, SSL, CDN, and monitoring for sites we&apos;ve built: globally distributed, secure, and always deployable. Monthly add-on.</p>
-            <p class="text-zinc-500 text-sm max-w-2xl mx-auto mt-4">Hosting is for websites we&apos;ve built and deploy.</p>
+            <p class="text-zinc-400 text-lg max-w-2xl mx-auto">Where your website lives. We manage the infrastructure, SSL, CDN, and monitoring for sites we&apos;ve built: globally distributed, secure, and always deployable.</p>
+            <p class="text-emerald-400/90 text-sm max-w-2xl mx-auto mt-4 font-medium">Required for every site we build — $75/mo, billed monthly.</p>
           </div>
           <div class="max-w-5xl mx-auto">
         <div class="hosting-pricing-card backdrop-blur-[12px] border border-emerald-500/20 rounded-2xl p-6 md:p-8 overflow-hidden relative flex flex-col transition-all duration-300 ease-out shadow-[0_0_30px_rgba(16,185,129,0.08)]" style="background: rgba(24, 24, 27, 0.6);">
@@ -543,6 +616,55 @@ import WebDesignFeatureGrid from '../components/WebDesignFeatureGrid.astro';
         </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Typical first-year investment -->
+    <section id="investment-example" class="max-w-4xl mx-auto pt-4 md:pt-8 pb-12 md:pb-16 px-4 sm:px-6 scroll-mt-28">
+      <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-8 md:p-10 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-transparent to-emerald-500/5 pointer-events-none"></div>
+        <div class="relative text-center mb-8">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-orange-400 mb-4">
+            <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+            Real-World Math
+          </div>
+          <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">Typical growth-focused launch</h2>
+          <p class="text-zinc-400 text-sm max-w-lg mx-auto">What a business often chooses when they want the full stack — not a requirement, just a common combo.</p>
+        </div>
+
+        <div class="relative max-w-md mx-auto space-y-3 mb-6">
+          <div class="flex justify-between items-center py-3 px-4 rounded-xl bg-white/[0.03] border border-white/5">
+            <span class="text-zinc-300 text-sm">Custom website</span>
+            <span class="text-white font-semibold">Starting at $3,500</span>
+          </div>
+          <div class="flex justify-between items-center py-3 px-4 rounded-xl bg-emerald-500/5 border border-emerald-500/20">
+            <span class="text-zinc-300 text-sm">Managed hosting <span class="text-emerald-400 text-xs">(required)</span></span>
+            <span class="text-white font-semibold">$75/mo</span>
+          </div>
+          <div class="flex justify-between items-center py-3 px-4 rounded-xl bg-white/[0.03] border border-white/5">
+            <span class="text-zinc-300 text-sm">Content support <span class="text-zinc-500 text-xs">(optional)</span></span>
+            <span class="text-white font-semibold">$125/mo</span>
+          </div>
+          <div class="flex justify-between items-center py-3 px-4 rounded-xl bg-orange-500/5 border border-orange-500/20">
+            <span class="text-zinc-300 text-sm">Growth Engine SEO <span class="text-zinc-500 text-xs">(optional)</span></span>
+            <span class="text-white font-semibold">$1,250/mo</span>
+          </div>
+        </div>
+
+        <div class="relative max-w-md mx-auto pt-5 border-t border-white/10 space-y-2 text-sm">
+          <div class="flex justify-between text-zinc-400">
+            <span>One-time at launch</span>
+            <span class="text-white font-medium">$3,500+</span>
+          </div>
+          <div class="flex justify-between text-zinc-400">
+            <span>Monthly with this stack</span>
+            <span class="text-white font-medium">$1,450/mo</span>
+          </div>
+        </div>
+
+        <p class="text-zinc-500 text-xs text-center mt-6 max-w-md mx-auto leading-relaxed">
+          SEO and support are optional — many clients start with just the website and hosting. Use <a href="/your-plan" class="text-orange-400 hover:text-orange-300 transition-colors">Add to Plan</a> to build your own combo and see the numbers.
+        </p>
       </div>
     </section>
 

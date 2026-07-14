@@ -66,4 +66,23 @@
         transform: translateZ(0) translateY(-2px);
         box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5), 0 0 30px rgba(16, 185, 129, 0.12);
     }
+
+    /* Scope cards below web design pricing */
+    .page-pricing .pricing-scope-card {
+        transform: translateZ(0);
+        transition: border-color 0.3s ease, transform 0.3s ease;
+    }
+    .page-pricing .pricing-scope-card:hover {
+        border-color: rgba(251, 146, 60, 0.25);
+        transform: translateZ(0) translateY(-1px);
+    }
+
+    /* SEO deliverables comparison table */
+    .page-pricing .seo-deliverables-table tbody tr:hover td {
+        background: rgba(255, 255, 255, 0.02);
+    }
+    .page-pricing .seo-deliverables-table td,
+    .page-pricing .seo-deliverables-table th {
+        vertical-align: top;
+    }
 }
