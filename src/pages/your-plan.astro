@@ -9,14 +9,14 @@ import MainLayout from '../layouts/MainLayout.astro';
   <header class="relative pt-32 sm:pt-32 md:pt-40 pb-12 sm:pb-16 px-4 sm:px-6 text-center overflow-hidden">
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[90vw] max-w-[800px] h-[400px] sm:h-[500px] md:h-[600px] glow-bg pointer-events-none opacity-40"></div>
     <div class="max-w-5xl mx-auto relative">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-orange-400 mb-6">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-xs font-medium text-orange-400 mb-6">
         <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
         Your Plan
       </div>
       <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4">
         Review your <span class="text-gradient-orange">selections</span>
       </h1>
-      <p class="text-zinc-400 text-lg leading-relaxed">
+      <p class="text-slate-600 text-lg leading-relaxed">
         Here's what you've picked. Reach out when you're ready and we'll tailor everything to your business.
       </p>
     </div>
@@ -24,18 +24,18 @@ import MainLayout from '../layouts/MainLayout.astro';
 
   <main class="pb-24 px-6 md:px-8">
     <div class="max-w-2xl mx-auto">
-      <div class="backdrop-blur-[12px] bg-white/5 border border-white/10 rounded-2xl p-8">
-        <h2 class="text-2xl font-bold text-white mb-6">Plan Summary</h2>
+      <div class="backdrop-blur-[12px] bg-slate-100 border border-slate-200 rounded-2xl p-8">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6">Plan Summary</h2>
         
         <div id="planItems" class="space-y-4 mb-6">
           <!-- Plan items will be injected here -->
         </div>
 
-        <div id="planTotals" class="border-t border-white/10 pt-4 space-y-2 mb-8">
+        <div id="planTotals" class="border-t border-slate-200 pt-4 space-y-2 mb-8">
           <!-- Totals will be injected here -->
         </div>
 
-        <p class="text-sm text-zinc-400 mb-6">
+        <p class="text-sm text-slate-600 mb-6">
           What you see here reflects our standard package rates. We'll walk through your selections together, then send a clear invoice based on the plan you choose. No surprises.
         </p>
 
@@ -45,14 +45,14 @@ import MainLayout from '../layouts/MainLayout.astro';
             Get in Touch
           </a>
           <a href="/pricing"
-            class="flex-1 px-8 py-4 bg-white/5 text-white font-semibold rounded-full text-center border border-white/10 hover:bg-white/10 transition-colors">
+            class="flex-1 px-8 py-4 bg-slate-100 text-slate-900 font-semibold rounded-full text-center border border-slate-200 hover:bg-slate-100 transition-colors">
             Adjust Selections
           </a>
         </div>
       </div>
 
       <div class="text-center mt-8">
-        <a href="/pricing" class="text-zinc-400 hover:text-white transition-colors text-sm">
+        <a href="/pricing" class="text-slate-600 hover:text-slate-900 transition-colors text-sm">
           ← Back to pricing
         </a>
       </div>
@@ -97,10 +97,10 @@ import MainLayout from '../layouts/MainLayout.astro';
 
         const planItems = document.getElementById('planItems');
         planItems.innerHTML = items.map(item => `
-          <div class="flex justify-between items-start py-3 border-b border-white/5 last:border-0">
+          <div class="flex justify-between items-start py-3 border-b border-slate-100 last:border-0">
             <div class="flex-1">
-              <h3 class="font-semibold text-white text-sm mb-1">${item.name}</h3>
-              <p class="text-xs text-zinc-400">
+              <h3 class="font-semibold text-slate-900 text-sm mb-1">${item.name}</h3>
+              <p class="text-xs text-slate-600">
                 ${item.type === 'one-time' ? 'One-time' : 'Monthly subscription'}
               </p>
             </div>
@@ -115,8 +115,8 @@ import MainLayout from '../layouts/MainLayout.astro';
         if (totals.oneTime > 0) {
           totalsHTML += `
             <div class="flex justify-between">
-              <span class="text-zinc-400">One-time total:</span>
-              <span class="text-white font-bold text-lg">$${totals.oneTime.toLocaleString()}</span>
+              <span class="text-slate-600">One-time total:</span>
+              <span class="text-slate-900 font-bold text-lg">$${totals.oneTime.toLocaleString()}</span>
             </div>
           `;
         }
@@ -124,8 +124,8 @@ import MainLayout from '../layouts/MainLayout.astro';
         if (totals.monthly > 0) {
           totalsHTML += `
             <div class="flex justify-between">
-              <span class="text-zinc-400">Monthly total:</span>
-              <span class="text-white font-bold text-lg">$${totals.monthly.toLocaleString()}/mo</span>
+              <span class="text-slate-600">Monthly total:</span>
+              <span class="text-slate-900 font-bold text-lg">$${totals.monthly.toLocaleString()}/mo</span>
             </div>
           `;
         }

@@ -14,13 +14,13 @@ import MainLayout from '../layouts/MainLayout.astro';
     <div class="relative max-w-2xl mx-auto text-center">
 
       <!-- 404 badge -->
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-orange-400 mb-8">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-xs font-medium text-orange-400 mb-8">
         <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
         Error 404
       </div>
 
       <!-- Large 404 -->
-      <div class="text-[10rem] sm:text-[14rem] font-bold leading-none tracking-tighter text-white/5 select-none mb-[-2rem] sm:mb-[-3rem]" aria-hidden="true">
+      <div class="text-[10rem] sm:text-[14rem] font-bold leading-none tracking-tighter text-slate-900/5 select-none mb-[-2rem] sm:mb-[-3rem]" aria-hidden="true">
         404
       </div>
 
@@ -28,7 +28,7 @@ import MainLayout from '../layouts/MainLayout.astro';
         Page <span class="text-gradient-orange">Not Found</span>
       </h1>
 
-      <p class="text-zinc-400 text-base sm:text-lg leading-relaxed mb-10 max-w-lg mx-auto">
+      <p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-10 max-w-lg mx-auto">
         Looks like this page went offline. Don't worry, let's get you back to building your online presence.
       </p>
 
@@ -41,7 +41,7 @@ import MainLayout from '../layouts/MainLayout.astro';
         </a>
         <a
           href="/contact"
-          class="w-full sm:w-auto px-7 py-3 bg-white/5 hover:bg-white/10 text-white font-semibold rounded-full border border-white/10 hover:border-white/20 transition-all text-sm">
+          class="w-full sm:w-auto px-7 py-3 bg-slate-100 hover:bg-slate-100 text-slate-900 font-semibold rounded-full border border-slate-200 hover:border-slate-300 transition-all text-sm">
           Contact Us
         </a>
       </div>
@@ -56,11 +56,11 @@ import MainLayout from '../layouts/MainLayout.astro';
         ].map(({ label, href, icon }) => (
           <a
             href={href}
-            class="flex flex-col items-center gap-2 px-4 py-5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all group">
+            class="flex flex-col items-center gap-2 px-4 py-5 rounded-xl bg-slate-100 border border-slate-200 hover:bg-slate-100 hover:border-slate-300 transition-all group">
             <svg class="w-5 h-5 text-orange-400 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={icon} />
             </svg>
-            <span class="text-sm font-medium text-zinc-300 group-hover:text-white transition-colors">{label}</span>
+            <span class="text-sm font-medium text-slate-700 group-hover:text-slate-900 transition-colors">{label}</span>
           </a>
         ))}
       </div>

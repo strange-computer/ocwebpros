@@ -8,10 +8,10 @@ import TerminalAnimation from '../components/TerminalAnimation.astro';
   bodyClass="page-home"
   pageCSS="/css/pages/home.css">
 
-  <section class="relative min-h-[90vh] flex flex-col items-center justify-start text-center px-6 pt-32 pb-20 sm:pt-32 sm:pb-20 md:pt-40 md:pb-24 overflow-hidden">
-    <!-- Hero background video -->
+  <!-- Hero -->
+  <section class="relative min-h-[100svh] flex flex-col justify-center overflow-hidden hero-atmosphere">
     <video
-      class="absolute inset-0 -z-10 w-full h-full object-cover"
+      class="absolute inset-0 -z-10 w-full h-full object-cover opacity-[0.32]"
       src="/videos/backgroundvideo.mp4"
       autoplay
       muted
@@ -19,353 +19,290 @@ import TerminalAnimation from '../components/TerminalAnimation.astro';
       playsinline
       preload="none"
     ></video>
-    <!-- Dark overlay + glow -->
-    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-black/95 via-black/85 to-black/95"></div>
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[90vw] max-w-[800px] h-[400px] sm:h-[500px] md:h-[600px] glow-bg pointer-events-none opacity-50"></div>
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-white/85 via-slate-50/80 to-slate-50"></div>
+    <div class="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-slate-50 to-transparent pointer-events-none"></div>
 
-    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-orange-400 mb-8 sm:mb-10 md:mb-8">
-      <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
-      Based in Lake Forest, CA
-    </div>
-
-    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight mb-8 sm:mb-10 md:mb-10 max-w-5xl mx-auto px-4">
-      Design for <span class="text-gradient-orange">Humans</span>.<br />
-      Rank for <span class="text-gradient-orange">Machines</span>.
-    </h1>
-
-    <p class="text-base sm:text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-12 sm:mb-14 md:mb-14 leading-relaxed px-4">
-      Custom web design and local SEO for Orange County businesses. Based in Lake Forest — serving Irvine, Mission Viejo, Rancho Santa Margarita, and South OC.
-    </p>
-
-    <div class="flex flex-col sm:flex-row gap-4 sm:gap-4 w-full justify-center max-w-md sm:max-w-none px-4 mb-8 sm:mb-0">
-      <a href="/contact" class="px-6 sm:px-8 py-3 sm:py-4 bg-orange-700 text-white font-semibold rounded-xl btn-glow hover:bg-orange-600 transition-colors text-sm sm:text-base text-center">
-        Request Consultation
-      </a>
-      <a href="/portfolio" class="px-6 sm:px-8 py-3 sm:py-4 bg-white/5 text-white font-semibold rounded-xl border border-white/10 hover:bg-white/10 transition-colors text-sm sm:text-base text-center">
-        View Our Work
-      </a>
-    </div>
-
-    <div class="mt-12 sm:mt-16 md:mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-16 border-t border-white/10 pt-8 sm:pt-10 px-4">
-      <div class="hero-stat-item" data-aos="fade-up" data-aos-delay="100">
-        <div class="text-2xl sm:text-3xl font-bold text-white mb-1">Custom Design</div>
-        <div class="text-xs sm:text-sm text-zinc-400">Tailored to your brand and goals</div>
-      </div>
-      <div class="hero-stat-item" data-aos="fade-up" data-aos-delay="200">
-        <div class="text-2xl sm:text-3xl font-bold text-white mb-1">Mobile‑first</div>
-        <div class="text-xs sm:text-sm text-zinc-400">Looks great on every device</div>
-      </div>
-      <div class="hero-stat-item col-span-1 sm:col-span-2 md:col-span-1" data-aos="fade-up" data-aos-delay="300">
-        <div class="text-2xl sm:text-3xl font-bold text-white mb-1">Straightforward Pricing</div>
-        <div class="text-xs sm:text-sm text-zinc-400">Clear scope, no surprises</div>
+    <div class="max-w-7xl mx-auto w-full px-6 pt-28 pb-20 sm:pt-32 sm:pb-24">
+      <p class="logo-text text-3xl sm:text-4xl md:text-5xl text-slate-900 mb-6 animate-fade-up">
+        OCWebPros
+      </p>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-900 max-w-4xl mb-6 leading-[1.08] animate-fade-up-delay">
+        More Leads. More Calls.<br />
+        <span class="text-gradient-orange">Websites That Rank.</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-600 max-w-2xl mb-10 leading-relaxed animate-fade-up-delay-2">
+        Custom web design and local SEO for Orange County businesses — built in Lake Forest to get you found on Google and turn visitors into customers.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 animate-fade-up-delay-2">
+        <a href="/contact" class="btn-primary text-base sm:text-lg px-8 py-4">
+          Book a Free Strategy Call
+        </a>
+        <a href="/pricing" class="btn-secondary text-base sm:text-lg px-8 py-4">
+          See Pricing →
+        </a>
       </div>
     </div>
   </section>
 
-  <section class="py-24 px-6 bg-zinc-900/30 border-y border-white/5" data-aos="fade-up">
+  <!-- Trust strip -->
+  <section class="px-6 py-8 border-y border-slate-200 bg-white">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+      <p class="text-sm font-medium text-slate-500">
+        Serving local markets in <span class="text-slate-900 font-semibold">Orange County</span> — Irvine, Mission Viejo, Lake Forest &amp; beyond
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-6 md:gap-8 opacity-80">
+        <picture>
+          <source srcset="/images/gaclogo.webp" type="image/webp" />
+          <img src="/images/gaclogo.png" alt="GAC" class="h-7 w-auto object-contain grayscale" width="204" height="64" />
+        </picture>
+        <picture>
+          <source srcset="/images/honkpill-logo.webp" type="image/webp" />
+          <img src="/images/honkpill-logo.png" alt="Honkpill" class="h-7 w-auto object-contain grayscale" width="284" height="64" />
+        </picture>
+        <img src="/images/nexus-logo.svg" alt="Nexus" class="h-7 w-auto object-contain grayscale" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Who we help (light) -->
+  <section class="py-20 sm:py-28 px-6 bg-white" data-aos="fade-up">
     <div class="max-w-7xl mx-auto">
-      <div class="grid md:grid-cols-2 gap-16 items-center">
+      <p class="section-eyebrow">Who We Help</p>
+      <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-4 max-w-3xl tracking-tight">
+        The local web &amp; SEO partner built for Orange County businesses
+      </h2>
+      <p class="text-slate-600 text-lg max-w-2xl mb-14 leading-relaxed">
+        We don’t try to serve everyone. We specialize in local companies that want to dominate their market and grow with a site that actually works.
+      </p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="/industries" class="group block p-7 rounded-2xl border border-slate-200 bg-slate-50 hover:border-orange-300 hover:bg-orange-50/50 hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300">
+          <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-orange-700 transition-colors">Service Businesses</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Get found when neighbors search — HVAC, plumbing, contractors, and home services.</p>
+        </a>
+        <a href="/services/web-design" class="group block p-7 rounded-2xl border border-slate-200 bg-slate-50 hover:border-orange-300 hover:bg-orange-50/50 hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300">
+          <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-orange-700 transition-colors">Local Brands</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Custom-coded sites that look premium, load fast, and convert on mobile.</p>
+        </a>
+        <a href="/services/local-seo" class="group block p-7 rounded-2xl border border-slate-200 bg-slate-50 hover:border-orange-300 hover:bg-orange-50/50 hover:shadow-lg hover:shadow-orange-500/5 transition-all duration-300 sm:col-span-2 lg:col-span-1">
+          <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-orange-700 transition-colors">Growing Teams</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Local SEO, Google Business, and content that compounds month after month.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why OCWebPros — DARK FOLD -->
+  <section class="fold-dark py-20 sm:py-28 px-6 relative overflow-hidden" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="grid md:grid-cols-2 gap-14 lg:gap-20 items-center">
         <div>
-          <h2 class="text-3xl md:text-4xl font-bold mb-6">
-            More Than a Website.<br />
-            <span class="text-gradient-orange">A Team That Delivers.</span>
+          <p class="section-eyebrow">Why OCWebPros</p>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight leading-tight">
+            Hook better leads with a local specialist
           </h2>
-          <div class="space-y-8">
-            <div class="flex gap-4">
-              <div class="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center flex-shrink-0 border border-white/10">
-                <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
-              </div>
-              <div>
-                <h3 class="text-xl font-semibold text-white mb-2">Custom, Purpose-Built Design</h3>
-                <p class="text-zinc-400 leading-relaxed">Every site is built from scratch for your specific needs. No template bloat, no unnecessary features - just what works for your business.</p>
-              </div>
+          <div class="space-y-7">
+            <div class="border-l-2 border-orange-500/60 pl-5">
+              <h3 class="text-lg font-semibold text-white mb-1.5">Custom, purpose-built design</h3>
+              <p class="text-slate-400 leading-relaxed text-[0.95rem]">Every site is built from scratch — no template bloat, no page-builder drag. Fast, mobile-first, SEO-ready from day one.</p>
             </div>
-            <div class="flex gap-4">
-              <div class="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center flex-shrink-0 border border-white/10">
-                <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-              </div>
-              <div>
-                <h3 class="text-xl font-semibold text-white mb-2">Direct Access to Your Team</h3>
-                <p class="text-zinc-400 leading-relaxed">Skip the ticket queues. Work directly with the people who built your site, based right here in Lake Forest, CA.</p>
-              </div>
+            <div class="border-l-2 border-orange-500/60 pl-5">
+              <h3 class="text-lg font-semibold text-white mb-1.5">Direct access to your team</h3>
+              <p class="text-slate-400 leading-relaxed text-[0.95rem]">Skip the ticket queues. Work with the people who built your site, based right here in Lake Forest, CA.</p>
+            </div>
+            <div class="border-l-2 border-orange-500/60 pl-5">
+              <h3 class="text-lg font-semibold text-white mb-1.5">Clear pricing, no surprises</h3>
+              <p class="text-slate-400 leading-relaxed text-[0.95rem]">Straightforward scopes and month-to-month options — we earn your business with results.</p>
             </div>
           </div>
+          <a href="/about" class="inline-flex mt-10 text-orange-400 font-semibold hover:text-orange-300 transition-colors">
+            Learn about us →
+          </a>
         </div>
         <div class="relative min-w-0">
-          <div class="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-purple-500/20 blur-3xl rounded-full"></div>
-          <div class="framer-card p-8 rounded-2xl relative z-10 min-w-0 overflow-visible">
-            <div class="space-y-4">
-              <TerminalAnimation />
-            </div>
+          <div class="absolute -inset-6 bg-orange-500/20 blur-3xl rounded-full opacity-60"></div>
+          <div class="relative z-10 rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/50">
+            <TerminalAnimation />
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Mid-page CTA stripe -->
-  <section class="px-4 sm:px-6 py-10 sm:py-12 border-t border-white/5 bg-gradient-to-r from-zinc-900/40 via-zinc-900/20 to-zinc-900/40" data-aos="fade-up">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-      <div>
-        <h3 class="text-2xl md:text-3xl font-bold">Let's make your website a growth asset.</h3>
-        <p class="text-zinc-400 mt-2">Fast, clear, and built to last - without the bloat.</p>
+  <!-- Proof strip on dark edge into light -->
+  <section class="bg-black border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div data-aos="fade-up" data-aos-delay="0">
+        <div class="text-2xl md:text-3xl font-extrabold text-white tracking-tight">Custom</div>
+        <div class="text-sm text-slate-400 mt-1">Hand-coded sites</div>
       </div>
-      <div class="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
-        <a href="/contact" class="px-6 py-3 bg-orange-700 text-white font-semibold rounded-full hover:bg-orange-600 transition-colors btn-glow text-center text-sm sm:text-base">Request consult</a>
-        <a href="/portfolio" class="px-6 py-3 bg-white/5 text-white font-semibold rounded-full border border-white/10 hover:bg-white/10 transition-colors text-center text-sm sm:text-base">See examples</a>
+      <div data-aos="fade-up" data-aos-delay="50">
+        <div class="text-2xl md:text-3xl font-extrabold text-white tracking-tight">Mobile-first</div>
+        <div class="text-sm text-slate-400 mt-1">Built to convert</div>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100">
+        <div class="text-2xl md:text-3xl font-extrabold text-white tracking-tight">24 cities</div>
+        <div class="text-sm text-slate-400 mt-1">Orange County coverage</div>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="150">
+        <div class="text-2xl md:text-3xl font-extrabold text-orange-400 tracking-tight">Clear pricing</div>
+        <div class="text-sm text-slate-400 mt-1">No surprise scopes</div>
       </div>
     </div>
   </section>
 
-  <!-- South OC Service Areas -->
-  <section class="py-20 px-6 bg-zinc-900/30 border-y border-white/5" data-aos="fade-up">
+  <!-- Services (light) -->
+  <section class="py-20 sm:py-28 px-6 bg-white" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-14">
+        <p class="section-eyebrow">What We Do</p>
+        <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">
+          Everything you need to dominate locally
+        </h2>
+        <p class="text-slate-600 text-lg max-w-2xl mx-auto leading-relaxed">
+          Web design, local SEO, and ongoing support — one system built to get your phone ringing.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="framer-card p-8 rounded-2xl group" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mb-6 border border-orange-100 group-hover:bg-orange-100 transition-colors">
+            <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Web Design</h3>
+          <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+            Custom websites built for local businesses. Fast, mobile-first, and designed to convert visitors into customers.
+          </p>
+          <a href="/services/web-design" class="text-sm text-orange-600 font-semibold hover:text-orange-700 transition-colors inline-flex items-center gap-1">
+            View web design services →
+          </a>
+        </div>
+
+        <div class="framer-card p-8 rounded-2xl relative group ring-1 ring-orange-500/20" data-aos="fade-up" data-aos-delay="200">
+          <span class="absolute top-4 right-4 text-xs font-bold uppercase tracking-wide text-orange-700 bg-orange-50 px-2.5 py-1 rounded-full">Popular</span>
+          <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mb-6 border border-orange-100 group-hover:bg-orange-100 transition-colors">
+            <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Local SEO</h3>
+          <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+            Rank in the map pack and organic results. Google Business, citations, content, and ongoing improvements.
+          </p>
+          <a href="/services/local-seo" class="text-sm text-orange-600 font-semibold hover:text-orange-700 transition-colors inline-flex items-center gap-1">
+            Explore local SEO packages →
+          </a>
+        </div>
+
+        <div class="framer-card p-8 rounded-2xl group" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mb-6 border border-orange-100 group-hover:bg-orange-100 transition-colors">
+            <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Hosting &amp; Support</h3>
+          <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+            Managed hosting with CDN, SSL, and uptime monitoring — plus support plans for content updates.
+          </p>
+          <a href="/hosting" class="text-sm text-orange-600 font-semibold hover:text-orange-700 transition-colors inline-flex items-center gap-1">
+            View hosting plans →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Locations — DARK FOLD -->
+  <section class="fold-dark py-20 sm:py-24 px-6" data-aos="fade-up">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Serving <span class="text-gradient-orange">South Orange County</span></h2>
-        <p class="text-zinc-400 max-w-2xl mx-auto">Dedicated local SEO and web design pages for 24 Orange County cities — not generic county-wide copy.</p>
+        <p class="section-eyebrow">Locations</p>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 tracking-tight">Serving South Orange County</h2>
+        <p class="text-slate-400 max-w-2xl mx-auto leading-relaxed">
+          We’re based in Lake Forest — not some distant agency guessing at your market. Every city page is built to win the searches that matter where you actually do business, so when a neighbor needs what you offer, you’re the name they find.
+        </p>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-        <a href="/local-seo/lake-forest" class="bg-white/5 border border-white/10 rounded-xl p-4 text-center hover:border-orange-500/30 hover:bg-white/10 transition-colors">
+        <a href="/local-seo/lake-forest" class="glass-dark rounded-xl p-5 text-center">
           <div class="text-white font-semibold mb-1">Lake Forest</div>
-          <div class="text-xs text-zinc-500">Our home base</div>
+          <div class="text-xs text-slate-400">Our home base</div>
         </a>
-        <a href="/local-seo/irvine" class="bg-white/5 border border-white/10 rounded-xl p-4 text-center hover:border-orange-500/30 hover:bg-white/10 transition-colors">
+        <a href="/local-seo/irvine" class="glass-dark rounded-xl p-5 text-center">
           <div class="text-white font-semibold mb-1">Irvine</div>
-          <div class="text-xs text-zinc-500">Local SEO & web design</div>
+          <div class="text-xs text-slate-400">Local SEO &amp; web design</div>
         </a>
-        <a href="/local-seo/mission-viejo" class="bg-white/5 border border-white/10 rounded-xl p-4 text-center hover:border-orange-500/30 hover:bg-white/10 transition-colors">
+        <a href="/local-seo/mission-viejo" class="glass-dark rounded-xl p-5 text-center">
           <div class="text-white font-semibold mb-1">Mission Viejo</div>
-          <div class="text-xs text-zinc-500">Local SEO & web design</div>
+          <div class="text-xs text-slate-400">Local SEO &amp; web design</div>
         </a>
-        <a href="/local-seo/rancho-santa-margarita" class="bg-white/5 border border-white/10 rounded-xl p-4 text-center hover:border-orange-500/30 hover:bg-white/10 transition-colors">
+        <a href="/local-seo/rancho-santa-margarita" class="glass-dark rounded-xl p-5 text-center">
           <div class="text-white font-semibold mb-1">Rancho Santa Margarita</div>
-          <div class="text-xs text-zinc-500">Local SEO & web design</div>
+          <div class="text-xs text-slate-400">Local SEO &amp; web design</div>
         </a>
       </div>
-      <p class="text-center mt-8 text-sm text-zinc-500">
-        Plus Anaheim, Huntington Beach, Santa Ana, Newport Beach, and <a href="/service-areas" class="text-orange-400 hover:text-orange-300 font-medium">20 more OC cities →</a>
+      <p class="text-center mt-10 text-sm text-slate-400">
+        Plus Anaheim, Huntington Beach, Santa Ana, Newport Beach, and <a href="/service-areas" class="text-orange-400 hover:text-orange-300 font-semibold">20 more OC cities →</a>
       </p>
     </div>
   </section>
 
-  <section class="py-32 px-6">
+  <!-- Process (light) -->
+  <section class="py-20 sm:py-28 px-6 bg-white">
     <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-3xl md:text-5xl font-bold mb-4">What We Build</h2>
-        <p class="text-zinc-400">Tailored solutions for every stage of your business.</p>
+      <div class="text-center mb-14" data-aos="fade-up">
+        <p class="section-eyebrow">The Process</p>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4 tracking-tight">How we get you more leads in 90 days</h2>
+        <p class="text-slate-600 leading-relaxed">Clear process, reliable communication, and quality outcomes.</p>
       </div>
-
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="framer-card p-8 rounded-2xl group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
-          <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-orange-600/20 transition-colors">
-            <svg class="w-6 h-6 text-white group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-          </div>
-          <h3 class="text-xl font-bold mb-3">Web Design</h3>
-          <p class="text-sm text-zinc-400 mb-6 leading-relaxed">
-            Custom websites built for local businesses. Fast, mobile-first, and designed to convert visitors into customers.
-          </p>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="px-2 py-1 text-xs bg-white/5 rounded text-zinc-300">Service Sites</span>
-            <span class="px-2 py-1 text-xs bg-white/5 rounded text-zinc-300">Local Business</span>
-          </div>
-          <a href="/services/web-design" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors inline-flex items-center gap-1">
-            View web design services
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg>
-          </a>
+      <div class="grid md:grid-cols-3 gap-8 md:gap-10">
+        <div class="relative p-6 rounded-2xl border border-slate-100 bg-slate-50/80" data-aos="fade-up" data-aos-delay="0">
+          <div class="text-5xl font-extrabold text-orange-200 mb-4">01</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Free audit &amp; strategy</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">We review your site, rankings, and goals — then map a clear plan. No fluff, no pressure.</p>
+          <p class="mt-4 text-xs font-semibold uppercase tracking-wider text-orange-600">Week 1 — Free</p>
         </div>
-
-        <div class="framer-card p-8 rounded-2xl group cursor-pointer" data-aos="fade-up" data-aos-delay="200">
-          <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-orange-600/20 transition-colors">
-            <svg class="w-6 h-6 text-white group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-          </div>
-          <h3 class="text-xl font-bold mb-3">Local SEO</h3>
-          <p class="text-sm text-zinc-400 mb-6 leading-relaxed">
-            Strategic optimization to help you rank in local search. Google Business, content strategy, and ongoing improvements.
-          </p>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="px-2 py-1 text-xs bg-white/5 rounded text-zinc-300">Google Business</span>
-            <span class="px-2 py-1 text-xs bg-white/5 rounded text-zinc-300">Link Building</span>
-          </div>
-          <a href="/services/local-seo" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors inline-flex items-center gap-1">
-            Explore local SEO packages
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg>
-          </a>
+        <div class="relative p-6 rounded-2xl border border-slate-100 bg-slate-50/80" data-aos="fade-up" data-aos-delay="100">
+          <div class="text-5xl font-extrabold text-orange-200 mb-4">02</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Build your growth system</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">We design or optimize your site, set up SEO foundations, and configure tracking for your market.</p>
+          <p class="mt-4 text-xs font-semibold uppercase tracking-wider text-orange-600">Weeks 2–4 — Setup</p>
         </div>
-
-        <div class="framer-card p-8 rounded-2xl group cursor-pointer" data-aos="fade-up" data-aos-delay="300">
-          <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-orange-600/20 transition-colors">
-            <svg class="w-6 h-6 text-white group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2"></path></svg>
-          </div>
-          <h3 class="text-xl font-bold mb-3">Hosting & Support</h3>
-          <p class="text-sm text-zinc-400 mb-6 leading-relaxed">
-            Managed hosting with CDN, SSL, and uptime monitoring. Add a support plan for content updates and ongoing maintenance.
-          </p>
-          <div class="flex flex-wrap gap-2 mb-4">
-            <span class="px-2 py-1 text-xs bg-white/5 rounded text-zinc-300">Managed Hosting</span>
-            <span class="px-2 py-1 text-xs bg-white/5 rounded text-zinc-300">Content Updates</span>
-          </div>
-          <a href="/hosting" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors inline-flex items-center gap-1">
-            View hosting plans
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg>
-          </a>
+        <div class="relative p-6 rounded-2xl border border-slate-100 bg-slate-50/80" data-aos="fade-up" data-aos-delay="200">
+          <div class="text-5xl font-extrabold text-orange-200 mb-4">03</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2">Watch the leads roll in</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">Month by month we optimize and compound. You get clear reporting — rankings, traffic, and what’s working.</p>
+          <p class="mt-4 text-xs font-semibold uppercase tracking-wider text-orange-600">Month 2+ — Growth</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Logos/social proof -->
-  <section class="px-6 py-10 border-t border-white/5">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-6 md:gap-10">
-      <div class="h-8" data-aos="fade-up" data-aos-delay="0">
-        <picture>
-          <source srcset="/images/gaclogo.webp" type="image/webp" />
-          <img src="/images/gaclogo.png" alt="GAC" class="h-8 w-auto object-contain opacity-90 grayscale hover:grayscale-0 transition" width="204" height="64" />
-        </picture>
+  <!-- Mid CTA — orange punch -->
+  <section class="px-4 sm:px-6 py-16 sm:py-20 bg-orange-600 relative overflow-hidden" data-aos="fade-up">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.15),transparent_50%)] pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left relative z-10">
+      <div>
+        <h3 class="text-2xl md:text-3xl font-bold text-white tracking-tight">Let’s make your website a growth asset.</h3>
+        <p class="text-orange-50/90 mt-2 text-base">Fast, clear, and built to last — without the bloat.</p>
       </div>
-      <div class="h-8" data-aos="fade-up" data-aos-delay="100">
-        <picture>
-          <source srcset="/images/honkpill-logo.webp" type="image/webp" />
-          <img src="/images/honkpill-logo.png" alt="Honkpill" class="h-8 w-auto object-contain opacity-90 grayscale hover:grayscale-0 transition" width="284" height="64" />
-        </picture>
-      </div>
-      <div class="h-8" data-aos="fade-up" data-aos-delay="200">
-        <picture>
-          <source srcset="/images/whatisthebeststuff-logo-1x.webp 1x, /images/whatisthebeststuff-logo-2x.webp 2x" type="image/webp" />
-          <img src="/images/whatisthebeststuff-logo.png" alt="What Is The Best Stuff" class="h-8 w-auto object-contain opacity-90 invert grayscale hover:grayscale-0 transition" width="207" height="32" />
-        </picture>
-      </div>
-      <div class="h-8" data-aos="fade-up" data-aos-delay="300">
-        <img src="/images/nexus-logo.svg" alt="Nexus" class="h-8 w-auto object-contain opacity-90 grayscale hover:grayscale-0 transition" />
-      </div>
-      <div class="h-8" data-aos="fade-up" data-aos-delay="400">
-        <img src="/images/velocity-logo.svg" alt="Velocity" class="h-8 w-auto object-contain opacity-90 grayscale hover:grayscale-0 transition" />
+      <div class="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+        <a href="/contact" class="px-7 py-3.5 bg-white text-orange-700 font-semibold rounded-full hover:bg-orange-50 transition-colors text-center text-sm sm:text-base shadow-lg shadow-orange-900/20">Book a free consult</a>
+        <a href="/portfolio" class="px-7 py-3.5 bg-orange-700/80 text-white font-semibold rounded-full border border-white/25 hover:bg-orange-800 transition-colors text-center text-sm sm:text-base">See examples</a>
       </div>
     </div>
   </section>
 
-  <section class="py-24 px-6 bg-zinc-900/30 border-y border-white/5">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-12" data-aos="fade-up">
-        <h2 class="text-3xl font-bold mb-4">What You Can Expect</h2>
-        <p class="text-zinc-400">Clear process, reliable communication, and quality outcomes.</p>
-      </div>
-      <!-- Desktop: Horizontal Timeline -->
-      <div class="hidden md:flex items-center justify-between relative">
-        <!-- Connecting line -->
-        <div class="absolute top-6 left-0 right-0 h-0.5 bg-orange-500/30 -z-10"></div>
-        <!-- Step 1 -->
-        <div class="flex flex-col items-center flex-1 relative group cursor-pointer" data-aos="zoom-in" data-aos-delay="0">
-          <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg mb-4 relative z-10 group-hover:scale-110 transition-transform">1</div>
-          <h3 class="font-bold text-white mb-2 text-center group-hover:text-orange-400 transition-colors">Discovery</h3>
-          <p class="text-sm text-zinc-400 text-center max-w-[180px]">We clarify goals, audience, and success criteria together.</p>
-        </div>
-        <!-- Step 2 -->
-        <div class="flex flex-col items-center flex-1 relative group cursor-pointer" data-aos="zoom-in" data-aos-delay="150">
-          <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg mb-4 relative z-10 group-hover:scale-110 transition-transform">2</div>
-          <h3 class="font-bold text-white mb-2 text-center group-hover:text-orange-400 transition-colors">Design</h3>
-          <p class="text-sm text-zinc-400 text-center max-w-[180px]">Modern, accessible UI tailored to your brand and content.</p>
-        </div>
-        <!-- Step 3 -->
-        <div class="flex flex-col items-center flex-1 relative group cursor-pointer" data-aos="zoom-in" data-aos-delay="300">
-          <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg mb-4 relative z-10 group-hover:scale-110 transition-transform">3</div>
-          <h3 class="font-bold text-white mb-2 text-center group-hover:text-orange-400 transition-colors">Build & Launch</h3>
-          <p class="text-sm text-zinc-400 text-center max-w-[180px]">Fast, mobile‑first pages and a smooth handoff at launch.</p>
-        </div>
-      </div>
-      <!-- Mobile: Vertical Timeline -->
-      <div class="md:hidden space-y-8">
-        <div class="flex gap-4 relative">
-          <div class="flex flex-col items-center">
-            <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg">1</div>
-            <div class="w-0.5 h-full bg-orange-500/30 mt-2 absolute top-12 left-6"></div>
-          </div>
-          <div class="flex-1 pt-2">
-            <h3 class="font-bold text-white mb-2">Discovery</h3>
-            <p class="text-sm text-zinc-400">We clarify goals, audience, and success criteria together.</p>
-          </div>
-        </div>
-        <div class="flex gap-4 relative">
-          <div class="flex flex-col items-center">
-            <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg">2</div>
-            <div class="w-0.5 h-full bg-orange-500/30 mt-2 absolute top-12 left-6"></div>
-          </div>
-          <div class="flex-1 pt-2">
-            <h3 class="font-bold text-white mb-2">Design</h3>
-            <p class="text-sm text-zinc-400">Modern, accessible UI tailored to your brand and content.</p>
-          </div>
-        </div>
-        <div class="flex gap-4">
-          <div class="flex flex-col items-center">
-            <div class="w-12 h-12 rounded-full bg-zinc-900 border-2 border-orange-500 text-orange-400 flex items-center justify-center font-bold text-lg">3</div>
-          </div>
-          <div class="flex-1 pt-2">
-            <h3 class="font-bold text-white mb-2">Build & Launch</h3>
-            <p class="text-sm text-zinc-400">Fast, mobile‑first pages and a smooth handoff at launch.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-16 sm:py-24 md:py-32 px-4 sm:px-6 text-center" data-aos="fade-up">
-    <div class="max-w-3xl mx-auto">
-      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Ready to build something great?</h2>
-      <p class="text-zinc-400 mb-8 sm:mb-10 text-base sm:text-lg">Local, reliable, and ready when you are.</p>
+  <!-- Final CTA — DARK FOLD -->
+  <section class="fold-dark py-20 sm:py-28 px-4 sm:px-6 text-center relative overflow-hidden" data-aos="fade-up">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(234,88,12,0.12),transparent_55%)] pointer-events-none"></div>
+    <div class="max-w-3xl mx-auto relative z-10">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6 tracking-tight">Ready to get your phone ringing?</h2>
+      <p class="text-slate-400 mb-8 sm:mb-10 text-base sm:text-lg leading-relaxed">Book a free strategy call. We’ll show you where you’re losing leads — and how to fix it.</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/contact" class="px-8 sm:px-10 py-4 sm:py-5 bg-orange-700 text-white font-bold rounded-full hover:bg-orange-600 transition-colors text-base sm:text-lg btn-glow">
-          Get a Free Quote
+        <a href="/contact" class="btn-primary text-base sm:text-lg px-8 py-4">
+          Book My Free Strategy Call
         </a>
-        <a href="/pricing" class="px-8 sm:px-10 py-4 sm:py-5 bg-white/5 text-white font-bold rounded-full border border-white/10 hover:bg-white/10 transition-colors text-base sm:text-lg">
-          View Pricing
+        <a href="tel:9493294437" class="btn-secondary-dark text-base sm:text-lg px-8 py-4">
+          (949) 329-4437
         </a>
       </div>
-      <p class="mt-6 sm:mt-8 text-zinc-400 text-xs sm:text-sm">Lake Forest, CA</p>
+      <p class="mt-8 text-slate-500 text-sm">Lake Forest, CA · No long-term contracts</p>
     </div>
   </section>
-
-  <!-- Hero stats sit at the bottom of min-h-[90vh]; global AOS offset skips them until scroll -->
-  <script is:inline>
-    (function () {
-      function revealHeroStats() {
-        document.querySelectorAll('.hero-stat-item[data-aos]').forEach(function (el) {
-          el.classList.add('aos-animate');
-        });
-      }
-
-      function whenAosReady(run) {
-        if (document.documentElement.classList.contains('aos-ready')) {
-          run();
-          return;
-        }
-        var observer = new MutationObserver(function () {
-          if (document.documentElement.classList.contains('aos-ready')) {
-            observer.disconnect();
-            run();
-          }
-        });
-        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
-      }
-
-      function init() {
-        whenAosReady(function () {
-          requestAnimationFrame(function () {
-            requestAnimationFrame(revealHeroStats);
-          });
-        });
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init, { once: true });
-      } else {
-        init();
-      }
-    })();
-  </script>
 
 </MainLayout>

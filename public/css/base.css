@@ -1,8 +1,15 @@
 @layer base {
     :root {
         --brand: #ea580c;
-        --text: #f4f4f5;
-        --bg: #09090b;
+        --brand-dark: #c2410c;
+        --brand-light: #fb923c;
+        --text: #0f172a;
+        --text-muted: #475569;
+        --bg: #f8fafc;
+        --surface: #ffffff;
+        --surface-alt: #f1f5f9;
+        --border: #e2e8f0;
+        --footer-bg: #0f172a;
     }
 
     html {
@@ -11,7 +18,7 @@
     }
 
     body {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Manrope', system-ui, sans-serif;
         background-color: var(--bg);
         color: var(--text);
         overflow-x: hidden;
@@ -19,7 +26,10 @@
         position: relative;
     }
 
-    /* Mobile-specific improvements */
+    h1, h2, h3, h4, .logo-text {
+        font-family: 'Outfit', system-ui, sans-serif;
+    }
+
     img {
         max-width: 100%;
         height: auto;
@@ -30,24 +40,19 @@
         height: auto;
     }
 
-    /* Improve touch targets on mobile */
     @media (max-width: 768px) {
         a, button {
             min-height: 44px;
             min-width: 44px;
         }
 
-        /* Prevent text size adjustment on iOS */
         html {
             -webkit-text-size-adjust: 100%;
             text-size-adjust: 100%;
         }
 
-        /* Improve scrolling on mobile */
         body {
             -webkit-overflow-scrolling: touch;
         }
     }
 }
-
-

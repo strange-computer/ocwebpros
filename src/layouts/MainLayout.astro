@@ -20,7 +20,7 @@ const {
 // Highlight active nav link based on current path
 const currentPath = Astro.url.pathname.replace(/\/+$/, '') || '/';
 const navClass = (href: string) =>
-  `hover:text-white transition-colors ${currentPath === href || (href !== '/' && currentPath.startsWith(href)) || (href === '/service-areas' && (currentPath.startsWith('/local-seo') || currentPath.startsWith('/web-design'))) ? 'text-white' : ''}`;
+  `hover:text-slate-900 transition-colors ${currentPath === href || (href !== '/' && currentPath.startsWith(href)) || (href === '/service-areas' && (currentPath.startsWith('/local-seo') || currentPath.startsWith('/web-design'))) ? 'text-slate-900 font-semibold' : ''}`;
 
 // Get the full URL for schema
 const siteUrl = Astro.site || new URL(Astro.url.origin);
@@ -207,8 +207,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@600;700&display=swap" /></noscript>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" /></noscript>
     
     <!-- Schema.org Structured Data for SEO -->
     <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
@@ -225,48 +225,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </>
     )}
   </head>
-  <body class={`antialiased overflow-x-hidden selection:bg-orange-500 selection:text-white ${bodyClass}`}>
+  <body class={`antialiased overflow-x-hidden selection:bg-orange-500 selection:text-white text-slate-900 bg-slate-50 ${bodyClass}`}>
     <script is:inline>document.documentElement.classList.add('aos-boot');</script>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBXTHDW8"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <nav class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/30 backdrop-blur-xl backdrop-saturate-150 shadow-[0_8px_32px_rgba(0,0,0,0.35)] ring-1 ring-white/10">
+    <nav class="fixed inset-x-0 top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-lg shadow-[0_1px_3px_rgba(15,23,42,0.06)]">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
         <div class="flex items-center gap-2 min-w-0 flex-shrink">
           <a href="/" class="flex items-center flex-shrink-0">
             <Image src={ocwebprosLogo} alt="OCWebPros" width={104} height={64} class="h-8 w-auto" />
           </a>
-          <a href="/" class="logo-text text-sm sm:text-base hover:text-white/80 transition">
+          <a href="/" class="logo-text text-sm sm:text-base text-slate-900 hover:text-orange-600 transition">
             OCWebPros
           </a>
         </div>
-        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
+        <div class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-500">
           <a href="/services" class={navClass('/services')}>Services</a>
           <a href="/service-areas" class={navClass('/service-areas')}>Service Areas</a>
           <a href="/pricing" class={navClass('/pricing')}>Pricing</a>
           <a href="/portfolio" class={navClass('/portfolio')}>Portfolio</a>
           <a href="/blog" class={navClass('/blog')}>Blog</a>
-          <a href="/support" class={navClass('/support')}>Support</a>
-          <a href="/hosting" class={navClass('/hosting')}>Hosting</a>
           <a href="/about" class={navClass('/about')}>About</a>
           <a href="/contact" class={navClass('/contact')}>Contact</a>
         </div>
         <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
-          <button id="cartBtn" aria-label="View your plan" class="relative p-2 text-zinc-400 hover:text-white transition-colors">
+          <button id="cartBtn" aria-label="View your plan" class="relative p-2 text-slate-500 hover:text-slate-900 transition-colors">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
             </svg>
             <span id="cartBadge" class="hidden absolute -top-1 -right-1 w-5 h-5 bg-orange-500 text-white text-xs font-bold rounded-full flex items-center justify-center">0</span>
           </button>
-          <a href="tel:9493294437" class="md:hidden flex items-center justify-center px-3 py-1.5 bg-white/10 text-white text-xs font-medium rounded-full border border-white/20 hover:bg-white/20 transition-colors leading-none">
+          <a href="tel:9493294437" class="md:hidden flex items-center justify-center px-3 py-1.5 bg-slate-100 text-slate-900 text-xs font-semibold rounded-full border border-slate-200 hover:bg-slate-200 transition-colors leading-none">
             Call
           </a>
-          <a href="tel:9493294437" class="hidden md:block px-5 py-2.5 bg-white text-black text-sm font-semibold rounded-full hover:bg-zinc-200 transition-colors">
-            (949) 329-4437
+          <a href="/contact" class="hidden md:inline-flex px-5 py-2.5 bg-orange-600 text-white text-sm font-semibold rounded-full hover:bg-orange-700 transition-colors btn-glow">
+            Book a Call
           </a>
-          <button id="mobileMenuToggle" class="md:hidden p-2 text-zinc-400 hover:text-white transition-colors" aria-label="Toggle menu">
+          <button id="mobileMenuToggle" class="lg:hidden p-2 text-slate-500 hover:text-slate-900 transition-colors" aria-label="Toggle menu">
             <svg id="menuIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
@@ -279,9 +277,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </nav>
 
     <!-- Mobile Menu Overlay -->
-    <div id="mobileMenu" class="fixed inset-0 z-40 bg-black/95 backdrop-blur-xl md:hidden transform translate-x-full transition-transform duration-300 ease-in-out">
+    <div id="mobileMenu" class="fixed inset-0 z-40 bg-white lg:hidden transform translate-x-full transition-transform duration-300 ease-in-out">
       <div class="flex flex-col h-full pt-20 pb-8 px-6">
-        <div class="flex flex-col gap-1">
+        <div class="flex flex-col gap-1 text-slate-600">
           <a href="/services" class={`py-3 px-4 rounded-lg text-base font-medium transition-colors ${navClass('/services')}`}>Services</a>
           <a href="/service-areas" class={`py-3 px-4 rounded-lg text-base font-medium transition-colors ${navClass('/service-areas')}`}>Service Areas</a>
           <a href="/pricing" class={`py-3 px-4 rounded-lg text-base font-medium transition-colors ${navClass('/pricing')}`}>Pricing</a>
@@ -292,11 +290,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="/about" class={`py-3 px-4 rounded-lg text-base font-medium transition-colors ${navClass('/about')}`}>About</a>
           <a href="/contact" class={`py-3 px-4 rounded-lg text-base font-medium transition-colors ${navClass('/contact')}`}>Contact</a>
         </div>
-        <div class="mt-auto pt-6 border-t border-white/10">
-          <a href="tel:9493294437" class="block w-full px-6 py-3 bg-orange-700 text-white font-semibold rounded-full text-center hover:bg-orange-600 transition-colors mb-3">
+        <div class="mt-auto pt-6 border-t border-slate-200">
+          <a href="tel:9493294437" class="block w-full px-6 py-3 bg-orange-600 text-white font-semibold rounded-full text-center hover:bg-orange-700 transition-colors mb-3">
             (949) 329-4437
           </a>
-          <a href="mailto:hello@ocwebpros.com" class="block w-full px-6 py-3 bg-white/5 text-white font-semibold rounded-full text-center border border-white/10 hover:bg-white/10 transition-colors">
+          <a href="mailto:hello@ocwebpros.com" class="block w-full px-6 py-3 bg-slate-50 text-slate-900 font-semibold rounded-full text-center border border-slate-200 hover:bg-slate-100 transition-colors">
             Email Us
           </a>
         </div>
@@ -305,24 +303,50 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <slot />
 
-    <footer class="border-t border-white/10 py-12 px-6 bg-black">
+    <footer class="border-t border-slate-800 py-16 px-6 bg-slate-900 text-slate-300">
       <div class="max-w-7xl mx-auto">
-        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
-          <div class="text-zinc-400 text-sm">© 2026 OCWebPros. All Rights Reserved.</div>
-          <div class="grid grid-cols-2 sm:flex sm:flex-wrap gap-x-6 gap-y-3 text-sm text-zinc-400">
-            <a href="/" class="hover:text-white transition-colors">Home</a>
-            <a href="/services" class="hover:text-white transition-colors">Services</a>
-            <a href="/service-areas" class="hover:text-white transition-colors">Service Areas</a>
-            <a href="/pricing" class="hover:text-white transition-colors">Pricing</a>
-            <a href="/industries" class="hover:text-white transition-colors">Industries</a>
-            <a href="/portfolio" class="hover:text-white transition-colors">Portfolio</a>
-            <a href="/blog" class="hover:text-white transition-colors">Blog</a>
-            <a href="/support" class="hover:text-white transition-colors">Support</a>
-            <a href="/hosting" class="hover:text-white transition-colors">Hosting</a>
-            <a href="/about" class="hover:text-white transition-colors">About</a>
-            <a href="/contact" class="hover:text-white transition-colors">Contact</a>
-            <a href="https://share.google/tSH03wj1lOrG59DXD" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Verified on Google</a>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+          <div class="lg:col-span-1">
+            <a href="/" class="logo-text text-xl text-white hover:text-orange-400 transition">OCWebPros</a>
+            <p class="mt-4 text-sm leading-relaxed text-slate-400">
+              Web design and local SEO for Orange County businesses. Based in Lake Forest — built to get you found and convert.
+            </p>
+            <a href="tel:9493294437" class="mt-4 inline-block text-white font-semibold hover:text-orange-400 transition">(949) 329-4437</a>
+            <a href="mailto:hello@ocwebpros.com" class="mt-1 block text-sm text-slate-400 hover:text-white transition">hello@ocwebpros.com</a>
           </div>
+          <div>
+            <h3 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Services</h3>
+            <div class="flex flex-col gap-2 text-sm">
+              <a href="/services/web-design" class="hover:text-white transition-colors">Web Design</a>
+              <a href="/services/local-seo" class="hover:text-white transition-colors">Local SEO</a>
+              <a href="/services/seo-strategy" class="hover:text-white transition-colors">SEO Strategy</a>
+              <a href="/hosting" class="hover:text-white transition-colors">Hosting</a>
+              <a href="/support" class="hover:text-white transition-colors">Support</a>
+              <a href="/pricing" class="hover:text-white transition-colors">Pricing</a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Company</h3>
+            <div class="flex flex-col gap-2 text-sm">
+              <a href="/about" class="hover:text-white transition-colors">About</a>
+              <a href="/portfolio" class="hover:text-white transition-colors">Portfolio</a>
+              <a href="/industries" class="hover:text-white transition-colors">Industries</a>
+              <a href="/service-areas" class="hover:text-white transition-colors">Service Areas</a>
+              <a href="/blog" class="hover:text-white transition-colors">Blog</a>
+              <a href="/contact" class="hover:text-white transition-colors">Contact</a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Get Started</h3>
+            <p class="text-sm text-slate-400 mb-4">Ready for a site that ranks and converts?</p>
+            <a href="/contact" class="inline-flex px-5 py-2.5 bg-orange-600 text-white text-sm font-semibold rounded-full hover:bg-orange-700 transition-colors">
+              Book a Free Consult
+            </a>
+            <a href="https://share.google/tSH03wj1lOrG59DXD" target="_blank" rel="noopener noreferrer" class="mt-4 block text-sm text-slate-400 hover:text-white transition-colors">Verified on Google →</a>
+          </div>
+        </div>
+        <div class="pt-8 border-t border-slate-800 text-sm text-slate-500">
+          © 2026 OCWebPros. Lake Forest, CA. All Rights Reserved.
         </div>
       </div>
     </footer>
