@@ -113,6 +113,11 @@ import { industrySectors, industryResources } from '../data/industriesPage';
               ))}
             </ul>
             <div class="flex flex-wrap gap-2 pt-5 border-t border-slate-200">
+              {sector.hubPath && (
+                <a href={sector.hubPath} class="text-xs px-3 py-1.5 rounded-full bg-orange-700 text-white hover:bg-orange-600 transition-colors">
+                  Industry hub →
+                </a>
+              )}
               {sector.guides.map((guide) => (
                 <a href={`/blog/${guide.slug}/`} class="text-xs px-3 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/25 text-orange-400 hover:bg-orange-500/20 transition-colors">
                   {guide.label} →

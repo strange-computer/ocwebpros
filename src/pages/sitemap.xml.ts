@@ -29,6 +29,8 @@ export const GET: APIRoute = async ({ site }) => {
     { url: 'pricing', priority: '0.9', changefreq: 'weekly' },
     { url: 'portfolio', priority: '0.8', changefreq: 'weekly' },
     { url: 'industries', priority: '0.8', changefreq: 'monthly' },
+    { url: 'industries/contractors', priority: '0.85', changefreq: 'monthly' },
+    { url: 'industries/dental', priority: '0.85', changefreq: 'monthly' },
     { url: 'hosting', priority: '0.7', changefreq: 'monthly' },
     { url: 'support', priority: '0.7', changefreq: 'monthly' },
     { url: 'website-maintenance-orange-county', priority: '0.8', changefreq: 'monthly' },

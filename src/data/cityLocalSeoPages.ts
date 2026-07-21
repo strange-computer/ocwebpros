@@ -1,6 +1,7 @@
 import { cityRegistry } from './cityRegistry';
 import { buildLocalSeoPage } from './cityPageBuilder';
 import type { CityServicePageData } from './cityPageTypes';
+import { priorityLocalSeoCities } from './priorityLocalSeoCities';
 
 export type CityLocalSeoPage = CityServicePageData;
 
@@ -431,11 +432,14 @@ const handCraftedLocalSeoPages: CityServicePageData[] = [
   },
 ];
 
+const priorityLocalSeoSlugs = new Set(priorityLocalSeoCities.map((city) => city.slug));
+
 const generatedLocalSeoPages = cityRegistry
-  .filter((city) => !city.handCrafted)
+  .filter((city) => !city.handCrafted && !priorityLocalSeoSlugs.has(city.slug))
   .map(buildLocalSeoPage);
 
 export const cityLocalSeoPages: CityServicePageData[] = [
   ...handCraftedLocalSeoPages,
+  ...priorityLocalSeoCities,
   ...generatedLocalSeoPages,
 ];

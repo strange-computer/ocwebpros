@@ -2,6 +2,7 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import SpotlightImage from './SpotlightImage.astro';
 import type { CityServicePageData } from '../data/cityPageTypes';
+import { cityProofStrip } from '../data/priorityLocalSeoCities';
 
 type ServiceKind = 'local-seo' | 'web-design';
 
@@ -167,6 +168,14 @@ const faqSchema = {
           View Pricing
         </a>
       </div>
+      <dl class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto text-left">
+        {cityProofStrip.map((item) => (
+          <div class="rounded-xl border border-slate-200 bg-white/80 px-4 py-3">
+            <dt class="text-[11px] uppercase tracking-wide text-slate-500 font-medium">{item.label}</dt>
+            <dd class="text-sm font-semibold text-slate-900 mt-0.5">{item.value}</dd>
+          </div>
+        ))}
+      </dl>
     </div>
   </header>
 

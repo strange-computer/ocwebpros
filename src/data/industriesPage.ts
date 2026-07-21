@@ -13,6 +13,8 @@ export type IndustrySector = {
   webDesignPath?: string;
   localSeoPath?: string;
   pricingAnchor?: string;
+  /** Dedicated industry hub page when shipped */
+  hubPath?: string;
 };
 
 export type IndustryResource = {
@@ -39,6 +41,7 @@ export const industrySectors: IndustrySector[] = [
     webDesignPath: '/services/web-design/',
     localSeoPath: '/services/local-seo/',
     pricingAnchor: '#web-design',
+    hubPath: '/industries/contractors/',
   },
   {
     id: 'professional',
@@ -95,6 +98,7 @@ export const industrySectors: IndustrySector[] = [
     webDesignPath: '/services/web-design/',
     localSeoPath: '/services/local-seo/',
     pricingAnchor: '#local-seo',
+    hubPath: '/industries/dental/',
   },
   {
     id: 'home-property',

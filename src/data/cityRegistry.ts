@@ -200,6 +200,7 @@ export const cityRegistry: CityRegistryEntry[] = [
     blogTitle: 'Newport Beach Local SEO Case Study',
     webDesignBlogSlug: '2026-05-15-newport-beach-luxury-real-estate-seo',
     webDesignBlogTitle: 'Newport Beach Luxury Real Estate SEO',
+    primary: true,
   },
   {
     slug: 'costa-mesa',
@@ -260,6 +261,7 @@ export const cityRegistry: CityRegistryEntry[] = [
     blogTitle: 'Fullerton Local SEO Guide',
     webDesignBlogSlug: 'restaurant-website-design-orange-county',
     webDesignBlogTitle: 'Restaurant Website Design Orange County',
+    primary: true,
   },
   {
     slug: 'anaheim',
@@ -275,6 +277,7 @@ export const cityRegistry: CityRegistryEntry[] = [
     blogTitle: 'Anaheim Tourism & Convention SEO Guide',
     webDesignBlogSlug: '2026-05-14-anaheim-citation-building-guide',
     webDesignBlogTitle: 'Anaheim Citation Building Guide',
+    primary: true,
   },
   {
     slug: 'huntington-beach',
@@ -290,6 +293,7 @@ export const cityRegistry: CityRegistryEntry[] = [
     blogTitle: 'Huntington Beach Surf & Tourism SEO',
     webDesignBlogSlug: '2026-05-14-huntington-beach-medical-spa-seo-guide',
     webDesignBlogTitle: 'Huntington Beach Medical Spa SEO Guide',
+    primary: true,
   },
   {
     slug: 'santa-ana',
@@ -350,6 +354,7 @@ export const cityRegistry: CityRegistryEntry[] = [
     blogTitle: 'Yorba Linda Local SEO Guide',
     webDesignBlogSlug: '2026-05-14-orange-county-web-design-pricing-guide-2026',
     webDesignBlogTitle: 'Orange County Web Design Pricing Guide 2026',
+    primary: true,
   },
   {
     slug: 'westminster',
@@ -380,6 +385,7 @@ export const cityRegistry: CityRegistryEntry[] = [
     blogTitle: 'Fountain Valley Local SEO Guide',
     webDesignBlogSlug: 'choose-web-design-agency-orange-county',
     webDesignBlogTitle: 'How to Choose a Web Design Agency in Orange County',
+    primary: true,
   },
 ];
 
