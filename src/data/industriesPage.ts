@@ -36,8 +36,8 @@ export const industrySectors: IndustrySector[] = [
     guides: [
       { slug: '2026-05-14-contractor-seo-orange-county-guide', label: 'Contractor SEO guide' },
     ],
-    webDesignPath: '/services/web-design',
-    localSeoPath: '/services/local-seo',
+    webDesignPath: '/services/web-design/',
+    localSeoPath: '/services/local-seo/',
     pricingAnchor: '#web-design',
   },
   {
@@ -54,8 +54,8 @@ export const industrySectors: IndustrySector[] = [
       { slug: '2026-05-14-legal-seo-orange-county-guide', label: 'Legal SEO guide' },
       { slug: '2026-05-15-mission-viejo-professional-services-seo', label: 'Professional services SEO' },
     ],
-    webDesignPath: '/services/web-design',
-    localSeoPath: '/services/local-seo',
+    webDesignPath: '/services/web-design/',
+    localSeoPath: '/services/local-seo/',
     pricingAnchor: '#local-seo',
   },
   {
@@ -73,8 +73,8 @@ export const industrySectors: IndustrySector[] = [
       { slug: '2026-05-14-santa-ana-restaurant-seo-case-study', label: 'Restaurant SEO case study' },
       { slug: '2026-07-02-case-study-orange-county-restaurant-ai-overviews-optimization', label: 'AI Overviews restaurant case study' },
     ],
-    webDesignPath: '/services/web-design',
-    localSeoPath: '/services/local-seo',
+    webDesignPath: '/services/web-design/',
+    localSeoPath: '/services/local-seo/',
     pricingAnchor: '#web-design',
   },
   {
@@ -92,8 +92,8 @@ export const industrySectors: IndustrySector[] = [
       { slug: '2026-05-15-orange-county-healthcare-seo-hipaa', label: 'Healthcare SEO & HIPAA' },
       { slug: '2026-05-14-huntington-beach-medical-spa-seo-guide', label: 'Med spa SEO guide' },
     ],
-    webDesignPath: '/services/web-design',
-    localSeoPath: '/services/local-seo',
+    webDesignPath: '/services/web-design/',
+    localSeoPath: '/services/local-seo/',
     pricingAnchor: '#local-seo',
   },
   {
@@ -110,8 +110,8 @@ export const industrySectors: IndustrySector[] = [
       { slug: '2026-05-15-newport-beach-luxury-real-estate-seo', label: 'Luxury real estate SEO' },
       { slug: '2026-05-14-contractor-seo-orange-county-guide', label: 'Home services SEO guide' },
     ],
-    webDesignPath: '/services/web-design',
-    localSeoPath: '/local-seo/newport-beach',
+    webDesignPath: '/services/web-design/',
+    localSeoPath: '/local-seo/newport-beach/',
     pricingAnchor: '#web-design',
   },
   {
@@ -129,8 +129,8 @@ export const industrySectors: IndustrySector[] = [
       { slug: '2026-05-16-orange-county-ecommerce-seo-mastery', label: 'E‑commerce SEO guide' },
       { slug: '2026-05-14-costa-mesa-ecommerce-seo-case-study', label: 'E‑commerce case study' },
     ],
-    webDesignPath: '/services/web-design',
-    localSeoPath: '/services/local-seo',
+    webDesignPath: '/services/web-design/',
+    localSeoPath: '/services/local-seo/',
     pricingAnchor: '#web-design',
   },
   {
@@ -148,8 +148,8 @@ export const industrySectors: IndustrySector[] = [
       { slug: '2026-05-15-laguna-beach-tourism-seo', label: 'Laguna Beach tourism SEO' },
       { slug: '2026-05-15-huntington-beach-surf-tourism-seo', label: 'Huntington Beach tourism SEO' },
     ],
-    webDesignPath: '/services/web-design',
-    localSeoPath: '/local-seo/anaheim',
+    webDesignPath: '/services/web-design/',
+    localSeoPath: '/local-seo/anaheim/',
     pricingAnchor: '#local-seo',
   },
   {
@@ -165,8 +165,8 @@ export const industrySectors: IndustrySector[] = [
     guides: [
       { slug: '2026-05-15-santa-ana-government-nonprofit-seo', label: 'Government & non‑profit SEO' },
     ],
-    webDesignPath: '/services/web-design',
-    localSeoPath: '/local-seo/santa-ana',
+    webDesignPath: '/services/web-design/',
+    localSeoPath: '/local-seo/santa-ana/',
     pricingAnchor: '#web-design',
   },
 ];

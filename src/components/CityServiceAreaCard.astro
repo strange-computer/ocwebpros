@@ -22,23 +22,23 @@ const lead = cardLead ?? city.marketAngle;
     {cardLead && <p class="text-slate-600 mb-4">{cardLead}</p>}
     {cardDetail && <p class="text-slate-600 mb-6">{cardDetail}</p>}
     <p class="text-slate-600 mb-4 text-sm">
-      <a href={`/local-seo/${city.slug}`} class="text-orange-400 hover:text-orange-300 underline font-medium">Local SEO</a>
+      <a href={`/local-seo/${city.slug}/`} class="text-orange-400 hover:text-orange-300 underline font-medium">Local SEO</a>
       <span class="text-slate-500 mx-2">·</span>
-      <a href={`/web-design/${city.slug}`} class="text-orange-400 hover:text-orange-300 underline font-medium">Web Design</a>
+      <a href={`/web-design/${city.slug}/`} class="text-orange-400 hover:text-orange-300 underline font-medium">Web Design</a>
       {city.blogSlug && (
         <>
           <span class="text-slate-500 mx-2">·</span>
-          <a href={`/blog/${city.blogSlug}`} class="text-orange-400 hover:text-orange-300 underline">{city.blogTitle?.split(':')[0] ?? 'Local guide'}</a>
+          <a href={`/blog/${city.blogSlug}/`} class="text-orange-400 hover:text-orange-300 underline">{city.blogTitle?.split(':')[0] ?? 'Local guide'}</a>
         </>
       )}
     </p>
-    <a href="/contact" class="text-orange-400 font-medium hover:text-orange-300 transition-colors">
+    <a href="/contact/" class="text-orange-400 font-medium hover:text-orange-300 transition-colors">
       Request {city.name} Consultation →
     </a>
   </div>
 ) : (
   <a
-    href={`/local-seo/${city.slug}`}
+    href={`/local-seo/${city.slug}/`}
     class="bg-white border border-slate-200 rounded-xl p-4 text-center hover:border-orange-500/30 hover:bg-orange-50/30 transition-colors group"
   >
     <div class="text-slate-900 font-medium group-hover:text-orange-600 transition-colors">{city.name}</div>

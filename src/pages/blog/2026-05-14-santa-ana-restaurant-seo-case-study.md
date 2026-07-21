@@ -23,7 +23,7 @@ When a family-owned Mexican restaurant in downtown Santa Ana came to us, they we
 
 This case study breaks down exactly what we did, why it worked specifically for Santa Ana restaurants, and how you can apply these strategies to your restaurant.
 
-**Need Santa Ana local SEO or web design?** See our [Local SEO Services in Santa Ana](/local-seo/santa-ana) and [Web Design in Santa Ana](/web-design/santa-ana) pages.
+**Need Santa Ana local SEO or web design?** See our [Local SEO Services in Santa Ana](/local-seo/santa-ana/) and [Web Design in Santa Ana](/web-design/santa-ana/) pages.
 
 ## Client Background: Downtown Santa Ana Mexican Restaurant
 
@@ -369,8 +369,8 @@ Santa Ana restaurant SEO requires specialized understanding of cultural authenti
 
 **At OCWebPros, we specialize in Santa Ana restaurant SEO.** We understand the unique opportunities of downtown Santa Ana, the cultural district, and Orange County's diverse dining scene.
 
-[Book your free Santa Ana Restaurant SEO audit](/contact) and we'll analyze your current online presence, identify cultural authenticity opportunities, and create a customized strategy to help you dominate Santa Ana restaurant search.
+[Book your free Santa Ana Restaurant SEO audit](/contact/) and we'll analyze your current online presence, identify cultural authenticity opportunities, and create a customized strategy to help you dominate Santa Ana restaurant search.
 
 ---
 
-*About the author: This case study was created by the OCWebPros team based in Lake Forest, CA, serving Santa Ana restaurants. We've helped numerous Orange County restaurants achieve dramatic growth through cultural authenticity and local SEO strategies. Questions about Santa Ana restaurant SEO? [Contact us](/contact).*
+*About the author: This case study was created by the OCWebPros team based in Lake Forest, CA, serving Santa Ana restaurants. We've helped numerous Orange County restaurants achieve dramatic growth through cultural authenticity and local SEO strategies. Questions about Santa Ana restaurant SEO? [Contact us](/contact/).*

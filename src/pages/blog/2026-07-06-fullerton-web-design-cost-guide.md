@@ -23,13 +23,13 @@ draft: false
 
 Fullerton's market rewards smart spending more than big spending. Between the downtown dining and nightlife district, the Cal State Fullerton student economy, and a broad base of family and professional businesses, this is a city where a well-built $4,000 website routinely outperforms a bloated $15,000 one — because the fundamentals matter more than the flourishes. Here's the 2026 pricing breakdown.
 
-**Want specifics?** See our [Web Design in Fullerton](/web-design/fullerton) and [Fullerton Local SEO](/local-seo/fullerton) pages.
+**Want specifics?** See our [Web Design in Fullerton](/web-design/fullerton/) and [Fullerton Local SEO](/local-seo/fullerton/) pages.
 
 ## The Fullerton Market in Brief
 
 - **Downtown runs on discovery.** Harbor Boulevard and the SOCO District compete for "tonight" searches — restaurants, bars, and live music found on phones minutes before a decision. Speed and current information (hours, menus, events) beat visual extravagance.
 - **The student economy is price-aware and mobile-native.** CSUF's tens of thousands of students search entirely on phones and convert on convenience: online ordering, booking links, clear pricing.
-- **The digital gap is wide.** Many established Fullerton businesses still run on aging sites or social profiles alone — which means properly built newcomers move up fast. Our [Fullerton local SEO guide](/blog/2026-05-14-fullerton-local-seo-guide) covers the ranking side.
+- **The digital gap is wide.** Many established Fullerton businesses still run on aging sites or social profiles alone — which means properly built newcomers move up fast. Our [Fullerton local SEO guide](/blog/2026-05-14-fullerton-local-seo-guide/) covers the ranking side.
 
 ## Fullerton Pricing Tiers in 2026
 
@@ -50,7 +50,7 @@ Most Fullerton restaurants, bars, medical and dental practices, auto services, a
 
 ### $6,500–$15,000+: Hospitality systems and multi-audience builds
 
-Restaurants adding full online ordering and reservations, venues needing event calendars and ticketing, practices serving both students and families with distinct funnels, and businesses covering multiple North OC cities (each needing its own landing page — see our [North OC regional guide](/blog/2026-07-06-north-orange-county-local-seo-guide)) land here.
+Restaurants adding full online ordering and reservations, venues needing event calendars and ticketing, practices serving both students and families with distinct funnels, and businesses covering multiple North OC cities (each needing its own landing page — see our [North OC regional guide](/blog/2026-07-06-north-orange-county-local-seo-guide/)) land here.
 
 ## Where Fullerton Businesses Should Spend
 
@@ -64,4 +64,4 @@ Restaurants adding full online ordering and reservations, venues needing event c
 
 Most Fullerton businesses should budget **$2,500–$6,500** — one of the friendlier price points in Orange County, in a market where the digital gap means properly built sites climb fast. The return isn't hypothetical: in a city running on "tonight" and "near me" searches, being the business that actually shows up is the entire game.
 
-**Get an exact quote:** Visit [Web Design in Fullerton](/web-design/fullerton) or [contact us](/contact) for a free consultation. We're an Orange County agency based in Lake Forest.
+**Get an exact quote:** Visit [Web Design in Fullerton](/web-design/fullerton/) or [contact us](/contact/) for a free consultation. We're an Orange County agency based in Lake Forest.

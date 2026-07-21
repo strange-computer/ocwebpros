@@ -72,4 +72,4 @@ Orange County businesses that embrace mobile‑first design will capture more lo
 
 ---
 
-*OCWebPros builds mobile‑first websites that rank higher and convert better. [Contact us](/contact) for a free mobile‑friendly audit of your current site.*
+*OCWebPros builds mobile‑first websites that rank higher and convert better. [Contact us](/contact/) for a free mobile‑friendly audit of your current site.*

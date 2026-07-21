@@ -127,4 +127,4 @@ When you optimize for generative engines, you’re not just chasing visibility. 
 
 The AI‑search revolution isn’t coming. It’s here. The brands that master GEO today will own the answer‑engine landscape tomorrow.
 
-*Need help building a GEO strategy that actually works? [Contact OCWebPros](https://ocwebpros.com/contact) for a custom AI‑search visibility assessment.*
+*Need help building a GEO strategy that actually works? [Contact OCWebPros](https://ocwebpros.com/contact/) for a custom AI‑search visibility assessment.*

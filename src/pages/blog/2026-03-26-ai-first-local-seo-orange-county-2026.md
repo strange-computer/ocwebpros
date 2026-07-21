@@ -23,7 +23,7 @@ If you've searched for "best pizza in Irvine" or "emergency plumber Costa Mesa" 
 
 This is the new reality of AI‑first search in 2026. According to Ahrefs' March 2026 SEO insights, **81.9% of top‑20 ranking pages already include AI assistance**. Google's AI‑driven search revolution is fundamentally changing how local businesses get discovered, and Orange County businesses that adapt now will capture a disproportionate share of local traffic.
 
-In this guide, we'll break down exactly what "AI‑first local SEO" means for 2026, provide actionable steps you can implement immediately, and show how OCWebPros helps Orange County businesses dominate AI search before their competitors even realize the game has changed. For the technical side of earning AI citations, start with our [Google SGE optimization guide](/blog/google-sge-ai-search-optimization-guide-2026).
+In this guide, we'll break down exactly what "AI‑first local SEO" means for 2026, provide actionable steps you can implement immediately, and show how OCWebPros helps Orange County businesses dominate AI search before their competitors even realize the game has changed. For the technical side of earning AI citations, start with our [Google SGE optimization guide](/blog/google-sge-ai-search-optimization-guide-2026/).
 
 ## What Is AI‑First Local SEO? (And Why It's Different from Traditional SEO)
 
@@ -56,7 +56,7 @@ Your Google Business Profile (GBP) is no longer just a directory listing—it's 
 - **Complete every field**: Name, address, phone, hours, categories, attributes, services, products, menu (if applicable). Missing data means AI can't summarize your business accurately.
 - **Use precise, multi‑category selections**: Instead of just "Plumber," add "Emergency Plumber," "Water Heater Repair," "Pipe Leak Detection" to cover intent clusters.
 - **Post 5+ times weekly with geo‑tagged images**: AI treats recent activity as a freshness signal. Use generative AI tools to create posts quickly; ensure images include local landmarks.
-- **Automate review responses under 5 minutes**: Rapid, personalized review responses boost trust signals that AI evaluates. Our [reputation management services](/services/local-seo) include AI‑powered response automation.
+- **Automate review responses under 5 minutes**: Rapid, personalized review responses boost trust signals that AI evaluates. Our [reputation management services](/services/local-seo/) include AI‑powered response automation.
 - **Populate the Q&A section**: Anticipate customer questions and provide clear answers—this content is frequently extracted for AI overviews.
 
 #### Orange County Example: 
@@ -75,7 +75,7 @@ Structured data (schema markup) tells AI systems exactly what your business offe
 > **Technical Note:** Google's AI systems ignore generic "Service Area" pages that lack specific location details. Create neighborhood‑specific service pages (e.g., "Irvine web design," "Costa Mesa SEO") with unique, localized content.
 
 #### Our Implementation Process:
-Our [local SEO services](/services/local-seo) include comprehensive schema audits, implementation of all essential local business markup, and ongoing monitoring to ensure AI‑readability. Sites built with [AI-ready web design](/blog/2026-03-23-ai-ready-web-design-ai-overviews) principles give schema markup the structural foundation it needs.
+Our [local SEO services](/services/local-seo/) include comprehensive schema audits, implementation of all essential local business markup, and ongoing monitoring to ensure AI‑readability. Sites built with [AI-ready web design](/blog/2026-03-23-ai-ready-web-design-ai-overviews/) principles give schema markup the structural foundation it needs.
 
 ### Step 3: Create Content for AI, Not Just Keywords
 
@@ -109,7 +109,7 @@ AI evaluates your business across multiple platforms—Google, Apple Maps, Yelp,
 - **Semantic Relevance**: Use clear, specific categories and terminology that AI associates with your services. A "web design agency" should also mention "e‑commerce development," "SEO," and "Orange County small business websites."
 
 #### Multi‑Channel Visibility Audit:
-Our [local SEO services](/services/local-seo) include a comprehensive cross‑platform audit, correction of inconsistencies, and ongoing monitoring to ensure your FACTS signals remain strong.
+Our [local SEO services](/services/local-seo/) include a comprehensive cross‑platform audit, correction of inconsistencies, and ongoing monitoring to ensure your FACTS signals remain strong.
 
 ### Step 5: Prepare for Zero‑Click Searches and AI‑Mediated Discovery
 
@@ -122,7 +122,7 @@ In 2026, **over 60% of local queries result in zero clicks**—the answer appear
 - **Monitor AI search performance**: Use tools to track when your business appears in AI overviews and for which queries.
 
 #### The Hybrid Approach: SEO + Paid
-As organic visibility becomes more challenging due to AI mediation, complement your AI‑first SEO with targeted local paid advertising. Our [Google Ads management](/contact) focuses on high‑intent local keywords that capture searchers AI overviews might miss. See our [pricing](/pricing) for bundled SEO and ads packages.
+As organic visibility becomes more challenging due to AI mediation, complement your AI‑first SEO with targeted local paid advertising. Our [Google Ads management](/contact/) focuses on high‑intent local keywords that capture searchers AI overviews might miss. See our [pricing](/pricing/) for bundled SEO and ads packages.
 
 ## Orange County Case Study: AI‑First Optimization in Action
 
@@ -164,7 +164,7 @@ The businesses that implement AI‑first optimization now will:
 3. **Build trust signals** that AI evaluates across all platforms
 4. **Future‑proof their marketing** against the next wave of search evolution
 
-At OCWebPros, we're already implementing AI‑first local SEO for our Orange County clients across [healthcare, legal, hospitality, and more](/industries). Our [AI consulting](/services/ai-consulting) and [local SEO services](/services/local-seo) identify exactly where your business stands and what specific steps you need to dominate AI search in 2026.
+At OCWebPros, we're already implementing AI‑first local SEO for our Orange County clients across [healthcare, legal, hospitality, and more](/industries/). Our [AI consulting](/services/ai-consulting/) and [local SEO services](/services/local-seo/) identify exactly where your business stands and what specific steps you need to dominate AI search in 2026.
 
 **Don't wait for your competitors to adapt first.** The visibility gap between AI‑optimized businesses and those using traditional SEO will only widen throughout 2026.
 

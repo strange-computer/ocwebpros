@@ -25,7 +25,7 @@ If you're operating in Santa Ana's government contracting, non-profit, or commun
 
 At OCWebPros, we've helped numerous Santa Ana government contractors and non-profits achieve search dominance by leveraging the city's unique civic characteristics. This guide covers everything you need to know about Santa Ana-specific public sector SEO.
 
-**Looking to hire a Santa Ana local SEO agency?** See our dedicated [Local SEO Services in Santa Ana](/local-seo/santa-ana) and [Web Design in Santa Ana](/web-design/santa-ana) pages.
+**Looking to hire a Santa Ana local SEO agency?** See our dedicated [Local SEO Services in Santa Ana](/local-seo/santa-ana/) and [Web Design in Santa Ana](/web-design/santa-ana/) pages.
 
 ## Why Santa Ana Public Sector SEO is Different
 
@@ -532,8 +532,8 @@ Santa Ana presents unique opportunities for government contractors, non-profits,
 
 **At OCWebPros, we specialize in Santa Ana public sector SEO.** We understand government procurement optimization, non-profit digital marketing, community organization strategies, and multilingual content for Orange County's most diverse city. Our strategies are designed specifically for Santa Ana's unique civic landscape.
 
-[Book your free Santa Ana public sector SEO audit](/contact) and we'll analyze your current online presence, identify government/non-profit opportunities, and create a customized strategy to help you dominate Santa Ana search.
+[Book your free Santa Ana public sector SEO audit](/contact/) and we'll analyze your current online presence, identify government/non-profit opportunities, and create a customized strategy to help you dominate Santa Ana search.
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Santa Ana public sector organizations. We've helped numerous government contractors, non-profits, and community groups achieve search dominance in Orange County's county seat. Questions about Santa Ana public sector SEO? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Santa Ana public sector organizations. We've helped numerous government contractors, non-profits, and community groups achieve search dominance in Orange County's county seat. Questions about Santa Ana public sector SEO? [Contact us](/contact/).*

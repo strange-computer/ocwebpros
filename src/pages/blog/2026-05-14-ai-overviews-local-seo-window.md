@@ -51,7 +51,7 @@ Your Google Business Profile (GBP) is the #1 data source for both traditional lo
 - **Encourage Neighborhood‑Specific Reviews** – Ask customers to mention the neighborhood or local landmarks in reviews (e.g., “Great service in downtown Anaheim!”). AI reads these signals.
 - **Verify NAP Consistency** – Ensure your Name, Address, and Phone are identical everywhere—AI cross‑references directories.
 
-> **Internal Link Opportunity:** Our [Google Business Profile management service](/services) ensures your profile is optimized for both humans and AI.
+> **Internal Link Opportunity:** Our [Google Business Profile management service](/services/) ensures your profile is optimized for both humans and AI.
 
 ### Step 2: Create Hyperlocal Content That AI Can’t Ignore
 
@@ -63,7 +63,7 @@ AI Overviews pull content from websites that demonstrate clear topical authority
 - **FAQ Sections** – Answer common local questions (e.g., “Do you serve Garden Grove?” “What’s your emergency response time in Costa Mesa?”). AI often extracts Q&A pairs.
 - **Visual Content with Geotags** – Upload photos and videos with accurate EXIF location data. AI can read alt text and geotags to validate your local presence.
 
-> **Internal Link Opportunity:** Learn how our [content strategy services](/services/seo-strategy) build hyperlocal authority that ranks in both organic and AI‑driven search.
+> **Internal Link Opportunity:** Learn how our [content strategy services](/services/seo-strategy/) build hyperlocal authority that ranks in both organic and AI‑driven search.
 
 ### Step 3: Build Neighborhood‑Level Citations and Structured Data
 
@@ -109,4 +109,4 @@ AI Overviews are coming for local search—just not yet. That gives you a strate
 
 The businesses that act now will become the trusted local sources that AI Overviews feature. Those that wait will be playing catch‑up.
 
-> **Ready to secure your local‑SEO advantage?** [Contact OCWebPros](/contact) for a free local‑SEO audit. We’ll analyze your current visibility, identify gaps, and build a customized plan to dominate local search before AI takes over.
+> **Ready to secure your local‑SEO advantage?** [Contact OCWebPros](/contact/) for a free local‑SEO audit. We’ll analyze your current visibility, identify gaps, and build a customized plan to dominate local search before AI takes over.

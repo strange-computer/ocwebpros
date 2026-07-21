@@ -22,7 +22,7 @@ SEO checklists are everywhere. Most are recycled from 2018, missing the seismic 
 
 This isn't just another checklist. It's a **2026‑focused, Ahrefs‑validated playbook** that combines traditional SEO fundamentals with the new realities of AI visibility, brand signals, and hyper‑local intent.
 
-At OCWebPros, we use this exact framework to optimize websites for Orange County businesses. For AI‑specific visibility tactics, pair this checklist with our [Google SGE optimization guide](/blog/google-sge-ai-search-optimization-guide-2026). Whether you're a local service company or a national brand targeting OC audiences, these steps will help you rank higher, attract better traffic, and future‑proof your search presence.
+At OCWebPros, we use this exact framework to optimize websites for Orange County businesses. For AI‑specific visibility tactics, pair this checklist with our [Google SGE optimization guide](/blog/google-sge-ai-search-optimization-guide-2026/). Whether you're a local service company or a national brand targeting OC audiences, these steps will help you rank higher, attract better traffic, and future‑proof your search presence.
 
 ## Part 1: Keyword Research for AI and Search (Ahrefs' 2026 Method)
 
@@ -50,7 +50,7 @@ Ahrefs' AI‑powered **"Identify intents"** button analyzes top‑ranking result
 > **Ahrefs Insight:** "Search intent is the most important ranking factor nobody talks about. If you don't match what the search results reward, you won't rank—no matter how good your content is."
 
 ### How OCWebPros Implements Keyword Research
-Our [SEO strategy services](/services/seo-strategy) begin with comprehensive keyword research using Ahrefs tools, competitor analysis, and intent mapping to ensure every piece of content targets real search demand.
+Our [SEO strategy services](/services/seo-strategy/) begin with comprehensive keyword research using Ahrefs tools, competitor analysis, and intent mapping to ensure every piece of content targets real search demand.
 
 ## Part 2: On‑Page SEO Checklist (Ahrefs' 2026 Standards)
 
@@ -94,7 +94,7 @@ Internal links help search engines discover pages and pass PageRank. Use **descr
 - Geotag images for local businesses (trust signal).
 
 ### How OCWebPros Handles On‑Page Optimization
-Our [on‑page SEO services](/services/seo-strategy) include URL structure audits, title/meta optimization, heading hierarchy reviews, and comprehensive content gap analysis using Ahrefs tools.
+Our [on‑page SEO services](/services/seo-strategy/) include URL structure audits, title/meta optimization, heading hierarchy reviews, and comprehensive content gap analysis using Ahrefs tools.
 
 ## Part 3: Technical SEO Foundation (Non‑Negotiable in 2026)
 
@@ -130,7 +130,7 @@ Help search engines and AI understand your content by implementing schema markup
 Free SSL certificates via Let's Encrypt make HTTPS mandatory. Mixed content (HTTP resources on HTTPS pages) can break security and hurt rankings.
 
 ### Our Technical SEO Approach
-OCWebPros' [technical SEO services](/services/seo-strategy) include hosting audits, Core Web Vitals optimization, schema implementation, and ongoing monitoring via Ahrefs Site Audit.
+OCWebPros' [technical SEO services](/services/seo-strategy/) include hosting audits, Core Web Vitals optimization, schema implementation, and ongoing monitoring via Ahrefs Site Audit.
 
 ## Part 4: AI Visibility and E‑E‑A‑T (The 2026 Differentiators)
 
@@ -146,7 +146,7 @@ Ahrefs' March 24, 2026 article confirms: **Google evaluates quality, not product
 Ahrefs' **Brand Radar** tool shows how often AI platforms respond to queries in your niche, helping prioritize topics with AI‑traffic potential.
 
 ### 4.3 E‑E‑A‑T: Experience, Expertise, Authoritativeness, Trustworthiness
-As AI‑generated content floods the web, Google relies more heavily on E‑E‑A‑T signals to differentiate quality—see our [brand signals guide](/blog/2026-03-26-brand-signals-eeat-ai-content-differentiation). Demonstrate:
+As AI‑generated content floods the web, Google relies more heavily on E‑E‑A‑T signals to differentiate quality—see our [brand signals guide](/blog/2026-03-26-brand-signals-eeat-ai-content-differentiation/). Demonstrate:
 - **Experience** – First‑hand, real‑world examples.
 - **Expertise** – Credentials, certifications, deep knowledge.
 - **Authoritativeness** – Industry recognition, media coverage.
@@ -164,12 +164,12 @@ As AI‑generated content floods the web, Google relies more heavily on E‑E‑
 - **Site Audit Patches** – Can automatically write thousands of meta descriptions optimized for AI readability.
 
 ### How We Boost AI Visibility for Clients
-Our [AI‑friendly content strategy](/services/seo-strategy) ensures your content meets both human and AI quality standards, with regular E‑E‑A‑T audits and brand‑signal tracking.
+Our [AI‑friendly content strategy](/services/seo-strategy/) ensures your content meets both human and AI quality standards, with regular E‑E‑A‑T audits and brand‑signal tracking.
 
 ## Part 5: Local SEO Integration (Orange County Focus)
 
 ### 5.1 Hyper‑Localized Content
-Generic city pages ("Orange County plumbing") are ineffective. Create **neighborhood‑specific service pages** (e.g., [Irvine local SEO](/local-seo/irvine) or [Costa Mesa emergency plumbing](/blog/2026-05-14-costa-mesa-ecommerce-seo-case-study)), community guides, and area‑based case studies.
+Generic city pages ("Orange County plumbing") are ineffective. Create **neighborhood‑specific service pages** (e.g., [Irvine local SEO](/local-seo/irvine/) or [Costa Mesa emergency plumbing](/blog/2026-05-14-costa-mesa-ecommerce-seo-case-study/)), community guides, and area‑based case studies.
 
 ### 5.2 Fully Optimized Google Business Profile
 - Complete every section (description, hours, services, attributes).
@@ -178,7 +178,7 @@ Generic city pages ("Orange County plumbing") are ineffective. Create **neighbor
 - Upload geotagged images regularly (visual trust signals).
 
 ### 5.3 Multi‑Channel Presence
-Don't rely solely on Google. See our [multi‑channel visibility guide](/blog/2026-03-26-multi-channel-visibility-2026) and optimize across:
+Don't rely solely on Google. See our [multi‑channel visibility guide](/blog/2026-03-26-multi-channel-visibility-2026/) and optimize across:
 - Google Maps
 - Apple Maps (growing mobile share)
 - Yelp
@@ -192,7 +192,7 @@ Inconsistencies in Name, Address, Phone severely harm local rankings. Use a dire
 Target natural‑language queries like "Where's the best HVAC repair near me right now?" with plain‑language responses and explicit geographic context.
 
 ### Our Local SEO Process
-OCWebPros' [local SEO services](/services/local-seo) include hyper‑local content creation, Google Business Profile optimization, multi‑channel consistency audits, and voice‑search keyword targeting.
+OCWebPros' [local SEO services](/services/local-seo/) include hyper‑local content creation, Google Business Profile optimization, multi‑channel consistency audits, and voice‑search keyword targeting.
 
 ## Conclusion: The 2026 SEO Playbook That Actually Works
 
@@ -204,7 +204,7 @@ SEO in 2026 isn't about chasing algorithm updates—it's about building a **foun
 4. **AI visibility depends on brand signals and E‑E‑A‑T**, not avoiding AI tools.
 5. **Local SEO demands hyper‑localization** and multi‑channel consistency.
 
-At OCWebPros, we've baked this checklist into every client engagement. Our [comprehensive SEO audit](/contact) and [SEO pricing](/pricing) identify exactly where your site stands on each of these 2026 essentials and provides a clear roadmap to improvement.
+At OCWebPros, we've baked this checklist into every client engagement. Our [comprehensive SEO audit](/contact/) and [SEO pricing](/pricing/) identify exactly where your site stands on each of these 2026 essentials and provides a clear roadmap to improvement.
 
 **Don't use a 2018 checklist for 2026 search.** The businesses that adapt now will build a visibility advantage that compounds throughout the AI‑driven search revolution.
 

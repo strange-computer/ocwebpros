@@ -23,7 +23,7 @@ draft: false
 
 Huntington Beach businesses operate in a market unlike anywhere else in Orange County. Your customers include locals who've lived here for decades, tourists planning a Surf City weekend from their phone, and lifestyle-driven shoppers who judge your business by how it *looks* before they read a word. Your website has to serve all three.
 
-**Looking for a designer who knows HB?** See our dedicated [Web Design in Huntington Beach](/web-design/huntington-beach) page — or [Huntington Beach Local SEO](/local-seo/huntington-beach) if ranking is the bigger problem.
+**Looking for a designer who knows HB?** See our dedicated [Web Design in Huntington Beach](/web-design/huntington-beach/) page — or [Huntington Beach Local SEO](/local-seo/huntington-beach/) if ranking is the bigger problem.
 
 ## The Three Audiences Every HB Website Serves
 
@@ -51,7 +51,7 @@ HB's brand is visual: the pier, the surf, Pacific City at sunset. Businesses her
 
 **Restaurants and bars:** Menu pages that are actual HTML (not PDF scans), reservation and ordering links above the fold, and schema markup so your hours and menu show in search. Tourist diners decide in under a minute.
 
-**Medical spas and wellness:** This is one of OC's most saturated aesthetics markets. You need HIPAA-aware forms, before/after galleries done right, and dedicated treatment pages. We covered the full strategy in our [HB medical spa SEO guide](/blog/2026-05-14-huntington-beach-medical-spa-seo-guide).
+**Medical spas and wellness:** This is one of OC's most saturated aesthetics markets. You need HIPAA-aware forms, before/after galleries done right, and dedicated treatment pages. We covered the full strategy in our [HB medical spa SEO guide](/blog/2026-05-14-huntington-beach-medical-spa-seo-guide/).
 
 **Surf and beach retail:** E-commerce with local pickup options, plus content that captures "surf shop Huntington Beach" and break-specific searches.
 
@@ -72,4 +72,4 @@ Local matters here. A designer who knows the difference between Main Street foot
 
 If your current site is slow, dated, or invisible in HB searches, the fix is a rebuild with local structure — not another round of patches.
 
-**Start with a free consultation:** [Web Design in Huntington Beach](/web-design/huntington-beach) covers our process, pricing, and what to expect. We're an Orange County agency and build exclusively for OC businesses.
+**Start with a free consultation:** [Web Design in Huntington Beach](/web-design/huntington-beach/) covers our process, pricing, and what to expect. We're an Orange County agency and build exclusively for OC businesses.

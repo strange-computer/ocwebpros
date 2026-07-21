@@ -554,8 +554,8 @@ Orange County healthcare presents unique challenges and opportunities. Strict HI
 
 **At OCWebPros, we specialize in Orange County healthcare SEO.** We understand HIPAA compliance requirements, patient privacy protections, and effective healthcare marketing in competitive OC markets. Our strategies are designed specifically for medical practices serving Orange County's diverse population.
 
-[Book your free Orange County healthcare SEO audit](/contact) and we'll analyze your current online presence, identify HIPAA compliance issues, and create a customized strategy to help you achieve search dominance while maintaining full patient privacy protection.
+[Book your free Orange County healthcare SEO audit](/contact/) and we'll analyze your current online presence, identify HIPAA compliance issues, and create a customized strategy to help you achieve search dominance while maintaining full patient privacy protection.
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County healthcare practices. We've helped numerous medical providers achieve search dominance while maintaining strict HIPAA compliance. Questions about Orange County healthcare SEO? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County healthcare practices. We've helped numerous medical providers achieve search dominance while maintaining strict HIPAA compliance. Questions about Orange County healthcare SEO? [Contact us](/contact/).*

@@ -23,7 +23,7 @@ draft: false
 
 Santa Ana is Orange County's county seat and largest city, home to more than 300,000 residents and one of the densest small business landscapes in Southern California. It's also a market where an enormous number of established businesses still run on Instagram pages, outdated sites, or nothing at all. That gap is the opportunity.
 
-**Want the direct route?** See our [Web Design in Santa Ana](/web-design/santa-ana) and [Santa Ana Local SEO](/local-seo/santa-ana) pages for packages and a free audit.
+**Want the direct route?** See our [Web Design in Santa Ana](/web-design/santa-ana/) and [Santa Ana Local SEO](/local-seo/santa-ana/) pages for packages and a free audit.
 
 ## The Santa Ana Digital Gap
 
@@ -55,11 +55,11 @@ The single most common mistake we see with Santa Ana restaurants and service bus
 
 ### 5. Review infrastructure
 
-Our [Santa Ana restaurant case study](/blog/2026-05-14-santa-ana-restaurant-seo-case-study) showed what systematic review generation does in this market — a 250% increase in online orders came largely from Maps visibility driven by review velocity. Your website should make leaving a review effortless: QR codes, follow-up links, and visible review displays.
+Our [Santa Ana restaurant case study](/blog/2026-05-14-santa-ana-restaurant-seo-case-study/) showed what systematic review generation does in this market — a 250% increase in online orders came largely from Maps visibility driven by review velocity. Your website should make leaving a review effortless: QR codes, follow-up links, and visible review displays.
 
 ## What It Costs
 
-For most Santa Ana small businesses, a professional custom site with local SEO structure built in runs **$2,500–$7,500** — less than most spend on a few months of slow-season payroll, and it works around the clock. Bilingual builds and online ordering add to that, but they also directly add revenue. The full breakdown is in our [Orange County pricing guide](/blog/2026-05-14-orange-county-web-design-pricing-guide-2026).
+For most Santa Ana small businesses, a professional custom site with local SEO structure built in runs **$2,500–$7,500** — less than most spend on a few months of slow-season payroll, and it works around the clock. Bilingual builds and online ordering add to that, but they also directly add revenue. The full breakdown is in our [Orange County pricing guide](/blog/2026-05-14-orange-county-web-design-pricing-guide-2026/).
 
 Whatever you spend, insist on owning the site outright. Renting a page-builder subscription forever is the most expensive option disguised as the cheapest.
 
@@ -67,4 +67,4 @@ Whatever you spend, insist on owning the site outright. Renting a page-builder s
 
 In Irvine or Newport Beach, you're fighting businesses that have invested in SEO for a decade. In Santa Ana, a properly built website with city landing pages, real schema markup, and an active Google Business Profile can outrank established competitors in months — because most of them haven't done the work.
 
-**Start with a free consultation:** [Web Design in Santa Ana](/web-design/santa-ana) or [contact us](/contact). We're based in Lake Forest and build exclusively for Orange County businesses.
+**Start with a free consultation:** [Web Design in Santa Ana](/web-design/santa-ana/) or [contact us](/contact/). We're based in Lake Forest and build exclusively for Orange County businesses.

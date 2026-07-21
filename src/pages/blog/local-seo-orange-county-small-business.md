@@ -10,7 +10,7 @@ image: "/images/local-seo-mockup.png"
 
 If your business serves customers in Orange County — whether you're a contractor in Mission Viejo, a restaurant in Lake Forest, or a med spa in Irvine — local SEO is the highest-ROI marketing you can do in 2026. Here's why, and what it actually involves.
 
-**South OC businesses:** We offer dedicated local SEO pages for [Irvine](/local-seo/irvine), [Mission Viejo](/local-seo/mission-viejo), and [Rancho Santa Margarita](/local-seo/rancho-santa-margarita).
+**South OC businesses:** We offer dedicated local SEO pages for [Irvine](/local-seo/irvine/), [Mission Viejo](/local-seo/mission-viejo/), and [Rancho Santa Margarita](/local-seo/rancho-santa-margarita/).
 
 ## What Is Local SEO?
 
@@ -44,4 +44,4 @@ Honest answer: 3–6 months to see meaningful movement, 6–12 months for compet
 
 We offer local SEO services built specifically for Orange County businesses — Google Business Profile optimization, citation building, on-page SEO, and content strategy.
 
-[Learn about our local SEO services →](/services/local-seo) | [Get a free audit →](/contact)
+[Learn about our local SEO services →](/services/local-seo/) | [Get a free audit →](/contact/)

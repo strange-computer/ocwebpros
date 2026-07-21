@@ -20,7 +20,7 @@ draft: false
 
 If you think SEO is still just about keywords and backlinks, you’re already behind. **In 2026, visual content functions as a primary trust signal for mobile and augmented‑reality searches.** Google’s latest algorithms prioritize geotagged images that show real storefronts, staff, and customer experiences—especially for “near me” and local‑intent queries.
 
-Recent research reveals that businesses uploading 5‑10 high‑quality, geo‑tagged photos each week see **42% more direction requests** and higher engagement metrics—both of which Google uses as real‑time ranking factors. For Orange County businesses competing in crowded markets like [Irvine](/local-seo/irvine), Newport Beach, or Anaheim, optimized visual content isn’t a “nice‑to‑have”; it’s a **mandatory component of local‑search dominance**. Browse our [service areas](/service-areas) for city-specific local SEO pages.
+Recent research reveals that businesses uploading 5‑10 high‑quality, geo‑tagged photos each week see **42% more direction requests** and higher engagement metrics—both of which Google uses as real‑time ranking factors. For Orange County businesses competing in crowded markets like [Irvine](/local-seo/irvine/), Newport Beach, or Anaheim, optimized visual content isn’t a “nice‑to‑have”; it’s a **mandatory component of local‑search dominance**. Browse our [service areas](/service-areas/) for city-specific local SEO pages.
 
 This step‑by‑step guide walks you through exactly how to implement a visual‑SEO strategy that leverages geotagged photos to boost your local rankings, drive more foot traffic, and outrank competitors who are still ignoring the power of images.
 
@@ -42,7 +42,7 @@ Visual SEO is the practice of optimizing images, videos, and other visual assets
 4. **Descriptive alt text** – Focus on color, material, usage—not keyword stuffing.
 5. **Surrounding textual context** – Captions, headings, and body text that reinforce image relevance.
 
-> **Internal link:** Need help optimizing your site’s images for speed and SEO? Our [web design services](/services/web-design) include responsive image delivery, WebP conversion, and Core Web Vitals optimization.
+> **Internal link:** Need help optimizing your site’s images for speed and SEO? Our [web design services](/services/web-design/) include responsive image delivery, WebP conversion, and Core Web Vitals optimization.
 
 ## The Power of Geotagged Photos for Local Search
 
@@ -87,7 +87,7 @@ Alt text should describe the image’s content and context for screen‑reader u
 #### 1.5 Compress Without Quality Loss
 Use tools like **Squoosh**, **ImageOptim**, or **ShortPixel** to strip metadata and reduce file size while preserving visual fidelity.
 
-> **Internal link:** Our [local SEO services](/services/local-seo) include comprehensive image‑optimization audits and automated compression workflows. See [local SEO pricing](/pricing#local-seo) for packages that include weekly GBP photo uploads.
+> **Internal link:** Our [local SEO services](/services/local-seo/) include comprehensive image‑optimization audits and automated compression workflows. See [local SEO pricing](/pricing/#local-seo) for packages that include weekly GBP photo uploads.
 
 ### Step 2: Geotagging Tools and Workflows
 You don’t need expensive software to geotag photos. Here are the most effective options for 2026.
@@ -133,7 +133,7 @@ Google categorizes GBP photos; upload across all categories for maximum impact:
 #### 3.4 Sync with “What’s New” Posts
 Each time you upload photos, create a complementary “What’s New” post describing the update. This double‑dip approach amplifies freshness signals and engagement.
 
-> **Internal link:** Struggling to manage your Google Business Profile? Our [local‑SEO packages](/services/local-seo) include weekly photo uploads, post scheduling, and performance reporting.
+> **Internal link:** Struggling to manage your Google Business Profile? Our [local‑SEO packages](/services/local-seo/) include weekly photo uploads, post scheduling, and performance reporting.
 
 ### Step 4: Monitoring and Measuring Success
 Visual SEO isn’t a “set‑and‑forget” tactic. Track these metrics to prove ROI and identify optimization opportunities.
@@ -205,7 +205,7 @@ Visual SEO isn’t a “set‑and‑forget” tactic. Track these metrics to pro
 5. **Inconsistent Uploads** – Sporadic photo updates suggest an inactive business.
 6. **Neglecting Other GBP Sections** – Photos alone won’t fix incomplete profiles; ensure hours, attributes, and Q&A are also filled.
 
-> **Internal link:** Avoid these pitfalls with our [website‑maintenance plans](/website-maintenance-orange-county), which include regular image audits, GBP updates, and local‑SEO health checks.
+> **Internal link:** Avoid these pitfalls with our [website‑maintenance plans](/website-maintenance-orange-county/), which include regular image audits, GBP updates, and local‑SEO health checks.
 
 ## Conclusion: Your Visual‑SEO Action Plan
 
@@ -220,7 +220,7 @@ Visual SEO in 2026 is about leveraging geotagged photos as trust signals that bo
 - [ ] Monitor direction requests and photo views in GBP Insights.
 - [ ] Repeat, refine, and scale.
 
-> **Ready to turn your visuals into local‑search dominance?** [Contact OCWebPros](/contact) for a free visual‑SEO audit. We’ll analyze your current image presence, identify gaps, and build a customized geotagging strategy that drives more foot traffic and higher rankings.
+> **Ready to turn your visuals into local‑search dominance?** [Contact OCWebPros](/contact/) for a free visual‑SEO audit. We’ll analyze your current image presence, identify gaps, and build a customized geotagging strategy that drives more foot traffic and higher rankings.
 
 ---
 

@@ -23,7 +23,7 @@ draft: false
 
 Little Saigon — spanning Westminster and Garden Grove along Bolsa Avenue and Brookhurst Street — is the largest Vietnamese business district outside Vietnam. It's also one of the most underserved markets in Orange County when it comes to local SEO. Most businesses here rely on reputation and foot traffic, which means the ones that invest in search visibility win outsized returns.
 
-**Want the city-level strategy?** See our dedicated pages for [Garden Grove Local SEO](/local-seo/garden-grove) and [Westminster Local SEO](/local-seo/westminster).
+**Want the city-level strategy?** See our dedicated pages for [Garden Grove Local SEO](/local-seo/garden-grove/) and [Westminster Local SEO](/local-seo/westminster/).
 
 ## Why Little Saigon Search Is Different
 
@@ -81,4 +81,4 @@ Every one of these is fixable in weeks, not months — and because so many compe
 
 The pattern we see with Little Saigon businesses that invest in the fundamentals: Google Maps visibility improves within 60–90 days, destination-query traffic ("best [dish] Little Saigon") builds over 3–6 months, and review volume compounds. In a district with this much search demand and this little optimization, the fundamentals are the whole game.
 
-**Ready to start?** Visit our [Garden Grove Local SEO](/local-seo/garden-grove) or [Westminster Local SEO](/local-seo/westminster) pages, or [contact us](/contact) for a free audit. We're based in Lake Forest and work with businesses across Orange County.
+**Ready to start?** Visit our [Garden Grove Local SEO](/local-seo/garden-grove/) or [Westminster Local SEO](/local-seo/westminster/) pages, or [contact us](/contact/) for a free audit. We're based in Lake Forest and work with businesses across Orange County.

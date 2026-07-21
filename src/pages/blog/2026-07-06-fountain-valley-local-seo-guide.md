@@ -23,9 +23,11 @@ draft: false
 
 Fountain Valley sits in the middle of everything: Huntington Beach to the west, Costa Mesa to the south, Santa Ana to the east, Westminster and Garden Grove to the north. That central location built the city's identity — "A Nice Place to Live" — and also created its defining marketing challenge. Businesses in every one of those neighboring cities actively target Fountain Valley customers, while many Fountain Valley businesses don't even claim their own city's searches.
 
+**Looking to hire SEO in Fountain Valley?** See our dedicated [SEO Services in Fountain Valley](/local-seo/fountain-valley/) page — or keep reading for the playbook.
+
 That's the whole opportunity, and this guide is about capturing it.
 
-**Want the direct route?** See our dedicated [Fountain Valley Local SEO](/local-seo/fountain-valley) and [Web Design in Fountain Valley](/web-design/fountain-valley) pages.
+**Want the direct route?** See our dedicated [Fountain Valley Local SEO](/local-seo/fountain-valley/) and [Web Design in Fountain Valley](/web-design/fountain-valley/) pages.
 
 ## Fountain Valley's Search Market
 
@@ -53,4 +55,4 @@ Fountain Valley addresses get mislabeled constantly. Google sometimes associates
 
 Fountain Valley has no shortage of demand — it has a shortage of businesses doing local SEO properly. In our audits, most FV businesses have unclaimed or minimal Google Business Profiles, no city landing page, and websites that never say "Fountain Valley" outside the footer. When the baseline is that low, executing the fundamentals well doesn't produce gradual gains. It produces rankings.
 
-**Start with a free audit:** Visit [Fountain Valley Local SEO](/local-seo/fountain-valley) or [contact us](/contact). We're based in Lake Forest and serve businesses across all 24 Orange County cities.
+**Start with a free audit:** Visit [SEO Services in Fountain Valley](/local-seo/fountain-valley/) or [contact us](/contact/). We're based in Lake Forest and serve businesses across all 24 Orange County cities.

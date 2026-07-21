@@ -20,7 +20,7 @@ const config = {
     schemaType: 'Local SEO',
     sisterPath: 'web-design',
     sisterLabel: 'Web Design',
-    hubPath: '/services/local-seo',
+    hubPath: '/services/local-seo/',
     hubLabel: 'local SEO services',
     spotlightSrc: '/images/unsplash/services-local-seo.jpg',
     spotlightAlt: (name: string) => `Local SEO results for ${name} businesses on Google Maps`,
@@ -32,9 +32,10 @@ const config = {
       'Citation consistency across Yelp, Bing, Apple Maps, and local directories',
       'Review strategy, monitoring, and monthly performance reporting',
     ],
+    h1Lead: 'Local SEO Services',
     servicesHeading: (name: string) => `Our ${name} Local SEO Services`,
     servicesSub: (name: string) =>
-      `Everything needed to rank for ${name} searches — managed monthly by a Lake Forest-based team.`,
+      `Everything needed to rank for SEO ${name} and Maps searches — managed monthly by a Lake Forest-based team.`,
     challengesHeading: (name: string) => `Why ${name} SEO Is Challenging`,
     processHeading: (name: string) => `How We Get ${name} Businesses Ranking`,
     processSteps: [
@@ -44,10 +45,10 @@ const config = {
       { title: 'Report', desc: (name: string) => `Monthly ${name} ranking updates, lead tracking, and next-step plan.` },
     ],
     faqHeading: (name: string) => `${name} Local SEO — Frequently Asked Questions`,
-    blogCardTitle: (name: string) => `${name} SEO Guide`,
+    blogCardTitle: (name: string) => `${name} SEO Guide (Blog)`,
     blogCardDesc: (name: string) =>
-      `Deep-dive into ${name}-specific strategies, neighborhoods, and tactics in our local SEO blog.`,
-    ctaHeading: (name: string) => `Ready to rank in ${name}?`,
+      `Prefer a how-to deep-dive first? Our ${name} blog guide covers neighborhoods and tactics. When you're ready to hire, this service page is the commercial home for SEO in ${name}.`,
+    ctaHeading: (name: string) => `Ready to hire SEO services in ${name}?`,
     ctaDesc: (name: string) =>
       `Request a free local SEO audit for your ${name} business. We'll show you exactly where you stand and what to fix first.`,
     auditLabel: 'SEO audit',
@@ -59,10 +60,11 @@ const config = {
     schemaType: 'Web Design',
     sisterPath: 'local-seo',
     sisterLabel: 'Local SEO',
-    hubPath: '/services/web-design',
+    hubPath: '/services/web-design/',
     hubLabel: 'web design services',
     spotlightSrc: '/images/unsplash/services-web-design.jpg',
     spotlightAlt: (name: string) => `Custom web design for ${name} businesses`,
+    h1Lead: 'Web Design',
     includesLead: (name: string) =>
       `Every ${name} website we build is custom, mobile-first, and optimized to convert visitors into customers.`,
     includesBullets: () => [
@@ -154,14 +156,14 @@ const faqSchema = {
         {city.badge}
       </div>
       <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4">
-        {cfg.label} in <span class="text-gradient-orange">{city.name}</span>
+        {cfg.h1Lead} in <span class="text-gradient-orange">{city.name}</span>
       </h1>
       <p class="text-slate-600 text-lg leading-relaxed max-w-3xl mx-auto">{city.heroSubtitle}</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-        <a href="/contact" class="px-8 py-3.5 bg-orange-700 text-white font-semibold rounded-full hover:bg-orange-600 transition-colors btn-glow text-sm md:text-base">
+        <a href="/contact/" class="px-8 py-3.5 bg-orange-700 text-white font-semibold rounded-full hover:bg-orange-600 transition-colors btn-glow text-sm md:text-base">
           Get a Free {city.shortName} {cfg.auditLabel}
         </a>
-        <a href={`/pricing${cfg.pricingHash}`} class="px-8 py-3.5 bg-slate-100 text-slate-900 font-semibold rounded-full border border-slate-200 hover:bg-slate-100 transition-colors text-sm md:text-base">
+        <a href={`/pricing/${cfg.pricingHash}`} class="px-8 py-3.5 bg-slate-100 text-slate-900 font-semibold rounded-full border border-slate-200 hover:bg-slate-100 transition-colors text-sm md:text-base">
           View Pricing
         </a>
       </div>
@@ -302,7 +304,7 @@ const faqSchema = {
           <div class="backdrop-blur-[12px] bg-slate-100 border border-slate-200 rounded-2xl p-6 sm:p-8" data-aos="fade-up">
             <h3 class="text-xl font-bold text-slate-900 mb-3">{cfg.blogCardTitle(city.name)}</h3>
             <p class="text-sm text-slate-600 leading-relaxed mb-4">{cfg.blogCardDesc(city.name)}</p>
-            <a href={`/blog/${city.blogSlug}`} class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors inline-flex items-center gap-1">
+            <a href={`/blog/${city.blogSlug}/`} class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors inline-flex items-center gap-1">
               Read: {city.blogTitle}
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
             </a>
@@ -313,7 +315,7 @@ const faqSchema = {
           <p class="text-sm text-slate-600 leading-relaxed mb-4">
             Pair your {city.name} {cfg.label.toLowerCase()} with our {cfg.sisterLabel.toLowerCase()} services for full local visibility.
           </p>
-          <a href={`/${cfg.sisterPath}/${city.slug}`} class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors inline-flex items-center gap-1">
+          <a href={`/${cfg.sisterPath}/${city.slug}/`} class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors inline-flex items-center gap-1">
             {cfg.sisterLabel} in {city.name} →
           </a>
         </div>
@@ -332,13 +334,13 @@ const faqSchema = {
           <ul class="space-y-2">
             {otherCities.slice(0, 6).map((other) => (
               <li>
-                <a href={`/${cfg.path}/${other.slug}`} class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors">
+                <a href={`/${cfg.path}/${other.slug}/`} class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors">
                   {cfg.label} in {other.name} →
                 </a>
               </li>
             ))}
             <li>
-              <a href="/service-areas" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors">
+              <a href="/service-areas/" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors">
                 All {allCities.length} Orange County service areas →
               </a>
             </li>
@@ -351,10 +353,10 @@ const faqSchema = {
       <h2 class="text-2xl md:text-3xl font-bold mb-4 text-slate-900">{cfg.ctaHeading(city.name)}</h2>
       <p class="text-slate-600 mb-8 max-w-xl mx-auto">{cfg.ctaDesc(city.name)}</p>
       <div class="inline-flex flex-col sm:flex-row gap-4">
-        <a href="/contact" class="px-10 py-5 bg-orange-700 text-white font-bold rounded-full hover:bg-orange-600 transition-colors text-lg btn-glow">
+        <a href="/contact/" class="px-10 py-5 bg-orange-700 text-white font-bold rounded-full hover:bg-orange-600 transition-colors text-lg btn-glow">
           Get a free {city.shortName} {cfg.auditLabel}
         </a>
-        <a href="/pricing" class="px-10 py-5 bg-slate-100 text-slate-900 font-bold rounded-full border border-slate-200 hover:bg-slate-100 transition-colors text-lg">
+        <a href="/pricing/" class="px-10 py-5 bg-slate-100 text-slate-900 font-bold rounded-full border border-slate-200 hover:bg-slate-100 transition-colors text-lg">
           View pricing
         </a>
       </div>

@@ -25,7 +25,7 @@ If you're running a business in Garden Grove, you're operating in one of the mos
 
 At OCWebPros, we've helped numerous Garden Grove businesses achieve local search dominance by leveraging the community's unique characteristics. This guide covers everything you need to know about Garden Grove-specific SEO.
 
-**Looking to hire a Garden Grove local SEO agency?** See our dedicated [Local SEO Services in Garden Grove](/local-seo/garden-grove) and [Web Design in Garden Grove](/web-design/garden-grove) pages.
+**Looking to hire a Garden Grove local SEO agency?** See our dedicated [Local SEO Services in Garden Grove](/local-seo/garden-grove/) and [Web Design in Garden Grove](/web-design/garden-grove/) pages.
 
 ## Why Garden Grove SEO is Different
 
@@ -489,8 +489,8 @@ Garden Grove offers unique opportunities for businesses that understand its stat
 
 **At OCWebPros, we specialize in Garden Grove SEO.** We understand Vietnamese community optimization, bilingual content strategies, cultural marketing considerations, and Little Saigon area dynamics spanning Garden Grove and Westminster. Our strategies are designed specifically for Garden Grove's unique demographic reality.
 
-[Book your free Garden Grove SEO audit](/contact) and we'll analyze your current online presence, identify Vietnamese community opportunities, and create a customized strategy to help you dominate Garden Grove search.
+[Book your free Garden Grove SEO audit](/contact/) and we'll analyze your current online presence, identify Vietnamese community opportunities, and create a customized strategy to help you dominate Garden Grove search.
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Garden Grove businesses. We've helped numerous companies achieve search dominance in Orange County's Vietnamese business hub. Questions about Garden Grove SEO? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Garden Grove businesses. We've helped numerous companies achieve search dominance in Orange County's Vietnamese business hub. Questions about Garden Grove SEO? [Contact us](/contact/).*

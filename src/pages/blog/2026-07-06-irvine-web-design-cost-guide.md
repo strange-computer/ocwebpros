@@ -23,7 +23,7 @@ draft: false
 
 Irvine is the most competitive local search market in Orange County, full stop. Master-planned, tech-saturated, and home to thousands of well-funded businesses, it's the one OC city where a "good enough" website reliably loses. This guide covers what web design costs in Irvine in 2026 — and more importantly, what the market forces you to buy at each tier.
 
-**Want numbers for your project?** See our [Web Design in Irvine](/web-design/irvine) page, or [Irvine Local SEO](/local-seo/irvine) if visibility is the bigger gap.
+**Want numbers for your project?** See our [Web Design in Irvine](/web-design/irvine/) page, or [Irvine Local SEO](/local-seo/irvine/) if visibility is the bigger gap.
 
 ## Why Irvine Raises the Bar (and the Budget)
 
@@ -49,7 +49,7 @@ Irvine's B2B and tech-adjacent companies typically need more: content-heavy site
 
 ## Where Irvine Businesses Should Spend
 
-1. **Neighborhood-level content.** A Woodbridge family and a Spectrum-area professional search differently. Pages that reflect that reality out-rank and out-convert the generic alternative. Our [Irvine GBP guide](/blog/2026-05-14-irvine-google-business-profile-optimization-guide) covers the profile side of the same strategy.
+1. **Neighborhood-level content.** A Woodbridge family and a Spectrum-area professional search differently. Pages that reflect that reality out-rank and out-convert the generic alternative. Our [Irvine GBP guide](/blog/2026-05-14-irvine-google-business-profile-optimization-guide/) covers the profile side of the same strategy.
 2. **Performance engineering.** Sub-2-second loads are table stakes when your audience works in tech. This is a build-quality issue, not a plugin.
 3. **Credibility assets.** Real photography, team bios, case studies with numbers. Irvine customers comparison-shop everything — give them reasons to stop at your site.
 
@@ -57,6 +57,6 @@ Irvine's B2B and tech-adjacent companies typically need more: content-heavy site
 
 ## The ROI Math in Irvine
 
-Irvine's customer values justify its costs. A single new dental patient is worth thousands over their lifetime; a B2B contract can be worth six figures. We documented a real example in our [Irvine dental case study](/blog/2026-05-18-orange-county-web-traffic-case-study) — a 347% traffic increase driven by exactly the structure described above. In a market this valuable, the expensive website is the one that doesn't rank.
+Irvine's customer values justify its costs. A single new dental patient is worth thousands over their lifetime; a B2B contract can be worth six figures. We documented a real example in our [Irvine dental case study](/blog/2026-05-18-orange-county-web-traffic-case-study/) — a 347% traffic increase driven by exactly the structure described above. In a market this valuable, the expensive website is the one that doesn't rank.
 
-**Get an exact quote:** Visit [Web Design in Irvine](/web-design/irvine) or [contact us](/contact) for a free consultation. We're based in neighboring Lake Forest and build for Orange County businesses exclusively.
+**Get an exact quote:** Visit [Web Design in Irvine](/web-design/irvine/) or [contact us](/contact/) for a free consultation. We're based in neighboring Lake Forest and build for Orange County businesses exclusively.

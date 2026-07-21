@@ -25,7 +25,7 @@ Brea punches far above its weight in Orange County search volume. Brea Mall and 
 
 It also means the competition is unusual: local businesses in Brea compete directly against national mall tenants with corporate SEO teams. Here's how to win anyway.
 
-**Want the direct route?** See our dedicated [Brea Local SEO](/local-seo/brea) and [Web Design in Brea](/web-design/brea) pages for packages and a free audit.
+**Want the direct route?** See our dedicated [Brea Local SEO](/local-seo/brea/) and [Web Design in Brea](/web-design/brea/) pages for packages and a free audit.
 
 ## The Brea Search Landscape
 
@@ -53,10 +53,10 @@ Brea customers freely cross into Fullerton and Yorba Linda for services, and vic
 
 Median household income in Brea runs well above the OC average, and it shows in search behavior: customers research thoroughly, compare multiple providers, and judge credibility by web presence. A slow or dated website doesn't just cost rankings here — it actively disqualifies you during the comparison phase, after the click.
 
-That's why we treat local SEO and web design as one project in markets like Brea. Ranking gets you the visit; the site closes it. Our [Web Design in Brea](/web-design/brea) page covers what that looks like.
+That's why we treat local SEO and web design as one project in markets like Brea. Ranking gets you the visit; the site closes it. Our [Web Design in Brea](/web-design/brea/) page covers what that looks like.
 
 ## The Opportunity Right Now
 
 Auditing the Brea market, we see the same gap as much of North OC: plenty of established businesses with strong reputations and weak digital footprints. Most have no city landing pages, thin Google Business Profiles, and no review strategy. The fundamentals — done properly and consistently — still move businesses to the top of Brea's local results within months.
 
-**Start with a free audit:** Visit [Brea Local SEO](/local-seo/brea) or [contact us](/contact). We're based in Lake Forest and serve all 24 Orange County cities.
+**Start with a free audit:** Visit [Brea Local SEO](/local-seo/brea/) or [contact us](/contact/). We're based in Lake Forest and serve all 24 Orange County cities.

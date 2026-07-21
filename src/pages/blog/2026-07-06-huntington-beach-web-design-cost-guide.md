@@ -23,7 +23,7 @@ draft: false
 
 Huntington Beach websites work harder than most. The same site has to convert a Seacliff resident researching a dentist and a tourist standing on Main Street deciding where to eat in the next ten minutes. That dual audience shapes what an HB website needs — and what it costs. Here's the 2026 breakdown.
 
-**Want specifics?** See our [Web Design in Huntington Beach](/web-design/huntington-beach) and [Huntington Beach Local SEO](/local-seo/huntington-beach) pages. For the strategy side, our [HB web design guide](/blog/2026-07-06-huntington-beach-web-design-guide) covers what beach-city sites need beyond price.
+**Want specifics?** See our [Web Design in Huntington Beach](/web-design/huntington-beach/) and [Huntington Beach Local SEO](/local-seo/huntington-beach/) pages. For the strategy side, our [HB web design guide](/blog/2026-07-06-huntington-beach-web-design-guide/) covers what beach-city sites need beyond price.
 
 ## What the HB Market Does to Pricing
 
@@ -50,7 +50,7 @@ Most HB restaurants, service businesses, fitness studios, and professional pract
 
 ### $7,500–$20,000+: Hospitality, medspas, and e-commerce
 
-Restaurants needing reservation and ordering systems, medical spas needing HIPAA-aware galleries and consultation funnels (the full strategy is in our [HB medspa SEO guide](/blog/2026-05-14-huntington-beach-medical-spa-seo-guide)), and surf/lifestyle brands adding e-commerce with local pickup all land in this range. Seasonal campaign landing pages — US Open of Surfing, summer season — are worth budgeting here too.
+Restaurants needing reservation and ordering systems, medical spas needing HIPAA-aware galleries and consultation funnels (the full strategy is in our [HB medspa SEO guide](/blog/2026-05-14-huntington-beach-medical-spa-seo-guide/)), and surf/lifestyle brands adding e-commerce with local pickup all land in this range. Seasonal campaign landing pages — US Open of Surfing, summer season — are worth budgeting here too.
 
 ## Where HB Businesses Should Spend
 
@@ -64,4 +64,4 @@ Restaurants needing reservation and ordering systems, medical spas needing HIPAA
 
 Most Huntington Beach businesses should budget **$2,500–$7,500**, with hospitality, aesthetics, and e-commerce typically investing more. In a city where the visitor economy hands you a constant stream of brand-new customers searching from their phones, the site that loads fast and looks like Surf City pays for itself quickly — and the one that doesn't is invisible at any price.
 
-**Get an exact quote:** Visit [Web Design in Huntington Beach](/web-design/huntington-beach) or [contact us](/contact) for a free consultation. We're an Orange County agency based in Lake Forest.
+**Get an exact quote:** Visit [Web Design in Huntington Beach](/web-design/huntington-beach/) or [contact us](/contact/) for a free consultation. We're an Orange County agency based in Lake Forest.

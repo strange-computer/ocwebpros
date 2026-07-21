@@ -315,10 +315,10 @@ Ready to get specific numbers for your business? Here's what to do:
 
 **At OCWebPros, we offer free, no-obligation SEO strategy sessions for Orange County businesses.** We'll audit your current situation, analyze your competition, and provide transparent pricing options with clear ROI projections.
 
-[Get Your Free Orange County SEO Strategy Session](/contact)
+[Get Your Free Orange County SEO Strategy Session](/contact/)
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA. We've helped hundreds of Orange County businesses achieve real SEO results—not just vanity metrics. Have questions about Orange County SEO pricing? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA. We've helped hundreds of Orange County businesses achieve real SEO results—not just vanity metrics. Have questions about Orange County SEO pricing? [Contact us](/contact/).*
 
 *Last updated: May 2026*

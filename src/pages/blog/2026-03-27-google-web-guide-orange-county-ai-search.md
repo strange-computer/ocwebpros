@@ -113,7 +113,7 @@ Web Guide is still rolling out, so you won’t see a “Web Guide” report in G
 
 ## What Web Guide Means for Local SEO in Orange County
 
-Orange County businesses have a unique advantage in Web Guide: **hyper‑local intent**. When someone searches “plumber near me” or “best SEO agency in Irvine,” Google already knows they’re in Orange County. Web Guide amplifies that by creating location‑specific clusters. Browse our [service areas](/service-areas) and [industry guides](/industries) to see how we structure cluster-ready content for different sectors.
+Orange County businesses have a unique advantage in Web Guide: **hyper‑local intent**. When someone searches “plumber near me” or “best SEO agency in Irvine,” Google already knows they’re in Orange County. Web Guide amplifies that by creating location‑specific clusters. Browse our [service areas](/service-areas/) and [industry guides](/industries/) to see how we structure cluster-ready content for different sectors.
 
 ### The Orange County Local SEO Checklist for Web Guide
 
@@ -160,11 +160,11 @@ At OCWebPros, we’ve already started implementing Web Guide‑optimized strateg
 
 ## Internal Links to OCWebPros Services
 
-- **[Web Design Services](/services/web-design):** We build fast, AI‑ready websites that meet Web Guide’s technical requirements.
-- **[SEO Strategy](/services/seo-strategy):** Our data‑driven approach uses Ahrefs to identify fan‑out topics and optimize for Web Guide clusters.
-- **[AI Consulting](/services/ai-consulting):** We help businesses create content that AI models love to cite, boosting visibility in AI‑driven search.
-- **[Local SEO Services](/services/local-seo):** Neighborhood-specific pages and GBP optimization for Orange County businesses.
-- **[Pricing](/pricing):** Transparent packages for web design, local SEO, and ongoing support.
+- **[Web Design Services](/services/web-design/):** We build fast, AI‑ready websites that meet Web Guide’s technical requirements.
+- **[SEO Strategy](/services/seo-strategy/):** Our data‑driven approach uses Ahrefs to identify fan‑out topics and optimize for Web Guide clusters.
+- **[AI Consulting](/services/ai-consulting/):** We help businesses create content that AI models love to cite, boosting visibility in AI‑driven search.
+- **[Local SEO Services](/services/local-seo/):** Neighborhood-specific pages and GBP optimization for Orange County businesses.
+- **[Pricing](/pricing/):** Transparent packages for web design, local SEO, and ongoing support.
 
 ## The Bottom Line: Web Guide Is a Wake‑Up Call
 
@@ -186,8 +186,8 @@ The businesses that adapt now will dominate search in 2026 and beyond. The ones 
 4. **Strengthen internal links** with descriptive anchor text.
 5. **Monitor impressions** in Google Search Console for unexpected bumps.
 
-Need help? [Contact OCWebPros](/contact) for a free Web Guide readiness audit. We’ll show you exactly where your site stands and what you need to do to rank in AI‑driven search.
+Need help? [Contact OCWebPros](/contact/) for a free Web Guide readiness audit. We’ll show you exactly where your site stands and what you need to do to rank in AI‑driven search.
 
 ---
 
-*This post is based on Ahrefs’ March 2026 research and our own experience optimizing Orange County businesses for AI‑driven search. For the latest updates, subscribe to our [SEO newsletter](/newsletter).*
+*This post is based on Ahrefs’ March 2026 research and our own experience optimizing Orange County businesses for AI‑driven search. For the latest updates, subscribe to our [SEO newsletter](/newsletter/).*

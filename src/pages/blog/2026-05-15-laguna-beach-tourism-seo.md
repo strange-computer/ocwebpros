@@ -23,7 +23,7 @@ If you're running a tourism-related business in Laguna Beach, you're operating i
 
 At OCWebPros, we've helped numerous Laguna Beach tourism businesses achieve search dominance by leveraging the destination's unique characteristics. This guide covers everything you need to know about Laguna Beach-specific tourism SEO.
 
-**Hire us for Laguna Beach local SEO:** Visit our [Local SEO Services in Laguna Beach](/local-seo/laguna-beach) and [Web Design in Laguna Beach](/web-design/laguna-beach) pages.
+**Hire us for Laguna Beach local SEO:** Visit our [Local SEO Services in Laguna Beach](/local-seo/laguna-beach/) and [Web Design in Laguna Beach](/web-design/laguna-beach/) pages.
 
 ## Why Laguna Beach Tourism SEO is Different
 
@@ -411,8 +411,8 @@ Laguna Beach offers unique opportunities for businesses that understand its dual
 
 **At OCWebPros, we specialize in Laguna Beach SEO.** We understand arts colony optimization, coastal tourism strategies, festival seasonality, and luxury market positioning. Our strategies are designed specifically for Laguna Beach's unique dual-identity market.
 
-[Book your free Laguna Beach SEO audit](/contact) and we'll analyze your current online presence, identify arts/coastal opportunities, and create a customized strategy to help you dominate Laguna Beach search.
+[Book your free Laguna Beach SEO audit](/contact/) and we'll analyze your current online presence, identify arts/coastal opportunities, and create a customized strategy to help you dominate Laguna Beach search.
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Laguna Beach businesses. We've helped numerous hotels, galleries, restaurants, and services achieve search dominance in Orange County's premier coastal arts destination. Questions about Laguna Beach SEO? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Laguna Beach businesses. We've helped numerous hotels, galleries, restaurants, and services achieve search dominance in Orange County's premier coastal arts destination. Questions about Laguna Beach SEO? [Contact us](/contact/).*

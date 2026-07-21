@@ -23,7 +23,7 @@ draft: false
 
 If you're pricing out a new website for your Anaheim business, you've probably seen quotes ranging from $500 to $50,000 — with very little explanation of what separates them. This guide breaks down what web design really costs in Anaheim in 2026, what you get at each tier, and where the money matters most in this market.
 
-**Ready to talk specifics?** See our [Web Design in Anaheim](/web-design/anaheim) page for our process and packages, or our [Anaheim Local SEO](/local-seo/anaheim) page if visibility is the bigger problem.
+**Ready to talk specifics?** See our [Web Design in Anaheim](/web-design/anaheim/) page for our process and packages, or our [Anaheim Local SEO](/local-seo/anaheim/) page if visibility is the bigger problem.
 
 ## Why Anaheim Pricing Is Its Own Conversation
 
@@ -81,4 +81,4 @@ If a designer can't answer the second question with specifics about city landing
 
 Most Anaheim small businesses should budget **$2,500–$7,500** for a site that actually competes, with tourism and booking-driven businesses budgeting more. The cheapest option costs more in the long run — in this market, an invisible website is a monthly expense with no return.
 
-**Get an exact quote:** Visit our [Web Design in Anaheim](/web-design/anaheim) page or [contact us](/contact) for a free consultation. We're based in Lake Forest and build for Orange County businesses exclusively.
+**Get an exact quote:** Visit our [Web Design in Anaheim](/web-design/anaheim/) page or [contact us](/contact/) for a free consultation. We're based in Lake Forest and build for Orange County businesses exclusively.

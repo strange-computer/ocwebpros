@@ -25,7 +25,7 @@ If you're running a business in Huntington Beach, you're operating in one of Cal
 
 At OCWebPros, we've helped numerous Huntington Beach businesses achieve local search dominance by leveraging the city's unique characteristics. This guide covers everything you need to know about Huntington Beach-specific SEO.
 
-**Looking to hire a Huntington Beach local SEO agency?** See our dedicated [Local SEO Services in Huntington Beach](/local-seo/huntington-beach) and [Web Design in Huntington Beach](/web-design/huntington-beach) pages.
+**Looking to hire a Huntington Beach local SEO agency?** See our dedicated [Local SEO Services in Huntington Beach](/local-seo/huntington-beach/) and [Web Design in Huntington Beach](/web-design/huntington-beach/) pages.
 
 ## Why Huntington Beach SEO is Different
 
@@ -458,8 +458,8 @@ Huntington Beach offers unparalleled opportunities for businesses that understan
 
 **At OCWebPros, we specialize in Huntington Beach SEO.** We understand surf culture optimization, beach tourism marketing, event seasonality, and local community positioning. Our strategies are designed specifically for Huntington Beach's unique coastal market.
 
-[Book your free Huntington Beach SEO audit](/contact) and we'll analyze your current online presence, identify surf/tourism opportunities, and create a customized strategy to help you dominate Huntington Beach search.
+[Book your free Huntington Beach SEO audit](/contact/) via our [SEO Services in Huntington Beach](/local-seo/huntington-beach/) page and we'll analyze your current online presence, identify surf/tourism opportunities, and create a customized strategy to help you dominate Huntington Beach search.
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Huntington Beach businesses. We've helped numerous hotels, restaurants, surf shops, and services achieve search dominance in Surf City USA. Questions about Huntington Beach SEO? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Huntington Beach businesses. We've helped numerous hotels, restaurants, surf shops, and services achieve search dominance in Surf City USA. Questions about Huntington Beach SEO? [Contact us](/contact/).*

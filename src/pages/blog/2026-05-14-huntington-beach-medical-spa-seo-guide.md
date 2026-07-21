@@ -23,7 +23,7 @@ If you're running a medical spa in Huntington Beach and struggling to attract ne
 
 At OCWebPros, we've helped multiple Huntington Beach medical spas achieve dramatic growth through HIPAA-compliant SEO strategies. This guide covers everything you need to know.
 
-**Need a Huntington Beach web design partner?** See our [Web Design in Huntington Beach](/web-design/huntington-beach) page for medspa-focused site builds.
+**Need a Huntington Beach web design partner?** See our [Web Design in Huntington Beach](/web-design/huntington-beach/) page for medspa-focused site builds.
 
 ## Why Huntington Beach Medical Spa SEO is Different
 
@@ -489,8 +489,8 @@ Medical spa SEO in Huntington Beach requires specialized expertise in both SEO a
 
 **At OCWebPros, we specialize in medical spa SEO for Huntington Beach practices.** We understand the unique needs of medspas, the competitive Orange County aesthetic market, and the critical importance of HIPAA compliance.
 
-[Book your free Medical Spa SEO audit](/contact) and we'll analyze your current online presence, identify HIPAA-compliant opportunities, and create a customized strategy to help you dominate Huntington Beach medical spa search.
+[Book your free Medical Spa SEO audit](/contact/) and we'll analyze your current online presence, identify HIPAA-compliant opportunities, and create a customized strategy to help you dominate Huntington Beach medical spa search.
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Huntington Beach medical spas. We've helped multiple medspas achieve significant growth through HIPAA-compliant SEO strategies. Questions about medical spa SEO? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Huntington Beach medical spas. We've helped multiple medspas achieve significant growth through HIPAA-compliant SEO strategies. Questions about medical spa SEO? [Contact us](/contact/).*

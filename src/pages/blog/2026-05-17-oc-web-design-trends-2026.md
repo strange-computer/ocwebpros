@@ -86,8 +86,8 @@ Orange County's competitive market demands websites that don't just keep up with
 
 **At OCWebPros, we specialize in Orange County web design that converts.** Our team understands local market dynamics, user behavior patterns, and the technical requirements for success in Orange County's diverse business landscape.
 
-[Book your free 2026 web design audit](/contact) and we'll analyze your current site against these trends, identify specific opportunities for improvement, and create a customized strategy to help you dominate Orange County search in 2026.
+[Book your free 2026 web design audit](/contact/) and we'll analyze your current site against these trends, identify specific opportunities for improvement, and create a customized strategy to help you dominate Orange County search in 2026.
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County businesses. We've helped numerous local businesses achieve search dominance through forward-thinking web design. Questions about 2026 web design trends? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County businesses. We've helped numerous local businesses achieve search dominance through forward-thinking web design. Questions about 2026 web design trends? [Contact us](/contact/).*

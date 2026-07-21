@@ -22,11 +22,11 @@ If you've searched for a local business recently, you've likely noticed somethin
 
 This is the new reality of local search in 2026. Search engines are moving from keyword‑based results to **AI‑driven, intent‑based experiences**. For Orange County businesses, this means the old playbook—claim your Google Business Profile, build a few citations, and wait for calls—is no longer enough.
 
-Based on our latest research and Ahrefs' March 2026 SEO insights, we've identified six trends that will define local SEO success this year—detailed further in our [complete Ahrefs SEO checklist](/blog/2026-03-26-ahrefs-seo-checklist-2026-ai-optimization) and [Orange County local SEO playbook](/blog/2026-05-14-orange-county-local-seo-playbook-2026). The businesses that adapt will capture more local traffic; those that don't will watch their visibility fade.
+Based on our latest research and Ahrefs' March 2026 SEO insights, we've identified six trends that will define local SEO success this year—detailed further in our [complete Ahrefs SEO checklist](/blog/2026-03-26-ahrefs-seo-checklist-2026-ai-optimization/) and [Orange County local SEO playbook](/blog/2026-05-14-orange-county-local-seo-playbook-2026/). The businesses that adapt will capture more local traffic; those that don't will watch their visibility fade.
 
 ## Trend 1: AI‑First Optimization—Search Engines Now Summarize Your Business
 
-Google's [AI Overviews](/blog/google-sge-ai-search-optimization-guide-2026) and AI Mode don't just pull from your website—they pull from **structured data, reviews, and Google Business Profile information** to generate concise summaries of what you offer, your hours, and even your pricing.
+Google's [AI Overviews](/blog/google-sge-ai-search-optimization-guide-2026/) and AI Mode don't just pull from your website—they pull from **structured data, reviews, and Google Business Profile information** to generate concise summaries of what you offer, your hours, and even your pricing.
 
 ### What This Means for Your Business
 - **Shift from keyword stuffing to AI‑friendly content**: Create shorter, scannable FAQ sections, clearly organized service descriptions, and structured data that helps AI models identify your expertise.
@@ -36,14 +36,14 @@ Google's [AI Overviews](/blog/google-sge-ai-search-optimization-guide-2026) and 
 > **Ahrefs Insight:** 81.9% of top‑20 ranking pages already include AI assistance. Google evaluates quality, not production method. Focus on helpful, in‑depth content that beats existing rankings.
 
 ### How OCWebPros Implements AI‑First Optimization
-We audit client websites for AI‑readability, implement comprehensive schema markup, and create content designed to be **both human‑friendly and machine‑interpretable**. Our [technical SEO services](/services/seo-strategy) ensure your site communicates clearly with AI systems.
+We audit client websites for AI‑readability, implement comprehensive schema markup, and create content designed to be **both human‑friendly and machine‑interpretable**. Our [technical SEO services](/services/seo-strategy/) ensure your site communicates clearly with AI systems.
 
 ## Trend 2: Hyper‑Localized Content—Generic City Pages Are Ineffective
 
 "Orange County plumbing" is too broad. "Costa Mesa emergency plumbing services" is what searchers actually type. Google's AI understands geographic nuance better than ever, and it rewards businesses that demonstrate genuine local integration.
 
 ### The Hyper‑Local Content Strategy
-- **Neighborhood‑specific service pages**: Create dedicated pages for each major neighborhood you serve (e.g., [Irvine web design](/web-design/irvine), [Newport Beach SEO](/blog/2026-05-14-newport-beach-local-seo-case-study)).
+- **Neighborhood‑specific service pages**: Create dedicated pages for each major neighborhood you serve (e.g., [Irvine web design](/web-design/irvine/), [Newport Beach SEO](/blog/2026-05-14-newport-beach-local-seo-case-study/)).
 - **Community guides and area‑based case studies**: Show you're part of the community by publishing guides to local events, schools, and amenities.
 - **Geo‑targeted blog content**: Write about local issues, news, and trends that matter to your target audience.
 
@@ -51,11 +51,11 @@ We audit client websites for AI‑readability, implement comprehensive schema ma
 Most local businesses stop at city‑level pages. By diving deeper into **neighborhood‑level content**, you cover a subtopic your competitors ignore—giving you a ranking edge for more specific, higher‑intent searches.
 
 ### Our Approach to Hyper‑Localization
-Our [content strategy services](/services/seo-strategy) include neighborhood‑specific keyword research, localized content creation, and geographic pyramid structures that build authority from the neighborhood up.
+Our [content strategy services](/services/seo-strategy/) include neighborhood‑specific keyword research, localized content creation, and geographic pyramid structures that build authority from the neighborhood up.
 
 ## Trend 3: Multi‑Channel Visibility—Don't Rely Solely on Google
 
-Google Business Profile remains essential, but it's no longer the only game in town. AI Overviews pull from multiple sources, and searchers use different platforms depending on context. See our [multi‑channel visibility framework](/blog/2026-03-26-multi-channel-visibility-2026) for the full platform‑by‑platform breakdown.
+Google Business Profile remains essential, but it's no longer the only game in town. AI Overviews pull from multiple sources, and searchers use different platforms depending on context. See our [multi‑channel visibility framework](/blog/2026-03-26-multi-channel-visibility-2026/) for the full platform‑by‑platform breakdown.
 
 ### The 2026 Multi‑Channel Stack
 1. **Google Business Profile** (non‑negotiable)
@@ -69,7 +69,7 @@ Google Business Profile remains essential, but it's no longer the only game in t
 Maintain consistent **NAP** (Name, Address, Phone) across all platforms. Inconsistencies confuse both searchers and AI systems, damaging your credibility.
 
 ### How We Handle Multi‑Channel Presence
-Our [local SEO services](/services/local-seo) include platform‑by‑platform optimization, regular audit sweeps for NAP consistency, and reputation management across all relevant channels.
+Our [local SEO services](/services/local-seo/) include platform‑by‑platform optimization, regular audit sweeps for NAP consistency, and reputation management across all relevant channels.
 
 ## Trend 4: Declining Organic Visibility & the Paid Ads Imperative
 
@@ -81,7 +81,7 @@ Ahrefs' research shows that single‑location profiles are losing organic visibi
 - **Diversify traffic sources**: Invest in email marketing, SMS campaigns, and community partnerships.
 
 ### The Data‑Driven Decision
-We analyze each client's specific market to determine the optimal **organic‑to‑paid mix**. Our [Google Ads management](/contact) focuses on high‑intent local keywords that complement organic rankings—see [SEO pricing](/pricing) for typical investment ranges.
+We analyze each client's specific market to determine the optimal **organic‑to‑paid mix**. Our [Google Ads management](/contact/) focuses on high‑intent local keywords that complement organic rankings—see [SEO pricing](/pricing/) for typical investment ranges.
 
 ## Trend 5: Voice & Conversational Search—Natural Language Is King
 
@@ -113,7 +113,7 @@ Google now treats **geotagged images** as trust signals for local businesses. Ph
 As augmented‑reality search grows, visual content will become even more important. Businesses with rich visual libraries will have a distinct advantage.
 
 ### How We Boost Visual Trust Signals
-Our [web design and photography partnerships](/services/web-design) ensure your visual content is professional, strategically tagged, and regularly updated across all platforms.
+Our [web design and photography partnerships](/services/web-design/) ensure your visual content is professional, strategically tagged, and regularly updated across all platforms.
 
 ## Conclusion: Adapt Now or Get Left Behind
 
@@ -121,7 +121,7 @@ The local SEO landscape is shifting faster than ever. AI‑first optimization, h
 
 Orange County businesses that embrace these changes will capture more local traffic, build stronger community connections, and future‑proof their marketing against the next wave of search evolution.
 
-At OCWebPros, we're already implementing these trends for our clients across [industries](/industries) throughout Orange County. Our [comprehensive SEO audits](/contact) identify exactly where your business stands and what steps you need to take next.
+At OCWebPros, we're already implementing these trends for our clients across [industries](/industries/) throughout Orange County. Our [comprehensive SEO audits](/contact/) identify exactly where your business stands and what steps you need to take next.
 
 **Don't wait for your competitors to adapt first.** The businesses that move now will build a visibility advantage that compounds throughout 2026 and beyond.
 

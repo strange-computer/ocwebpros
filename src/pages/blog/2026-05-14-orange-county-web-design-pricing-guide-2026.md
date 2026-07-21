@@ -343,10 +343,10 @@ Ready to get specific numbers for your business? Here's what to do:
 
 **At OCWebPros, we offer free, no-obligation website strategy sessions for Orange County businesses.** We'll review your current situation, discuss your goals, and provide transparent pricing options—no pressure, just honest advice about what makes sense for your business.
 
-[Get Your Free Orange County Website Strategy Session](/contact)
+[Get Your Free Orange County Website Strategy Session](/contact/)
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA. We've helped hundreds of Orange County businesses get websites that actually work—not just look pretty. Have questions about Orange County web design pricing? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA. We've helped hundreds of Orange County businesses get websites that actually work—not just look pretty. Have questions about Orange County web design pricing? [Contact us](/contact/).*
 
 *Last updated: May 2026*

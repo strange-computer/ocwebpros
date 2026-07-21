@@ -141,4 +141,4 @@ In 2026, local visibility is no longer just about ranking in the map pack—it�
 
 ---
 
-*Need help implementing structured data for your Orange County business? [Contact OCWebPros](https://ocwebpros.com/contact) for a free schema audit and AI‑optimization plan.*
+*Need help implementing structured data for your Orange County business? [Contact OCWebPros](https://ocwebpros.com/contact/) for a free schema audit and AI‑optimization plan.*

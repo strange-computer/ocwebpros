@@ -149,4 +149,4 @@ Then watch the citations roll in.
 
 *OCWebPros helps Orange County businesses earn synthetic authority in the age of AI search. We don’t just optimize for algorithms—we build content that both humans and machines trust.*  
 
-*Ready to be cited?* **[Start a conversation →](https://ocwebpros.com/contact)**
+*Ready to be cited?* **[Start a conversation →](https://ocwebpros.com/contact/)**

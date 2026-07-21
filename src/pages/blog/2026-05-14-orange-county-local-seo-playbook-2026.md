@@ -493,4 +493,4 @@ If you don't see measurable progress in these areas, we'll work an extra month a
 3. **Start with Phase 1** - We handle the technical work while you run your business
 4. **Watch the rankings improve** - We report progress weekly
 
-**Ready to dominate Orange County search results?** [Book your free Local SEO Strategy Session](/contact) and we'll create a customized 90-day plan to g
+**Ready to dominate Orange County search results?** [Book your free Local SEO Strategy Session](/contact/) and we'll create a customized 90-day plan to g

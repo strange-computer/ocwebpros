@@ -23,12 +23,12 @@ draft: false
 
 Costa Mesa is Orange County's taste-making city. South Coast Plaza anchors one of America's top luxury retail markets, The CAMP and The LAB set the region's independent-brand aesthetic, and the city's creative agencies, showrooms, and design-driven businesses raise the visual bar for everyone. If your business is in Costa Mesa, your website is being evaluated by one of the most design-literate customer bases in Southern California. Here's what meeting that bar costs in 2026.
 
-**Want specifics?** See our [Web Design in Costa Mesa](/web-design/costa-mesa) and [Costa Mesa Local SEO](/local-seo/costa-mesa) pages.
+**Want specifics?** See our [Web Design in Costa Mesa](/web-design/costa-mesa/) and [Costa Mesa Local SEO](/local-seo/costa-mesa/) pages.
 
 ## What Makes Costa Mesa Different
 
 - **Design literacy is the norm.** Between the arts scene, the fashion retail cluster, and the creative industry presence, Costa Mesa customers notice typography, spacing, and photography the way other markets notice price. Dated design costs you credibility faster here.
-- **E-commerce is a local specialty.** Costa Mesa's independent brands — apparel, lifestyle, food — sell online as much as in person. Web design in this city often means commerce design; our [Costa Mesa e-commerce case study](/blog/2026-05-14-costa-mesa-ecommerce-seo-case-study) shows what the SEO side of that looks like.
+- **E-commerce is a local specialty.** Costa Mesa's independent brands — apparel, lifestyle, food — sell online as much as in person. Web design in this city often means commerce design; our [Costa Mesa e-commerce case study](/blog/2026-05-14-costa-mesa-ecommerce-seo-case-study/) shows what the SEO side of that looks like.
 - **Two markets, one city.** The South Coast Metro corporate corridor and the Eastside/Westside independent scene are different audiences. Where you sit — and who you serve — should shape the build.
 
 ## Costa Mesa Pricing Tiers in 2026
@@ -43,7 +43,7 @@ Custom design with genuine art direction: considered typography, strong photogra
 
 ### $8,000–$25,000+: E-commerce and brand-led builds
 
-Independent brands need full commerce builds: product systems, checkout optimization, email integration, and content that ranks for both local and non-local product searches (our [OC e-commerce design trends guide](/blog/ecommerce-website-design-orange-county-2026-trends) covers the current landscape). Design-led hospitality and multi-concept operators also land here. In commerce, conversion-rate improvements compound — this tier typically pays for itself in measurable revenue.
+Independent brands need full commerce builds: product systems, checkout optimization, email integration, and content that ranks for both local and non-local product searches (our [OC e-commerce design trends guide](/blog/ecommerce-website-design-orange-county-2026-trends/) covers the current landscape). Design-led hospitality and multi-concept operators also land here. In commerce, conversion-rate improvements compound — this tier typically pays for itself in measurable revenue.
 
 ## Where Costa Mesa Businesses Should Spend
 
@@ -57,4 +57,4 @@ Independent brands need full commerce builds: product systems, checkout optimiza
 
 Most Costa Mesa businesses should budget **$3,000–$8,000**, with e-commerce and brand-led builds investing more. In a city where customers can tell the difference between designed and decorated, the premium over a template isn't vanity — it's the cost of being taken seriously by the market you chose.
 
-**Get an exact quote:** Visit [Web Design in Costa Mesa](/web-design/costa-mesa) or [contact us](/contact) for a free consultation. We're an Orange County agency based in Lake Forest.
+**Get an exact quote:** Visit [Web Design in Costa Mesa](/web-design/costa-mesa/) or [contact us](/contact/) for a free consultation. We're an Orange County agency based in Lake Forest.

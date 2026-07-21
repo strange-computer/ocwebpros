@@ -22,37 +22,37 @@ draft: false
 
 South Orange County looks like one continuous suburb from the 5 freeway, but Google treats Lake Forest, Mission Viejo, Rancho Santa Margarita, Laguna Niguel, Aliso Viejo, and Laguna Hills as separate markets — because searchers do. A Mission Viejo family searching "orthodontist near me" gets different results than their friends two exits south, and the businesses that show up are the ones that built presence in each city deliberately.
 
-OCWebPros is based in Lake Forest, so this is the region we know street by street. Here's how the major South OC markets differ, and how to structure a presence that wins across them. (We wrote the same guide for [North OC](/blog/2026-07-06-north-orange-county-local-seo-guide) if you serve both ends of the county.)
+OCWebPros is based in Lake Forest, so this is the region we know street by street. Here's how the major South OC markets differ, and how to structure a presence that wins across them. (We wrote the same guide for [North OC](/blog/2026-07-06-north-orange-county-local-seo-guide/) if you serve both ends of the county.)
 
 ## Lake Forest: The Crossroads of South OC
 
 Our home base sits at the junction of the 5 and 241, pulling commuter and family traffic from every direction. Foothill Ranch, Baker Ranch, and the El Toro Road corridor each have distinct business clusters, and the city's mix of industrial parks and family neighborhoods means both B2B and consumer searches are strong. Home services, medical, and family-oriented businesses do especially well with neighborhood-level content here.
 
-**City pages:** [Lake Forest Local SEO](/local-seo/lake-forest) · [Web Design in Lake Forest](/web-design/lake-forest)
+**City pages:** [Lake Forest Local SEO](/local-seo/lake-forest/) · [Web Design in Lake Forest](/web-design/lake-forest/)
 
 ## Mission Viejo: The Professional Services Hub
 
-Mission Viejo is South OC's biggest residential market and its professional services capital — medical, dental, legal, and financial practices cluster around the Mission Hospital area and Crown Valley corridor. It's also the most review-driven market in the region: families here compare providers carefully, and Maps rankings hinge on review depth and recency. Our [Mission Viejo professional services guide](/blog/2026-05-15-mission-viejo-professional-services-seo) covers the playbook.
+Mission Viejo is South OC's biggest residential market and its professional services capital — medical, dental, legal, and financial practices cluster around the Mission Hospital area and Crown Valley corridor. It's also the most review-driven market in the region: families here compare providers carefully, and Maps rankings hinge on review depth and recency. Our [Mission Viejo professional services guide](/blog/2026-05-15-mission-viejo-professional-services-seo/) covers the playbook.
 
-**City pages:** [Mission Viejo Local SEO](/local-seo/mission-viejo) · [Web Design in Mission Viejo](/web-design/mission-viejo)
+**City pages:** [Mission Viejo Local SEO](/local-seo/mission-viejo/) · [Web Design in Mission Viejo](/web-design/mission-viejo/)
 
 ## Rancho Santa Margarita: The Community Market
 
-RSM is South OC's most tight-knit city — customers strongly prefer providers who feel genuinely local, and word-of-mouth carries further than anywhere else in the region. That makes it uniquely winnable: few RSM businesses have dedicated city pages or active review strategies, so the fundamentals produce fast movement. Full breakdown in our [RSM local SEO guide](/blog/2026-07-06-rancho-santa-margarita-local-seo-guide).
+RSM is South OC's most tight-knit city — customers strongly prefer providers who feel genuinely local, and word-of-mouth carries further than anywhere else in the region. That makes it uniquely winnable: few RSM businesses have dedicated city pages or active review strategies, so the fundamentals produce fast movement. Full breakdown in our [RSM local SEO guide](/blog/2026-07-06-rancho-santa-margarita-local-seo-guide/).
 
-**City pages:** [RSM Local SEO](/local-seo/rancho-santa-margarita) · [Web Design in RSM](/web-design/rancho-santa-margarita)
+**City pages:** [RSM Local SEO](/local-seo/rancho-santa-margarita/) · [Web Design in RSM](/web-design/rancho-santa-margarita/)
 
 ## Laguna Niguel: The Quiet High-Value Market
 
 Laguna Niguel pairs affluent households with surprisingly light local competition in many categories. Home services, wellness, and professional providers who build a real Laguna Niguel presence — city page, landmark references, local reviews — often find first-page positions attainable in months, in a customer base with South OC's strongest spending power.
 
-**City pages:** [Laguna Niguel Local SEO](/local-seo/laguna-niguel) · [Web Design in Laguna Niguel](/web-design/laguna-niguel)
+**City pages:** [Laguna Niguel Local SEO](/local-seo/laguna-niguel/) · [Web Design in Laguna Niguel](/web-design/laguna-niguel/)
 
 ## Aliso Viejo & Laguna Hills: The Border Cities
 
-These two are South OC's boundary-problem markets. Aliso Viejo's corporate centers and newer neighborhoods blend into Laguna Beach and Laguna Niguel searches; Laguna Hills' medical cluster around Saddleback Memorial serves patients from five cities. Businesses here need to claim their city explicitly — in schema, copy, and Google Business Profile — or Google associates them with a neighbor. Healthcare practices in Laguna Hills should also read our [healthcare SEO and HIPAA guide](/blog/2026-05-15-orange-county-healthcare-seo-hipaa).
+These two are South OC's boundary-problem markets. Aliso Viejo's corporate centers and newer neighborhoods blend into Laguna Beach and Laguna Niguel searches; Laguna Hills' medical cluster around Saddleback Memorial serves patients from five cities. Businesses here need to claim their city explicitly — in schema, copy, and Google Business Profile — or Google associates them with a neighbor. Healthcare practices in Laguna Hills should also read our [healthcare SEO and HIPAA guide](/blog/2026-05-15-orange-county-healthcare-seo-hipaa/).
 
-**City pages:** [Aliso Viejo Local SEO](/local-seo/aliso-viejo) · [Laguna Hills Local SEO](/local-seo/laguna-hills)
+**City pages:** [Aliso Viejo Local SEO](/local-seo/aliso-viejo/) · [Laguna Hills Local SEO](/local-seo/laguna-hills/)
 
 ## The South OC Regional Strategy
 
@@ -66,4 +66,4 @@ Customers here cross city lines daily — for work, school, and shopping along t
 
 The pattern across every South OC audit we run: demand is strong, competition is beatable, and most businesses simply haven't built city-level presence. The ones that do rank in three or four cities at once.
 
-**Based in South OC and want to own your cities?** [Contact us](/contact) for a free audit, or browse all our [Orange County service areas](/service-areas). We're your neighbors in Lake Forest — and we build city-specific SEO for all 24 OC cities.
+**Based in South OC and want to own your cities?** [Contact us](/contact/) for a free audit, or browse all our [Orange County service areas](/service-areas/). We're your neighbors in Lake Forest — and we build city-specific SEO for all 24 OC cities.

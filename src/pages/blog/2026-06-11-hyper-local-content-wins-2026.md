@@ -28,7 +28,7 @@ Google's local algorithms have grown incredibly precise. They don't just match a
 
 These are problem‑first, location‑second queries. And they're the ones that win clicks in 2026.
 
-The regional split matters too. [North Orange County](/blog/2026-07-06-north-orange-county-local-seo-guide) and [South Orange County](/blog/2026-07-06-south-orange-county-local-seo-guide) customers search differently — different landmarks, different commute patterns, different price sensitivity. A single "Orange County" page can't capture either market.
+The regional split matters too. [North Orange County](/blog/2026-07-06-north-orange-county-local-seo-guide/) and [South Orange County](/blog/2026-07-06-south-orange-county-local-seo-guide/) customers search differently — different landmarks, different commute patterns, different price sensitivity. A single "Orange County" page can't capture either market.
 
 ## How to Build Hyper‑Local Problem Pages
 
@@ -36,7 +36,7 @@ The regional split matters too. [North Orange County](/blog/2026-07-06-north-ora
    Use tools like Google Business Profile Insights, AnswerThePublic, and local Facebook groups to see what your actual neighbors are asking. Look for phrases that include "how to," "why is," "best way to," paired with local landmarks (e.g., "near the Irvine Spectrum," "off Jamboree Rd.").
 
 2. **Create Unique, Indexable Location Pages**
-   Don't just duplicate your service page and swap city names. Build a dedicated page for each neighborhood you serve, structured around the top 3‑5 problems you solve there. Include local references—nearby parks, schools, shopping centers—to ground the content geographically. Browse our [industry-specific guides](/industries) to see how different sectors frame neighborhood content.
+   Don't just duplicate your service page and swap city names. Build a dedicated page for each neighborhood you serve, structured around the top 3‑5 problems you solve there. Include local references—nearby parks, schools, shopping centers—to ground the content geographically. Browse our [industry-specific guides](/industries/) to see how different sectors frame neighborhood content.
 
 3. **Answer Concisely with Clear Headings**
    AI‑driven search extracts answers directly from your page. Use clear H2/H3 headings that mirror the question, then provide a straightforward, authoritative answer in the first paragraph. Keep paragraphs short and scannable.
@@ -45,7 +45,7 @@ The regional split matters too. [North Orange County](/blog/2026-07-06-north-ora
    Add LocalBusiness and FAQ schema to every hyper‑local page. This gives search engines explicit signals about your location, services, and the Q&A structure of your content, boosting visibility in AI Overviews and local packs.
 
 5. **Pair Content with a Site That Converts**
-   Hyper-local pages earn the click, but the website closes the deal. A dated or slow site disqualifies you during the comparison phase — especially in markets like Irvine where customers evaluate multiple providers. See our [Web Design in Irvine](/web-design/irvine) page and [web design services](/services/web-design) for what a conversion-ready local site looks like.
+   Hyper-local pages earn the click, but the website closes the deal. A dated or slow site disqualifies you during the comparison phase — especially in markets like Irvine where customers evaluate multiple providers. See our [Web Design in Irvine](/web-design/irvine/) page and [web design services](/services/web-design/) for what a conversion-ready local site looks like.
 
 ## Why It Works Now
 
@@ -65,4 +65,4 @@ Each example shares the same pattern: a real problem, a real neighborhood, and a
 
 Stop creating content for cities. Start creating content for neighborhoods and the specific problems people face there. In 2026, hyper‑local, problem‑focused pages aren't a nice‑to‑have—they're the only way to cut through the AI‑generated noise and connect with customers who are ready to hire.
 
-*Need help identifying the hyper‑local problems your ideal customers are searching for? [Contact OCWebPros](/contact) for a free neighborhood‑level content audit. We serve all 24 Orange County cities from our Lake Forest office.*
+*Need help identifying the hyper‑local problems your ideal customers are searching for? [Contact OCWebPros](/contact/) for a free neighborhood‑level content audit. We serve all 24 Orange County cities from our Lake Forest office.*

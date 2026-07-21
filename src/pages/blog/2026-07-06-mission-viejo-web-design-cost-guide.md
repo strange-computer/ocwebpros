@@ -23,7 +23,7 @@ draft: false
 
 Mission Viejo is South Orange County's largest residential market and its professional services hub — a city where dentists, orthodontists, family lawyers, tutors, and home services compete for the attention of careful, research-heavy families. Websites here don't need Silicon Valley flash. They need to be fast, credible, and easy for a busy parent to act on. This guide covers what that costs in 2026.
 
-**Want specifics?** See our [Web Design in Mission Viejo](/web-design/mission-viejo) and [Mission Viejo Local SEO](/local-seo/mission-viejo) pages.
+**Want specifics?** See our [Web Design in Mission Viejo](/web-design/mission-viejo/) and [Mission Viejo Local SEO](/local-seo/mission-viejo/) pages.
 
 ## How Mission Viejo Customers Decide
 
@@ -44,11 +44,11 @@ Custom design with the trust-and-friction fundamentals built in:
 - **Booking-friendly UX** — clear calls, online scheduling links, forms that work one-handed on a phone
 - **Fast Core Web Vitals** — parents research in stolen moments; slow sites lose them
 
-Most Mission Viejo dental, medical, legal, home services, and family-oriented businesses belong in this range. Our [Mission Viejo professional services guide](/blog/2026-05-15-mission-viejo-professional-services-seo) covers the SEO strategy that this tier's structure supports.
+Most Mission Viejo dental, medical, legal, home services, and family-oriented businesses belong in this range. Our [Mission Viejo professional services guide](/blog/2026-05-15-mission-viejo-professional-services-seo/) covers the SEO strategy that this tier's structure supports.
 
 ### $7,000–$15,000+: Multi-provider practices and competitive specialties
 
-Group practices needing provider bios and multi-location structure, orthodontics and cosmetic specialties competing in high-value categories, and businesses serving several South OC cities (which need a landing page per city — see our [South OC regional guide](/blog/2026-07-06-south-orange-county-local-seo-guide)) land in this range. The cost driver is content volume and competitive intensity, not visual extravagance.
+Group practices needing provider bios and multi-location structure, orthodontics and cosmetic specialties competing in high-value categories, and businesses serving several South OC cities (which need a landing page per city — see our [South OC regional guide](/blog/2026-07-06-south-orange-county-local-seo-guide/)) land in this range. The cost driver is content volume and competitive intensity, not visual extravagance.
 
 ## Where Mission Viejo Businesses Should Spend
 
@@ -62,4 +62,4 @@ Group practices needing provider bios and multi-location structure, orthodontics
 
 Most Mission Viejo businesses should budget **$2,500–$7,000**, with competitive specialties and multi-city practices investing more. Compare that against customer lifetime values — a family that stays with a dentist for a decade, a home services client who calls back for years — and the website pays for itself with a handful of new relationships.
 
-**Get an exact quote:** Visit [Web Design in Mission Viejo](/web-design/mission-viejo) or [contact us](/contact) for a free consultation. We're your neighbors in Lake Forest and build for Orange County businesses exclusively.
+**Get an exact quote:** Visit [Web Design in Mission Viejo](/web-design/mission-viejo/) or [contact us](/contact/) for a free consultation. We're your neighbors in Lake Forest and build for Orange County businesses exclusively.

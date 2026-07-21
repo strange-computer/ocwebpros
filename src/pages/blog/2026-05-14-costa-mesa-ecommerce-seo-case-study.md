@@ -23,7 +23,7 @@ When a boutique fashion retailer in Costa Mesa's South Coast Plaza area came to 
 
 This case study breaks down exactly what we did, why it worked specifically for Costa Mesa e-commerce, and how you can apply these strategies to your online business.
 
-**Hire us for Costa Mesa SEO:** See our [Local SEO Services in Costa Mesa](/local-seo/costa-mesa) and [Web Design in Costa Mesa](/web-design/costa-mesa) pages.
+**Hire us for Costa Mesa SEO:** See our [Local SEO Services in Costa Mesa](/local-seo/costa-mesa/) and [Web Design in Costa Mesa](/web-design/costa-mesa/) pages.
 
 ## Client Background: South Coast Plaza Area Fashion Retailer
 
@@ -349,8 +349,8 @@ Costa Mesa e-commerce requires specialized SEO strategies that bridge online sho
 
 **At OCWebPros, we specialize in Costa Mesa e-commerce SEO.** We understand the unique opportunities of the South Coast Plaza retail district, Orange County shopping behavior, and e-commerce technical requirements.
 
-[Book your free Costa Mesa E-commerce SEO audit](/contact) and we'll analyze your current online presence, identify local optimization opportunities, and create a customized strategy to help you dominate Costa Mesa search.
+[Book your free Costa Mesa E-commerce SEO audit](/contact/) and we'll analyze your current online presence, identify local optimization opportunities, and create a customized strategy to help you dominate Costa Mesa search.
 
 ---
 
-*About the author: This case study was created by the OCWebPros team based in Lake Forest, CA, serving Costa Mesa e-commerce businesses. We've helped dozens of Orange County online retailers achieve dramatic growth through targeted local SEO. Questions about Costa Mesa e-commerce SEO? [Contact us](/contact).*
+*About the author: This case study was created by the OCWebPros team based in Lake Forest, CA, serving Costa Mesa e-commerce businesses. We've helped dozens of Orange County online retailers achieve dramatic growth through targeted local SEO. Questions about Costa Mesa e-commerce SEO? [Contact us](/contact/).*

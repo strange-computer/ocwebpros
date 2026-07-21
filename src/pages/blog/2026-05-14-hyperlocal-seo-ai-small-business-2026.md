@@ -30,7 +30,7 @@ In this guide, we’ll break down exactly what hyperlocal SEO means in the age o
 
 Hyperlocal SEO is the practice of optimizing your digital presence for **neighborhood‑level or even street‑level searches**. It targets customers who are searching within a tight geographic radius—often with urgent, high‑intent queries.
 
-Traditional local SEO might focus on city‑wide keywords (“lawyer in Irvine”). Hyperlocal SEO goes deeper: “personal injury lawyer near South Coast Plaza,” “divorce attorney in Woodbridge,” “car accident lawyer off the 405.” We build dedicated pages for cities like [Irvine](/local-seo/irvine) and [Fullerton](/local-seo/fullerton) that go neighborhood by neighborhood.
+Traditional local SEO might focus on city‑wide keywords (“lawyer in Irvine”). Hyperlocal SEO goes deeper: “personal injury lawyer near South Coast Plaza,” “divorce attorney in Woodbridge,” “car accident lawyer off the 405.” We build dedicated pages for cities like [Irvine](/local-seo/irvine/) and [Fullerton](/local-seo/fullerton/) that go neighborhood by neighborhood.
 
 ### Why Hyperlocal SEO Matters More in 2026
 
@@ -80,7 +80,7 @@ Each target neighborhood should have a dedicated page on your website. These pag
 - **Images & Videos** – Geotagged photos of your team working in that neighborhood. AI can read EXIF data and alt text.
 - **Internal Linking** – Link to your main service pages with descriptive anchor text (e.g., “Learn more about our full-service plumbing solutions”).
 
-> **Internal Link Opportunity:** Our [local SEO services](/services/local-seo) are designed to build hyperlocal landing pages that rank. See [local SEO pricing](/pricing#local-seo) for package details.
+> **Internal Link Opportunity:** Our [local SEO services](/services/local-seo/) are designed to build hyperlocal landing pages that rank. See [local SEO pricing](/pricing/#local-seo) for package details.
 
 ### Step 3: Optimize Your Google Business Profile for Neighborhoods
 
@@ -111,7 +111,7 @@ Creating neighborhood‑specific content at scale is challenging. AI tools can h
 - **Add Unique Insights** – AI can’t replicate firsthand experience. Include photos, customer stories, and local partnerships.
 - **Update Frequently** – AI rewards freshness. Schedule quarterly updates to each hyperlocal page.
 
-> **Internal Link Opportunity:** See our guide [AI‑First Local SEO for Orange County Businesses](/blog/2026-03-26-ai-first-local-seo-orange-county-2026) for more on combining AI with local optimization.
+> **Internal Link Opportunity:** See our guide [AI‑First Local SEO for Orange County Businesses](/blog/2026-03-26-ai-first-local-seo-orange-county-2026/) for more on combining AI with local optimization.
 
 ### Step 6: Monitor AI Search Visibility
 
@@ -144,8 +144,8 @@ AI is making local search more granular, more intent‑driven, and more competit
 4. **Start building hyperlocal citations** and encourage neighborhood‑focused reviews.
 5. **Monitor AI Overviews** for your target queries and adjust accordingly.
 
-If you need help implementing a hyperlocal SEO strategy, OCWebPros offers [SEO strategy services](/services/seo-strategy) and [local SEO packages](/services/local-seo) tailored to small businesses. Browse our [service areas](/service-areas) to see which Orange County cities we cover, or check [pricing](/pricing#local-seo) for plan details. We combine AI‑driven research with hands‑on optimization to help you dominate neighborhood search in 2026.
+If you need help implementing a hyperlocal SEO strategy, OCWebPros offers [SEO strategy services](/services/seo-strategy/) and [local SEO packages](/services/local-seo/) tailored to small businesses. Browse our [service areas](/service-areas/) to see which Orange County cities we cover, or check [pricing](/pricing/#local-seo) for plan details. We combine AI‑driven research with hands‑on optimization to help you dominate neighborhood search in 2026.
 
 ---
 
-*Ready to dominate hyperlocal search? [Contact OCWebPros today](/contact) for a free hyperlocal SEO audit.*
+*Ready to dominate hyperlocal search? [Contact OCWebPros today](/contact/) for a free hyperlocal SEO audit.*

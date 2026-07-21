@@ -18,7 +18,7 @@ draft: false
 
 **The first page of Google is no longer a list of links—it's a conversation.**
 
-Google's AI Overviews now appear for **84% of search queries**, up 58% year-over-year according to BrightEdge data from February 2025 through February 2026. For Orange County businesses—from Irvine tech firms to Newport Beach service providers—this shift changes the fundamental goal of [web design](/services/web-design) and SEO. You're no longer optimizing solely to rank #1. You're optimizing to **be cited** as a trusted source inside the AI-generated answer.
+Google's AI Overviews now appear for **84% of search queries**, up 58% year-over-year according to BrightEdge data from February 2025 through February 2026. For Orange County businesses—from Irvine tech firms to Newport Beach service providers—this shift changes the fundamental goal of [web design](/services/web-design/) and SEO. You're no longer optimizing solely to rank #1. You're optimizing to **be cited** as a trusted source inside the AI-generated answer.
 
 ## From Rankings to Citations: Why the Game Changed
 
@@ -30,7 +30,7 @@ Traditional SEO measured success in position and click-through rate. AI Overview
 
 Getting cited is now often more valuable than holding position 1 below the fold. A dental practice in Irvine that appears in an AI Overview for "root canal cost Orange County" may never get the click—but the patient remembers the name when they're ready to book. That brand imprint compounds.
 
-The strategic shift is clear: design and structure your site so AI crawlers can extract clear, authoritative answers. Our [Google SGE optimization guide](/blog/google-sge-ai-search-optimization-guide-2026) covers the full semantic framework; this post focuses on what that means for how you actually build the site.
+The strategic shift is clear: design and structure your site so AI crawlers can extract clear, authoritative answers. Our [Google SGE optimization guide](/blog/google-sge-ai-search-optimization-guide-2026/) covers the full semantic framework; this post focuses on what that means for how you actually build the site.
 
 ## Technical and Structural Requirements for AI-Ready Sites
 
@@ -58,7 +58,7 @@ Test every implementation with Google's Rich Results Test before launch.
 
 AI crawlers are speed-sensitive. Pages that load fast get crawled more deeply. Core Web Vitals—LCP, INP, CLS—remain ranking and trust signals. With **80% of AI searches happening on mobile**, mobile-first design isn't optional. It's the baseline.
 
-For a deeper dive on building sites specifically for AI citation, see our guide on [AI-ready web design for Google Overviews](/blog/2026-03-23-ai-ready-web-design-ai-overviews).
+For a deeper dive on building sites specifically for AI citation, see our guide on [AI-ready web design for Google Overviews](/blog/2026-03-23-ai-ready-web-design-ai-overviews/).
 
 ## Content Strategy: Write to Be Quoted
 
@@ -74,7 +74,7 @@ That second version is citable. The first is not.
 
 ### Freshness and Trust Signals
 
-AI prioritizes recent information—especially in health, finance, and technology. Add visible "Last updated" dates, refresh top pages quarterly, and cite authoritative external sources (industry studies, government data, recognized publications). Showcase author expertise with bios, credentials, and [case studies across industries](/industries).
+AI prioritizes recent information—especially in health, finance, and technology. Add visible "Last updated" dates, refresh top pages quarterly, and cite authoritative external sources (industry studies, government data, recognized publications). Showcase author expertise with bios, credentials, and [case studies across industries](/industries/).
 
 ## Measuring Success in an AI-First World
 
@@ -90,9 +90,9 @@ Tools like BrightEdge and Searchmetrics now offer AI-tracking features, but manu
 
 Web designers and SEOs must collaborate from day one—not bolt SEO onto a finished design. Layout, typography, heading hierarchy, schema implementation, and content structure should all serve two audiences: human visitors and AI crawlers.
 
-At OCWebPros, we build AI-ready websites for Orange County businesses across [healthcare, legal, hospitality, and professional services](/industries). Whether you need a new site or a retrofit of an existing one, our [web design](/services/web-design) and [AI consulting](/services/ai-consulting) teams work together so your site earns citations—not just clicks.
+At OCWebPros, we build AI-ready websites for Orange County businesses across [healthcare, legal, hospitality, and professional services](/industries/). Whether you need a new site or a retrofit of an existing one, our [web design](/services/web-design/) and [AI consulting](/services/ai-consulting/) teams work together so your site earns citations—not just clicks.
 
-**Ready to adapt?** Review our [pricing](/pricing) for transparent project ranges, or [contact us](/contact) for a free AI-readiness audit of your current site.
+**Ready to adapt?** Review our [pricing](/pricing/) for transparent project ranges, or [contact us](/contact/) for a free AI-readiness audit of your current site.
 
 ---
 

@@ -23,7 +23,7 @@ draft: false
 
 Yorba Linda consistently ranks among the wealthiest cities in America of its size — a community of homeowners who spend heavily on their properties, their families, and their professional services, and who research every provider before making a call. For local businesses, this is a market where local SEO isn't about volume. It's about showing up *and* looking hireable when the highest-value customers in Orange County are comparing options.
 
-**Want the direct route?** See our dedicated [Yorba Linda Local SEO](/local-seo/yorba-linda) and [Web Design in Yorba Linda](/web-design/yorba-linda) pages.
+**Looking to hire SEO in Yorba Linda?** See our dedicated [SEO Services in Yorba Linda](/local-seo/yorba-linda/) and [Web Design in Yorba Linda](/web-design/yorba-linda/) pages — or keep reading for the market playbook.
 
 ## How Yorba Linda Customers Search
 
@@ -50,7 +50,7 @@ In this market, every element that signals credibility earns its keep:
 - **Specifics:** years in business, licenses, insurance, guarantees, named neighborhoods you serve
 - **A premium website:** here more than anywhere in OC, a dated site reads as a dated business
 
-We wrote about why [trust signals have become the local SEO currency](/blog/2026-07-05-trust-signals-local-seo-2026) — Yorba Linda is the market where that's most literal.
+We wrote about why [trust signals have become the local SEO currency](/blog/2026-07-05-trust-signals-local-seo-2026/) — Yorba Linda is the market where that's most literal.
 
 ### 2. Create a dedicated Yorba Linda page
 
@@ -68,4 +68,4 @@ Case studies of actual Yorba Linda projects — with neighborhoods named and res
 
 Yorba Linda is a lower-volume, higher-value market. You won't see thousands of monthly searches per category — you'll see dozens to hundreds, each worth far more than the OC average. One ranked position in a home-services category here can carry a six-figure annual revenue impact, which is why the math on doing local SEO properly is easier in Yorba Linda than almost anywhere in the county.
 
-**Start with a free audit:** Visit [Yorba Linda Local SEO](/local-seo/yorba-linda) or [contact us](/contact). We're based in Lake Forest and serve businesses across all 24 Orange County cities.
+**Start with a free audit:** Visit [SEO Services in Yorba Linda](/local-seo/yorba-linda/) or [contact us](/contact/). We're based in Lake Forest and serve businesses across all 24 Orange County cities.

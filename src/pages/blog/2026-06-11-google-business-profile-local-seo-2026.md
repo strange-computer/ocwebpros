@@ -337,6 +337,6 @@ Remember: In 2026, your Google Business Profile **is** your digital storefront f
 
 ---
 
-**Need help with your Google Business Profile optimization?** OCWebPros offers comprehensive GBP audits and management for Orange County businesses. [Contact us](https://ocwebpros.com/contact) for a free profile review and customized optimization plan.
+**Need help with your Google Business Profile optimization?** OCWebPros offers comprehensive GBP audits and management for Orange County businesses. [Contact us](https://ocwebpros.com/contact/) for a free profile review and customized optimization plan.
 
 *OCWebPros is a Orange‑County‑based web development and digital marketing agency specializing in AI‑driven local SEO. We help Orange County businesses dominate local search through technical optimization and strategic content. Follow us on [LinkedIn](https://linkedin.com/company/ocwebpros) for more local SEO insights.*

@@ -145,7 +145,7 @@ We believe e‑commerce should feel local — even when it's digital.
 
 Ready to upgrade your Orange County e‑commerce presence? Get a **free e‑commerce audit** from OCWebPros. We'll evaluate your current site, identify the highest‑impact improvements, and provide a clear implementation plan.
 
-[Get Your Free E‑commerce Audit →](/contact)
+[Get Your Free E‑commerce Audit →](/contact/)
 
 ---
 

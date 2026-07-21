@@ -476,8 +476,8 @@ Contractor SEO in Orange County requires specialized expertise in service area b
 
 **At OCWebPros, we specialize in contractor SEO for Orange County home service businesses.** We understand the unique needs of plumbers, electricians, HVAC contractors, remodelers, and other service professionals.
 
-[Book your free Contractor SEO audit](/contact) and we'll analyze your current online presence, identify service area optimization opportunities, and create a customized strategy to help you dominate Orange County contractor search.
+[Book your free Contractor SEO audit](/contact/) and we'll analyze your current online presence, identify service area optimization opportunities, and create a customized strategy to help you dominate Orange County contractor search.
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County contractors. We've helped numerous home service businesses achieve dramatic growth through targeted SEO strategies. Questions about contractor SEO? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County contractors. We've helped numerous home service businesses achieve dramatic growth through targeted SEO strategies. Questions about contractor SEO? [Contact us](/contact/).*

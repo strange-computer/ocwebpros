@@ -22,7 +22,7 @@ While the AI industry obsesses over larger models and cloud APIs, a quiet revolu
 
 Imagine running a 14‑billion‑parameter language model on your MacBook Pro and seeing the first token appear in **under 10 seconds**. Or generating a 1024×1024 AI image in **3.8× less time** than last year's hardware. These aren't speculative benchmarks; they're the real‑world results of the M5’s Neural Accelerators and the MLX framework optimizations that arrived in March 2026.
 
-In this post, we'll unpack the M5's hardware and software innovations, translate the benchmarks into practical workflows for web agencies, and show how **OCWebPros** is already leveraging this local‑AI surge to deliver faster, cheaper, and more private AI‑powered [web design](/services/web-design) to Orange County businesses. For the broader infrastructure context, read our [AI infrastructure race analysis](/blog/2026-03-23-ai-infrastructure-race-orange-county-businesses).
+In this post, we'll unpack the M5's hardware and software innovations, translate the benchmarks into practical workflows for web agencies, and show how **OCWebPros** is already leveraging this local‑AI surge to deliver faster, cheaper, and more private AI‑powered [web design](/services/web-design/) to Orange County businesses. For the broader infrastructure context, read our [AI infrastructure race analysis](/blog/2026-03-23-ai-infrastructure-race-orange-county-businesses/).
 
 ## Part 1: M5 Chip Hardware Breakthroughs—Why 4× Faster AI Isn’t Marketing Hype
 
@@ -141,7 +141,7 @@ We now offer a **dedicated AI‑ready web design service** that includes:
 3. Integrated AI chat for site visitors (running locally on our infrastructure)
 4. Monthly AI‑content refresh using local LLMs
 
-See our full guide on [AI-ready web design for Google Overviews](/blog/2026-03-23-ai-ready-web-design-ai-overviews) and [AI consulting services](/services/ai-consulting) for details.
+See our full guide on [AI-ready web design for Google Overviews](/blog/2026-03-23-ai-ready-web-design-ai-overviews/) and [AI consulting services](/services/ai-consulting/) for details.
 
 ## Conclusion: The Future Is Local (and Faster)
 
@@ -154,7 +154,7 @@ The Apple M5 chip isn’t just a hardware refresh—it’s a **paradigm shift fo
 3. **Explore local AI tooling**—Cursor AI, FLUX image generation, private LLMs for client data
 4. **Plan your hardware upgrade**—if you’re on M1/M2, the M5’s 4× AI performance is worth the jump
 
-At OCWebPros, we're betting on local AI. The performance gains, cost savings, and privacy advantages are too significant to ignore. If you're an Orange County business looking to integrate AI without the cloud bills or data‑privacy worries, [reach out](/contact) for a consultation—or review our [pricing](/pricing) and [industry-specific solutions](/industries). We'll show you how the M5 revolution can transform your web presence.
+At OCWebPros, we're betting on local AI. The performance gains, cost savings, and privacy advantages are too significant to ignore. If you're an Orange County business looking to integrate AI without the cloud bills or data‑privacy worries, [reach out](/contact/) for a consultation—or review our [pricing](/pricing/) and [industry-specific solutions](/industries/). We'll show you how the M5 revolution can transform your web presence.
 
 ---
 

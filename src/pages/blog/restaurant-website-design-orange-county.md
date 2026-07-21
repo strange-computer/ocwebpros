@@ -179,7 +179,7 @@ We believe your website should work as hard as your kitchen — bringing in cust
 
 Ready to transform your Orange County restaurant's online presence? Get a **free restaurant website audit** from OCWebPros. We'll evaluate your current site, identify opportunities, and provide a clear roadmap.
 
-[Get Your Free Restaurant Website Audit →](/contact)
+[Get Your Free Restaurant Website Audit →](/contact/)
 
 ---
 

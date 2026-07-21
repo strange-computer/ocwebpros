@@ -113,6 +113,6 @@ The businesses that embrace this shift—treating their GBP as their primary loc
 
 ---
 
-*Based on OCWebPros Local SEO Research (July 11, 2026) and analysis of AI‑driven local search trends. For a free GBP AI‑readiness audit, [contact our team](/contact).*
+*Based on OCWebPros Local SEO Research (July 11, 2026) and analysis of AI‑driven local search trends. For a free GBP AI‑readiness audit, [contact our team](/contact/).*
 
 *OCWebPros is a Lake Forest, CA‑based web design and SEO agency serving Orange County businesses with modern, AI‑ready digital strategies.*

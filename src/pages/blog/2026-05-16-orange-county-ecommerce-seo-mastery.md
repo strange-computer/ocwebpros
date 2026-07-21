@@ -585,8 +585,8 @@ Orange County offers unparalleled opportunities for e-commerce businesses that u
 
 **At OCWebPros, we specialize in Orange County e-commerce SEO.** We understand local platform optimization, mobile commerce strategies, pickup/delivery SEO, and high-value market positioning. Our strategies are designed specifically for Orange County's sophisticated e-commerce landscape.
 
-[Book your free Orange County e-commerce SEO audit](/contact) and we'll analyze your current online presence, identify local optimization opportunities, and create a customized strategy to help you dominate Orange County e-commerce search.
+[Book your free Orange County e-commerce SEO audit](/contact/) and we'll analyze your current online presence, identify local optimization opportunities, and create a customized strategy to help you dominate Orange County e-commerce search.
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County e-commerce businesses. We've helped numerous online retailers achieve search dominance in one of California's most competitive e-commerce markets. Questions about Orange County e-commerce SEO? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County e-commerce businesses. We've helped numerous online retailers achieve search dominance in one of California's most competitive e-commerce markets. Questions about Orange County e-commerce SEO? [Contact us](/contact/).*

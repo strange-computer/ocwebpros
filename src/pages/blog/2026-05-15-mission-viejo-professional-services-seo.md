@@ -25,7 +25,7 @@ If you're a professional service provider in Mission Viejo, you're operating in 
 
 At OCWebPros, we've helped numerous Mission Viejo professionals achieve local search dominance by leveraging the community's unique characteristics. This guide covers everything you need to know about Mission Viejo-specific professional services SEO.
 
-**Ready to hire a Mission Viejo SEO partner?** Visit our [Local SEO Services in Mission Viejo](/local-seo/mission-viejo) page for plans, FAQs, and a free audit.
+**Ready to hire a Mission Viejo SEO partner?** Visit our [Local SEO Services in Mission Viejo](/local-seo/mission-viejo/) page for plans, FAQs, and a free audit.
 
 ## Why Mission Viejo Professional SEO is Different
 
@@ -459,8 +459,8 @@ Mission Viejo offers unique opportunities for professionals who understand maste
 
 **At OCWebPros, we specialize in Mission Viejo professional services SEO.** We understand village-specific optimization, affluent demographic targeting, and professional community networking in Orange County's largest master-planned community. Our strategies are designed specifically for Mission Viejo's unique professional market.
 
-[Book your free Mission Viejo professional SEO audit](/contact) and we'll analyze your current online presence, identify master-planned community opportunities, and create a customized strategy to help you dominate Mission Viejo search.
+[Book your free Mission Viejo professional SEO audit](/contact/) and we'll analyze your current online presence, identify master-planned community opportunities, and create a customized strategy to help you dominate Mission Viejo search.
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Mission Viejo professionals. We've helped numerous attorneys, financial advisors, consultants, and medical providers achieve search dominance in Orange County's premier master-planned community. Questions about Mission Viejo professional SEO? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Mission Viejo professionals. We've helped numerous attorneys, financial advisors, consultants, and medical providers achieve search dominance in Orange County's premier master-planned community. Questions about Mission Viejo professional SEO? [Contact us](/contact/).*

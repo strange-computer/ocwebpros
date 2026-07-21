@@ -23,7 +23,7 @@ If you're running a business in Tustin, you're operating in one of Orange County
 
 At OCWebPros, we've helped Tustin businesses navigate this changing landscape to achieve local search dominance. This guide covers everything you need to know about Tustin-specific SEO.
 
-**Ready to hire a Tustin SEO partner?** Visit our [Local SEO Services in Tustin](/local-seo/tustin) and [Web Design in Tustin](/web-design/tustin) pages.
+**Ready to hire a Tustin SEO partner?** Visit our [Local SEO Services in Tustin](/local-seo/tustin/) and [Web Design in Tustin](/web-design/tustin/) pages.
 
 ## Why Tustin SEO is Different
 
@@ -451,8 +451,8 @@ Tustin offers dynamic opportunities for businesses that understand its district 
 
 **At OCWebPros, we specialize in Tustin business SEO.** We understand Legacy Field optimization, district-specific strategies, development timeline alignment, and growth market positioning. Our strategies are designed specifically for Tustin's evolving business landscape.
 
-[Book your free Tustin business SEO audit](/contact) and we'll analyze your current online presence, identify district development opportunities, and create a customized strategy to help you dominate Tustin search.
+[Book your free Tustin business SEO audit](/contact/) and we'll analyze your current online presence, identify district development opportunities, and create a customized strategy to help you dominate Tustin search.
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Tustin businesses. We've helped numerous companies achieve search dominance in Orange County's fastest-growing business markets. Questions about Tustin SEO? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Tustin businesses. We've helped numerous companies achieve search dominance in Orange County's fastest-growing business markets. Questions about Tustin SEO? [Contact us](/contact/).*

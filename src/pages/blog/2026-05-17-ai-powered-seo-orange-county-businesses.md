@@ -62,4 +62,4 @@ The future of local search is conversational, visual, and intelligent. Is your O
 
 ---
 
-*OCWebPros specializes in AI‑powered SEO and web design for Orange County businesses. [Contact us](/contact) for a free AI‑search audit of your online presence.*
+*OCWebPros specializes in AI‑powered SEO and web design for Orange County businesses. [Contact us](/contact/) for a free AI‑search audit of your online presence.*

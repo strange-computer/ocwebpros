@@ -54,4 +54,4 @@ If a new customer is worth $2,000 to your business and your website brings in 3 
 
 We build custom websites for Orange County small businesses — fast, mobile-first, designed to rank and convert. Based right here in Lake Forest, CA, we work directly with you (no ticket queues, no overseas handoffs).
 
-Curious what a site would cost for your specific business? [Get a free quote →](/contact)
+Curious what a site would cost for your specific business? [Get a free quote →](/contact/)

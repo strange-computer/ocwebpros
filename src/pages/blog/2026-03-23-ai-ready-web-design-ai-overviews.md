@@ -134,4 +134,4 @@ When you design for AI crawlers, you’re not abandoning human visitors. You’r
 
 The AI‑search revolution isn’t coming. It’s here. The brands that adapt their web design today will own the answer‑engine landscape tomorrow.
 
-*Need help building a site that AI cites? [Contact OCWebPros](https://ocwebpros.com/contact) for a custom AI‑readiness audit.*
+*Need help building a site that AI cites? [Contact OCWebPros](https://ocwebpros.com/contact/) for a custom AI‑readiness audit.*

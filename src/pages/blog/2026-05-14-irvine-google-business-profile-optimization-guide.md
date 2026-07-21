@@ -25,7 +25,7 @@ If you're running a business in Irvine and not showing up when people search for
 
 At OCWebPros, we've helped hundreds of Irvine businesses optimize their Google Business Profiles (GBP) to dominate local search. In this guide, we'll share our exact Irvine-specific strategies that get businesses ranking at the top of Google.
 
-**Looking to hire an Irvine local SEO agency?** See our dedicated [Local SEO Services in Irvine](/local-seo/irvine) page for pricing, process, and a free audit.
+**Looking to hire an Irvine local SEO agency?** See our dedicated [Local SEO Services in Irvine](/local-seo/irvine/) page for pricing, process, and a free audit.
 
 ## Why Irvine GBP Optimization is Different
 
@@ -390,8 +390,8 @@ Your Google Business Profile is your #1 asset for Irvine local search visibility
 
 **At OCWebPros, we specialize in Irvine GBP optimization.** We understand that businesses in the Business Complex need different strategies than those near UCI or in the Spectrum area.
 
-[Book your free Irvine GBP audit](/contact) and we'll analyze your current presence, identify Irvine-specific opportunities, and create a customized optimization plan to get you ranking at the top of local search.
+[Book your free Irvine GBP audit](/contact/) and we'll analyze your current presence, identify Irvine-specific opportunities, and create a customized optimization plan to get you ranking at the top of local search.
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Irvine businesses. We've helped hundreds of Irvine companies optimize their Google Business Profiles for maximum local search visibility. Questions about Irvine GBP optimization? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Irvine businesses. We've helped hundreds of Irvine companies optimize their Google Business Profiles for maximum local search visibility. Questions about Irvine GBP optimization? [Contact us](/contact/).*

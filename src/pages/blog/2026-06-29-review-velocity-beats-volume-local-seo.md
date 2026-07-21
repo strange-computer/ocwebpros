@@ -24,7 +24,7 @@ In 2026, a quiet but profound shift is reshaping how Google evaluates local busi
 
 For years, businesses chased the five‑star badge and the 100‑review milestone. The logic was simple: more reviews meant more social proof, which meant higher rankings. That's no longer true. Google's local ranking algorithm now places a heavier emphasis on *when* you received your reviews, and *how consistently* you receive them.
 
-This shift ties directly into the broader [trust signals](/blog/2026-07-05-trust-signals-local-seo-2026) framework that now governs local search. AI-driven systems don't just count stars — they evaluate whether your business looks active, responsive, and credible *right now*.
+This shift ties directly into the broader [trust signals](/blog/2026-07-05-trust-signals-local-seo-2026/) framework that now governs local search. AI-driven systems don't just count stars — they evaluate whether your business looks active, responsive, and credible *right now*.
 
 ## What Changed?
 
@@ -36,9 +36,9 @@ Orange County markets make this especially visible. In competitive cities like I
 
 Review velocity—the pace at which you acquire new reviews—is now a stronger ranking factor than total volume. This makes sense from a user‑experience perspective. When someone searches for "best plumber near me," they don't just want a plumber who was great three years ago; they want a plumber who is great *right now*. A steady flow of recent reviews is the clearest public indicator of current quality and reliability.
 
-Your [Google Business Profile](/blog/2026-07-11-google-business-profile-primary-homepage-ai-local-search) is where this signal lives. AI Overviews and local packs pull review data directly from GBP, weighting recency alongside rating and response patterns. A profile that hasn't earned a new review in six months looks dormant — even if the star average is perfect.
+Your [Google Business Profile](/blog/2026-07-11-google-business-profile-primary-homepage-ai-local-search/) is where this signal lives. AI Overviews and local packs pull review data directly from GBP, weighting recency alongside rating and response patterns. A profile that hasn't earned a new review in six months looks dormant — even if the star average is perfect.
 
-For a deeper look at how this plays out across Orange County, see our [July 2026 local SEO guide on AI Overviews and review velocity](/blog/2026-07-02-orange-county-local-seo-ai-overviews-review-velocity).
+For a deeper look at how this plays out across Orange County, see our [July 2026 local SEO guide on AI Overviews and review velocity](/blog/2026-07-02-orange-county-local-seo-ai-overviews-review-velocity/).
 
 ## The Practical Shift
 
@@ -54,12 +54,12 @@ For local businesses, this means a fundamental change in strategy:
 
 ## Review Velocity in Orange County
 
-We see the velocity gap most clearly in South OC, where affluent customers research thoroughly before hiring. A contractor in [Lake Forest](/local-seo/lake-forest) with 60 reviews and 8 new ones this month will often outrank a competitor with 180 reviews and nothing since last fall. The customer behavior matches the algorithm: people want proof you're still delivering.
+We see the velocity gap most clearly in South OC, where affluent customers research thoroughly before hiring. A contractor in [Lake Forest](/local-seo/lake-forest/) with 60 reviews and 8 new ones this month will often outrank a competitor with 180 reviews and nothing since last fall. The customer behavior matches the algorithm: people want proof you're still delivering.
 
-If you're not sure where your review cadence stands, start with a GBP audit. Our [local SEO services](/services/local-seo) include review strategy, response templates, and monthly velocity tracking. See [local SEO pricing](/pricing#local-seo) for package details.
+If you're not sure where your review cadence stands, start with a GBP audit. Our [local SEO services](/services/local-seo/) include review strategy, response templates, and monthly velocity tracking. See [local SEO pricing](/pricing/#local-seo) for package details.
 
 ## The Bottom Line
 
 The game is no longer about amassing a huge pile of reviews. It's about maintaining a healthy, consistent pulse of customer feedback. In 2026, a business that earns 8 new reviews each month will likely outrank a competitor with twice as many total reviews but no recent activity. Focus on the rhythm, not just the number.
 
-**Want a review velocity audit?** [Contact us](/contact) for a free GBP review. We're based in Lake Forest and serve all 24 Orange County cities.
+**Want a review velocity audit?** [Contact us](/contact/) for a free GBP review. We're based in Lake Forest and serve all 24 Orange County cities.

@@ -23,7 +23,7 @@ If you're running a business in Anaheim and struggling with local search visibil
 
 At OCWebPros, we've helped hundreds of Anaheim businesses build citations that drive real results. In this guide, we'll show you exactly how to do it right—and what mistakes to avoid.
 
-**Need Anaheim local SEO help?** See our [Local SEO Services in Anaheim](/local-seo/anaheim) page for a full audit and city-specific strategy.
+**Need Anaheim local SEO help?** See our [Local SEO Services in Anaheim](/local-seo/anaheim/) page for a full audit and city-specific strategy.
 
 ## Why Anaheim Citations Are Different
 
@@ -445,8 +445,8 @@ Citation building isn't about quantity—it's about quality, consistency, and An
 
 **At OCWebPros, we specialize in Anaheim citation building.** We understand the unique needs of Disneyland-area businesses, convention services, Anaheim manufacturers, and local service providers.
 
-[Book your free Anaheim citation audit](/contact) and we'll analyze your current citation profile, identify Anaheim-specific opportunities, and create a customized citation building plan to improve your local search rankings.
+[Book your free Anaheim citation audit](/contact/) and we'll analyze your current citation profile, identify Anaheim-specific opportunities, and create a customized citation building plan to improve your local search rankings.
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Anaheim businesses. We've helped hundreds of Anaheim companies build citations that drive real local search results. Questions about Anaheim citation building? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Anaheim businesses. We've helped hundreds of Anaheim companies build citations that drive real local search results. Questions about Anaheim citation building? [Contact us](/contact/).*

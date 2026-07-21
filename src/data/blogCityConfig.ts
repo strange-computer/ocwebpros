@@ -11,8 +11,8 @@ export const blogCityConfig: Record<string, CityBlogConfig> = Object.fromEntries
     city.slug,
     {
       name: city.name,
-      localSeoPath: `/local-seo/${city.slug}`,
-      webDesignPath: `/web-design/${city.slug}`,
+      localSeoPath: `/local-seo/${city.slug}/`,
+      webDesignPath: `/web-design/${city.slug}/`,
     },
   ])
 );

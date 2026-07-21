@@ -25,7 +25,7 @@ If you're operating a tourism-related business in Anaheim, you're working in one
 
 At OCWebPros, we've helped numerous Anaheim tourism businesses achieve search dominance by leveraging the city's unique characteristics. This guide covers everything you need to know about Anaheim-specific tourism SEO.
 
-**Looking to hire an Anaheim local SEO agency?** See our dedicated [Local SEO Services in Anaheim](/local-seo/anaheim) and [Web Design in Anaheim](/web-design/anaheim) pages for pricing, process, and a free audit.
+**Looking to hire an Anaheim local SEO agency?** See our dedicated [Local SEO Services in Anaheim](/local-seo/anaheim/) and [Web Design in Anaheim](/web-design/anaheim/) pages for pricing, process, and a free audit.
 
 ## Why Anaheim Tourism SEO is Different
 
@@ -514,8 +514,8 @@ Anaheim offers unparalleled opportunities for tourism businesses that understand
 
 **At OCWebPros, we specialize in Anaheim tourism and convention SEO.** We understand Disneyland proximity optimization, convention center area marketing, resort district dynamics, and seasonal tourism patterns. Our strategies are designed specifically for Anaheim's unique tourism ecosystem.
 
-[Book your free Anaheim tourism SEO audit](/contact) and we'll analyze your current online presence, identify Disneyland/convention opportunities, and create a customized strategy to help you dominate Anaheim search.
+[Book your free Anaheim tourism SEO audit](/contact/) and we'll analyze your current online presence, identify Disneyland/convention opportunities, and create a customized strategy to help you dominate Anaheim search.
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Anaheim tourism businesses. We've helped numerous hotels, restaurants, and services achieve search dominance in Orange County's tourism capital. Questions about Anaheim tourism SEO? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Anaheim tourism businesses. We've helped numerous hotels, restaurants, and services achieve search dominance in Orange County's tourism capital. Questions about Anaheim tourism SEO? [Contact us](/contact/).*

@@ -62,4 +62,4 @@ Those who ignore it will watch their competitors capture the attention of custom
 
 ---
 
-*OCWebPros helps Orange County businesses leverage video and AI‑powered SEO to dominate local search. [Contact us](/contact) for a free video‑SEO audit of your online presence.*
+*OCWebPros helps Orange County businesses leverage video and AI‑powered SEO to dominate local search. [Contact us](/contact/) for a free video‑SEO audit of your online presence.*

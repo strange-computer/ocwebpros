@@ -32,27 +32,27 @@ Anaheim is OC's tourism capital and one of its biggest residential markets at th
 
 - **Tourism-adjacent businesses** compete for visitor queries with hotel chains and national franchises — mobile speed and destination content decide these
 - **Resident-facing businesses** win with neighborhood-specific pages (Anaheim Hills searches differently than Downtown) and review depth
-- Citation accuracy matters unusually much here; see our [Anaheim citation building guide](/blog/2026-05-14-anaheim-citation-building-guide)
+- Citation accuracy matters unusually much here; see our [Anaheim citation building guide](/blog/2026-05-14-anaheim-citation-building-guide/)
 
-**City pages:** [Anaheim Local SEO](/local-seo/anaheim) · [Web Design in Anaheim](/web-design/anaheim)
+**City pages:** [Anaheim Local SEO](/local-seo/anaheim/) · [Web Design in Anaheim](/web-design/anaheim/)
 
 ## Fullerton: Downtown and the University
 
-Fullerton's market splits between the downtown dining/nightlife district and the Cal State Fullerton student economy — two audiences with different search patterns and seasonality. Downtown businesses benefit from SOCO District and Harbor Boulevard references; student-oriented services need to survive the summer demand trough. Our full [Fullerton local SEO guide](/blog/2026-05-14-fullerton-local-seo-guide) covers both.
+Fullerton's market splits between the downtown dining/nightlife district and the Cal State Fullerton student economy — two audiences with different search patterns and seasonality. Downtown businesses benefit from SOCO District and Harbor Boulevard references; student-oriented services need to survive the summer demand trough. Our full [Fullerton local SEO guide](/blog/2026-05-14-fullerton-local-seo-guide/) covers both.
 
-**City pages:** [Fullerton Local SEO](/local-seo/fullerton) · [Web Design in Fullerton](/web-design/fullerton)
+**City pages:** [Fullerton Local SEO](/local-seo/fullerton/) · [Web Design in Fullerton](/web-design/fullerton/)
 
 ## Brea: The Retail Destination
 
-Brea Mall and the Birch Street downtown pull shoppers from across the region — including LA County. That regional gravity means Brea rankings capture customers from far beyond city limits, and it means you compete against national mall tenants with corporate SEO budgets. Landmark-anchored content and category-precise Google Business Profiles win here. Full breakdown in our [Brea local SEO guide](/blog/2026-07-06-brea-local-seo-guide).
+Brea Mall and the Birch Street downtown pull shoppers from across the region — including LA County. That regional gravity means Brea rankings capture customers from far beyond city limits, and it means you compete against national mall tenants with corporate SEO budgets. Landmark-anchored content and category-precise Google Business Profiles win here. Full breakdown in our [Brea local SEO guide](/blog/2026-07-06-brea-local-seo-guide/).
 
-**City pages:** [Brea Local SEO](/local-seo/brea) · [Web Design in Brea](/web-design/brea)
+**City pages:** [Brea Local SEO](/local-seo/brea/) · [Web Design in Brea](/web-design/brea/)
 
 ## Yorba Linda: The Trust Market
 
-OC's most affluent large city is a high-consideration, low-impulse market: fewer searches, dramatically higher customer value, and buyers who vet every provider. Reviews, real photography, and premium web presentation aren't differentiators in Yorba Linda — they're the entry fee. Our [Yorba Linda guide](/blog/2026-07-06-yorba-linda-local-seo-guide) covers the full trust stack.
+OC's most affluent large city is a high-consideration, low-impulse market: fewer searches, dramatically higher customer value, and buyers who vet every provider. Reviews, real photography, and premium web presentation aren't differentiators in Yorba Linda — they're the entry fee. Our [Yorba Linda guide](/blog/2026-07-06-yorba-linda-local-seo-guide/) covers the full trust stack.
 
-**City pages:** [Yorba Linda Local SEO](/local-seo/yorba-linda) · [Web Design in Yorba Linda](/web-design/yorba-linda)
+**City pages:** [Yorba Linda Local SEO](/local-seo/yorba-linda/) · [Web Design in Yorba Linda](/web-design/yorba-linda/)
 
 ## The Regional Strategy That Works
 
@@ -66,4 +66,4 @@ If you serve multiple North OC cities, the structure is consistent:
 
 Businesses that build this structure rank in three or four cities simultaneously. Businesses with one "North Orange County" page rank in none — the search results in each city go to whoever bothered to show up for it specifically.
 
-**Serving North OC and not ranking there?** [Contact us](/contact) for a free audit, or browse all our [Orange County service areas](/service-areas). We're based in Lake Forest and build city-specific SEO for all 24 OC cities.
+**Serving North OC and not ranking there?** [Contact us](/contact/) for a free audit, or browse all our [Orange County service areas](/service-areas/). We're based in Lake Forest and build city-specific SEO for all 24 OC cities.

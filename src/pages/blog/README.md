@@ -47,7 +47,7 @@ More content here. You can use:
 - Bullet points
 - **Bold text**
 - *Italic text*
-- [Links](/contact)
+- [Links](/contact/)
 - `code snippets`
 
 ## Another Section
@@ -66,7 +66,7 @@ Wrap up with key takeaways and a call to action.
 
 ---
 
-**Need help with [topic]?** [Get in touch](/contact) to discuss your goals.
+**Need help with [topic]?** [Get in touch](/contact/) to discuss your goals.
 ```
 
 ## Frontmatter Field Guide

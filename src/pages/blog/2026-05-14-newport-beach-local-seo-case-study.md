@@ -23,7 +23,7 @@ When a high-end concierge service in Newport Beach came to us, they were struggl
 
 This case study breaks down exactly what we did, why it worked for the Newport Beach luxury market, and how you can apply these strategies to your business.
 
-**Hire us for Newport Beach local SEO:** See our [Local SEO Services in Newport Beach](/local-seo/newport-beach) page for plans and a free audit.
+**Hire us for Newport Beach local SEO:** See our [Local SEO Services in Newport Beach](/local-seo/newport-beach/) page for plans and a free audit.
 
 ## Client Background: Newport Beach Concierge Service
 
@@ -322,8 +322,8 @@ Newport Beach luxury markets require specialized SEO strategies. What works for 
 
 **At OCWebPros, we specialize in Newport Beach luxury market SEO.** We understand the nuances of Newport Coast, Corona del Mar, Balboa Island, and other Newport Beach neighborhoods.
 
-[Book your free Newport Beach SEO audit](/contact) and we'll analyze your current presence, identify Newport Beach-specific opportunities, and create a customized strategy to help you dominate Newport Beach search.
+[Book your free Newport Beach SEO audit](/contact/) and we'll analyze your current presence, identify Newport Beach-specific opportunities, and create a customized strategy to help you dominate Newport Beach search.
 
 ---
 
-*About the author: This case study was created by the OCWebPros team based in Lake Forest, CA, serving Newport Beach businesses. We've helped dozens of Newport Beach luxury service providers achieve dramatic growth through targeted local SEO. Questions about Newport Beach SEO? [Contact us](/contact).*
+*About the author: This case study was created by the OCWebPros team based in Lake Forest, CA, serving Newport Beach businesses. We've helped dozens of Newport Beach luxury service providers achieve dramatic growth through targeted local SEO. Questions about Newport Beach SEO? [Contact us](/contact/).*

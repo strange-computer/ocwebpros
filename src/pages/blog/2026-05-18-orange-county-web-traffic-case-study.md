@@ -25,7 +25,7 @@ When an established dental practice in Irvine came to us, they were frustrated. 
 
 This Orange County web design case study breaks down exactly what we did, why it worked in Irvine's hyper‑competitive market, and how any local business in Orange County can apply these strategies to achieve similar local SEO results.
 
-**Hire us for Irvine local SEO:** See our [Local SEO Services in Irvine](/local-seo/irvine) page for plans and a free audit.
+**Hire us for Irvine local SEO:** See our [Local SEO Services in Irvine](/local-seo/irvine/) page for plans and a free audit.
 
 ## Client Background: Irvine Family Dental Practice
 
@@ -349,7 +349,7 @@ If you're running a business in Orange County and struggling to show up when you
 2. Identify immediate opportunities for traffic growth
 3. Provide a custom 90‑day strategy tailored to your Orange County market
 
-[Contact us today](/contact) to schedule your free audit and learn how we can help you achieve 347%+ traffic growth in the next 90 days.
+[Contact us today](/contact/) to schedule your free audit and learn how we can help you achieve 347%+ traffic growth in the next 90 days.
 
 ---
 

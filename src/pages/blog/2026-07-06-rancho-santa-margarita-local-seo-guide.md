@@ -25,7 +25,7 @@ If you run a business in Rancho Santa Margarita, you're operating in one of Oran
 
 At OCWebPros, we're based in neighboring Lake Forest — minutes from Central Park, Plano Trabuco Road, and the Mercado del Lago. This guide covers exactly what RSM businesses need to rank on Google Maps and organic search in 2026.
 
-**Looking to hire an RSM local SEO agency?** See our dedicated [Local SEO Services in Rancho Santa Margarita](/local-seo/rancho-santa-margarita) page for pricing, process, and a free audit.
+**Looking to hire an RSM local SEO agency?** See our dedicated [Local SEO Services in Rancho Santa Margarita](/local-seo/rancho-santa-margarita/) page for pricing, process, and a free audit.
 
 ## Why RSM Local SEO Is Different
 
@@ -54,7 +54,7 @@ Your site needs a page with:
 - FAQ section with schema markup
 - Internal links from your service areas hub and related blogs
 
-We built our own [RSM local SEO page](/local-seo/rancho-santa-margarita) using the same structure we recommend to clients.
+We built our own [RSM local SEO page](/local-seo/rancho-santa-margarita/) using the same structure we recommend to clients.
 
 ### 2. Google Business Profile Optimization
 
@@ -128,7 +128,7 @@ RSM is less competitive than Irvine, which means faster wins for businesses that
 | Competitive head terms (e.g., "plumber RSM") | 3–5 months |
 | Dominant Map Pack position | 4–6 months with reviews + GBP activity |
 
-Pair your local SEO with a [custom RSM website](/web-design/rancho-santa-margarita) for the fastest results.
+Pair your local SEO with a [custom RSM website](/web-design/rancho-santa-margarita/) for the fastest results.
 
 ## Next Steps for RSM Businesses
 
@@ -140,6 +140,6 @@ Pair your local SEO with a [custom RSM website](/web-design/rancho-santa-margari
 
 ---
 
-[Book your free RSM local SEO audit](/contact) and we'll analyze your current visibility, identify quick wins, and create a customized plan for Rancho Santa Margarita search dominance.
+[Book your free RSM local SEO audit](/contact/) and we'll analyze your current visibility, identify quick wins, and create a customized plan for Rancho Santa Margarita search dominance.
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA — minutes from Rancho Santa Margarita. Questions about RSM local SEO? [Contact us](/contact) or visit our [RSM local SEO services page](/local-seo/rancho-santa-margarita).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA — minutes from Rancho Santa Margarita. Questions about RSM local SEO? [Contact us](/contact/) or visit our [RSM local SEO services page](/local-seo/rancho-santa-margarita/).*

@@ -470,8 +470,8 @@ Legal SEO in Orange County requires specialized expertise in both SEO and legal 
 
 **At OCWebPros, we specialize in legal SEO for Orange County law firms.** We understand the unique needs of attorneys, the competitive Orange County legal market, and the critical importance of ethical compliance.
 
-[Book your free Legal SEO audit](/contact) and we'll analyze your current online presence, identify ethical optimization opportunities, and create a customized strategy to help you dominate Orange County legal search.
+[Book your free Legal SEO audit](/contact/) and we'll analyze your current online presence, identify ethical optimization opportunities, and create a customized strategy to help you dominate Orange County legal search.
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County law firms. We've helped multiple practices achieve significant growth through ethical SEO strategies. Questions about legal SEO? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County law firms. We've helped multiple practices achieve significant growth through ethical SEO strategies. Questions about legal SEO? [Contact us](/contact/).*

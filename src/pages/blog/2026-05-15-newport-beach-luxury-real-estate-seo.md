@@ -531,8 +531,8 @@ Newport Beach offers unparalleled opportunities for luxury real estate professio
 
 **At OCWebPros, we specialize in Newport Beach luxury real estate SEO.** We understand the nuances of Harbor properties, Peninsula positioning, Lido Isle exclusivity, and Newport Coast luxury. Our strategies are designed specifically for high-net-worth markets and exclusive communities.
 
-[Book your free Newport Beach luxury real estate SEO audit](/contact) and we'll analyze your current online presence, identify luxury market opportunities, and create a customized strategy to help you dominate Newport Beach search.
+[Book your free Newport Beach luxury real estate SEO audit](/contact/) and we'll analyze your current online presence, identify luxury market opportunities, and create a customized strategy to help you dominate Newport Beach search.
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County luxury real estate professionals. We've helped numerous Newport Beach agents and brokers achieve search dominance in one of California's most competitive luxury markets. Questions about Newport Beach luxury real estate SEO? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange County luxury real estate professionals. We've helped numerous Newport Beach agents and brokers achieve search dominance in one of California's most competitive luxury markets. Questions about Newport Beach luxury real estate SEO? [Contact us](/contact/).*

@@ -23,7 +23,7 @@ If you're running a business in Orange, California, you face one of the most uni
 
 At OCWebPros, we've helped numerous Orange businesses overcome the name confusion and achieve local search dominance. This guide covers everything you need to know about Orange-specific SEO.
 
-**Hire us for Orange, CA local SEO:** See our [Local SEO Services in Orange](/local-seo/orange) and [Web Design in Orange](/web-design/orange) pages.
+**Hire us for Orange, CA local SEO:** See our [Local SEO Services in Orange](/local-seo/orange/) and [Web Design in Orange](/web-design/orange/) pages.
 
 ## Why Orange SEO is Different
 
@@ -410,8 +410,8 @@ Orange, California presents unique SEO challenges, but also unique opportunities
 
 **At OCWebPros, we specialize in Orange, CA SEO.** We understand the challenges of Old Towne historic district optimization, Chapman University area marketing, and overcoming the general "Orange" search confusion.
 
-[Book your free Orange SEO audit](/contact) and we'll analyze your current online presence, identify Orange-specific opportunities, and create a customized strategy to help you dominate Orange search.
+[Book your free Orange SEO audit](/contact/) and we'll analyze your current online presence, identify Orange-specific opportunities, and create a customized strategy to help you dominate Orange search.
 
 ---
 
-*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange businesses. We've helped numerous Orange companies overcome the unique "Orange" search challenge and achieve local search dominance. Questions about Orange SEO? [Contact us](/contact).*
+*About the author: This guide was created by the OCWebPros team based in Lake Forest, CA, serving Orange businesses. We've helped numerous Orange companies overcome the unique "Orange" search challenge and achieve local search dominance. Questions about Orange SEO? [Contact us](/contact/).*
