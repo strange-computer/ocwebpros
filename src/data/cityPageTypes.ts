@@ -18,6 +18,8 @@ export interface CityServicePageData {
   challenges: string[];
   services: { title: string; description: string }[];
   whyUs: string[];
+  /** Neighborhood-named deliverables — how we work in this city (no fake case studies) */
+  localProof?: string[];
   blogSlug?: string;
   blogTitle?: string;
   faqs: CityFaq[];

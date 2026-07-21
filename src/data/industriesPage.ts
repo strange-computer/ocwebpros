@@ -60,6 +60,7 @@ export const industrySectors: IndustrySector[] = [
     webDesignPath: '/services/web-design/',
     localSeoPath: '/services/local-seo/',
     pricingAnchor: '#local-seo',
+    hubPath: '/industries/legal/',
   },
   {
     id: 'restaurants',
@@ -79,6 +80,7 @@ export const industrySectors: IndustrySector[] = [
     webDesignPath: '/services/web-design/',
     localSeoPath: '/services/local-seo/',
     pricingAnchor: '#web-design',
+    hubPath: '/industries/restaurants/',
   },
   {
     id: 'healthcare',

@@ -1,0 +1,192 @@
+---
+import MainLayout from '../../../layouts/MainLayout.astro';
+import SpotlightImage from '../../../components/SpotlightImage.astro';
+import {
+  industryCityPages,
+  getIndustryCityPage,
+  cityProofStrip,
+  meshLinksForIndustry,
+} from '../../../data/industryCityPages';
+import type { MeshIndustrySlug } from '../../../data/industryMesh';
+
+export function getStaticPaths() {
+  return industryCityPages.map((page) => ({
+    params: { industry: page.industry, city: page.citySlug },
+  }));
+}
+
+const { industry, city } = Astro.params;
+const page = getIndustryCityPage(industry!, city!);
+if (!page) {
+  throw new Error(`Unknown industry×city: ${industry}/${city}`);
+}
+
+const siteUrl = Astro.site || new URL(Astro.url.origin);
+const pageUrl = new URL(`/industries/${page.industry}/${page.citySlug}/`, siteUrl).toString();
+const sisterMesh = meshLinksForIndustry(page.industry as MeshIndustrySlug).filter(
+  (l) => !l.href.includes(`/${page.citySlug}/`)
+);
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: page.h1,
+  description: page.description,
+  url: pageUrl,
+  provider: {
+    '@type': 'LocalBusiness',
+    '@id': siteUrl.toString() + '#business',
+    name: 'OCWebPros',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Lake Forest',
+      addressRegion: 'CA',
+      postalCode: '92630',
+      addressCountry: 'US',
+    },
+    telephone: '+1-949-329-4437',
+  },
+  areaServed: {
+    '@type': 'City',
+    name: page.cityName,
+    containedInPlace: { '@type': 'State', name: 'California' },
+  },
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: page.faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+  })),
+};
+---
+
+<MainLayout
+  title={page.metaTitle}
+  description={page.description}
+  bodyClass="page-industries page-industry-city"
+  pageCSS="/css/pages/industries.css"
+>
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} slot="head" />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head" />
+
+  <header class="relative pt-32 sm:pt-32 md:pt-40 pb-12 sm:pb-16 px-4 sm:px-6 text-center overflow-hidden">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[90vw] max-w-[800px] h-[400px] sm:h-[500px] md:h-[600px] glow-bg pointer-events-none opacity-40"></div>
+    <div class="max-w-5xl mx-auto relative">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-xs font-medium text-orange-400 mb-6">
+        <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+        {page.badge} · {page.cityName}
+      </div>
+      <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4 text-slate-900">{page.h1}</h1>
+      <p class="text-slate-600 text-lg leading-relaxed max-w-3xl mx-auto">{page.heroSubtitle}</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+        <a href="/contact/" class="px-8 py-3.5 bg-orange-700 text-white font-semibold rounded-full hover:bg-orange-600 transition-colors btn-glow text-sm md:text-base">
+          Get a Free Audit
+        </a>
+        <a href="/pricing/" class="px-8 py-3.5 bg-slate-100 text-slate-900 font-semibold rounded-full border border-slate-200 hover:bg-slate-100 transition-colors text-sm md:text-base">
+          View Pricing
+        </a>
+      </div>
+      <dl class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto text-left">
+        {cityProofStrip.map((item) => (
+          <div class="rounded-xl border border-slate-200 bg-white/80 px-4 py-3">
+            <dt class="text-[11px] uppercase tracking-wide text-slate-500 font-medium">{item.label}</dt>
+            <dd class="text-sm font-semibold text-slate-900 mt-0.5">{item.value}</dd>
+          </div>
+        ))}
+      </dl>
+      <p class="mt-6 text-sm text-slate-500">
+        <a href={`/industries/${page.industry}/`} class="text-orange-400 hover:text-orange-300 transition-colors">← {page.badge} hub</a>
+        <span class="mx-2">·</span>
+        <a href={`/local-seo/${page.citySlug}/`} class="text-orange-400 hover:text-orange-300 transition-colors">{page.cityName} local SEO</a>
+      </p>
+    </div>
+  </header>
+
+  <main class="pb-16 sm:pb-24 px-4 sm:px-6 md:px-8">
+    <section class="max-w-4xl mx-auto pt-8 pb-12">
+      {page.intro.map((paragraph) => (
+        <p class="text-slate-700 text-lg leading-relaxed mb-6">{paragraph}</p>
+      ))}
+    </section>
+
+    <section class="max-w-7xl mx-auto pt-4 pb-16 px-4 sm:px-6">
+      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        <SpotlightImage
+          class="order-1"
+          aos="fade-left"
+          src="/images/unsplash/services-local-seo.jpg"
+          alt={`${page.h1} for Orange County businesses`}
+        />
+        <div class="w-full md:w-1/2 backdrop-blur-[12px] bg-slate-100 border border-slate-200 rounded-2xl p-6 sm:p-8 md:p-10 order-2" data-aos="fade-right">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-slate-900">What we deliver in {page.cityName}</h2>
+          <ul class="space-y-5">
+            {page.deliverables.map((item) => (
+              <li>
+                <h3 class="text-base font-bold text-slate-900 mb-1">{item.title}</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">{item.body}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto py-16 px-4 sm:px-6 md:px-8 bg-slate-50 border-y border-slate-100">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-slate-900 text-center">{page.cityName} areas we cover</h2>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 max-w-4xl mx-auto">
+        {page.neighborhoods.map((area) => (
+          <li class="flex items-start gap-2 text-sm text-slate-700">
+            <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0"></span>
+            <span>{area}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="max-w-7xl mx-auto py-16 px-4 sm:px-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6 text-slate-900 text-center">Related pages</h2>
+      <div class="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
+        <a href={`/industries/${page.industry}/`} class="px-4 py-2 rounded-full bg-orange-700 text-white text-sm font-medium hover:bg-orange-600 transition-colors">
+          {page.badge} hub
+        </a>
+        <a href={`/local-seo/${page.citySlug}/`} class="px-4 py-2 rounded-full bg-slate-100 border border-slate-200 text-sm font-medium text-slate-800 hover:border-orange-300 transition-colors">
+          SEO {page.cityName}
+        </a>
+        <a href={`/web-design/${page.citySlug}/`} class="px-4 py-2 rounded-full bg-slate-100 border border-slate-200 text-sm font-medium text-slate-800 hover:border-orange-300 transition-colors">
+          Web Design {page.cityName}
+        </a>
+        {sisterMesh.slice(0, 6).map((link) => (
+          <a href={link.href} class="px-4 py-2 rounded-full bg-slate-100 border border-slate-200 text-sm font-medium text-slate-800 hover:border-orange-300 transition-colors">
+            {link.label}
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="max-w-3xl mx-auto py-16 px-4 sm:px-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-slate-900 text-center">FAQ</h2>
+      <div class="space-y-6">
+        {page.faqs.map((faq) => (
+          <div class="border-b border-slate-200 pb-6">
+            <h3 class="text-lg font-bold text-slate-900 mb-2">{faq.question}</h3>
+            <p class="text-slate-600 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="max-w-3xl mx-auto text-center py-12 px-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4 text-slate-900">Ready to grow in {page.cityName}?</h2>
+      <p class="text-slate-600 mb-8 leading-relaxed">
+        Request a free audit. We’ll show where you stand in Maps and organic — and what to fix first.
+      </p>
+      <a href="/contact/" class="inline-flex px-8 py-3.5 bg-orange-700 text-white font-semibold rounded-full hover:bg-orange-600 transition-colors btn-glow text-sm md:text-base">
+        Contact OCWebPros
+      </a>
+    </section>
+  </main>
+</MainLayout>

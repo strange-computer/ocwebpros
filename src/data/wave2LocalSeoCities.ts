@@ -1,0 +1,438 @@
+import type { CityServicePageData } from './cityPageTypes';
+import { baseFaqs, citySeoServices } from './priorityLocalSeoCities';
+
+/** Wave-2 GSC impression leaders upgraded to Irvine-class uniqueness. */
+export const wave2LocalSeoCities: CityServicePageData[] = [
+  {
+    slug: 'orange',
+    name: 'Orange',
+    shortName: 'Orange',
+    badge: 'Historic Plaza City',
+    title: 'SEO Services in Orange, CA | Local SEO Agency | OCWebPros',
+    description:
+      'Looking for SEO in Orange? Local SEO for Old Towne Plaza, Chapman University, and Circle-area businesses — GBP, Maps, city pages. Free audit. Lake Forest-based.',
+    heroSubtitle:
+      'Hire SEO for Orange that speaks Old Towne and Chapman — not a generic Orange County dump page.',
+    intro: [
+      'If you searched for SEO Orange or local SEO Orange CA, this is the commercial home to hire from. Old Towne Plaza tourism and Chapman University student demand create two search behaviors that one county-wide page cannot cover.',
+      'OCWebPros helps Orange businesses win Maps and organic with dedicated city pages, active GBP profiles, and review systems built for Plaza retailers, contractors, and professional practices.',
+    ],
+    marketInsight:
+      'Plaza landmarks and the university community drive distinct queries. Businesses that only say "Orange County" lose to competitors that name the Circle, Chapman, and Glassell corridors.',
+    neighborhoods: [
+      'Old Towne Orange & Plaza',
+      'Orange Circle area',
+      'Chapman University vicinity',
+      'The Village at Orange',
+      'Tustin Street corridor',
+      'Katella & Glassell',
+    ],
+    businessTypes: [
+      'Old Towne restaurants & antique shops',
+      'Chapman-area student services',
+      'Medical & dental practices',
+      'Auto services & repair',
+      'Home contractors & remodeling',
+      'Professional & legal services',
+    ],
+    challenges: [
+      'Historic district businesses slow to adopt digital marketing',
+      'Student market requires different messaging than residential',
+      'Competition from surrounding Anaheim, Tustin, and Santa Ana',
+      'Many businesses rely on foot traffic without online investment',
+    ],
+    services: citySeoServices('Orange'),
+    whyUs: [
+      'City pages that reference Plaza and Chapman — not just the city name',
+      'Lake Forest-based team with same-day Orange County response',
+      'Plans from $500/mo with no long-term contracts',
+      'Web design + local SEO under one roof',
+    ],
+    localProof: [
+      'Plaza and Circle landmark content that reinforces Orange city association',
+      'Dual messaging for tourist-facing retail and Chapman-area services',
+      'GBP hygiene so Orange listings are not swallowed by Anaheim competitors',
+    ],
+    blogSlug: '2026-05-15-orange-city-seo-strategy',
+    blogTitle: 'Orange City SEO Strategy Guide',
+    faqs: baseFaqs('Orange', 'Old Towne Plaza, the Circle, and Chapman University'),
+  },
+  {
+    slug: 'santa-ana',
+    name: 'Santa Ana',
+    shortName: 'Santa Ana',
+    badge: 'County Seat & Largest City',
+    title: 'SEO Services in Santa Ana, CA | Local SEO Agency | OCWebPros',
+    description:
+      'Looking for SEO in Santa Ana? Local SEO for downtown, Civic Center, and Bristol corridor businesses — bilingual-aware, Maps-ready. Free audit. Lake Forest-based.',
+    heroSubtitle:
+      'OC’s largest city needs neighborhood-level SEO — not one page hoping to rank for everything.',
+    intro: [
+      'If you searched for SEO Santa Ana or local SEO Santa Ana, hire here. Dense downtown, Civic Center, and neighborhood corridors create intense competition plus bilingual search intent that generic sites miss.',
+      'OCWebPros builds Santa Ana visibility with dedicated city pages, GBP optimization, and review systems for restaurants, professional services, and community-facing businesses.',
+    ],
+    marketInsight:
+      'English and Spanish queries both matter. Downtown Artists Village search behavior differs from Bristol Street retail and residential corridors — claim the right neighborhoods on-page and on Maps.',
+    neighborhoods: [
+      'Downtown Santa Ana & Artists Village',
+      'Civic Center & government district',
+      'Logan & French Park',
+      'South Coast Metro border',
+      'Bristol Street corridor',
+      'First Street & Ross',
+    ],
+    businessTypes: [
+      'Restaurants & taquerias',
+      'Government contractors',
+      'Non-profits & community services',
+      'Legal & professional services',
+      'Medical & dental',
+      'Retail & auto services',
+    ],
+    challenges: [
+      'Largest OC market means intense competition in every category',
+      'Multilingual search intent (English and Spanish queries)',
+      'Many established businesses with minimal digital presence',
+      'Distinct downtown vs. neighborhood search patterns',
+    ],
+    services: citySeoServices('Santa Ana'),
+    whyUs: [
+      'Strategies that respect bilingual and neighborhood intent',
+      'City pages built for hire queries — not blog-only shortcuts',
+      'Transparent pricing from $500/mo, Lake Forest-based',
+      'Same-day response across central OC',
+    ],
+    localProof: [
+      'Downtown vs. Bristol corridor page structure for distinct search intent',
+      'GBP and citation work that keeps Santa Ana association clear',
+      'Review systems for high-competition restaurant and professional categories',
+    ],
+    blogSlug: '2026-05-15-santa-ana-government-nonprofit-seo',
+    blogTitle: 'Santa Ana Government & Non-Profit SEO',
+    faqs: baseFaqs('Santa Ana', 'Artists Village, Civic Center, and Bristol Street'),
+  },
+  {
+    slug: 'costa-mesa',
+    name: 'Costa Mesa',
+    shortName: 'Costa Mesa',
+    badge: 'Retail & Creative District',
+    title: 'SEO Services in Costa Mesa, CA | Local SEO Agency | OCWebPros',
+    description:
+      'Looking for SEO in Costa Mesa? Local SEO for South Coast Plaza, The Camp, and Harbor Blvd businesses. Free audit. Lake Forest-based.',
+    heroSubtitle:
+      'Dense retail and creative competition — hire Costa Mesa SEO that names your corridors.',
+    intro: [
+      'If you searched for SEO Costa Mesa or Costa Mesa SEO company, this is the hire page. South Coast Plaza, The Camp, The Lab, and Harbor Blvd create commercial density where Maps visibility is extremely valuable.',
+      'OCWebPros helps Costa Mesa dining, retail, and service businesses with dedicated city pages, GBP, and conversion-ready sites.',
+    ],
+    marketInsight:
+      'E-commerce, dining, and service businesses compete in the same zip codes. Targeted pages beat one homepage trying to rank for every Costa Mesa query.',
+    neighborhoods: [
+      'South Coast Plaza & Metro Pointe',
+      'The Camp & The Lab',
+      '17th Street & Westside',
+      'Mesa Verde & College Park',
+      'Harbor Boulevard corridor',
+      'South Coast Metro',
+    ],
+    businessTypes: [
+      'Retail & e-commerce',
+      'Restaurants & nightlife',
+      'Creative agencies & studios',
+      'Auto services & dealerships',
+      'Medical & dental',
+      'Entertainment & events',
+    ],
+    challenges: [
+      'Dense commercial competition near South Coast Plaza',
+      'Mix of retail, dining, and service requires targeted pages',
+      'Many businesses lack e-commerce SEO alongside local SEO',
+      'High foot traffic area means Maps visibility is extremely valuable',
+    ],
+    services: citySeoServices('Costa Mesa'),
+    whyUs: [
+      'Corridor-level targeting for Harbor Blvd and South Coast Metro',
+      'Local SEO + web design for conversion on mobile',
+      'Plans from $500/mo with direct access',
+      'Lake Forest team — central OC coverage without offshore handoffs',
+    ],
+    localProof: [
+      'Pages that separate Plaza retail, Westside dining, and service-area intent',
+      'GBP optimization for high-foot-traffic commercial corridors',
+      'E-commerce and local SEO alignment when both matter',
+    ],
+    blogSlug: '2026-05-14-costa-mesa-ecommerce-seo-case-study',
+    blogTitle: 'Costa Mesa E-commerce SEO Case Study',
+    faqs: baseFaqs('Costa Mesa', 'South Coast Plaza, The Camp, and Harbor Blvd'),
+  },
+  {
+    slug: 'tustin',
+    name: 'Tustin',
+    shortName: 'Tustin',
+    badge: 'Historic & Growing City',
+    title: 'SEO Services in Tustin, CA | Local SEO Agency | OCWebPros',
+    description:
+      'Looking for SEO in Tustin? Local SEO for Old Town and Tustin Legacy — dual-market pages that win Maps. Free audit. Lake Forest-based.',
+    heroSubtitle:
+      'Old Town charm and Legacy growth need dual messaging — hire Tustin SEO that covers both.',
+    intro: [
+      'If you searched for SEO Tustin or local SEO Tustin, hire from this page. Historic Old Town and the expanding Legacy district attract different customers — one blurb fails both.',
+      'OCWebPros builds Tustin city pages, GBP systems, and review velocity for restaurants, auto, medical, and home services competing with adjacent Irvine.',
+    ],
+    marketInsight:
+      'Legacy newcomers and Old Town regulars search differently. Claim both markets on-site or Irvine competitors will.',
+    neighborhoods: [
+      'Old Town Tustin & Main Street',
+      'Tustin Legacy & The District',
+      'Jamboree Road corridor',
+      'Irvine Boulevard border',
+      'Enderle Center area',
+      'Pioneer Road & Walnut',
+    ],
+    businessTypes: [
+      'Restaurants & Old Town retail',
+      'Auto services & dealerships',
+      'Medical & dental practices',
+      'Home services & contractors',
+      'Professional services',
+      'Tech & corporate offices',
+    ],
+    challenges: [
+      'Dual-market messaging for Old Town vs. Legacy areas',
+      'Growing competition as Tustin Legacy expands',
+      'Many established businesses with outdated web presence',
+      'Competing with adjacent Irvine for search visibility',
+    ],
+    services: citySeoServices('Tustin'),
+    whyUs: [
+      'Dual Old Town / Legacy page strategies',
+      'Defense against Irvine spillover competition',
+      'Transparent plans from $500/mo',
+      'Lake Forest-based — local meetings when you need them',
+    ],
+    localProof: [
+      'Separate content paths for Main Street and The District / Legacy',
+      'GBP categories and services matched to both markets',
+      'Citation consistency as Tustin grows into new commercial zones',
+    ],
+    blogSlug: '2026-05-15-tustin-business-optimization',
+    blogTitle: 'Tustin Business Optimization Guide',
+    faqs: baseFaqs('Tustin', 'Old Town, Tustin Legacy, and The District'),
+  },
+  {
+    slug: 'dana-point',
+    name: 'Dana Point',
+    shortName: 'Dana Point',
+    badge: 'Harbor & Tourism Hub',
+    title: 'SEO Services in Dana Point, CA | Local SEO Agency | OCWebPros',
+    description:
+      'Looking for SEO in Dana Point? Local SEO for Harbor, Monarch Beach, and Capistrano Beach businesses. Free audit. Lake Forest-based.',
+    heroSubtitle:
+      'Harbor tourism and luxury service searches — hire Dana Point SEO built for both.',
+    intro: [
+      'If you searched for SEO Dana Point or Dana Point SEO company, this is the hire page. Harbor dining, marine services, and Monarch Beach luxury demand premium presentation and clear city association.',
+      'OCWebPros helps Dana Point businesses rank with dedicated pages, GBP tuned for harbor and residential intent, and review systems that convert high-value inquiries.',
+    ],
+    marketInsight:
+      'Tourist vs. resident queries differ. Capistrano Beach and Harbor businesses need year-round SEO — not summer-only posts.',
+    neighborhoods: [
+      'Dana Point Harbor',
+      'Lantern Bay & Strand',
+      'Monarch Beach',
+      'Capistrano Beach',
+      'Del Prado & Golden Lantern',
+      'Dana Hills area',
+    ],
+    businessTypes: [
+      'Marine & harbor businesses',
+      'Restaurants & waterfront dining',
+      'Hotels & hospitality',
+      'Real estate & luxury services',
+      'Charter & tour operators',
+      'Medical & wellness',
+    ],
+    challenges: [
+      'Luxury market demands premium website presentation',
+      'Heavy competition in harbor dining and marine services',
+      'Tourist vs. resident search intent requires dual targeting',
+      'Many harbor businesses with minimal online presence',
+    ],
+    services: citySeoServices('Dana Point'),
+    whyUs: [
+      'Harbor + residential dual targeting',
+      'Premium presentation standards for Monarch Beach markets',
+      'Plans from $500/mo with coastal OC coverage',
+      'Trailing-slash clean URLs and dedicated city pages',
+    ],
+    localProof: [
+      'Harbor and Capistrano Beach landmark content for Maps relevance',
+      'GBP photo and post systems for hospitality and marine categories',
+      'City pages that outrank thin coastal OC templates',
+    ],
+    blogSlug: '2026-05-15-laguna-beach-tourism-seo',
+    blogTitle: 'Laguna Beach Tourism SEO Guide',
+    faqs: baseFaqs('Dana Point', 'the Harbor, Monarch Beach, and Capistrano Beach'),
+  },
+  {
+    slug: 'san-clemente',
+    name: 'San Clemente',
+    shortName: 'San Clemente',
+    badge: 'Coastal Beach Town',
+    title: 'SEO Services in San Clemente, CA | Local SEO Agency | OCWebPros',
+    description:
+      'Looking for SEO in San Clemente? Local SEO for Pier, Avenida Del Mar, and Talega businesses. Free audit. Lake Forest-based.',
+    heroSubtitle:
+      'Visitor spikes and loyal locals — hire San Clemente SEO that works year-round.',
+    intro: [
+      'If you searched for SEO San Clemente or local SEO San Clemente, hire here. Pier tourism and Talega resident demand need both visitor and "near me" signals.',
+      'OCWebPros builds San Clemente city pages, GBP systems, and review velocity for restaurants, surf retail, hospitality, and home services.',
+    ],
+    marketInsight:
+      'Seasonal Pier searches spike; resident home-service and medical queries stay year-round. Neglecting off-season GBP activity costs rankings.',
+    neighborhoods: [
+      'San Clemente Pier & beach area',
+      'Avenida Del Mar downtown',
+      'Marblehead & Shorecliffs',
+      'Talega community',
+      'North Beach / Las Palmas',
+      'I-5 & Avenida Pico corridor',
+    ],
+    businessTypes: [
+      'Restaurants & beach cafes',
+      'Surf & outdoor retail',
+      'Vacation rentals & hospitality',
+      'Home services & contractors',
+      'Real estate & property',
+      'Health & wellness',
+    ],
+    challenges: [
+      'Seasonal tourism spikes require year-round SEO strategy',
+      'Competition from Dana Point and Laguna Beach coastal businesses',
+      'Many businesses neglect GBP during off-season months',
+      'Balancing tourist-facing and local-resident messaging',
+    ],
+    services: citySeoServices('San Clemente'),
+    whyUs: [
+      'Year-round coastal SEO calendars — not summer-only tactics',
+      'Pages that name Pier, Del Mar, and Talega',
+      'Transparent plans from $500/mo',
+      'South OC coverage from Lake Forest',
+    ],
+    localProof: [
+      'Pier and Avenida Del Mar content for visitor intent',
+      'Talega and residential Maps targeting for home services',
+      'Off-season GBP posting cadence to hold rankings',
+    ],
+    blogSlug: '2026-05-15-huntington-beach-surf-tourism-seo',
+    blogTitle: 'Surf & Tourism SEO Strategies for Coastal OC',
+    faqs: baseFaqs('San Clemente', 'the Pier, Avenida Del Mar, and Talega'),
+  },
+  {
+    slug: 'garden-grove',
+    name: 'Garden Grove',
+    shortName: 'Garden Grove',
+    badge: 'Vietnamese Business Hub',
+    title: 'SEO Services in Garden Grove, CA | Local SEO Agency | OCWebPros',
+    description:
+      'Looking for SEO in Garden Grove? Local SEO for Little Saigon, Brookhurst, and Garden Grove Blvd — bilingual-aware. Free audit. Lake Forest-based.',
+    heroSubtitle:
+      'Little Saigon density demands bilingual-aware local SEO — hire a team that gets it.',
+    intro: [
+      'If you searched for SEO Garden Grove or local SEO Garden Grove, this is the hire page. Little Saigon is one of the largest Vietnamese business districts outside Vietnam — culturally relevant content and Maps visibility are essential.',
+      'OCWebPros helps Garden Grove restaurants, salons, medical, and professional services with city pages, GBP, and citation systems built for this market.',
+    ],
+    marketInsight:
+      'English-only sites miss high-intent Vietnamese queries. Brookhurst density means review velocity and clear GBP categories decide the Map Pack.',
+    neighborhoods: [
+      'Little Saigon & Westminster border',
+      'Garden Grove Boulevard',
+      'Brookhurst Street corridor',
+      'Westminster Avenue area',
+      'Chapman Avenue & Harbor',
+      'Atlanta Avenue district',
+    ],
+    businessTypes: [
+      'Vietnamese restaurants & markets',
+      'Beauty salons & nail spas',
+      'Medical & dental practices',
+      'Auto repair & services',
+      'Retail & professional services',
+      'Home contractors',
+    ],
+    challenges: [
+      'Bilingual and culturally specific search behavior',
+      'Extremely dense restaurant and retail competition on Brookhurst',
+      'Many businesses with English-only websites missing Vietnamese queries',
+      'Competition from adjacent Westminster and Santa Ana',
+    ],
+    services: citySeoServices('Garden Grove'),
+    whyUs: [
+      'Bilingual-aware local SEO strategy for Little Saigon',
+      'City pages that compete on Brookhurst density',
+      'Plans from $500/mo with clear deliverables',
+      'Central OC coverage from Lake Forest',
+    ],
+    localProof: [
+      'GBP and content planning that respects bilingual search intent',
+      'Brookhurst and Garden Grove Blvd corridor targeting',
+      'Citation cleanup against Westminster border confusion',
+    ],
+    blogSlug: '2026-05-15-garden-grove-local-seo-guide',
+    blogTitle: 'Garden Grove Local SEO Guide',
+    faqs: baseFaqs('Garden Grove', 'Little Saigon, Brookhurst, and Garden Grove Blvd'),
+  },
+  {
+    slug: 'brea',
+    name: 'Brea',
+    shortName: 'Brea',
+    badge: 'North OC Retail Hub',
+    title: 'SEO Services in Brea, CA | Local SEO Agency | OCWebPros',
+    description:
+      'Looking for SEO in Brea? Local SEO for Brea Mall, downtown Birch Street, and North OC professionals. Free audit. Lake Forest-based.',
+    heroSubtitle:
+      'Mall anchors and downtown independents compete differently — hire Brea SEO that fits your side.',
+    intro: [
+      'If you searched for SEO Brea or local SEO Brea, hire here. Brea Mall national budgets and downtown Birch Street independents fight for the same North OC shoppers.',
+      'OCWebPros builds Brea city pages, GBP systems, and review velocity so local businesses are not outranked by Fullerton or Yorba Linda competitors.',
+    ],
+    marketInsight:
+      'Affluent suburban demographics expect polished sites. Many providers serve Brea without a dedicated city page — claiming Brea on-site is an advantage.',
+    neighborhoods: [
+      'Brea Mall & Brea Marketplace',
+      'Downtown Brea & Birch Street',
+      'Brea Imperial corridor',
+      'Olinda Village area',
+      'Carbon Canyon border',
+      'Imperial Highway corridor',
+    ],
+    businessTypes: [
+      'Retail & shopping center tenants',
+      'Restaurants & dining',
+      'Medical & dental',
+      'Professional services',
+      'Home remodeling & contractors',
+      'Fitness & wellness',
+    ],
+    challenges: [
+      'Competition from Brea Mall anchor tenants with national SEO budgets',
+      'Growing North OC tech-adjacent market with high design expectations',
+      'Many businesses serve Brea but lack dedicated city pages',
+      'Competing with Fullerton and Yorba Linda for overlapping searches',
+    ],
+    services: citySeoServices('Brea'),
+    whyUs: [
+      'North OC specialists who defend against Fullerton/YL spillover',
+      'City pages for Mall-adjacent and downtown Birch Street businesses',
+      'Transparent plans from $500/mo',
+      'Lake Forest-based team with same-day response',
+    ],
+    localProof: [
+      'Dedicated Brea landing pages so you are not only ranking under neighboring cities',
+      'GBP optimization for Mall and downtown Birch Street categories',
+      'Review systems matched to affluent North OC expectations',
+    ],
+    blogSlug: '2026-07-06-brea-local-seo-guide',
+    blogTitle: 'Brea Local SEO Guide',
+    faqs: baseFaqs('Brea', 'Brea Mall, downtown Birch Street, and Imperial Highway'),
+  },
+];

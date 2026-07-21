@@ -3,6 +3,7 @@ import MainLayout from '../layouts/MainLayout.astro';
 import SpotlightImage from './SpotlightImage.astro';
 import type { CityServicePageData } from '../data/cityPageTypes';
 import { cityProofStrip } from '../data/priorityLocalSeoCities';
+import { industryPathwayLinks } from '../data/industryMesh';
 
 type ServiceKind = 'local-seo' | 'web-design';
 
@@ -101,6 +102,7 @@ const cfg = config[serviceKind];
 const siteUrl = Astro.site || new URL(Astro.url.origin);
 const pageUrl = new URL(`/${cfg.path}/${city.slug}/`, siteUrl).toString();
 const otherCities = allCities.filter((c) => c.slug !== city.slug);
+const industryLinks = serviceKind === 'local-seo' ? industryPathwayLinks(city.slug) : [];
 
 const serviceSchema = {
   '@context': 'https://schema.org',
@@ -187,6 +189,20 @@ const faqSchema = {
       <p class="text-slate-600 text-base leading-relaxed border-l-2 border-orange-500/50 pl-6">{city.marketInsight}</p>
     </section>
 
+    {city.localProof && city.localProof.length > 0 && (
+      <section class="max-w-4xl mx-auto pb-12 px-4 sm:px-0">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-slate-900">How we work in {city.name}</h2>
+        <ul class="space-y-3">
+          {city.localProof.map((item) => (
+            <li class="flex items-start gap-3 text-slate-700">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span>
+              <span class="leading-relaxed">{item}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
     <section class="max-w-7xl mx-auto pt-4 md:pt-8 pb-16 md:pb-24 px-4 sm:px-6">
       <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
         <SpotlightImage class="order-1" aos="fade-left" src={cfg.spotlightSrc} alt={cfg.spotlightAlt(city.name)} />
@@ -249,6 +265,24 @@ const faqSchema = {
         ))}
       </div>
     </section>
+
+    {industryLinks.length > 0 && (
+      <section class="max-w-7xl mx-auto py-12 md:py-16 px-4 sm:px-6 md:px-8">
+        <div class="text-center mb-8" data-aos="fade-up">
+          <h2 class="text-2xl md:text-3xl font-bold mb-2 text-slate-900">Industry pathways for {city.name}</h2>
+          <p class="text-slate-600 text-sm md:text-base max-w-2xl mx-auto">
+            City pages win geography. Industry hubs and City×Industry pages win niche hire searches.
+          </p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-3">
+          {industryLinks.map((link) => (
+            <a href={link.href} class="px-4 py-2 rounded-full bg-slate-100 border border-slate-200 text-sm font-medium text-slate-800 hover:border-orange-300 hover:text-orange-600 transition-colors">
+              {link.label}
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
 
     <section class="max-w-7xl mx-auto py-16 md:py-20 px-4 sm:px-6 md:px-8">
       <div class="grid md:grid-cols-2 gap-8">

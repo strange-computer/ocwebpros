@@ -8,15 +8,23 @@ export const cityProofStrip = [
   { label: 'Contracts', value: 'None required' },
 ] as const;
 
-function baseFaqs(city: string, neighborhoodHint: string): CityServicePageData['faqs'] {
+export function baseFaqs(city: string, neighborhoodHint: string): CityServicePageData['faqs'] {
   return [
     {
       question: `How much does SEO cost for a ${city} business?`,
       answer: `OCWebPros local SEO plans start at $500/month for Google Business Profile management, citation monitoring, and technical upkeep. Growth plans at $1,250/month add ${city}-specific content, competitor analysis, and on-page optimization.`,
     },
     {
+      question: `Who is the best SEO company in ${city}?`,
+      answer: `The best fit is a Lake Forest-based team that builds dedicated ${city} pages, manages GBP weekly, and reports rankings honestly. OCWebPros focuses on Orange County hire-intent SEO — not overseas content mills.`,
+    },
+    {
       question: `How long does it take to rank for SEO in ${city}?`,
       answer: `Most ${city} businesses see measurable Maps movement within 60–90 days with consistent GBP activity, a dedicated city page, and review generation. Competitive categories can take 3–6 months for dominant organic positions.`,
+    },
+    {
+      question: `Is there affordable SEO for small businesses in ${city}?`,
+      answer: `Yes. Our entry local SEO plan starts at $500/mo with no long-term contract — built for ${city} service businesses that need Maps and organic visibility without enterprise pricing.`,
     },
     {
       question: `Do you need a ${city} office to rank locally?`,
@@ -33,7 +41,7 @@ function baseFaqs(city: string, neighborhoodHint: string): CityServicePageData['
   ];
 }
 
-function services(city: string): CityServicePageData['services'] {
+export function citySeoServices(city: string): CityServicePageData['services'] {
   return [
     {
       title: `Google Business Profile for ${city}`,
@@ -102,12 +110,17 @@ export const priorityLocalSeoCities: CityServicePageData[] = [
       'Many downtown businesses with thin GBP optimization',
       'Content that never references SOCO or Harbor landmarks',
     ],
-    services: services('Fullerton'),
+    services: citySeoServices('Fullerton'),
     whyUs: [
       'North OC coverage from Lake Forest — same-day meetings, no overseas handoffs',
       'We separate downtown, campus, and industrial intent instead of one generic Fullerton blurb',
       'Transparent plans from $500/mo with direct access to the people doing the work',
       'We build the city service pages we recommend — not blog-only shortcuts',
+    ],
+    localProof: [
+      'GBP and posts tuned for Harbor Blvd / SOCO dining and Cal State–adjacent services',
+      'Dedicated Fullerton landing pages for hire-intent SEO queries — not buried blog posts',
+      'Citation cleanup so Fullerton NAP does not drift into Brea or Anaheim listings',
     ],
     blogSlug: '2026-05-14-fullerton-local-seo-guide',
     blogTitle: 'Fullerton Local SEO Guide',
@@ -151,12 +164,17 @@ export const priorityLocalSeoCities: CityServicePageData[] = [
       'Medical spa and aesthetics competition',
       'Weak mobile experiences for visitors searching from the sand',
     ],
-    services: services('Huntington Beach'),
+    services: citySeoServices('Huntington Beach'),
     whyUs: [
       'Coastal OC coverage from Lake Forest with same-day response',
       'Campaigns that respect tourism seasonality without ignoring resident Maps demand',
       'Transparent pricing from $500/mo — no long-term contracts',
       'City pages + web design under one roof for conversion-ready sites',
+    ],
+    localProof: [
+      'Seasonal Pier / Main Street content calendars paired with year-round Harbour resident targeting',
+      'Mobile-first GBP photo and post systems for beach and medical-spa categories',
+      'City pages that name Pacific City, Seacliff, and Beach Blvd — not "coastal OC"',
     ],
     blogSlug: '2026-05-15-huntington-beach-surf-tourism-seo',
     blogTitle: 'Huntington Beach Surf & Tourism SEO',
@@ -200,12 +218,17 @@ export const priorityLocalSeoCities: CityServicePageData[] = [
       'Providers serving YL without a dedicated city page',
       'Overlap with Placentia, Brea, and Anaheim Hills competitors',
     ],
-    services: services('Yorba Linda'),
+    services: citySeoServices('Yorba Linda'),
     whyUs: [
       'North OC specialists who treat trust signals as ranking factors',
       'City pages that name East Lake Village and Bryant Ranch — not "all of OC"',
       'Plans from $500/mo with direct access — no account-manager maze',
       'Web design + local SEO so the site matches the market',
+    ],
+    localProof: [
+      'Trust-first page structure for affluent East Lake Village and Bryant Ranch homeowners',
+      'GBP presentation standards matched to Yorba Linda professional and home-service categories',
+      'Review velocity systems that compete with Placentia and Brea providers',
     ],
     blogSlug: '2026-07-06-yorba-linda-local-seo-guide',
     blogTitle: 'Yorba Linda Local SEO Guide',
@@ -249,12 +272,17 @@ export const priorityLocalSeoCities: CityServicePageData[] = [
       'Auto dealers with national SEO but weak local pages',
       'GBP listings drifting into neighboring cities',
     ],
-    services: services('Fountain Valley'),
+    services: citySeoServices('Fountain Valley'),
     whyUs: [
       'Central OC coverage that treats border competition as the main problem',
       'Citation and GBP cleanup that re-anchors Fountain Valley association',
       'Transparent monthly plans from $500 with no long-term contracts',
       'Lake Forest-based team — local meetings, fast turnaround',
+    ],
+    localProof: [
+      'Citation and GBP hygiene so FV businesses are not listed under HB or Santa Ana',
+      'Medical-corridor pages for Warner/Euclid and Mile Square Park service areas',
+      'Clear Fountain Valley signals on-site and on Maps for border-city competition',
     ],
     blogSlug: '2026-07-06-fountain-valley-local-seo-guide',
     blogTitle: 'Fountain Valley Local SEO Guide',
@@ -298,12 +326,17 @@ export const priorityLocalSeoCities: CityServicePageData[] = [
       'Businesses optimizing for tourists only',
       'National chains crowding Resort district Maps results',
     ],
-    services: services('Anaheim'),
+    services: citySeoServices('Anaheim'),
     whyUs: [
       'We plan for Resort vs. Hills intent instead of one Anaheim keyword dump',
       'Local team in Lake Forest — available for on-site reviews when it matters',
       'Plans from $500/mo with clear deliverables and no long-term lock-in',
       'Web design + SEO so visitor-facing sites convert on mobile',
+    ],
+    localProof: [
+      'Separate Resort / Convention and Anaheim Hills landing strategies',
+      'GBP category and service lists that match resident vs. tourism intent',
+      'Katella and Ball Road corridor content without ignoring Hills homeowners',
     ],
     blogSlug: '2026-05-15-anaheim-tourism-convention-seo',
     blogTitle: 'Anaheim Tourism & Convention SEO Guide',
@@ -347,12 +380,17 @@ export const priorityLocalSeoCities: CityServicePageData[] = [
       'National and regional brands competing locally',
       'Reputation management critical at premium price points',
     ],
-    services: services('Newport Beach'),
+    services: citySeoServices('Newport Beach'),
     whyUs: [
       'Presentation-first local SEO for markets that judge the website before the call',
       'City pages that speak Fashion Island and CdM — not generic "coastal OC"',
       'Transparent pricing and direct access from our Lake Forest office',
       'Pair with custom web design when the current site undercuts the brand',
+    ],
+    localProof: [
+      'Premium GBP photography and review response standards for Fashion Island / CdM',
+      'City pages that separate Peninsula, Newport Coast, and Mariners Mile intent',
+      'Web design + SEO so the site matches luxury coastal expectations',
     ],
     blogSlug: '2026-05-14-newport-beach-local-seo-case-study',
     blogTitle: 'Newport Beach Local SEO Case Study',

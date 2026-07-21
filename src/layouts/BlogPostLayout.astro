@@ -1,6 +1,7 @@
 ---
 import MainLayout from './MainLayout.astro';
 import { blogCityConfig } from '../data/blogCityConfig';
+import { isMeshCity } from '../data/industryMesh';
 
 const { frontmatter } = Astro.props;
 const {
@@ -23,6 +24,27 @@ const formattedDate = new Date(pubDate).toLocaleDateString('en-US', {
 const siteUrl = Astro.site || new URL(Astro.url.origin);
 const articleUrl = Astro.url.toString();
 const cityConfig = city ? blogCityConfig[city] : undefined;
+
+const titleLower = `${title} ${category ?? ''}`.toLowerCase();
+const industryCta = titleLower.includes('dental')
+  ? { href: '/industries/dental/', label: 'Dental SEO hub' }
+  : titleLower.includes('contractor') || titleLower.includes('hvac') || titleLower.includes('home service')
+    ? { href: '/industries/contractors/', label: 'Contractor SEO hub' }
+    : titleLower.includes('restaurant') || titleLower.includes('dining')
+      ? { href: '/industries/restaurants/', label: 'Restaurant SEO hub' }
+      : titleLower.includes('legal') || titleLower.includes('attorney') || titleLower.includes('law firm')
+        ? { href: '/industries/legal/', label: 'Legal SEO hub' }
+        : { href: '/industries/', label: 'Industry hubs' };
+
+const meshCta =
+  city &&
+  cityConfig &&
+  isMeshCity(city) &&
+  (titleLower.includes('dental') || titleLower.includes('contractor'))
+    ? titleLower.includes('dental')
+      ? { href: `/industries/dental/${city}/`, label: `Dental SEO in ${cityConfig.name}` }
+      : { href: `/industries/contractors/${city}/`, label: `Contractor SEO in ${cityConfig.name}` }
+    : null;
 
 const articleSchema = {
   '@context': 'https://schema.org',
@@ -141,12 +163,20 @@ const articleSchema = {
         <p class="text-slate-600 mb-6">
           This guide is for learning. When you want a team to run local SEO in {cityConfig.name}, use our dedicated service page — built for hire-intent searches.
         </p>
-        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <div class="flex flex-col sm:flex-row gap-3 justify-center flex-wrap">
           <a href={cityConfig.localSeoPath} class="px-8 py-3.5 bg-orange-700 text-white font-semibold rounded-full hover:bg-orange-600 transition-colors btn-glow">
             SEO Services in {cityConfig.name}
           </a>
           <a href={cityConfig.webDesignPath} class="px-8 py-3.5 bg-slate-100 text-slate-900 font-semibold rounded-full border border-slate-200 hover:bg-slate-100 transition-colors">
             Web Design in {cityConfig.name}
+          </a>
+          {meshCta && (
+            <a href={meshCta.href} class="px-8 py-3.5 bg-slate-100 text-slate-900 font-semibold rounded-full border border-slate-200 hover:bg-slate-100 transition-colors">
+              {meshCta.label}
+            </a>
+          )}
+          <a href={industryCta.href} class="px-8 py-3.5 bg-slate-100 text-slate-900 font-semibold rounded-full border border-slate-200 hover:bg-slate-100 transition-colors">
+            {industryCta.label}
           </a>
         </div>
       </div>
@@ -154,12 +184,15 @@ const articleSchema = {
       <div class="backdrop-blur-[12px] bg-slate-100 border border-slate-200 rounded-2xl p-8 text-center">
         <h2 class="text-2xl font-bold text-slate-900 mb-3">Ready to grow your business online?</h2>
         <p class="text-slate-600 mb-6">Let's build a website that ranks and converts.</p>
-        <div class="flex flex-col sm:flex-row gap-3 justify-center mb-4">
+        <div class="flex flex-col sm:flex-row gap-3 justify-center mb-4 flex-wrap">
           <a href="/contact/" class="px-8 py-3.5 bg-orange-700 text-white font-semibold rounded-full hover:bg-orange-600 transition-colors btn-glow">
             Request a consultation
           </a>
           <a href="/services/local-seo/" class="px-8 py-3.5 bg-slate-100 text-slate-900 font-semibold rounded-full border border-slate-200 hover:bg-slate-100 transition-colors">
             Local SEO services
+          </a>
+          <a href={industryCta.href} class="px-8 py-3.5 bg-slate-100 text-slate-900 font-semibold rounded-full border border-slate-200 hover:bg-slate-100 transition-colors">
+            {industryCta.label}
           </a>
         </div>
         <p class="text-xs text-slate-500">

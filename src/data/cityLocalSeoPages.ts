@@ -2,6 +2,7 @@ import { cityRegistry } from './cityRegistry';
 import { buildLocalSeoPage } from './cityPageBuilder';
 import type { CityServicePageData } from './cityPageTypes';
 import { priorityLocalSeoCities } from './priorityLocalSeoCities';
+import { wave2LocalSeoCities } from './wave2LocalSeoCities';
 
 export type CityLocalSeoPage = CityServicePageData;
 
@@ -82,6 +83,11 @@ const handCraftedLocalSeoPages: CityServicePageData[] = [
       'We practice what we preach: dedicated city pages, not blog-only SEO',
       'Plans from $500/mo with direct access to your SEO team',
     ],
+    localProof: [
+      'Hyper-local GBP and citation work for Foothill Ranch and El Toro Road businesses',
+      'City pages that claim Lake Forest association before Irvine competitors do',
+      'Same-day strategy sessions from our Lake Forest office — not a distant account manager',
+    ],
     blogSlug: 'local-seo-orange-county-small-business',
     blogTitle: 'Why Local SEO Matters for Orange County Small Businesses',
     faqs: [
@@ -89,6 +95,16 @@ const handCraftedLocalSeoPages: CityServicePageData[] = [
         question: 'How much does local SEO cost in Lake Forest?',
         answer:
           'OCWebPros local SEO plans start at $500/month for Google Business Profile management, citation monitoring, and technical upkeep. Most Lake Forest small businesses see strong ROI at this tier within 60–90 days.',
+      },
+      {
+        question: 'Who is the best SEO company in Lake Forest?',
+        answer:
+          'Look for a team based here that builds dedicated Lake Forest pages, posts to GBP weekly, and reports rankings clearly. OCWebPros is headquartered in Lake Forest and serves South OC with transparent plans from $500/mo.',
+      },
+      {
+        question: 'Is there affordable SEO for small businesses in Lake Forest?',
+        answer:
+          'Yes. Our $500/mo plan covers GBP, citations, and technical upkeep with no long-term contract — built for Lake Forest service businesses.',
       },
       {
         question: 'Why choose a Lake Forest-based SEO agency?',
@@ -188,6 +204,11 @@ const handCraftedLocalSeoPages: CityServicePageData[] = [
       'We build the city service pages we recommend to clients — not blog-only shortcuts',
       'Transparent monthly plans starting at $500/mo with no long-term contracts',
     ],
+    localProof: [
+      'Neighborhood-level pages and GBP signals for Woodbridge, Spectrum, and University Park',
+      'Competitive category strategies for medical, legal, and B2B tech in Irvine',
+      'Review and citation systems built for OC\'s toughest Map Pack',
+    ],
     blogSlug: '2026-05-14-irvine-google-business-profile-optimization-guide',
     blogTitle: 'Irvine Google Business Profile Optimization Guide',
     faqs: [
@@ -195,6 +216,16 @@ const handCraftedLocalSeoPages: CityServicePageData[] = [
         question: 'How much does local SEO cost for an Irvine business?',
         answer:
           'OCWebPros local SEO plans start at $500/month for ongoing Google Business Profile management, citation upkeep, and technical monitoring. Growth plans at $1,250/month add city-specific content, competitor analysis, and on-page optimization — ideal for competitive Irvine markets like professional services and medical.',
+      },
+      {
+        question: 'Who is the best SEO company in Irvine?',
+        answer:
+          'Choose a nearby Orange County team that builds Irvine-specific pages, manages GBP weekly, and understands Spectrum vs. Woodbridge intent. OCWebPros is 15 minutes away in Lake Forest with transparent plans and no long-term lock-in.',
+      },
+      {
+        question: 'Is there affordable SEO for small businesses in Irvine?',
+        answer:
+          'Yes. Entry plans start at $500/mo. Competitive Irvine categories often need the $1,250 growth tier for content and competitor tracking — we recommend based on your niche, not upsells.',
       },
       {
         question: 'How long does it take to rank for "local SEO Irvine" or similar terms?',
@@ -432,7 +463,9 @@ const handCraftedLocalSeoPages: CityServicePageData[] = [
   },
 ];
 
-const priorityLocalSeoSlugs = new Set(priorityLocalSeoCities.map((city) => city.slug));
+const priorityLocalSeoSlugs = new Set(
+  [...priorityLocalSeoCities, ...wave2LocalSeoCities].map((city) => city.slug)
+);
 
 const generatedLocalSeoPages = cityRegistry
   .filter((city) => !city.handCrafted && !priorityLocalSeoSlugs.has(city.slug))
@@ -441,5 +474,6 @@ const generatedLocalSeoPages = cityRegistry
 export const cityLocalSeoPages: CityServicePageData[] = [
   ...handCraftedLocalSeoPages,
   ...priorityLocalSeoCities,
+  ...wave2LocalSeoCities,
   ...generatedLocalSeoPages,
 ];
