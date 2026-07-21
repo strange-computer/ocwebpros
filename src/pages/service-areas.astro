@@ -2,33 +2,7 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import CityServiceAreaCard from '../components/CityServiceAreaCard.astro';
 import { primaryCities, additionalCities } from '../data/cityRegistry';
-
-const primaryCardCopy: Record<string, { lead: string; detail: string }> = {
-  'lake-forest': {
-    lead: 'OCWebPros is based right here in Lake Forest. We know the local business community - from Foothill Ranch Towne Centre to The Orchard on El Toro Road.',
-    detail: 'Lake Forest businesses benefit from our hyper‑local understanding of South OC consumer behavior and search trends.',
-  },
-  irvine: {
-    lead: "Irvine's competitive business environment demands websites that stand out. We build custom sites for Irvine companies that need to compete with national brands.",
-    detail: 'From the Irvine Spectrum to the John Wayne Airport area, we understand the premium expectations of Irvine consumers and businesses.',
-  },
-  'mission-viejo': {
-    lead: "Mission Viejo's family‑oriented market values trust and local connection. Our websites for Mission Viejo businesses emphasize community relevance and ease of use.",
-    detail: "Whether you're near The Shops at Mission Viejo or the Lake, we build sites that resonate with South OC families.",
-  },
-  'rancho-santa-margarita': {
-    lead: "RSM's tight‑knit business community values personalized service. As neighbors in Lake Forest, we provide the local touch RSM businesses expect.",
-    detail: "From the Trabuco Canyon area to the Central Park, we understand RSM's unique market dynamics.",
-  },
-  'laguna-hills': {
-    lead: "Laguna Hills' concentration of medical practices and professional services requires websites that build credibility and facilitate patient/client communication.",
-    detail: 'Near Five Lagunas and Saddleback Memorial, we build sites that meet the high standards of Laguna Hills professionals.',
-  },
-  'aliso-viejo': {
-    lead: "Aliso Viejo's newer developments and corporate centers demand modern, responsive web design. We build sites that match Aliso Viejo's contemporary aesthetic.",
-    detail: 'From Aliso Viejo Town Center to The Commons, we understand the expectations of Aliso Viejo businesses and residents.',
-  },
-};
+import { serviceAreaCardCopy } from '../data/serviceAreaCardCopy';
 ---
 <MainLayout 
   title="Web Design Service Areas Orange County CA | OCWebPros" 
@@ -79,8 +53,8 @@ const primaryCardCopy: Record<string, { lead: string; detail: string }> = {
           <CityServiceAreaCard
             city={city}
             variant="primary"
-            cardLead={primaryCardCopy[city.slug]?.lead}
-            cardDetail={primaryCardCopy[city.slug]?.detail}
+            cardLead={serviceAreaCardCopy[city.slug]?.lead}
+            cardDetail={serviceAreaCardCopy[city.slug]?.detail}
           />
         ))}
       </div>
@@ -90,12 +64,17 @@ const primaryCardCopy: Record<string, { lead: string; detail: string }> = {
     <section class="pt-8 pb-16">
       <h2 class="text-3xl md:text-4xl font-bold mb-8 text-slate-900">Also Serving These Orange County Cities</h2>
       <p class="text-slate-600 mb-8 text-lg">
-        Dedicated local SEO and web design pages for every city we serve — click any city for service details, pricing, and FAQs.
+        Dedicated local SEO and web design pages for every city we serve — each with market-specific context, plus links to service details and FAQs.
       </p>
 
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {additionalCities.map((city) => (
-          <CityServiceAreaCard city={city} variant="compact" />
+          <CityServiceAreaCard
+            city={city}
+            variant="primary"
+            cardLead={serviceAreaCardCopy[city.slug]?.lead}
+            cardDetail={serviceAreaCardCopy[city.slug]?.detail}
+          />
         ))}
       </div>
     </section>
