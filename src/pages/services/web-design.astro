@@ -2,57 +2,117 @@
 import MainLayout from '../../layouts/MainLayout.astro';
 import SpotlightImage from '../../components/SpotlightImage.astro';
 import WebDesignFeatureGrid from '../../components/WebDesignFeatureGrid.astro';
+import { primaryCities, cityRegistry } from '../../data/cityRegistry';
+
+const webDesignProof = [
+  { label: 'Custom sites from', value: '$3,500' },
+  { label: 'Based in', value: 'Lake Forest, CA' },
+  { label: 'Built for', value: '24 OC cities' },
+  { label: 'SEO foundations', value: 'Included' },
+] as const;
+
+const ocFaqs = [
+  {
+    question: 'How much does web design cost in Orange County?',
+    answer:
+      'OCWebPros custom websites typically start at $3,500 for a focused authority site. Scope depends on page count, integrations, and content — we quote after a free consult so Orange County businesses know exactly what they are buying.',
+  },
+  {
+    question: 'Who is the best web design company in Orange County?',
+    answer:
+      'Choose a Lake Forest–based team that builds custom, mobile-first sites with local SEO foundations — not a template reseller. OCWebPros designs for OC hire intent and pairs every build with optional ongoing local SEO.',
+  },
+  {
+    question: 'Do you build websites for businesses outside South OC?',
+    answer:
+      'Yes. We serve all of Orange County — Irvine, Newport Beach, Anaheim, Santa Ana, Huntington Beach, and every city on our service-areas list — from our Lake Forest office.',
+  },
+  {
+    question: 'How is this different from your city web design pages?',
+    answer:
+      'This page is the Orange County–wide commercial home for web design. City pages target searches like “web design Irvine.” Hire here for county-wide positioning; use city pages when the query names a specific city.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: ocFaqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+  })),
+};
 ---
 <MainLayout 
-  title="Web Design Services Orange County CA | OCWebPros" 
-  description="Custom web design for Orange County businesses. Fast, mobile-first, AI-ready websites with Core Web Vitals optimization, local schema, and conversion-focused UI. From $3,500."
+  title="Web Design Orange County CA | Custom Websites | OCWebPros" 
+  description="Looking for web design in Orange County? Custom, mobile-first sites from Lake Forest–based OCWebPros — Core Web Vitals, local schema, conversion-focused. From $3,500. Free consult."
   bodyClass="page-services page-web-design"
   pageCSS="/css/pages/services.css">
+
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head" />
 
   <header class="relative pt-32 sm:pt-32 md:pt-40 pb-12 sm:pb-16 px-4 sm:px-6 text-center overflow-hidden">
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[90vw] max-w-[800px] h-[400px] sm:h-[500px] md:h-[600px] glow-bg pointer-events-none opacity-40"></div>
     <div class="max-w-5xl mx-auto relative">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-xs font-medium text-orange-400 mb-6">
         <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
-        Web Design
+        Orange County Web Design
       </div>
       <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4">
         Custom Web Design in <span class="text-gradient-orange">Orange County</span>
       </h1>
       <p class="text-slate-600 text-lg leading-relaxed max-w-3xl mx-auto">
-        Fast-loading, mobile-first websites built around your business goals - designed to convert visitors, rank in search, and stay easy to manage.
+        Hire a Lake Forest–based studio for fast, mobile-first websites built for Orange County businesses — designed to convert, rank locally, and stay easy to manage.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
         <a href="/contact/" class="px-8 py-3.5 bg-orange-700 text-white font-semibold rounded-full hover:bg-orange-600 transition-colors btn-glow text-sm md:text-base">
-          Request a Free Consult
+          Request a Free OC Consult
         </a>
         <a href="/portfolio/" class="px-8 py-3.5 bg-slate-100 text-slate-900 font-semibold rounded-full border border-slate-200 hover:bg-slate-100 transition-colors text-sm md:text-base">
           View Our Work
         </a>
       </div>
+      <dl class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto text-left">
+        {webDesignProof.map((item) => (
+          <div class="rounded-xl border border-slate-200 bg-white/80 px-4 py-3">
+            <dt class="text-[11px] uppercase tracking-wide text-slate-500 font-medium">{item.label}</dt>
+            <dd class="text-sm font-semibold text-slate-900 mt-0.5">{item.value}</dd>
+          </div>
+        ))}
+      </dl>
     </div>
   </header>
 
   <main class="pb-16 sm:pb-24 px-4 sm:px-6 md:px-8">
+    <section class="max-w-4xl mx-auto pt-8 pb-12">
+      <p class="text-slate-700 text-lg leading-relaxed mb-6">
+        If you searched for web design Orange County, web design company OC, or Orange County website design, this is the commercial home to hire from. We build custom sites for businesses across South OC, coastal cities, central OC, and North OC — with local SEO foundations included so the site is ready to rank.
+      </p>
+      <p class="text-slate-600 text-base leading-relaxed border-l-2 border-orange-500/50 pl-6">
+        OC customers judge you on mobile first. Affluent coastal markets and competitive Irvine categories punish slow templates. We ship purpose-built sites that load fast, speak your city, and convert inquiries — not bloated page builders.
+      </p>
+    </section>
+
     <!-- Spotlight -->
-    <section class="max-w-7xl mx-auto pt-8 md:pt-12 pb-16 md:pb-24 px-4 sm:px-6">
+    <section class="max-w-7xl mx-auto pt-4 md:pt-8 pb-16 md:pb-24 px-4 sm:px-6">
       <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
         <div class="w-full md:w-1/2 backdrop-blur-[12px] bg-slate-100 border border-slate-200 rounded-2xl p-6 sm:p-8 md:p-10" data-aos="fade-right">
           <div class="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center mb-6">
             <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
           </div>
-          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-slate-900">Built for Real Businesses</h2>
-          <p class="text-slate-600 mb-6 text-lg leading-relaxed">Your website should authentically represent your brand and drive measurable results. We focus on content strategy, conversion optimization, and technical performance - not bloated templates.</p>
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-slate-900">Built for Orange County Businesses</h2>
+          <p class="text-slate-600 mb-6 text-lg leading-relaxed">Your website should represent your brand and drive measurable leads in competitive OC markets. We focus on conversion, local SEO structure, and technical performance — not bloated templates.</p>
           <ul class="space-y-3 text-slate-700">
             <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Custom, component-based UI without template bloat</span></li>
-            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Responsive layouts optimized for phones, tablets, and desktops</span></li>
-            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Clean code that loads fast and works for every visitor</span></li>
-            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>AI-ready structure with schema markup and semantic HTML</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Mobile-first layouts tuned for OC “near me” traffic</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>City and service page structure ready for local SEO</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Core Web Vitals, schema, and semantic HTML from day one</span></li>
           </ul>
         </div>
         <SpotlightImage
           src="/images/unsplash/services-web-design.jpg"
-          alt="Web designer working on a modern website layout"
+          alt="Custom web design for Orange County businesses"
         />
       </div>
     </section>
@@ -228,52 +288,85 @@ import WebDesignFeatureGrid from '../../components/WebDesignFeatureGrid.astro';
       </div>
     </section>
 
+    <!-- OC cities we serve -->
+    <section class="max-w-7xl mx-auto py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-slate-50 border-y border-slate-100">
+      <div class="text-center mb-10" data-aos="fade-up">
+        <h2 class="text-2xl md:text-3xl font-bold mb-2 text-slate-900">Orange County cities we design for</h2>
+        <p class="text-slate-600 text-sm md:text-base max-w-2xl mx-auto">
+          This hub covers county-wide web design. City pages win searches like “web design Irvine” — {cityRegistry.length} dedicated OC destinations.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 max-w-4xl mx-auto">
+        {primaryCities.map((city) => (
+          <a href={`/web-design/${city.slug}/`} class="rounded-xl border border-slate-200 bg-white px-4 py-3 text-center text-sm font-medium text-slate-800 hover:border-orange-300 hover:text-orange-600 transition-colors">
+            Web Design {city.name}
+          </a>
+        ))}
+      </div>
+      <p class="text-center mt-8 text-sm text-slate-500">
+        <a href="/service-areas/" class="text-orange-400 hover:text-orange-300 font-medium transition-colors">View all {cityRegistry.length} Orange County service areas →</a>
+      </p>
+    </section>
+
+    <!-- OC FAQs -->
+    <section class="max-w-3xl mx-auto py-16 px-4 sm:px-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-slate-900 text-center">Orange County web design — FAQ</h2>
+      <div class="space-y-6">
+        {ocFaqs.map((faq) => (
+          <div class="border-b border-slate-200 pb-6">
+            <h3 class="text-lg font-bold text-slate-900 mb-2">{faq.question}</h3>
+            <p class="text-slate-600 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
     <!-- Related -->
     <section class="max-w-7xl mx-auto py-16 md:py-24 px-4 sm:px-6 md:px-8">
       <div class="grid md:grid-cols-3 gap-6">
         <div class="backdrop-blur-[12px] bg-slate-100 border border-slate-200 rounded-2xl p-6 sm:p-8" data-aos="fade-up">
           <h3 class="text-xl font-bold text-slate-900 mb-3">Pair with Local SEO</h3>
-          <p class="text-sm text-slate-600 leading-relaxed mb-4">A great website needs visibility. Our local SEO packages help Orange County businesses rank in Google Maps and organic search.</p>
+          <p class="text-sm text-slate-600 leading-relaxed mb-4">A great website needs visibility. Our Orange County local SEO packages help you rank in Google Maps and organic search.</p>
           <a href="/services/local-seo/" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors inline-flex items-center gap-1">
-            Explore local SEO packages
+            Explore OC local SEO
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
           </a>
         </div>
         <div class="backdrop-blur-[12px] bg-slate-100 border border-slate-200 rounded-2xl p-6 sm:p-8" data-aos="fade-up" data-aos-delay="100">
           <h3 class="text-xl font-bold text-slate-900 mb-3">City-Specific Web Design</h3>
-          <p class="text-sm text-slate-600 leading-relaxed mb-4">Dedicated landing pages for 24 Orange County cities — built to rank for "web design Irvine," "web designer Anaheim," and similar searches.</p>
+          <p class="text-sm text-slate-600 leading-relaxed mb-4">Dedicated landing pages for hire-intent searches like “web design Irvine” and “web designer Anaheim.”</p>
           <ul class="space-y-2 mb-4">
             <li><a href="/web-design/lake-forest/" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors">Lake Forest</a> · <a href="/web-design/irvine/" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors">Irvine</a> · <a href="/web-design/anaheim/" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors">Anaheim</a></li>
-            <li><a href="/web-design/huntington-beach/" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors">Huntington Beach</a> · <a href="/web-design/santa-ana/" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors">Santa Ana</a> · <a href="/web-design/garden-grove/" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors">Garden Grove</a></li>
+            <li><a href="/web-design/huntington-beach/" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors">Huntington Beach</a> · <a href="/web-design/santa-ana/" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors">Santa Ana</a> · <a href="/web-design/newport-beach/" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors">Newport Beach</a></li>
           </ul>
           <a href="/service-areas/" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors inline-flex items-center gap-1">
-            View all 24 OC service areas →
+            View all {cityRegistry.length} OC service areas →
           </a>
         </div>
         <div class="backdrop-blur-[12px] bg-slate-100 border border-slate-200 rounded-2xl p-6 sm:p-8" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="text-xl font-bold text-slate-900 mb-3">All Orange County Service Areas</h3>
-          <p class="text-sm text-slate-600 leading-relaxed mb-4">Based in Lake Forest, we work with businesses across Irvine, Mission Viejo, Newport Beach, and the entire OC region.</p>
-          <a href="/service-areas/" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors inline-flex items-center gap-1">
-            View service areas
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-          </a>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Industry Websites</h3>
+          <p class="text-sm text-slate-600 leading-relaxed mb-4">Sites and SEO paths for contractors, dental, restaurants, and law firms across Orange County.</p>
+          <ul class="space-y-2 mb-4">
+            <li><a href="/industries/contractors/" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors">Contractors</a> · <a href="/industries/dental/" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors">Dental</a></li>
+            <li><a href="/industries/restaurants/" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors">Restaurants</a> · <a href="/industries/legal/" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors">Legal</a> · <a href="/industries/" class="text-sm text-orange-400 font-medium hover:text-orange-300 transition-colors">All →</a></li>
+          </ul>
         </div>
       </div>
     </section>
 
     <!-- CTA -->
     <div class="text-center py-12 sm:py-16 md:py-24 px-4 sm:px-6 md:px-8" data-aos="fade-up">
-      <h2 class="text-2xl md:text-3xl font-bold mb-4 text-slate-900">Ready to build your authority website?</h2>
-      <p class="text-slate-600 mb-8 max-w-xl mx-auto text-balance">Tell us about your business and we&apos;ll outline a clear plan. No pressure, no jargon.</p>
+      <h2 class="text-2xl md:text-3xl font-bold mb-4 text-slate-900">Ready to hire web design in Orange County?</h2>
+      <p class="text-slate-600 mb-8 max-w-xl mx-auto text-balance">Tell us about your OC business and we&apos;ll outline a clear plan. No pressure, no jargon.</p>
       <div class="inline-flex flex-col sm:flex-row gap-4">
         <a href="/contact/" class="px-10 py-5 bg-orange-700 text-white font-bold rounded-full hover:bg-orange-600 transition-colors text-lg btn-glow">
-          Request a free consult
+          Request a free OC consult
         </a>
         <a href="/portfolio/" class="px-10 py-5 bg-slate-100 text-slate-900 font-bold rounded-full border border-slate-200 hover:bg-slate-100 transition-colors text-lg">
           See examples
         </a>
       </div>
-      <p class="text-slate-600 text-sm mt-3">Prefer a call? Add your number in the email.</p>
+      <p class="text-slate-600 text-sm mt-3">Based in Lake Forest — serving all {cityRegistry.length} Orange County cities.</p>
     </div>
   </main>
 </MainLayout>

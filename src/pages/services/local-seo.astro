@@ -1,58 +1,112 @@
 ---
 import MainLayout from '../../layouts/MainLayout.astro';
 import SpotlightImage from '../../components/SpotlightImage.astro';
+import { cityProofStrip } from '../../data/priorityLocalSeoCities';
+import { primaryCities, cityRegistry } from '../../data/cityRegistry';
+
+const ocFaqs = [
+  {
+    question: 'How much does local SEO cost in Orange County?',
+    answer:
+      'OCWebPros local SEO plans start at $500/month for Google Business Profile management, citation monitoring, and technical upkeep. Growth plans at $1,250/month add Orange County city pages, competitor analysis, and ongoing content.',
+  },
+  {
+    question: 'Who is the best SEO company in Orange County?',
+    answer:
+      'Look for a Lake Forest–based team that builds dedicated OC city pages, posts to GBP weekly, and reports rankings honestly — not an overseas content mill. OCWebPros focuses on Orange County hire-intent SEO with transparent plans and no long-term contracts.',
+  },
+  {
+    question: 'Do I need a page for every OC city I serve?',
+    answer:
+      'Not overnight. Start with the cities that drive the most leads, then expand. Thin duplicate pages hurt more than they help. We prioritize real coverage and unique local proof across South OC, coastal, and North OC markets.',
+  },
+  {
+    question: 'How is this different from your city SEO pages?',
+    answer:
+      'This page is the Orange County–wide commercial home for local SEO. City pages like SEO Irvine or SEO Fullerton target city hire queries. Industry hubs cover niches like dental and contractors. Use this hub to hire county-wide; use city pages when the search is city-specific.',
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: ocFaqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+  })),
+};
 ---
 <MainLayout 
-  title="Local SEO Services Orange County CA | OCWebPros" 
-  description="Local SEO for Orange County businesses. Google Business Profile optimization, photo uploads, post scheduling, citation management, and content strategy. Plans from $500/mo."
+  title="Local SEO Orange County CA | SEO Agency | OCWebPros" 
+  description="Looking for local SEO in Orange County? Lake Forest-based OCWebPros — GBP, Maps, city pages, citations for 24 OC cities. Plans from $500/mo. Free audit."
   bodyClass="page-services page-local-seo"
   pageCSS="/css/pages/services.css">
+
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head" />
 
   <header class="relative pt-32 sm:pt-32 md:pt-40 pb-12 sm:pb-16 px-4 sm:px-6 text-center overflow-hidden">
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[90vw] max-w-[800px] h-[400px] sm:h-[500px] md:h-[600px] glow-bg pointer-events-none opacity-40"></div>
     <div class="max-w-5xl mx-auto relative">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-xs font-medium text-orange-400 mb-6">
         <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
-        Local SEO
+        Orange County Local SEO
       </div>
       <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4">
         Local SEO in <span class="text-gradient-orange">Orange County</span>
       </h1>
       <p class="text-slate-600 text-lg leading-relaxed max-w-3xl mx-auto">
-        Make it easy for nearby customers to find and contact you across Google Search and Maps - with ongoing optimization, not one-time fixes.
+        Hire a Lake Forest–based SEO team for Google Maps and organic visibility across all of Orange County — South OC, coastal, central, and North OC — with ongoing work, not one-time fixes.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
         <a href="/contact/" class="px-8 py-3.5 bg-orange-700 text-white font-semibold rounded-full hover:bg-orange-600 transition-colors btn-glow text-sm md:text-base">
-          Get a Free Audit
+          Get a Free OC Audit
         </a>
         <a href="/pricing/" class="px-8 py-3.5 bg-slate-100 text-slate-900 font-semibold rounded-full border border-slate-200 hover:bg-slate-100 transition-colors text-sm md:text-base">
           View Pricing
         </a>
       </div>
+      <dl class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto text-left">
+        {cityProofStrip.map((item) => (
+          <div class="rounded-xl border border-slate-200 bg-white/80 px-4 py-3">
+            <dt class="text-[11px] uppercase tracking-wide text-slate-500 font-medium">{item.label}</dt>
+            <dd class="text-sm font-semibold text-slate-900 mt-0.5">{item.value}</dd>
+          </div>
+        ))}
+      </dl>
     </div>
   </header>
 
   <main class="pb-16 sm:pb-24 px-4 sm:px-6 md:px-8">
+    <section class="max-w-4xl mx-auto pt-8 pb-12">
+      <p class="text-slate-700 text-lg leading-relaxed mb-6">
+        If you searched for local SEO Orange County, SEO company OC, or Orange County SEO services, this is the commercial home to hire from. We are based in Lake Forest and build the city pages, Google Business Profiles, and review systems OC businesses need to compete with national agencies and franchise Map Packs.
+      </p>
+      <p class="text-slate-600 text-base leading-relaxed border-l-2 border-orange-500/50 pl-6">
+        Orange County is not one market. Irvine Spectrum searches behave differently than Huntington Pier tourism or Santa Ana neighborhood intent. County-wide strategy plus dedicated city and industry pages is how you win hire-intent visibility without thin duplicate content.
+      </p>
+    </section>
+
     <!-- Spotlight -->
-    <section class="max-w-7xl mx-auto pt-8 md:pt-12 pb-16 md:pb-24 px-4 sm:px-6">
+    <section class="max-w-7xl mx-auto pt-4 md:pt-8 pb-16 md:pb-24 px-4 sm:px-6">
       <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
         <SpotlightImage
           class="order-1"
           aos="fade-left"
           src="/images/unsplash/services-local-seo.jpg"
-          alt="Local business search results on a phone map"
+          alt="Orange County local SEO and Google Maps results"
         />
         <div class="w-full md:w-1/2 backdrop-blur-[12px] bg-slate-100 border border-slate-200 rounded-2xl p-6 sm:p-8 md:p-10 order-2" data-aos="fade-right">
           <div class="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center mb-6">
             <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           </div>
-          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-slate-900">Get Found by Local Customers</h2>
-          <p class="text-slate-600 mb-6 text-lg leading-relaxed">When someone in Orange County searches for your service, you should show up - in organic results, on Google Maps, and across the platforms that influence local rankings.</p>
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-slate-900">Get Found Across Orange County</h2>
+          <p class="text-slate-600 mb-6 text-lg leading-relaxed">When someone in OC searches for your service, you should show up — in organic results, on Google Maps, and on the city pages that match how they search.</p>
           <ul class="space-y-3 text-slate-700">
-            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Google Business Profile setup, optimization, and regular posts</span></li>
-            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>On-page SEO: titles, meta, headings, and internal links</span></li>
-            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Regular photos, posts, and performance reports</span></li>
-            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Citation consistency across Yelp, Bing, and local directories</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Google Business Profile setup, optimization, and weekly posts</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Dedicated OC city landing pages for hire-intent searches</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Citation consistency across Yelp, Bing, Apple Maps, and local directories</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Review velocity and monthly ranking reports for Orange County keywords</span></li>
           </ul>
         </div>
       </div>
@@ -325,6 +379,39 @@ import SpotlightImage from '../../components/SpotlightImage.astro';
       </div>
     </section>
 
+    <!-- OC cities we serve -->
+    <section class="max-w-7xl mx-auto py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-slate-50 border-y border-slate-100">
+      <div class="text-center mb-10" data-aos="fade-up">
+        <h2 class="text-2xl md:text-3xl font-bold mb-2 text-slate-900">Orange County cities we serve</h2>
+        <p class="text-slate-600 text-sm md:text-base max-w-2xl mx-auto">
+          This hub covers county-wide local SEO. City pages win searches like “SEO Irvine” — {cityRegistry.length} dedicated OC destinations.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 max-w-4xl mx-auto">
+        {primaryCities.map((city) => (
+          <a href={`/local-seo/${city.slug}/`} class="rounded-xl border border-slate-200 bg-white px-4 py-3 text-center text-sm font-medium text-slate-800 hover:border-orange-300 hover:text-orange-600 transition-colors">
+            SEO {city.name}
+          </a>
+        ))}
+      </div>
+      <p class="text-center mt-8 text-sm text-slate-500">
+        <a href="/service-areas/" class="text-orange-400 hover:text-orange-300 font-medium transition-colors">View all {cityRegistry.length} Orange County service areas →</a>
+      </p>
+    </section>
+
+    <!-- OC FAQs -->
+    <section class="max-w-3xl mx-auto py-16 px-4 sm:px-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-slate-900 text-center">Orange County local SEO — FAQ</h2>
+      <div class="space-y-6">
+        {ocFaqs.map((faq) => (
+          <div class="border-b border-slate-200 pb-6">
+            <h3 class="text-lg font-bold text-slate-900 mb-2">{faq.question}</h3>
+            <p class="text-slate-600 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
     <!-- Related -->
     <section class="max-w-7xl mx-auto py-16 md:py-24 px-4 sm:px-6 md:px-8">
       <div class="grid md:grid-cols-3 gap-6">
@@ -361,17 +448,17 @@ import SpotlightImage from '../../components/SpotlightImage.astro';
 
     <!-- CTA -->
     <div class="text-center py-12 sm:py-16 md:py-24 px-4 sm:px-6 md:px-8" data-aos="fade-up">
-      <h2 class="text-2xl md:text-3xl font-bold mb-4 text-slate-900">Ready to rank in Orange County?</h2>
-      <p class="text-slate-600 mb-8 max-w-xl mx-auto">Request a free local SEO audit and we&apos;ll show you where you stand - and what to fix first.</p>
+      <h2 class="text-2xl md:text-3xl font-bold mb-4 text-slate-900">Ready to hire local SEO in Orange County?</h2>
+      <p class="text-slate-600 mb-8 max-w-xl mx-auto">Request a free OC audit — we&apos;ll show where you stand on Maps and organic, and what to fix first.</p>
       <div class="inline-flex flex-col sm:flex-row gap-4">
         <a href="/contact/" class="px-10 py-5 bg-orange-700 text-white font-bold rounded-full hover:bg-orange-600 transition-colors text-lg btn-glow">
-          Get a free audit
+          Get a free OC audit
         </a>
         <a href="/pricing/" class="px-10 py-5 bg-slate-100 text-slate-900 font-bold rounded-full border border-slate-200 hover:bg-slate-100 transition-colors text-lg">
           View all pricing
         </a>
       </div>
-      <p class="text-slate-600 text-sm mt-3">Prefer a call? Add your number in the email.</p>
+      <p class="text-slate-600 text-sm mt-3">Based in Lake Forest — serving all {cityRegistry.length} Orange County cities.</p>
     </div>
   </main>
 </MainLayout>
