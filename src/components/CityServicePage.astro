@@ -4,6 +4,8 @@ import SpotlightImage from './SpotlightImage.astro';
 import type { CityServicePageData } from '../data/cityPageTypes';
 import { cityProofStrip } from '../data/priorityLocalSeoCities';
 import { industryPathwayLinks } from '../data/industryMesh';
+import { cityLocalSeoVideos } from '../data/cityVideos';
+import { cityLocalSeoImages } from '../data/cityImages';
 
 type ServiceKind = 'local-seo' | 'web-design';
 
@@ -103,6 +105,10 @@ const siteUrl = Astro.site || new URL(Astro.url.origin);
 const pageUrl = new URL(`/${cfg.path}/${city.slug}/`, siteUrl).toString();
 const otherCities = allCities.filter((c) => c.slug !== city.slug);
 const industryLinks = serviceKind === 'local-seo' ? industryPathwayLinks(city.slug) : [];
+const cityVideo = serviceKind === 'local-seo' ? cityLocalSeoVideos[city.slug] : undefined;
+const cityImages = serviceKind === 'local-seo' ? cityLocalSeoImages[city.slug] : undefined;
+const spotlightImage = cityImages?.spotlight;
+const galleryImages = cityImages?.gallery || [];
 
 const serviceSchema = {
   '@context': 'https://schema.org',
@@ -140,6 +146,28 @@ const faqSchema = {
     acceptedAnswer: { '@type': 'Answer', text: faq.answer },
   })),
 };
+
+const videoSchema = cityVideo?.youtubeId
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'VideoObject',
+      name: cityVideo.title,
+      description: city.description,
+      thumbnailUrl: `https://i.ytimg.com/vi/${cityVideo.youtubeId}/hqdefault.jpg`,
+      uploadDate: new Date().toISOString().slice(0, 10),
+      contentUrl: cityVideo.url,
+      embedUrl: `https://www.youtube.com/embed/${cityVideo.youtubeId}`,
+    }
+  : cityVideo?.localSrc
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'VideoObject',
+        name: cityVideo.title,
+        description: city.description,
+        contentUrl: new URL(cityVideo.localSrc, siteUrl).toString(),
+        uploadDate: new Date().toISOString().slice(0, 10),
+      }
+    : null;
 ---
 
 <MainLayout
@@ -150,6 +178,9 @@ const faqSchema = {
 >
   <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} slot="head" />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head" />
+  {videoSchema && (
+    <script type="application/ld+json" set:html={JSON.stringify(videoSchema)} slot="head" />
+  )}
 
   <header class="relative pt-32 sm:pt-32 md:pt-40 pb-12 sm:pb-16 px-4 sm:px-6 text-center overflow-hidden">
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[90vw] max-w-[800px] h-[400px] sm:h-[500px] md:h-[600px] glow-bg pointer-events-none opacity-40"></div>
@@ -205,7 +236,17 @@ const faqSchema = {
 
     <section class="max-w-7xl mx-auto pt-4 md:pt-8 pb-16 md:pb-24 px-4 sm:px-6">
       <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-        <SpotlightImage class="order-1" aos="fade-left" src={cfg.spotlightSrc} alt={cfg.spotlightAlt(city.name)} />
+        <SpotlightImage
+          class="order-1"
+          aos="fade-left"
+          src={spotlightImage?.src || cfg.spotlightSrc}
+          alt={spotlightImage?.alt || cfg.spotlightAlt(city.name)}
+          title={spotlightImage?.title}
+          width={spotlightImage?.width}
+          height={spotlightImage?.height}
+          credit={spotlightImage ? `Photo: ${spotlightImage.photographer} / ${spotlightImage.source}` : undefined}
+          creditUrl={spotlightImage?.photographerUrl}
+        />
         <div class="w-full md:w-1/2 backdrop-blur-[12px] bg-slate-100 border border-slate-200 rounded-2xl p-6 sm:p-8 md:p-10 order-2" data-aos="fade-right">
           <div class="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center mb-6">
             <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
@@ -223,6 +264,41 @@ const faqSchema = {
         </div>
       </div>
     </section>
+
+    {galleryImages.length > 0 && (
+      <section class="max-w-7xl mx-auto py-12 md:py-16 px-4 sm:px-6 md:px-8" aria-label={`${city.name} local visuals`}>
+        <div class="text-center mb-8" data-aos="fade-up">
+          <h2 class="text-2xl md:text-3xl font-bold mb-2 text-slate-900">{city.name} in focus</h2>
+          <p class="text-slate-600 text-sm md:text-base max-w-2xl mx-auto">
+            Local visuals that reinforce SEO {city.name} relevance — neighborhoods, landmarks, and the market we serve.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          {galleryImages.map((image, index) => (
+            <figure class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-100" data-aos="fade-up" data-aos-delay={index * 50}>
+              <img
+                src={image.src}
+                alt={image.alt}
+                title={image.title}
+                width={image.width}
+                height={image.height}
+                class="w-full h-56 object-cover"
+                loading="lazy"
+              />
+              <figcaption class="px-3 py-2 text-[11px] text-slate-500">
+                <a href={image.photographerUrl} class="hover:text-orange-600 underline decoration-slate-300" target="_blank" rel="noopener noreferrer">
+                  {image.photographer}
+                </a>
+                {' · '}
+                <a href={image.sourceUrl} class="hover:text-orange-600 underline decoration-slate-300" target="_blank" rel="noopener noreferrer">
+                  {image.source === 'unsplash' ? 'Unsplash' : 'Pexels'}
+                </a>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+    )}
 
     <section class="max-w-7xl mx-auto py-16 md:py-20 px-4 sm:px-6 md:px-8 bg-slate-50 border-y border-slate-100">
       <div class="grid md:grid-cols-2 gap-10 md:gap-16">
@@ -323,6 +399,34 @@ const faqSchema = {
         ))}
       </div>
     </section>
+
+    {cityVideo && (cityVideo.youtubeId || cityVideo.localSrc) && (
+      <section class="max-w-4xl mx-auto py-16 md:py-20 px-4 sm:px-6" aria-label={`${city.name} local SEO video`}>
+        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-center text-slate-900" data-aos="fade-up">SEO in {city.name} — watch</h2>
+        <div class="relative w-full overflow-hidden rounded-2xl border border-slate-200 bg-slate-900 aspect-video shadow-sm" data-aos="fade-up">
+          {cityVideo.youtubeId ? (
+            <iframe
+              class="absolute inset-0 h-full w-full"
+              src={`https://www.youtube.com/embed/${cityVideo.youtubeId}`}
+              title={cityVideo.title}
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          ) : (
+            <video
+              class="absolute inset-0 h-full w-full"
+              src={cityVideo.localSrc}
+              title={cityVideo.title}
+              controls
+              playsinline
+              preload="metadata"
+            ></video>
+          )}
+        </div>
+      </section>
+    )}
 
     <section class="max-w-3xl mx-auto py-16 md:py-24 px-4 sm:px-6">
       <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center text-slate-900" data-aos="fade-up">{cfg.faqHeading(city.name)}</h2>

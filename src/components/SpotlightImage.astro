@@ -2,6 +2,11 @@
 interface Props {
   src: string;
   alt: string;
+  title?: string;
+  width?: number;
+  height?: number;
+  credit?: string;
+  creditUrl?: string;
   aos?: string;
   class?: string;
 }
@@ -9,6 +14,11 @@ interface Props {
 const {
   src,
   alt,
+  title,
+  width,
+  height,
+  credit,
+  creditUrl,
   aos = 'fade-left',
   class: className = '',
 } = Astro.props;
@@ -21,8 +31,22 @@ const {
   <img
     src={src}
     alt={alt}
+    title={title}
+    width={width}
+    height={height}
     class="w-full h-full object-cover object-center brightness-95 contrast-105 saturate-100"
     loading="lazy"
   />
   <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent pointer-events-none"></div>
+  {credit && (
+    <p class="absolute bottom-2 left-2 right-2 text-[10px] text-white/80 drop-shadow">
+      {creditUrl ? (
+        <a href={creditUrl} class="underline decoration-white/40 hover:text-white" target="_blank" rel="noopener noreferrer">
+          {credit}
+        </a>
+      ) : (
+        credit
+      )}
+    </p>
+  )}
 </div>

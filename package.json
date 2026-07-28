@@ -7,7 +7,13 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "fetch-unsplash": "node scripts/fetch-unsplash-images.mjs"
+    "fetch-unsplash": "node scripts/fetch-unsplash-images.mjs",
+    "test:video": "node scripts/test-video-pipeline.mjs",
+    "batch:city-videos": "node scripts/batch-city-videos.mjs",
+    "batch:city-images": "node scripts/batch-city-images.mjs",
+    "generate:city-manifest": "node scripts/generate-city-media-manifest.mjs",
+    "youtube:auth": "node scripts/youtube-auth.mjs",
+    "youtube:upload": "node scripts/youtube-upload.mjs"
   },
   "dependencies": {
     "@astrojs/netlify": "^6.6.4",
@@ -16,5 +22,9 @@
     "aos": "^2.3.4",
     "astro": "^5.16.6",
     "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "googleapis": "^173.0.0",
+    "open": "^11.0.0"
   }
 }

@@ -18,6 +18,16 @@ pnpm-debug.log*
 .env.local
 .env.production
 
+# OAuth / API secrets (never commit)
+secrets/
+youtube-token.json
+**/youtube-client-secret.json
+
+# Video pipeline scratch + generated media (rebuild via npm scripts)
+tmp/
+public/videos/pages/
+public/images/cities/
+
 # macOS-specific files
 .DS_Store
 
