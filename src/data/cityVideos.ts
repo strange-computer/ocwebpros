@@ -12,7 +12,9 @@ export const cityLocalSeoVideos: Record<string, CityVideoMeta> = {
     localSrc: '/videos/pages/local-seo-aliso-viejo.mp4',
   },
   'anaheim': {
+    youtubeId: 'Ihz4sTBtzH8',
     title: "Local SEO in Anaheim, CA | OCWebPros",
+    url: 'https://www.youtube.com/watch?v=Ihz4sTBtzH8',
     localSrc: '/videos/pages/local-seo-anaheim.mp4',
   },
   'brea': {
@@ -20,7 +22,9 @@ export const cityLocalSeoVideos: Record<string, CityVideoMeta> = {
     localSrc: '/videos/pages/local-seo-brea.mp4',
   },
   'costa-mesa': {
+    youtubeId: 'zPNEjF_HHaA',
     title: "Local SEO in Costa Mesa, CA | OCWebPros",
+    url: 'https://www.youtube.com/watch?v=zPNEjF_HHaA',
     localSrc: '/videos/pages/local-seo-costa-mesa.mp4',
   },
   'dana-point': {
@@ -32,7 +36,9 @@ export const cityLocalSeoVideos: Record<string, CityVideoMeta> = {
     localSrc: '/videos/pages/local-seo-fountain-valley.mp4',
   },
   'fullerton': {
+    youtubeId: 'i8cxZuPEKMs',
     title: "Local SEO in Fullerton, CA | OCWebPros",
+    url: 'https://www.youtube.com/watch?v=i8cxZuPEKMs',
     localSrc: '/videos/pages/local-seo-fullerton.mp4',
   },
   'garden-grove': {
