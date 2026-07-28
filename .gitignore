@@ -23,10 +23,10 @@ secrets/
 youtube-token.json
 **/youtube-client-secret.json
 
-# Video pipeline scratch + generated media (rebuild via npm scripts)
+# Video pipeline scratch + generated video binaries (rebuild via npm scripts)
 tmp/
 public/videos/pages/
-public/images/cities/
+# City stills are committed so Netlify can serve them (~37MB)
 
 # macOS-specific files
 .DS_Store
