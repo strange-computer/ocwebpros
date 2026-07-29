@@ -27,7 +27,7 @@ import WebDesignFeatureGrid from '../components/WebDesignFeatureGrid.astro';
   <main class="pb-16 sm:pb-24 px-4 sm:px-6 md:px-8">
     <!-- Web Design Pricing Box -->
     <section id="web-design" class="max-w-7xl mx-auto pt-4 md:pt-8 pb-12 md:pb-16 px-4 sm:px-6 scroll-mt-28">
-      <div class="backdrop-blur-[12px] bg-slate-100 border border-slate-200 rounded-2xl p-8 md:p-12 relative overflow-hidden">
+      <div class="backdrop-blur-[12px] bg-slate-100 border border-slate-200 rounded-2xl p-4 sm:p-6 md:p-12 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-transparent to-transparent pointer-events-none"></div>
         <div class="relative">
           <div class="text-center mb-8 md:mb-12">
@@ -37,7 +37,7 @@ import WebDesignFeatureGrid from '../components/WebDesignFeatureGrid.astro';
           <div class="max-w-5xl mx-auto relative">
         <!-- Glow orb behind card -->
         <div class="absolute -top-12 -left-12 w-64 h-64 md:w-80 md:h-80 bg-gradient-to-tr from-orange-500/20 to-sky-500/20 blur-3xl rounded-full pointer-events-none" aria-hidden="true"></div>
-        <div class="web-design-pricing-card relative backdrop-blur-[12px] border border-slate-200 rounded-2xl p-8 md:p-10 overflow-hidden transition-all duration-300 ease-out shadow-[0_10px_40px_-10px_rgba(15,23,42,0.12)]" style="background: #ffffff;">
+        <div class="web-design-pricing-card relative backdrop-blur-[12px] border border-slate-200 rounded-2xl p-5 sm:p-8 md:p-10 overflow-hidden transition-all duration-300 ease-out shadow-[0_10px_40px_-10px_rgba(15,23,42,0.12)]" style="background: #ffffff;">
           <!-- Stronger gradient overlays -->
           <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-transparent to-transparent pointer-events-none"></div>
           <div class="absolute inset-0 bg-gradient-to-tl from-orange-500/5 via-transparent to-transparent pointer-events-none"></div>
@@ -530,7 +530,7 @@ import WebDesignFeatureGrid from '../components/WebDesignFeatureGrid.astro';
     </section>
 
     <section id="hosting" class="max-w-7xl mx-auto pt-4 md:pt-8 pb-12 md:pb-16 px-4 sm:px-6 scroll-mt-28">
-      <div class="backdrop-blur-[12px] bg-slate-100 border border-slate-200 rounded-2xl p-8 md:p-12 relative overflow-hidden">
+      <div class="backdrop-blur-[12px] bg-slate-100 border border-slate-200 rounded-2xl p-4 sm:p-6 md:p-12 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/5 via-transparent to-transparent pointer-events-none"></div>
         <div class="relative">
           <div class="text-center mb-8 md:mb-12">
@@ -539,7 +539,7 @@ import WebDesignFeatureGrid from '../components/WebDesignFeatureGrid.astro';
             <p class="text-emerald-400/90 text-sm max-w-2xl mx-auto mt-4 font-medium">Required for every site we build — $75/mo, billed monthly.</p>
           </div>
           <div class="max-w-5xl mx-auto">
-        <div class="hosting-pricing-card backdrop-blur-[12px] border border-emerald-500/20 rounded-2xl p-6 md:p-8 overflow-hidden relative flex flex-col transition-all duration-300 ease-out shadow-[0_0_30px_rgba(16,185,129,0.08)]" style="background: #ffffff;">
+        <div class="hosting-pricing-card backdrop-blur-[12px] border border-emerald-500/20 rounded-2xl p-5 sm:p-6 md:p-8 overflow-hidden relative flex flex-col transition-all duration-300 ease-out shadow-[0_0_30px_rgba(16,185,129,0.08)]" style="background: #ffffff;">
           <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/10 via-transparent to-transparent pointer-events-none"></div>
           <div class="absolute inset-0 bg-gradient-to-tl from-teal-500/5 via-transparent to-transparent pointer-events-none"></div>
           <div class="relative">
@@ -564,30 +564,30 @@ import WebDesignFeatureGrid from '../components/WebDesignFeatureGrid.astro';
                   <h2 class="text-2xl md:text-4xl font-bold mb-2 text-slate-900 tracking-tight">The &quot;Peace of Mind&quot; Protocol</h2>
                   <p class="text-slate-600 text-sm leading-relaxed max-w-xl mx-auto">We don&apos;t just host your site. We guard it.</p>
                 </div>
-                <ul class="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-2">
-                  <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-slate-50 border border-slate-100 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-slate-100 hover:border-slate-200">
+                <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
+                  <li class="flex items-start gap-2.5 py-2.5 px-3.5 rounded-lg bg-slate-50 border border-slate-100 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-slate-100 hover:border-slate-200">
                     <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <div><span class="text-sm font-semibold text-slate-900 block">Deploy Rollback</span><span class="text-xs text-slate-600">Every publish is saved. Roll back to a previous version instantly if an update causes trouble.</span></div>
+                    <div class="min-w-0"><span class="text-sm font-semibold text-slate-900 block">Deploy Rollback</span><span class="text-xs text-slate-600 leading-relaxed">Every publish is saved. Roll back to a previous version instantly if an update causes trouble.</span></div>
                   </li>
-                  <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-slate-50 border border-slate-100 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-slate-100 hover:border-slate-200">
+                  <li class="flex items-start gap-2.5 py-2.5 px-3.5 rounded-lg bg-slate-50 border border-slate-100 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-slate-100 hover:border-slate-200">
                     <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <div><span class="text-sm font-semibold text-slate-900 block">Global CDN &amp; Caching</span><span class="text-xs text-slate-600">Your site is served from edge locations worldwide for fast load times.</span></div>
+                    <div class="min-w-0"><span class="text-sm font-semibold text-slate-900 block">Global CDN &amp; Caching</span><span class="text-xs text-slate-600 leading-relaxed">Your site is served from edge locations worldwide for fast load times.</span></div>
                   </li>
-                  <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-slate-50 border border-slate-100 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-slate-100 hover:border-slate-200">
+                  <li class="flex items-start gap-2.5 py-2.5 px-3.5 rounded-lg bg-slate-50 border border-slate-100 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-slate-100 hover:border-slate-200">
                     <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <div><span class="text-sm font-semibold text-slate-900 block">Uptime Monitoring</span><span class="text-xs text-slate-600">We check that your site stays online and respond quickly if something goes wrong.</span></div>
+                    <div class="min-w-0"><span class="text-sm font-semibold text-slate-900 block">Uptime Monitoring</span><span class="text-xs text-slate-600 leading-relaxed">We check that your site stays online and respond quickly if something goes wrong.</span></div>
                   </li>
-                  <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-slate-50 border border-slate-100 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-slate-100 hover:border-slate-200">
+                  <li class="flex items-start gap-2.5 py-2.5 px-3.5 rounded-lg bg-slate-50 border border-slate-100 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-slate-100 hover:border-slate-200">
                     <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <div><span class="text-sm font-semibold text-slate-900 block">Edge Security &amp; DDoS Protection</span><span class="text-xs text-slate-600">Built-in edge protection against DDoS attacks and sudden traffic spikes.</span></div>
+                    <div class="min-w-0"><span class="text-sm font-semibold text-slate-900 block">Edge Security &amp; DDoS Protection</span><span class="text-xs text-slate-600 leading-relaxed">Built-in edge protection against DDoS attacks and sudden traffic spikes.</span></div>
                   </li>
-                  <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-slate-50 border border-slate-100 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-slate-100 hover:border-slate-200">
+                  <li class="flex items-start gap-2.5 py-2.5 px-3.5 rounded-lg bg-slate-50 border border-slate-100 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-slate-100 hover:border-slate-200">
                     <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <div><span class="text-sm font-semibold text-slate-900 block">Auto-Renewing SSL</span><span class="text-xs text-slate-600">The &quot;Padlock&quot; is managed and renewed for you forever.</span></div>
+                    <div class="min-w-0"><span class="text-sm font-semibold text-slate-900 block">Auto-Renewing SSL</span><span class="text-xs text-slate-600 leading-relaxed">The &quot;Padlock&quot; is managed and renewed for you forever.</span></div>
                   </li>
-                  <li class="flex items-start gap-2.5 py-2 px-3 rounded-lg bg-slate-50 border border-slate-100 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-slate-100 hover:border-slate-200">
+                  <li class="flex items-start gap-2.5 py-2.5 px-3.5 rounded-lg bg-slate-50 border border-slate-100 transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-slate-100 hover:border-slate-200">
                     <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                    <div><span class="text-sm font-semibold text-slate-900 block">Managed DNS &amp; Domain Setup</span><span class="text-xs text-slate-600">We configure your domain and DNS at launch so your site goes live without the headache.</span></div>
+                    <div class="min-w-0"><span class="text-sm font-semibold text-slate-900 block">Managed DNS &amp; Domain Setup</span><span class="text-xs text-slate-600 leading-relaxed">We configure your domain and DNS at launch so your site goes live without the headache.</span></div>
                   </li>
                 </ul>
               </div>

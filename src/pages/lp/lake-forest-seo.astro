@@ -1,0 +1,380 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+
+const faqs = [
+  {
+    question: 'How much does Lake Forest SEO cost?',
+    answer:
+      'OCWebPros local SEO plans start at $500/month for Google Business Profile management, citation monitoring, and technical upkeep. Most Lake Forest small businesses see strong ROI at this tier within 60–90 days.',
+  },
+  {
+    question: 'What is included in a free Lake Forest SEO audit?',
+    answer:
+      'We review your Google Business Profile, rankings for Lake Forest keywords, citation accuracy, on-page SEO, and competitor positioning — then deliver a prioritized fix list you can act on immediately.',
+  },
+  {
+    question: 'How long does it take to rank in Lake Forest?',
+    answer:
+      'Lake Forest is less competitive than Irvine, so most businesses see Google Maps movement within 30–60 days and organic improvement within 90 days when GBP, city pages, and reviews are executed consistently.',
+  },
+  {
+    question: 'Why hire a Lake Forest SEO agency instead of a national firm?',
+    answer:
+      'We are based in Lake Forest. You get same-time-zone support, in-person strategy sessions, and an agency that understands Foothill Ranch, El Toro Road, and South OC search behavior — not a generic Orange County template.',
+  },
+  {
+    question: 'Do you only serve Lake Forest businesses?',
+    answer:
+      'Lake Forest is our home base. We serve businesses across Orange County, with dedicated local SEO for nearby cities including Irvine, Mission Viejo, and Rancho Santa Margarita.',
+  },
+];
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Lake Forest SEO',
+  alternateName: 'Local SEO Services in Lake Forest, CA',
+  description:
+    'Local SEO services for Lake Forest, CA businesses — Google Business Profile optimization, Google Maps rankings, citations, reviews, and city-specific landing pages.',
+  provider: {
+    '@type': 'LocalBusiness',
+    name: 'OCWebPros',
+    telephone: '+1-949-329-4437',
+    email: 'hello@ocwebpros.com',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Lake Forest',
+      addressRegion: 'CA',
+      postalCode: '92630',
+      addressCountry: 'US',
+    },
+  },
+  areaServed: {
+    '@type': 'City',
+    name: 'Lake Forest',
+    containedInPlace: { '@type': 'State', name: 'California' },
+  },
+  offers: {
+    '@type': 'Offer',
+    priceCurrency: 'USD',
+    price: '500.00',
+    priceSpecification: {
+      '@type': 'UnitPriceSpecification',
+      price: '500.00',
+      priceCurrency: 'USD',
+      unitText: 'MONTH',
+    },
+  },
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+};
+---
+<MainLayout
+  title="Lake Forest SEO | Free Local SEO Audit | OCWebPros"
+  description="Lake Forest SEO that gets your business found on Google Search and Maps. Based in Lake Forest, CA. Free audit — Google Business Profile, rankings, and a clear action plan. Call (949) 329-4437."
+  bodyClass="page-lp-lake-forest-seo"
+  landing={true}
+  landingCtaHref="#audit-form"
+  landingCtaLabel="Get Free Audit"
+>
+  <Fragment slot="head">
+    <!-- Ads test LP: kept out of the index so it doesn't cannibalize /local-seo/lake-forest/ -->
+    <meta name="robots" content="noindex, follow" />
+    <meta name="geo.region" content="US-CA" />
+    <meta name="geo.placename" content="Lake Forest" />
+    <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <!-- Hero: full-bleed visual + brand + message-matched H1 + form CTA -->
+  <header class="relative min-h-[min(100svh,920px)] flex items-center overflow-hidden pt-20 sm:pt-24">
+    <div class="absolute inset-0" aria-hidden="true">
+      <img
+        src="/images/lake-forest-oc.jpg"
+        alt=""
+        class="h-full w-full object-cover object-center"
+        width="1600"
+        height="1067"
+        fetchpriority="high"
+      />
+      <div class="absolute inset-0 bg-gradient-to-br from-slate-950/88 via-slate-900/78 to-orange-950/55"></div>
+      <div class="absolute inset-0 hero-atmosphere opacity-40 mix-blend-screen pointer-events-none"></div>
+    </div>
+
+    <div class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <div class="lg:col-span-6 text-white animate-fade-up">
+          <p class="logo-text text-3xl sm:text-4xl md:text-5xl tracking-tight text-white mb-5">
+            OCWebPros
+          </p>
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.05] mb-5">
+            Lake Forest <span class="text-gradient-orange">SEO</span>
+          </h1>
+          <p class="text-lg sm:text-xl text-slate-200/90 max-w-xl leading-relaxed mb-8">
+            Rank when local customers search — on Google and Maps — with a Lake Forest team that works next door, not overseas.
+          </p>
+          <ul class="space-y-3 text-slate-100/90 mb-8">
+            <li class="flex items-start gap-3">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span>
+              <span>Google Business Profile &amp; Maps optimization</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span>
+              <span>Lake Forest–specific pages that outrank generic OC content</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1.5 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span>
+              <span>Plans from $500/mo · Free audit · Same-day local calls</span>
+            </li>
+          </ul>
+          <a href="tel:9493294437" class="inline-flex items-center gap-2 text-white font-semibold hover:text-orange-300 transition-colors">
+            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            (949) 329-4437
+          </a>
+        </div>
+
+        <div id="audit-form" class="lg:col-span-6 scroll-mt-28 animate-fade-up" style="animation-delay: 120ms;">
+          <div class="bg-white/95 backdrop-blur-md border border-white/40 rounded-2xl p-6 sm:p-8 shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
+            <h2 class="text-2xl font-bold text-slate-900 mb-1">Get your free Lake Forest SEO audit</h2>
+            <p class="text-slate-600 text-sm mb-6">Tell us about your business. We’ll reply with rankings gaps and next steps — usually within one business day.</p>
+            <form id="lfSeoAuditForm" class="grid gap-4">
+              <div>
+                <label for="lf-name" class="block text-sm font-medium text-slate-700 mb-1.5">Full name*</label>
+                <input id="lf-name" name="name" required autocomplete="name" class="w-full rounded-xl bg-white border border-slate-200 px-4 py-3 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500/50 transition-all" placeholder="Jane Doe" />
+              </div>
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="lf-email" class="block text-sm font-medium text-slate-700 mb-1.5">Email*</label>
+                  <input id="lf-email" type="email" name="email" required autocomplete="email" class="w-full rounded-xl bg-white border border-slate-200 px-4 py-3 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500/50 transition-all" placeholder="you@business.com" />
+                </div>
+                <div>
+                  <label for="lf-phone" class="block text-sm font-medium text-slate-700 mb-1.5">Phone*</label>
+                  <input id="lf-phone" type="tel" name="phone" required autocomplete="tel" class="w-full rounded-xl bg-white border border-slate-200 px-4 py-3 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500/50 transition-all" placeholder="(949) 555-1234" />
+                </div>
+              </div>
+              <div>
+                <label for="lf-website" class="block text-sm font-medium text-slate-700 mb-1.5">Website</label>
+                <input id="lf-website" type="url" name="website" autocomplete="url" class="w-full rounded-xl bg-white border border-slate-200 px-4 py-3 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500/50 transition-all" placeholder="https://yourbusiness.com" />
+              </div>
+              <div>
+                <label for="lf-message" class="block text-sm font-medium text-slate-700 mb-1.5">What should we look at first?</label>
+                <textarea id="lf-message" name="message" rows="3" class="w-full rounded-xl bg-white border border-slate-200 px-4 py-3 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500/50 transition-all resize-none" placeholder="Google Maps rankings, reviews, website SEO…"></textarea>
+              </div>
+              <button type="submit" class="w-full px-8 py-3.5 bg-orange-700 text-white font-semibold rounded-full hover:bg-orange-600 transition-colors btn-glow text-base">
+                Request Free SEO Audit
+              </button>
+              <p id="lfSeoFormNote" class="text-xs text-slate-500 text-center">No spam. Lake Forest, CA · Mon–Fri 9am–5pm</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- What Lake Forest SEO includes -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24" aria-labelledby="includes-heading">
+      <div class="max-w-2xl mb-12" data-aos="fade-up">
+        <p class="section-eyebrow mb-3">What’s included</p>
+        <h2 id="includes-heading" class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-3">
+          SEO built for Lake Forest searchers
+        </h2>
+        <p class="text-slate-600 text-lg leading-relaxed">
+          When someone in Foothill Ranch, Portola Hills, or along El Toro Road searches “near me,” you should be the business they call.
+        </p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {[
+          {
+            title: 'Google Business Profile',
+            body: 'Categories, weekly posts, photos, Q&A, and spam fighting tuned to Lake Forest search patterns.',
+          },
+          {
+            title: 'Google Maps Rankings',
+            body: 'Earn the Map Pack with reviews, NAP consistency, and location signals that prove you serve Lake Forest.',
+          },
+          {
+            title: 'City Landing Pages',
+            body: 'Dedicated pages for Lake Forest services — not a one-size Orange County blog post.',
+          },
+          {
+            title: 'Citations & Directories',
+            body: 'Consistent name, address, and phone across Yelp, Bing, Apple Maps, and local directories.',
+          },
+          {
+            title: 'Review Generation',
+            body: 'Ethical systems to earn real Lake Forest customer reviews — a top local ranking factor.',
+          },
+          {
+            title: 'Monthly Reporting',
+            body: 'Clear rankings, Maps visibility, calls, and form leads — plus what to do next.',
+          },
+        ].map((item, i) => (
+          <div data-aos="fade-up" data-aos-delay={String(i * 60)}>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">{item.title}</h3>
+            <p class="text-slate-600 leading-relaxed">{item.body}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Why us -->
+    <section class="bg-slate-50 border-y border-slate-100 py-16 md:py-24 px-4 sm:px-6" aria-labelledby="why-heading">
+      <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div data-aos="fade-up">
+          <p class="section-eyebrow mb-3">Our home base</p>
+          <h2 id="why-heading" class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-4">
+            Your SEO partner is in Lake Forest
+          </h2>
+          <p class="text-slate-600 text-lg leading-relaxed mb-6">
+            OCWebPros is based right here — not a call center overseas. We know the neighborhoods, the competition from Irvine and Mission Viejo, and how Lake Forest customers actually choose a business online.
+          </p>
+          <ul class="space-y-3 text-slate-700">
+            <li class="flex items-start gap-3"><span class="mt-1.5 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Same-day meetings and same-time-zone support</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1.5 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Deep knowledge of Foothill Ranch, The Orchard, and South OC search trends</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1.5 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>We run the city-page strategy we recommend to clients</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1.5 w-2 h-2 rounded-full bg-orange-500 flex-shrink-0"></span><span>Transparent plans from $500/mo — no long-term lock-in</span></li>
+          </ul>
+        </div>
+        <div class="relative h-72 sm:h-96 rounded-2xl overflow-hidden border border-slate-200" data-aos="fade-up" data-aos-delay="100">
+          <img
+            src="/images/unsplash/industries-local-business.jpg"
+            alt="Local Lake Forest business owner reviewing online presence"
+            class="h-full w-full object-cover"
+            loading="lazy"
+            width="1200"
+            height="800"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/50 via-transparent to-transparent"></div>
+          <p class="absolute bottom-4 left-4 right-4 text-white text-sm font-medium">Lake Forest, CA 92630 · Serving South Orange County</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24" aria-labelledby="process-heading">
+      <div class="text-center max-w-2xl mx-auto mb-12" data-aos="fade-up">
+        <p class="section-eyebrow mb-3">Simple process</p>
+        <h2 id="process-heading" class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-3">
+          From audit to rankings
+        </h2>
+        <p class="text-slate-600 text-lg">Four clear steps. No black-box SEO.</p>
+      </div>
+      <ol class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 list-none p-0 m-0">
+        {[
+          { step: '01', title: 'Free audit', body: 'We map your GBP, keywords, citations, and competitors in Lake Forest.' },
+          { step: '02', title: 'Fix the foundation', body: 'Clean NAP, on-page SEO, and Google Business Profile setup that matches how locals search.' },
+          { step: '03', title: 'Grow visibility', body: 'City pages, reviews, posts, and citations that push you into the Map Pack.' },
+          { step: '04', title: 'Report & refine', body: 'Monthly rankings and lead tracking — with adjustments that compound.' },
+        ].map((item, i) => (
+          <li data-aos="fade-up" data-aos-delay={String(i * 80)}>
+            <p class="text-orange-600 font-bold text-sm tracking-wider mb-2">{item.step}</p>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">{item.title}</h3>
+            <p class="text-slate-600 leading-relaxed">{item.body}</p>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <!-- Pricing snapshot -->
+    <section class="bg-slate-50 border-y border-slate-100 py-16 md:py-24 px-4 sm:px-6" aria-labelledby="pricing-heading">
+      <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
+        <p class="section-eyebrow mb-3">Transparent pricing</p>
+        <h2 id="pricing-heading" class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-3">
+          Lake Forest SEO plans from $500/mo
+        </h2>
+        <p class="text-slate-600 text-lg leading-relaxed mb-8">
+          Start with foundation upkeep or scale into content, competitor gaps, and aggressive local growth. Every plan includes direct access to your SEO team in Lake Forest.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#audit-form" class="px-8 py-3.5 bg-orange-700 text-white font-semibold rounded-full hover:bg-orange-600 transition-colors btn-glow">
+            Get Free Audit
+          </a>
+          <a href="/pricing" class="px-8 py-3.5 bg-white text-slate-900 font-semibold rounded-full border border-slate-200 hover:bg-slate-100 transition-colors">
+            Compare plans
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="max-w-3xl mx-auto px-4 sm:px-6 py-16 md:py-24" aria-labelledby="faq-heading">
+      <div class="text-center mb-10" data-aos="fade-up">
+        <p class="section-eyebrow mb-3">FAQ</p>
+        <h2 id="faq-heading" class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">
+          Lake Forest SEO questions
+        </h2>
+      </div>
+      <div class="space-y-3" data-aos="fade-up">
+        {faqs.map((faq) => (
+          <details class="group border border-slate-200 rounded-xl bg-white px-5 py-4 open:shadow-sm">
+            <summary class="cursor-pointer list-none flex items-center justify-between gap-4 font-semibold text-slate-900">
+              <span>{faq.question}</span>
+              <span class="text-orange-600 text-xl leading-none group-open:rotate-45 transition-transform">+</span>
+            </summary>
+            <p class="mt-3 text-slate-600 leading-relaxed pr-8">{faq.answer}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="fold-dark py-16 md:py-24 px-4 sm:px-6">
+      <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
+        <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-4">
+          Ready to own Lake Forest search?
+        </h2>
+        <p class="text-slate-300 text-lg mb-8 max-w-xl mx-auto">
+          Request your free SEO audit or call the team based right here in Lake Forest.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#audit-form" class="px-8 py-3.5 bg-orange-600 text-white font-semibold rounded-full hover:bg-orange-500 transition-colors btn-glow">
+            Get Free Audit
+          </a>
+          <a href="tel:9493294437" class="px-8 py-3.5 bg-white/10 text-white font-semibold rounded-full border border-white/20 hover:bg-white/15 transition-colors">
+            (949) 329-4437
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      const form = document.getElementById('lfSeoAuditForm');
+      if (!form) return;
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const fd = new FormData(form);
+        const name = String(fd.get('name') || '');
+        const email = String(fd.get('email') || '');
+        const phone = String(fd.get('phone') || '');
+        const website = String(fd.get('website') || '');
+        const msg = String(fd.get('message') || '');
+        const subject = encodeURIComponent('Lake Forest SEO audit request (PPC LP)');
+        const body = encodeURIComponent(
+          `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nWebsite: ${website}\n\nMessage:\n${msg}\n\nSource: /lp/lake-forest-seo`
+        );
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'lp_seo_audit_submit',
+          landing_page: '/lp/lake-forest-seo',
+        });
+        window.location.href = `mailto:hello@ocwebpros.com?subject=${subject}&body=${body}`;
+        const note = document.getElementById('lfSeoFormNote');
+        if (note) note.textContent = 'Opening your email app…';
+      });
+    })();
+  </script>
+</MainLayout>
