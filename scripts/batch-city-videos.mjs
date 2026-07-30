@@ -165,13 +165,52 @@ async function main() {
       console.log(`  mp4: ${rendered.outMp4}${rendered.skipped ? ' (cached)' : ''}`);
 
       let youtubeId = existing[item.citySlug]?.youtubeId || null;
-      if (!cli.skipUpload) {
+      if (!cli.skipUpload && youtubeId) {
+        console.log(`  YouTube already linked: ${youtubeId} (skip upload)`);
+      } else if (!cli.skipUpload) {
         try {
           console.log('  uploading to YouTube…');
           youtubeId = await uploadVideo(youtube, item, rendered.outMp4);
           console.log(`  ✅ https://www.youtube.com/watch?v=${youtubeId}`);
         } catch (uploadErr) {
-          console.error(`  ⚠ YouTube upload skipped: ${uploadErr.message}`);
+          const msg = uploadErr.message || String(uploadErr);
+          console.error(`  ⚠ YouTube upload skipped: ${msg}`);
+          if (/quota|rateLimitExceeded|dailyLimitExceeded|uploadLimitExceeded|exceeded the number of videos/i.test(msg)) {
+            console.error('\n⛔ YouTube quota hit — stopping further uploads. Re-run tomorrow after midnight PT.\n');
+            merged[item.citySlug] = {
+              youtubeId: undefined,
+              title: item.title,
+              localSrc: `/videos/pages/${item.id}.mp4`,
+            };
+            records.push({
+              id: item.id,
+              citySlug: item.citySlug,
+              title: item.title,
+              localSrc: `/videos/pages/${item.id}.mp4`,
+              error: msg,
+            });
+            // Keep remaining cities as existing local-only entries
+            for (let j = index + 1; j < manifest.length; j++) {
+              const rest = manifest[j];
+              const restLocal = `/videos/pages/${rest.id}.mp4`;
+              if (!merged[rest.citySlug]) {
+                merged[rest.citySlug] = {
+                  youtubeId: existing[rest.citySlug]?.youtubeId,
+                  title: rest.title,
+                  localSrc: existing[rest.citySlug]?.localSrc || restLocal,
+                };
+              }
+              records.push({
+                id: rest.id,
+                citySlug: rest.citySlug,
+                title: rest.title,
+                youtubeId: existing[rest.citySlug]?.youtubeId || null,
+                localSrc: restLocal,
+                error: 'skipped: quota',
+              });
+            }
+            break;
+          }
         }
       }
 
