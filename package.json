@@ -10,8 +10,10 @@
     "fetch-unsplash": "node scripts/fetch-unsplash-images.mjs",
     "test:video": "node scripts/test-video-pipeline.mjs",
     "batch:city-videos": "node scripts/batch-city-videos.mjs",
+    "batch:web-design-videos": "node scripts/batch-city-videos.mjs --manifest web-design-video-manifest.json --data-file src/data/cityWebDesignVideos.ts --export-name cityWebDesignVideos --service-label \"web design\"",
     "batch:city-images": "node scripts/batch-city-images.mjs",
     "generate:city-manifest": "node scripts/generate-city-media-manifest.mjs",
+    "generate:web-design-manifest": "node scripts/generate-web-design-video-manifest.mjs",
     "youtube:auth": "node scripts/youtube-auth.mjs",
     "youtube:upload": "node scripts/youtube-upload.mjs"
   },

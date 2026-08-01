@@ -5,6 +5,7 @@ import type { CityServicePageData } from '../data/cityPageTypes';
 import { cityProofStrip } from '../data/priorityLocalSeoCities';
 import { industryPathwayLinks } from '../data/industryMesh';
 import { cityLocalSeoVideos } from '../data/cityVideos';
+import { cityWebDesignVideos } from '../data/cityWebDesignVideos';
 import { cityLocalSeoImages } from '../data/cityImages';
 
 type ServiceKind = 'local-seo' | 'web-design';
@@ -105,7 +106,10 @@ const siteUrl = Astro.site || new URL(Astro.url.origin);
 const pageUrl = new URL(`/${cfg.path}/${city.slug}/`, siteUrl).toString();
 const otherCities = allCities.filter((c) => c.slug !== city.slug);
 const industryLinks = serviceKind === 'local-seo' ? industryPathwayLinks(city.slug) : [];
-const cityVideo = serviceKind === 'local-seo' ? cityLocalSeoVideos[city.slug] : undefined;
+const cityVideo =
+  serviceKind === 'local-seo'
+    ? cityLocalSeoVideos[city.slug]
+    : cityWebDesignVideos[city.slug];
 const cityImages = serviceKind === 'local-seo' ? cityLocalSeoImages[city.slug] : undefined;
 const spotlightImage = cityImages?.spotlight;
 const galleryImages = cityImages?.gallery || [];
@@ -402,7 +406,9 @@ const videoSchema = cityVideo?.youtubeId
 
     {cityVideo && (cityVideo.youtubeId || cityVideo.localSrc) && (
       <section class="max-w-4xl mx-auto py-16 md:py-20 px-4 sm:px-6" aria-label={`${city.name} local SEO video`}>
-        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-center text-slate-900" data-aos="fade-up">SEO in {city.name} — watch</h2>
+        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-center text-slate-900" data-aos="fade-up">
+          {serviceKind === 'local-seo' ? `SEO in ${city.name}` : `Web design in ${city.name}`} — watch
+        </h2>
         <div class="relative w-full overflow-hidden rounded-2xl border border-slate-200 bg-slate-900 aspect-video shadow-sm" data-aos="fade-up">
           {cityVideo.youtubeId ? (
             <iframe

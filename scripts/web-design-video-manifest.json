@@ -1,0 +1,627 @@
+[
+  {
+    "id": "web-design-lake-forest",
+    "citySlug": "lake-forest",
+    "cityName": "Lake Forest",
+    "title": "Web Design in Lake Forest, CA | OCWebPros",
+    "slug": "web-design/lake-forest",
+    "landmarks": [
+      "Lake Forest Sports Park",
+      "Foothill Ranch"
+    ],
+    "allowedPlaces": [
+      "foothill ranch",
+      "el toro"
+    ],
+    "pexelsQuery": "Lake Forest California",
+    "pexelsQueries": [
+      "Foothill Ranch California",
+      "Orange County suburb neighborhood California"
+    ],
+    "requireCityMatch": false,
+    "clipCount": 3,
+    "script": "Web design in Lake Forest, California. Around Lake Forest Sports Park and Foothill Ranch, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom Lake Forest websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free Lake Forest web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-irvine",
+    "citySlug": "irvine",
+    "cityName": "Irvine",
+    "title": "Web Design in Irvine, CA | OCWebPros",
+    "slug": "web-design/irvine",
+    "landmarks": [
+      "Irvine Spectrum",
+      "Great Park"
+    ],
+    "allowedPlaces": [
+      "spectrum center",
+      "uc irvine"
+    ],
+    "pexelsQuery": "Irvine California",
+    "pexelsQueries": [
+      "Irvine Spectrum California",
+      "Irvine business district California"
+    ],
+    "requireCityMatch": true,
+    "clipCount": 3,
+    "script": "Web design in Irvine, California. Around Irvine Spectrum and Great Park, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom Irvine websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free Irvine web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-mission-viejo",
+    "citySlug": "mission-viejo",
+    "cityName": "Mission Viejo",
+    "title": "Web Design in Mission Viejo, CA | OCWebPros",
+    "slug": "web-design/mission-viejo",
+    "landmarks": [
+      "Lake Mission Viejo",
+      "Alicia Parkway"
+    ],
+    "allowedPlaces": [
+      "lake mission viejo"
+    ],
+    "pexelsQuery": "Mission Viejo California",
+    "pexelsQueries": [
+      "Lake Mission Viejo California",
+      "South Orange County suburb lake"
+    ],
+    "requireCityMatch": false,
+    "clipCount": 3,
+    "script": "Web design in Mission Viejo, California. Around Lake Mission Viejo and Alicia Parkway, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom Mission Viejo websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free Mission Viejo web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-rancho-santa-margarita",
+    "citySlug": "rancho-santa-margarita",
+    "cityName": "Rancho Santa Margarita",
+    "title": "Web Design in Rancho Santa Margarita, CA | OCWebPros",
+    "slug": "web-design/rancho-santa-margarita",
+    "landmarks": [
+      "Rancho Santa Margarita California"
+    ],
+    "allowedPlaces": [
+      "rancho santa margarita california"
+    ],
+    "pexelsQuery": "Rancho Santa Margarita California",
+    "pexelsQueries": [
+      "Rancho Santa Margarita California California",
+      "Rancho Santa Margarita downtown California",
+      "Orange County Rancho Santa Margarita"
+    ],
+    "requireCityMatch": false,
+    "clipCount": 3,
+    "script": "Web design in Rancho Santa Margarita, California. Around Rancho Santa Margarita California, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom Rancho Santa Margarita websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free Rancho Santa Margarita web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-laguna-hills",
+    "citySlug": "laguna-hills",
+    "cityName": "Laguna Hills",
+    "title": "Web Design in Laguna Hills, CA | OCWebPros",
+    "slug": "web-design/laguna-hills",
+    "landmarks": [
+      "Five Lagunas & Alicia Parkway",
+      "Saddleback Memorial area",
+      "Moulton Parkway corridor"
+    ],
+    "allowedPlaces": [
+      "five lagunas & alicia parkway",
+      "saddleback memorial area",
+      "moulton parkway corridor"
+    ],
+    "pexelsQuery": "Laguna Hills California",
+    "pexelsQueries": [
+      "Five Lagunas & Alicia Parkway California",
+      "Laguna Hills downtown California",
+      "Orange County Laguna Hills"
+    ],
+    "requireCityMatch": false,
+    "clipCount": 3,
+    "script": "Web design in Laguna Hills, California. Around Five Lagunas & Alicia Parkway and Saddleback Memorial area, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom Laguna Hills websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free Laguna Hills web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-aliso-viejo",
+    "citySlug": "aliso-viejo",
+    "cityName": "Aliso Viejo",
+    "title": "Web Design in Aliso Viejo, CA | OCWebPros",
+    "slug": "web-design/aliso-viejo",
+    "landmarks": [
+      "Aliso Viejo Town Center",
+      "The Commons at Aliso Viejo",
+      "Pacific Park Drive area"
+    ],
+    "allowedPlaces": [
+      "aliso viejo town center",
+      "the commons at aliso viejo",
+      "pacific park drive area"
+    ],
+    "pexelsQuery": "Aliso Viejo California",
+    "pexelsQueries": [
+      "Aliso Viejo Town Center California",
+      "Aliso Viejo downtown California",
+      "Orange County Aliso Viejo"
+    ],
+    "requireCityMatch": false,
+    "clipCount": 3,
+    "script": "Web design in Aliso Viejo, California. Around Aliso Viejo Town Center and The Commons at Aliso Viejo, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom Aliso Viejo websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free Aliso Viejo web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-san-clemente",
+    "citySlug": "san-clemente",
+    "cityName": "San Clemente",
+    "title": "Web Design in San Clemente, CA | OCWebPros",
+    "slug": "web-design/san-clemente",
+    "landmarks": [
+      "San Clemente Pier & beach area",
+      "Avenida Del Mar downtown",
+      "Marblehead & Shorecliffs"
+    ],
+    "allowedPlaces": [
+      "san clemente pier & beach area",
+      "avenida del mar downtown",
+      "marblehead & shorecliffs"
+    ],
+    "pexelsQuery": "San Clemente California",
+    "pexelsQueries": [
+      "San Clemente Pier & beach area California",
+      "San Clemente downtown California",
+      "Orange County San Clemente"
+    ],
+    "requireCityMatch": false,
+    "clipCount": 3,
+    "script": "Web design in San Clemente, California. Around San Clemente Pier & beach area and Avenida Del Mar downtown, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom San Clemente websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free San Clemente web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-dana-point",
+    "citySlug": "dana-point",
+    "cityName": "Dana Point",
+    "title": "Web Design in Dana Point, CA | OCWebPros",
+    "slug": "web-design/dana-point",
+    "landmarks": [
+      "Dana Point Harbor",
+      "Lantern Bay & Strand",
+      "Monarch Beach"
+    ],
+    "allowedPlaces": [
+      "dana point harbor",
+      "lantern bay & strand",
+      "monarch beach"
+    ],
+    "pexelsQuery": "Dana Point California",
+    "pexelsQueries": [
+      "Dana Point Harbor California",
+      "Dana Point downtown California",
+      "Orange County Dana Point"
+    ],
+    "requireCityMatch": false,
+    "clipCount": 3,
+    "script": "Web design in Dana Point, California. Around Dana Point Harbor and Lantern Bay & Strand, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom Dana Point websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free Dana Point web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-san-juan-capistrano",
+    "citySlug": "san-juan-capistrano",
+    "cityName": "San Juan Capistrano",
+    "title": "Web Design in San Juan Capistrano, CA | OCWebPros",
+    "slug": "web-design/san-juan-capistrano",
+    "landmarks": [
+      "Historic downtown & Los Rios",
+      "Mission San Juan Capistrano area",
+      "Ortega Highway corridor"
+    ],
+    "allowedPlaces": [
+      "historic downtown & los rios",
+      "mission san juan capistrano area",
+      "ortega highway corridor"
+    ],
+    "pexelsQuery": "San Juan Capistrano California",
+    "pexelsQueries": [
+      "Historic downtown & Los Rios California",
+      "San Juan Capistrano downtown California",
+      "Orange County San Juan Capistrano"
+    ],
+    "requireCityMatch": false,
+    "clipCount": 3,
+    "script": "Web design in San Juan Capistrano, California. Around Historic downtown & Los Rios and Mission San Juan Capistrano area, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom San Juan Capistrano websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free San Juan Capistrano web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-laguna-beach",
+    "citySlug": "laguna-beach",
+    "cityName": "Laguna Beach",
+    "title": "Web Design in Laguna Beach, CA | OCWebPros",
+    "slug": "web-design/laguna-beach",
+    "landmarks": [
+      "Downtown Laguna & Forest Avenue",
+      "Heisler Park & Main Beach",
+      "Laguna Canyon & Festival of Arts"
+    ],
+    "allowedPlaces": [
+      "downtown laguna & forest avenue",
+      "heisler park & main beach",
+      "laguna canyon & festival of arts"
+    ],
+    "pexelsQuery": "Laguna Beach California",
+    "pexelsQueries": [
+      "Downtown Laguna & Forest Avenue California",
+      "Laguna Beach downtown California",
+      "Orange County Laguna Beach"
+    ],
+    "requireCityMatch": false,
+    "clipCount": 3,
+    "script": "Web design in Laguna Beach, California. Around Downtown Laguna & Forest Avenue and Heisler Park & Main Beach, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom Laguna Beach websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free Laguna Beach web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-laguna-niguel",
+    "citySlug": "laguna-niguel",
+    "cityName": "Laguna Niguel",
+    "title": "Web Design in Laguna Niguel, CA | OCWebPros",
+    "slug": "web-design/laguna-niguel",
+    "landmarks": [
+      "Laguna Niguel Regional Park area",
+      "Crown Valley Parkway",
+      "Niguel Road & Marina Hills"
+    ],
+    "allowedPlaces": [
+      "laguna niguel regional park area",
+      "crown valley parkway",
+      "niguel road & marina hills"
+    ],
+    "pexelsQuery": "Laguna Niguel California",
+    "pexelsQueries": [
+      "Laguna Niguel Regional Park area California",
+      "Laguna Niguel downtown California",
+      "Orange County Laguna Niguel"
+    ],
+    "requireCityMatch": false,
+    "clipCount": 3,
+    "script": "Web design in Laguna Niguel, California. Around Laguna Niguel Regional Park area and Crown Valley Parkway, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom Laguna Niguel websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free Laguna Niguel web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-newport-beach",
+    "citySlug": "newport-beach",
+    "cityName": "Newport Beach",
+    "title": "Web Design in Newport Beach, CA | OCWebPros",
+    "slug": "web-design/newport-beach",
+    "landmarks": [
+      "Balboa Peninsula",
+      "Newport Harbor"
+    ],
+    "allowedPlaces": [
+      "balboa peninsula",
+      "balboa island",
+      "newport harbor",
+      "corona del mar"
+    ],
+    "pexelsQuery": "Newport Beach California",
+    "pexelsQueries": [
+      "Newport Beach harbor yachts",
+      "Balboa Peninsula California"
+    ],
+    "requireCityMatch": true,
+    "clipCount": 3,
+    "script": "Web design in Newport Beach, California. Around Balboa Peninsula and Newport Harbor, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom Newport Beach websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free Newport Beach web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-costa-mesa",
+    "citySlug": "costa-mesa",
+    "cityName": "Costa Mesa",
+    "title": "Web Design in Costa Mesa, CA | OCWebPros",
+    "slug": "web-design/costa-mesa",
+    "landmarks": [
+      "South Coast Plaza",
+      "The Camp Costa Mesa"
+    ],
+    "allowedPlaces": [
+      "south coast plaza",
+      "the camp",
+      "the lab anti mall"
+    ],
+    "pexelsQuery": "Costa Mesa California",
+    "pexelsQueries": [
+      "South Coast Plaza Costa Mesa",
+      "Costa Mesa California retail"
+    ],
+    "requireCityMatch": true,
+    "clipCount": 3,
+    "script": "Web design in Costa Mesa, California. Around South Coast Plaza and The Camp Costa Mesa, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom Costa Mesa websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free Costa Mesa web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-tustin",
+    "citySlug": "tustin",
+    "cityName": "Tustin",
+    "title": "Web Design in Tustin, CA | OCWebPros",
+    "slug": "web-design/tustin",
+    "landmarks": [
+      "Old Town Tustin & Main Street",
+      "Tustin Legacy & The District",
+      "Jamboree Road corridor"
+    ],
+    "allowedPlaces": [
+      "old town tustin & main street",
+      "tustin legacy & the district",
+      "jamboree road corridor"
+    ],
+    "pexelsQuery": "Tustin California",
+    "pexelsQueries": [
+      "Old Town Tustin & Main Street California",
+      "Tustin downtown California",
+      "Orange County Tustin"
+    ],
+    "requireCityMatch": false,
+    "clipCount": 3,
+    "script": "Web design in Tustin, California. Around Old Town Tustin & Main Street and Tustin Legacy & The District, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom Tustin websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free Tustin web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-orange",
+    "citySlug": "orange",
+    "cityName": "Orange",
+    "title": "Web Design in Orange, CA | OCWebPros",
+    "slug": "web-design/orange",
+    "landmarks": [
+      "Old Towne Orange & Plaza",
+      "Orange Circle area",
+      "Chapman University vicinity"
+    ],
+    "allowedPlaces": [
+      "old towne orange & plaza",
+      "orange circle area",
+      "chapman university vicinity"
+    ],
+    "pexelsQuery": "Orange California",
+    "pexelsQueries": [
+      "Old Towne Orange & Plaza California",
+      "Orange downtown California",
+      "Orange County Orange"
+    ],
+    "requireCityMatch": false,
+    "clipCount": 3,
+    "script": "Web design in Orange, California. Around Old Towne Orange & Plaza and Orange Circle area, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom Orange websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free Orange web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-fullerton",
+    "citySlug": "fullerton",
+    "cityName": "Fullerton",
+    "title": "Web Design in Fullerton, CA | OCWebPros",
+    "slug": "web-design/fullerton",
+    "landmarks": [
+      "Downtown Fullerton",
+      "SOCO District"
+    ],
+    "allowedPlaces": [
+      "soco",
+      "cal state fullerton",
+      "harbor boulevard fullerton"
+    ],
+    "pexelsQuery": "Fullerton California",
+    "pexelsQueries": [
+      "Downtown Fullerton California",
+      "Fullerton California downtown"
+    ],
+    "requireCityMatch": true,
+    "clipCount": 3,
+    "script": "Web design in Fullerton, California. Around Downtown Fullerton and SOCO District, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom Fullerton websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free Fullerton web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-anaheim",
+    "citySlug": "anaheim",
+    "cityName": "Anaheim",
+    "title": "Web Design in Anaheim, CA | OCWebPros",
+    "slug": "web-design/anaheim",
+    "landmarks": [
+      "Downtown Anaheim",
+      "Anaheim Resort District"
+    ],
+    "allowedPlaces": [
+      "anaheim resort",
+      "anaheim packing district",
+      "honda center"
+    ],
+    "pexelsQuery": "Anaheim California",
+    "pexelsQueries": [
+      "Downtown Anaheim California",
+      "Anaheim California city"
+    ],
+    "requireCityMatch": true,
+    "clipCount": 3,
+    "script": "Web design in Anaheim, California. Around Downtown Anaheim and Anaheim Resort District, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom Anaheim websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free Anaheim web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-huntington-beach",
+    "citySlug": "huntington-beach",
+    "cityName": "Huntington Beach",
+    "title": "Web Design in Huntington Beach, CA | OCWebPros",
+    "slug": "web-design/huntington-beach",
+    "landmarks": [
+      "Huntington Pier",
+      "Main Street Huntington Beach"
+    ],
+    "allowedPlaces": [
+      "huntington pier",
+      "surf city",
+      "pacific city"
+    ],
+    "pexelsQuery": "Huntington Beach California pier",
+    "pexelsQueries": [
+      "Huntington Beach pier surf",
+      "Huntington Beach California ocean"
+    ],
+    "requireCityMatch": true,
+    "clipCount": 3,
+    "script": "Web design in Huntington Beach, California. Around Huntington Pier and Main Street Huntington Beach, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom Huntington Beach websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free Huntington Beach web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-santa-ana",
+    "citySlug": "santa-ana",
+    "cityName": "Santa Ana",
+    "title": "Web Design in Santa Ana, CA | OCWebPros",
+    "slug": "web-design/santa-ana",
+    "landmarks": [
+      "Downtown Santa Ana & Artists Village",
+      "Civic Center & government district",
+      "Logan & French Park"
+    ],
+    "allowedPlaces": [
+      "downtown santa ana & artists village",
+      "civic center & government district",
+      "logan & french park"
+    ],
+    "pexelsQuery": "Santa Ana California",
+    "pexelsQueries": [
+      "Downtown Santa Ana & Artists Village California",
+      "Santa Ana downtown California",
+      "Orange County Santa Ana"
+    ],
+    "requireCityMatch": false,
+    "clipCount": 3,
+    "script": "Web design in Santa Ana, California. Around Downtown Santa Ana & Artists Village and Civic Center & government district, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom Santa Ana websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free Santa Ana web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-garden-grove",
+    "citySlug": "garden-grove",
+    "cityName": "Garden Grove",
+    "title": "Web Design in Garden Grove, CA | OCWebPros",
+    "slug": "web-design/garden-grove",
+    "landmarks": [
+      "Little Saigon & Westminster border",
+      "Garden Grove Boulevard",
+      "Brookhurst Street corridor"
+    ],
+    "allowedPlaces": [
+      "little saigon & westminster border",
+      "garden grove boulevard",
+      "brookhurst street corridor"
+    ],
+    "pexelsQuery": "Garden Grove California",
+    "pexelsQueries": [
+      "Little Saigon & Westminster border California",
+      "Garden Grove downtown California",
+      "Orange County Garden Grove"
+    ],
+    "requireCityMatch": false,
+    "clipCount": 3,
+    "script": "Web design in Garden Grove, California. Around Little Saigon & Westminster border and Garden Grove Boulevard, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom Garden Grove websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free Garden Grove web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-brea",
+    "citySlug": "brea",
+    "cityName": "Brea",
+    "title": "Web Design in Brea, CA | OCWebPros",
+    "slug": "web-design/brea",
+    "landmarks": [
+      "Brea Mall & Brea Marketplace",
+      "Downtown Brea & Birch Street",
+      "Brea Imperial corridor"
+    ],
+    "allowedPlaces": [
+      "brea mall & brea marketplace",
+      "downtown brea & birch street",
+      "brea imperial corridor"
+    ],
+    "pexelsQuery": "Brea California",
+    "pexelsQueries": [
+      "Brea Mall & Brea Marketplace California",
+      "Brea downtown California",
+      "Orange County Brea"
+    ],
+    "requireCityMatch": false,
+    "clipCount": 3,
+    "script": "Web design in Brea, California. Around Brea Mall & Brea Marketplace and Downtown Brea & Birch Street, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom Brea websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free Brea web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-yorba-linda",
+    "citySlug": "yorba-linda",
+    "cityName": "Yorba Linda",
+    "title": "Web Design in Yorba Linda, CA | OCWebPros",
+    "slug": "web-design/yorba-linda",
+    "landmarks": [
+      "Yorba Linda Town Center",
+      "East Lake Village",
+      "Villa Park border"
+    ],
+    "allowedPlaces": [
+      "yorba linda town center",
+      "east lake village",
+      "villa park border"
+    ],
+    "pexelsQuery": "Yorba Linda California",
+    "pexelsQueries": [
+      "Yorba Linda Town Center California",
+      "Yorba Linda downtown California",
+      "Orange County Yorba Linda"
+    ],
+    "requireCityMatch": false,
+    "clipCount": 3,
+    "script": "Web design in Yorba Linda, California. Around Yorba Linda Town Center and East Lake Village, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom Yorba Linda websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free Yorba Linda web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-westminster",
+    "citySlug": "westminster",
+    "cityName": "Westminster",
+    "title": "Web Design in Westminster, CA | OCWebPros",
+    "slug": "web-design/westminster",
+    "landmarks": [
+      "Little Saigon core & Asian Garden Mall",
+      "Westminster Boulevard",
+      "Bolsa Avenue corridor"
+    ],
+    "allowedPlaces": [
+      "little saigon core & asian garden mall",
+      "westminster boulevard",
+      "bolsa avenue corridor"
+    ],
+    "pexelsQuery": "Westminster California",
+    "pexelsQueries": [
+      "Little Saigon core & Asian Garden Mall California",
+      "Westminster downtown California",
+      "Orange County Westminster"
+    ],
+    "requireCityMatch": false,
+    "clipCount": 3,
+    "script": "Web design in Westminster, California. Around Little Saigon core & Asian Garden Mall and Westminster Boulevard, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom Westminster websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free Westminster web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  },
+  {
+    "id": "web-design-fountain-valley",
+    "citySlug": "fountain-valley",
+    "cityName": "Fountain Valley",
+    "title": "Web Design in Fountain Valley, CA | OCWebPros",
+    "slug": "web-design/fountain-valley",
+    "landmarks": [
+      "Fountain Valley Town Center",
+      "Euclid Street corridor",
+      "Warner Avenue & Magnolia"
+    ],
+    "allowedPlaces": [
+      "fountain valley town center",
+      "euclid street corridor",
+      "warner avenue & magnolia"
+    ],
+    "pexelsQuery": "Fountain Valley California",
+    "pexelsQueries": [
+      "Fountain Valley Town Center California",
+      "Fountain Valley downtown California",
+      "Orange County Fountain Valley"
+    ],
+    "requireCityMatch": false,
+    "clipCount": 3,
+    "script": "Web design in Fountain Valley, California. Around Fountain Valley Town Center and Euclid Street corridor, local businesses need a fast, mobile-first website that converts visitors into customers - not a bloated template. OC Web Pros builds custom Fountain Valley websites with city and service pages, local schema, and Core Web Vitals performance. Based in Lake Forest and focused on Orange County. Request a free Fountain Valley web design consult with OC Web Pros.",
+    "voiceId": "21m00Tcm4TlvDq8ikWAM"
+  }
+]
