@@ -245,7 +245,7 @@ At OCWebPros, we believe in **transparent, value-based pricing**. Here's how we 
 - Custom 5-8 page website
 - Mobile-first responsive design
 - Basic SEO setup
-- 90+ PageSpeed scores
+- Fast load times and mobile performance
 - 30-day support included
 
 ### Growth Package: $8,500-15,000  

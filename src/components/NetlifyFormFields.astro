@@ -1,0 +1,15 @@
+---
+interface Props {
+  formName: string;
+}
+
+const { formName } = Astro.props;
+---
+
+<input type="hidden" name="form-name" value={formName} />
+<p class="hidden" aria-hidden="true">
+  <label>
+    Don't fill this out if you're human:
+    <input name="bot-field" tabindex="-1" autocomplete="off" />
+  </label>
+</p>

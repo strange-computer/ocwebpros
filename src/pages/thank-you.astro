@@ -1,0 +1,61 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+
+const form = Astro.url.searchParams.get('form');
+const messages: Record<string, { title: string; body: string }> = {
+  contact: {
+    title: 'Message sent',
+    body: 'Thanks for reaching out. A team member will reply during business hours (Mon–Fri, 9am–5pm).',
+  },
+  newsletter: {
+    title: "You're subscribed",
+    body: "Thanks for signing up. You'll hear from us when we publish new SEO and web design insights.",
+  },
+  'lake-forest-seo-audit': {
+    title: 'Audit request received',
+    body: "Thanks! We'll review your site and reply with rankings gaps and next steps — usually within one business day.",
+  },
+};
+const content = (form && messages[form]) || {
+  title: 'Thank you',
+  body: 'Your submission was received. We will be in touch soon.',
+};
+---
+
+<MainLayout
+  title="Thank You | OCWebPros"
+  description="Thank you for contacting OCWebPros. We will respond during business hours."
+  bodyClass="page-thank-you"
+  pageCSS="/css/pages/contact.css"
+>
+  <Fragment slot="head">
+    <meta name="robots" content="noindex, nofollow" />
+  </Fragment>
+
+  <main class="min-h-screen flex items-center justify-center px-4 sm:px-6 py-32 relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-orange-600/10 blur-[120px] pointer-events-none"></div>
+
+    <div class="relative max-w-2xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-xs font-medium text-orange-400 mb-8">
+        <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+        Success
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4 text-slate-900">
+        {content.title}
+      </h1>
+      <p class="text-slate-600 text-lg leading-relaxed mb-8">
+        {content.body}
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/" class="px-8 py-3.5 bg-orange-700 text-white font-semibold rounded-full hover:bg-orange-600 transition-colors btn-glow">
+          Back to home
+        </a>
+        <a href="tel:9493294437" class="px-8 py-3.5 bg-slate-100 text-slate-900 font-semibold rounded-full border border-slate-200 hover:bg-slate-200 transition-colors">
+          Call (949) 329-4437
+        </a>
+      </div>
+    </div>
+  </main>
+</MainLayout>

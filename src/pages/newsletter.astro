@@ -1,5 +1,6 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
+import NetlifyFormFields from '../components/NetlifyFormFields.astro';
 ---
 <MainLayout 
   title="SEO Newsletter | OCWebPros" 
@@ -29,7 +30,16 @@ import MainLayout from '../layouts/MainLayout.astro';
       <div class="backdrop-blur-[12px] bg-slate-100 border border-slate-200 rounded-2xl p-6 sm:p-8 md:p-10">
         <h2 class="text-2xl md:text-3xl font-bold mb-2 text-slate-900 text-center">Subscribe for free</h2>
         <p class="text-slate-600 text-sm md:text-base text-center mb-8">Get the latest when we publish - usually a few times a month.</p>
-        <form id="newsletterForm" class="max-w-md mx-auto space-y-4">
+        <form
+          id="newsletterForm"
+          name="newsletter"
+          method="POST"
+          action="/thank-you/?form=newsletter"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          class="max-w-md mx-auto space-y-4"
+        >
+          <NetlifyFormFields formName="newsletter" />
           <div>
             <label class="block text-sm font-medium text-slate-700 mb-2">Email*</label>
             <input type="email" name="email" required class="w-full rounded-xl bg-white border border-slate-200 px-4 py-3 text-slate-900 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500/50 transition-all" placeholder="you@example.com" />
@@ -91,18 +101,9 @@ import MainLayout from '../layouts/MainLayout.astro';
     (function () {
       const form = document.getElementById('newsletterForm');
       if (!form) return;
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const fd = new FormData(form);
-        const email = fd.get('email') || '';
-        const name = fd.get('name') || '';
-        const subject = encodeURIComponent('Newsletter subscription request');
-        const body = encodeURIComponent(
-          `Please add me to the OCWebPros SEO newsletter.\n\nEmail: ${email}\nName: ${name || '(not provided)'}`
-        );
+      form.addEventListener('submit', () => {
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({ event: 'newsletter_signup' });
-        window.location.href = `mailto:hello@ocwebpros.com?subject=${subject}&body=${body}`;
       });
     })();
   </script>
