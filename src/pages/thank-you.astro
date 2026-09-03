@@ -1,25 +1,5 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
-
-const form = Astro.url.searchParams.get('form');
-const messages: Record<string, { title: string; body: string }> = {
-  contact: {
-    title: 'Message sent',
-    body: 'Thanks for reaching out. A team member will reply during business hours (Mon–Fri, 9am–5pm).',
-  },
-  newsletter: {
-    title: "You're subscribed",
-    body: "Thanks for signing up. You'll hear from us when we publish new SEO and web design insights.",
-  },
-  'lake-forest-seo-audit': {
-    title: 'Audit request received',
-    body: "Thanks! We'll review your site and reply with rankings gaps and next steps — usually within one business day.",
-  },
-};
-const content = (form && messages[form]) || {
-  title: 'Thank you',
-  body: 'Your submission was received. We will be in touch soon.',
-};
 ---
 
 <MainLayout
@@ -41,11 +21,11 @@ const content = (form && messages[form]) || {
         Success
       </div>
 
-      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4 text-slate-900">
-        {content.title}
+      <h1 id="thankYouTitle" class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4 text-slate-900">
+        Thank you
       </h1>
-      <p class="text-slate-600 text-lg leading-relaxed mb-8">
-        {content.body}
+      <p id="thankYouBody" class="text-slate-600 text-lg leading-relaxed mb-8">
+        Your submission was received. We will be in touch soon.
       </p>
 
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
@@ -58,4 +38,32 @@ const content = (form && messages[form]) || {
       </div>
     </div>
   </main>
+
+  <script>
+    (function () {
+      const messages = {
+        contact: {
+          title: 'Message sent',
+          body: 'Thanks for reaching out. A team member will reply during business hours (Mon–Fri, 9am–5pm).',
+        },
+        newsletter: {
+          title: "You're subscribed",
+          body: "Thanks for signing up. You'll hear from us when we publish new SEO and web design insights.",
+        },
+        'lake-forest-seo-audit': {
+          title: 'Audit request received',
+          body: "Thanks! We'll review your site and reply with rankings gaps and next steps — usually within one business day.",
+        },
+      };
+
+      const form = new URLSearchParams(window.location.search).get('form');
+      const content = form && messages[form];
+      if (!content) return;
+
+      const title = document.getElementById('thankYouTitle');
+      const body = document.getElementById('thankYouBody');
+      if (title) title.textContent = content.title;
+      if (body) body.textContent = content.body;
+    })();
+  </script>
 </MainLayout>

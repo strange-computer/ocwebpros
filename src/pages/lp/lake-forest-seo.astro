@@ -153,7 +153,7 @@ const faqSchema = {
               id="lfSeoAuditForm"
               name="lake-forest-seo-audit"
               method="POST"
-              action="/thank-you/?form=lake-forest-seo-audit"
+              action="/thank-you/"
               data-netlify="true"
               netlify-honeypot="bot-field"
               class="grid gap-4"
@@ -365,12 +365,28 @@ const faqSchema = {
     (function () {
       const form = document.getElementById('lfSeoAuditForm');
       if (!form) return;
-      form.addEventListener('submit', () => {
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const fd = new FormData(form);
+
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
           event: 'lp_seo_audit_submit',
           landing_page: '/lp/lake-forest-seo',
         });
+
+        try {
+          await fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(/** @type {Record<string, string>} */ (Object.fromEntries(fd))).toString(),
+          });
+        } catch (err) {
+          console.error('Form submit failed', err);
+        }
+
+        window.location.href = '/thank-you/?form=lake-forest-seo-audit';
       });
     })();
   </script>

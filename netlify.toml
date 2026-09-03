@@ -55,6 +55,16 @@
   force = true
 
 [[redirects]]
+  from = "/local-seo/"
+  to = "/services/local-seo/"
+  status = 301
+
+[[redirects]]
+  from = "/web-design/"
+  to = "/services/web-design/"
+  status = 301
+
+[[redirects]]
   from = "/checkout"
   to = "/your-plan"
   status = 301

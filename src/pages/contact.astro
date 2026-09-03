@@ -64,7 +64,7 @@ import NetlifyFormFields from '../components/NetlifyFormFields.astro';
           id="lfwContactForm"
           name="contact"
           method="POST"
-          action="/thank-you/?form=contact"
+          action="/thank-you/"
           data-netlify="true"
           netlify-honeypot="bot-field"
           class="grid md:grid-cols-2 gap-6"
@@ -125,9 +125,25 @@ import NetlifyFormFields from '../components/NetlifyFormFields.astro';
     (function () {
       const form = document.getElementById('lfwContactForm');
       if (!form) return;
-      form.addEventListener('submit', () => {
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const fd = new FormData(form);
+
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({ event: 'contact_form_submit' });
+
+        try {
+          await fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(/** @type {Record<string, string>} */ (Object.fromEntries(fd))).toString(),
+          });
+        } catch (err) {
+          console.error('Form submit failed', err);
+        }
+
+        window.location.href = '/thank-you/?form=contact';
       });
     })();
   </script>
