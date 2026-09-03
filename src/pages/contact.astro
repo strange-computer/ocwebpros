@@ -1,6 +1,6 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
-import NetlifyFormFields from '../components/NetlifyFormFields.astro';
+import { formspree } from '../data/formspree';
 ---
 <MainLayout 
   title="Contact | OCWebPros" 
@@ -62,14 +62,14 @@ import NetlifyFormFields from '../components/NetlifyFormFields.astro';
         <h2 class="text-2xl md:text-3xl font-bold mb-6 text-slate-900">How can we help you today?</h2>
         <form
           id="lfwContactForm"
-          name="contact"
           method="POST"
-          action="/thank-you/"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
+          action={formspree.contact}
+          data-formspree-submit
+          data-thank-you="/thank-you/?form=contact"
+          data-gtm-event="contact_form_submit"
           class="grid md:grid-cols-2 gap-6"
         >
-          <NetlifyFormFields formName="contact" />
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
           <div class="col-span-2 md:col-span-1">
             <label class="block text-sm font-medium text-slate-700 mb-2">Full Name*</label>
             <input name="name" required class="w-full rounded-xl bg-white border border-slate-200 px-4 py-3 text-slate-900 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500/50 transition-all" placeholder="Jane Doe" />
@@ -90,7 +90,7 @@ import NetlifyFormFields from '../components/NetlifyFormFields.astro';
             <button type="submit" class="px-8 py-3 bg-orange-700 text-white font-semibold rounded-full hover:bg-orange-600 transition-colors btn-glow">
               Send Message
             </button>
-            <span id="lfwFormNote" class="text-sm text-slate-600">No spam. We'll reply during business hours.</span>
+            <span id="lfwFormNote" data-form-note class="text-sm text-slate-600">No spam. We'll reply during business hours.</span>
           </div>
         </form>
       </div>
@@ -121,30 +121,5 @@ import NetlifyFormFields from '../components/NetlifyFormFields.astro';
     </section>
   </main>
 
-  <script>
-    (function () {
-      const form = document.getElementById('lfwContactForm');
-      if (!form) return;
-
-      form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const fd = new FormData(form);
-
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({ event: 'contact_form_submit' });
-
-        try {
-          await fetch('/', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: new URLSearchParams(/** @type {Record<string, string>} */ (Object.fromEntries(fd))).toString(),
-          });
-        } catch (err) {
-          console.error('Form submit failed', err);
-        }
-
-        window.location.href = '/thank-you/?form=contact';
-      });
-    })();
-  </script>
+  <script src="/js/formspree-submit.js" defer></script>
 </MainLayout>

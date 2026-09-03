@@ -1,6 +1,6 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
-import NetlifyFormFields from '../components/NetlifyFormFields.astro';
+import { formspree } from '../data/formspree';
 ---
 <MainLayout 
   title="SEO Newsletter | OCWebPros" 
@@ -32,14 +32,14 @@ import NetlifyFormFields from '../components/NetlifyFormFields.astro';
         <p class="text-slate-600 text-sm md:text-base text-center mb-8">Get the latest when we publish - usually a few times a month.</p>
         <form
           id="newsletterForm"
-          name="newsletter"
           method="POST"
-          action="/thank-you/"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
+          action={formspree.newsletter}
+          data-formspree-submit
+          data-thank-you="/thank-you/?form=newsletter"
+          data-gtm-event="newsletter_signup"
           class="max-w-md mx-auto space-y-4"
         >
-          <NetlifyFormFields formName="newsletter" />
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
           <div>
             <label class="block text-sm font-medium text-slate-700 mb-2">Email*</label>
             <input type="email" name="email" required class="w-full rounded-xl bg-white border border-slate-200 px-4 py-3 text-slate-900 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-orange-500/50 transition-all" placeholder="you@example.com" />
@@ -51,7 +51,7 @@ import NetlifyFormFields from '../components/NetlifyFormFields.astro';
           <button type="submit" class="w-full px-8 py-3.5 bg-orange-700 text-white font-semibold rounded-full hover:bg-orange-600 transition-colors btn-glow">
             Subscribe
           </button>
-          <p id="newsletterNote" class="text-sm text-slate-600 text-center">No spam. Unsubscribe anytime.</p>
+          <p id="newsletterNote" data-form-note class="text-sm text-slate-600 text-center">No spam. Unsubscribe anytime.</p>
         </form>
       </div>
     </section>
@@ -97,30 +97,5 @@ import NetlifyFormFields from '../components/NetlifyFormFields.astro';
     </section>
   </main>
 
-  <script>
-    (function () {
-      const form = document.getElementById('newsletterForm');
-      if (!form) return;
-
-      form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const fd = new FormData(form);
-
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({ event: 'newsletter_signup' });
-
-        try {
-          await fetch('/', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: new URLSearchParams(/** @type {Record<string, string>} */ (Object.fromEntries(fd))).toString(),
-          });
-        } catch (err) {
-          console.error('Form submit failed', err);
-        }
-
-        window.location.href = '/thank-you/?form=newsletter';
-      });
-    })();
-  </script>
+  <script src="/js/formspree-submit.js" defer></script>
 </MainLayout>

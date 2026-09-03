@@ -1,6 +1,6 @@
 ---
 import MainLayout from '../../layouts/MainLayout.astro';
-import NetlifyFormFields from '../../components/NetlifyFormFields.astro';
+import { formspree } from '../../data/formspree';
 
 const faqs = [
   {
@@ -151,14 +151,15 @@ const faqSchema = {
             <p class="text-slate-600 text-sm mb-6">Tell us about your business. We’ll reply with rankings gaps and next steps — usually within one business day.</p>
             <form
               id="lfSeoAuditForm"
-              name="lake-forest-seo-audit"
               method="POST"
-              action="/thank-you/"
-              data-netlify="true"
-              netlify-honeypot="bot-field"
+              action={formspree.seoAudit}
+              data-formspree-submit
+              data-thank-you="/thank-you/?form=lake-forest-seo-audit"
+              data-gtm-event="lp_seo_audit_submit"
+              data-gtm-landing="/lp/lake-forest-seo"
               class="grid gap-4"
             >
-              <NetlifyFormFields formName="lake-forest-seo-audit" />
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
               <input type="hidden" name="source" value="/lp/lake-forest-seo" />
               <div>
                 <label for="lf-name" class="block text-sm font-medium text-slate-700 mb-1.5">Full name*</label>
@@ -185,7 +186,7 @@ const faqSchema = {
               <button type="submit" class="w-full px-8 py-3.5 bg-orange-700 text-white font-semibold rounded-full hover:bg-orange-600 transition-colors btn-glow text-base">
                 Request Free SEO Audit
               </button>
-              <p id="lfSeoFormNote" class="text-xs text-slate-500 text-center">No spam. Lake Forest, CA · Mon–Fri 9am–5pm</p>
+              <p id="lfSeoFormNote" data-form-note class="text-xs text-slate-500 text-center">No spam. Lake Forest, CA · Mon–Fri 9am–5pm</p>
             </form>
           </div>
         </div>
@@ -361,33 +362,5 @@ const faqSchema = {
     </section>
   </main>
 
-  <script>
-    (function () {
-      const form = document.getElementById('lfSeoAuditForm');
-      if (!form) return;
-
-      form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const fd = new FormData(form);
-
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-          event: 'lp_seo_audit_submit',
-          landing_page: '/lp/lake-forest-seo',
-        });
-
-        try {
-          await fetch('/', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: new URLSearchParams(/** @type {Record<string, string>} */ (Object.fromEntries(fd))).toString(),
-          });
-        } catch (err) {
-          console.error('Form submit failed', err);
-        }
-
-        window.location.href = '/thank-you/?form=lake-forest-seo-audit';
-      });
-    })();
-  </script>
+  <script src="/js/formspree-submit.js" defer></script>
 </MainLayout>
