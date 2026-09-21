@@ -1,5 +1,5 @@
 (function () {
-  document.querySelectorAll('form[data-formspree-submit]').forEach((form) => {
+  document.querySelectorAll('form[data-netlify-submit]').forEach((form) => {
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
@@ -18,10 +18,11 @@
       if (submitButton) submitButton.disabled = true;
 
       try {
-        const response = await fetch(form.action, {
+        const fd = new FormData(form);
+        const response = await fetch('/', {
           method: 'POST',
-          body: new FormData(form),
-          headers: { Accept: 'application/json' },
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(Object.fromEntries(fd)).toString(),
         });
 
         if (!response.ok) {

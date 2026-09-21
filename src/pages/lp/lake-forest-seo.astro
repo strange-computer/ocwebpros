@@ -1,6 +1,6 @@
 ---
 import MainLayout from '../../layouts/MainLayout.astro';
-import { formspree } from '../../data/formspree';
+import NetlifyFormFields from '../../components/NetlifyFormFields.astro';
 
 const faqs = [
   {
@@ -151,15 +151,18 @@ const faqSchema = {
             <p class="text-slate-600 text-sm mb-6">Tell us about your business. We’ll reply with rankings gaps and next steps — usually within one business day.</p>
             <form
               id="lfSeoAuditForm"
+              name="lake-forest-seo-audit"
               method="POST"
-              action={formspree.seoAudit}
-              data-formspree-submit
+              action="/thank-you/"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              data-netlify-submit
               data-thank-you="/thank-you/?form=lake-forest-seo-audit"
               data-gtm-event="lp_seo_audit_submit"
               data-gtm-landing="/lp/lake-forest-seo"
               class="grid gap-4"
             >
-              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
+              <NetlifyFormFields formName="lake-forest-seo-audit" />
               <input type="hidden" name="source" value="/lp/lake-forest-seo" />
               <div>
                 <label for="lf-name" class="block text-sm font-medium text-slate-700 mb-1.5">Full name*</label>
@@ -362,5 +365,5 @@ const faqSchema = {
     </section>
   </main>
 
-  <script src="/js/formspree-submit.js" defer></script>
+  <script src="/js/netlify-form-submit.js" defer></script>
 </MainLayout>
