@@ -152,7 +152,7 @@ export function buildWebDesignPage(city: CityRegistryEntry): CityServicePageData
     faqs: [
       {
         question: `How much does web design cost in ${city.name}?`,
-        answer: `Custom ${city.name} websites typically range from $3,500–$9,000+ depending on pages, features, and integrations. We provide clear quotes after a free consultation.`,
+        answer: `Custom ${city.name} websites typically range from $1,500–$3,500 depending on pages, features, and integrations. We provide clear quotes after a free consultation.`,
       },
       {
         question: `How long does a ${city.name} website project take?`,

@@ -71,7 +71,7 @@ In 2026, website performance isn't just a technical metric—it's a design philo
 
 We're so confident in our Orange County web design expertise that we offer this guarantee:
 
-**With our 2026 Web Design Package ($3,500 one-time), you'll receive:**
+**With our 2026 Web Design Package ($1,500 one-time), you'll receive:**
 1. Fully responsive design incorporating all five 2026 trends
 2. 50%+ improvement in mobile conversion rates
 3. AI personalization implementation for your specific business model

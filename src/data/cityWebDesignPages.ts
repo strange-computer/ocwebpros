@@ -140,7 +140,7 @@ const handCraftedWebDesignPages: CityServicePageData[] = [
     blogSlug: '2026-05-15-mission-viejo-professional-services-seo',
     blogTitle: 'Mission Viejo Professional Services SEO Guide',
     faqs: [
-      { question: 'How much does a Mission Viejo business website cost?', answer: 'Most Mission Viejo business sites range from $3,500–$9,000 depending on pages and features. Professional service sites with booking and detailed service pages are typically $5,000–$8,000.' },
+      { question: 'How much does a Mission Viejo business website cost?', answer: 'Most Mission Viejo business sites range from $1,500–$3,500 depending on pages and features. Larger builds with booking flows and extra service pages typically land at the top of that range.' },
       { question: 'Can you design websites for Mission Viejo professional services?', answer: 'Yes. Lawyers, dentists, accountants, and consultants are a core focus. We build credibility-first designs with clear service breakdowns and contact paths.' },
       { question: 'Will my Mission Viejo website rank on Google?', answer: 'Every site includes SEO foundations. For ongoing rankings, pair your launch with our local SEO plans starting at $500/month.' },
       { question: 'How long does a Mission Viejo website project take?', answer: 'Typically 4–8 weeks. Professional service sites with multiple service pages may take 6–10 weeks.' },

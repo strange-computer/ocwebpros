@@ -28,7 +28,7 @@ If you need a basic online presence in a weekend, tools like Wix or Squarespace 
 
 | | DIY Builder | Custom (OCWebPros) |
 |---|---|---|
-| Upfront cost | Low ($0–$500) | $1,500–$5,000 |
+| Upfront cost | Low ($0–$500) | $1,500–$3,500 |
 | Monthly cost | $15–$50 | $30–$150 (hosting) |
 | SEO performance | Limited | Built for ranking |
 | Design | Template | Custom to your brand |

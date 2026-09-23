@@ -241,7 +241,7 @@ Before you sign anything, ask:
 
 At OCWebPros, we believe in **transparent, value-based pricing**. Here's how we structure it:
 
-### Starter Package: $3,500
+### Starter Package: $1,500
 - Custom 5-8 page website
 - Mobile-first responsive design
 - Basic SEO setup
@@ -325,7 +325,7 @@ Ask for:
 
 For most Orange County businesses looking for a professional website that actually drives growth:
 
-- **Minimum viable professional site:** $3,500
+- **Minimum viable professional site:** $1,500
 - **Solid growth-focused site:** $8,500-15,000  
 - **Comprehensive business asset:** $15,000-30,000+
 
