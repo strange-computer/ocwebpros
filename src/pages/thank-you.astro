@@ -64,6 +64,18 @@ import MainLayout from '../layouts/MainLayout.astro';
       const body = document.getElementById('thankYouBody');
       if (title) title.textContent = content.title;
       if (body) body.textContent = content.body;
+
+      const gtmEvents = {
+        contact: 'contact_form_submit',
+        newsletter: 'newsletter_signup',
+        'lake-forest-seo-audit': 'lp_seo_audit_submit',
+      };
+      const gtmEvent = form && gtmEvents[form];
+      if (gtmEvent) {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: gtmEvent, form_submit_status: 'success', form_name: form });
+        window.dataLayer.push({ event: 'generate_lead', lead_source: gtmEvent, form_name: form });
+      }
     })();
   </script>
 </MainLayout>

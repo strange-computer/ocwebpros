@@ -4,15 +4,6 @@
       e.preventDefault();
 
       const thankYou = form.getAttribute('data-thank-you');
-      const gtmEvent = form.getAttribute('data-gtm-event');
-      const gtmLanding = form.getAttribute('data-gtm-landing');
-
-      if (gtmEvent) {
-        window.dataLayer = window.dataLayer || [];
-        const payload = { event: gtmEvent };
-        if (gtmLanding) payload.landing_page = gtmLanding;
-        window.dataLayer.push(payload);
-      }
 
       const submitButton = form.querySelector('[type="submit"]');
       if (submitButton) submitButton.disabled = true;
